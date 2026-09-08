@@ -1,0 +1,21 @@
+{
+  "name": "Indian Equities 360° Institutional Terminal",
+  "short_name": "MarketRadar",
+  "start_url": "./Advance_Technical_Analysis_424_Stocks.html",
+  "display": "standalone",
+  "background_color": "#0B1120",
+  "theme_color": "#0284C7",
+  "orientation": "any",
+  "icons": [
+    {
+      "src": "https://cdn-icons-png.flaticon.com/512/2910/2910311.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "https://cdn-icons-png.flaticon.com/512/2910/2910311.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

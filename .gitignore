@@ -1,0 +1,35 @@
+# Large Archive and Backups
+others/
+*.log
+launcher_error.log
+
+# Binaries (Uploaded via GitHub Releases API)
+Alpha360_Terminal.apk
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.env
+.venv/
+env/
+venv/
+
+# Flutter / Dart
+flutter_app/build/
+flutter_app/.dart_tool/
+flutter_app/.flutter-plugins
+flutter_app/.flutter-plugins-dependencies
+flutter_app/.pub-cache/
+flutter_app/.pub/
+flutter_app/windows/flutter/ephemeral/
+flutter_app/android/.gradle/
+flutter_app/android/app/build/
+flutter_app/android/local.properties
+
+# IDE & OS
+.vscode/
+.idea/
+*.iml
+.DS_Store
+Thumbs.db

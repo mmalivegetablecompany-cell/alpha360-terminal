@@ -1,0 +1,4484 @@
+[
+  {
+    "symbol": "GENUSPOWER",
+    "name": "Genus Power Infrastructures Ltd",
+    "sector": "Power & Electrical Equipment",
+    "mcap": "Small Cap",
+    "mcap_cr": 9343.5,
+    "master_score": 87.8,
+    "funda_score": 90.0,
+    "tech_score": 98.0,
+    "et_score": 80.0,
+    "today_price": 337.8,
+    "today_pe": 15.77,
+    "today_pb": 4.21,
+    "today_peg": 0.36,
+    "consensus": "Strong Buy (ET Consensus: +17.8% Upside)",
+    "tier": "Tier 1: Prime Alpha (High Growth & Undervalued)",
+    "buy_rating": "\ud83c\udf1f Deep Value / Strong Buy",
+    "forecast_upside": 17.8,
+    "avg_rev": 100.2,
+    "min_rev": 44.9,
+    "max_rev": 135.93,
+    "avg_pat": 204.86,
+    "min_pat": 39.84,
+    "max_pat": 670.0,
+    "q_details": [
+      {
+        "q": "Sep 2024",
+        "rev_yoy": 88.03,
+        "pat_yoy": 69.39,
+        "rev": 487.0,
+        "pat": 83.0
+      },
+      {
+        "q": "Dec 2024",
+        "rev_yoy": 132.31,
+        "pat_yoy": 670.0,
+        "rev": 604.0,
+        "pat": 57.0
+      },
+      {
+        "q": "Mar 2025",
+        "rev_yoy": 123.1,
+        "pat_yoy": 412.5,
+        "rev": 937.0,
+        "pat": 123.0
+      },
+      {
+        "q": "Jun 2025",
+        "rev_yoy": 127.54,
+        "pat_yoy": 185.42,
+        "rev": 942.0,
+        "pat": 137.0
+      },
+      {
+        "q": "Sep 2025",
+        "rev_yoy": 135.93,
+        "pat_yoy": 72.29,
+        "rev": 1149.0,
+        "pat": 143.0
+      },
+      {
+        "q": "Dec 2025",
+        "rev_yoy": 85.76,
+        "pat_yoy": 145.61,
+        "rev": 1122.0,
+        "pat": 140.0
+      },
+      {
+        "q": "Mar 2026",
+        "rev_yoy": 64.03,
+        "pat_yoy": 39.84,
+        "rev": 1537.0,
+        "pat": 172.0
+      },
+      {
+        "q": "Jun 2026",
+        "rev_yoy": 44.9,
+        "pat_yoy": 43.8,
+        "rev": 1365.0,
+        "pat": 197.0
+      }
+    ]
+  },
+  {
+    "symbol": "AFFLE",
+    "name": "Affle 3i Limited",
+    "sector": "IT, Software & Cloud Technologies",
+    "mcap": "Small Cap",
+    "mcap_cr": 22750.7,
+    "master_score": 86.5,
+    "funda_score": 84.0,
+    "tech_score": 78.0,
+    "et_score": 90.0,
+    "today_price": 1616.5,
+    "today_pe": 47.61,
+    "today_pb": 6.82,
+    "today_peg": 2.29,
+    "consensus": "Buy (ET Consensus: +25.5% Upside)",
+    "tier": "Tier 2: Strong Momentum Compounder",
+    "buy_rating": "\ud83c\udf1f Deep Value / Strong Buy",
+    "forecast_upside": 25.5,
+    "avg_rev": 20.48,
+    "min_rev": 18.97,
+    "max_rev": 25.99,
+    "avg_pat": 23.04,
+    "min_pat": 16.5,
+    "max_pat": 37.31,
+    "q_details": [
+      {
+        "q": "Sep 2024",
+        "rev_yoy": 25.99,
+        "pat_yoy": 37.31,
+        "rev": 543.0,
+        "pat": 92.0
+      },
+      {
+        "q": "Dec 2024",
+        "rev_yoy": 20.64,
+        "pat_yoy": 29.87,
+        "rev": 602.0,
+        "pat": 100.0
+      },
+      {
+        "q": "Mar 2025",
+        "rev_yoy": 18.97,
+        "pat_yoy": 18.39,
+        "rev": 602.0,
+        "pat": 103.0
+      },
+      {
+        "q": "Jun 2025",
+        "rev_yoy": 19.42,
+        "pat_yoy": 21.84,
+        "rev": 621.0,
+        "pat": 106.0
+      },
+      {
+        "q": "Sep 2025",
+        "rev_yoy": 19.15,
+        "pat_yoy": 20.65,
+        "rev": 647.0,
+        "pat": 111.0
+      },
+      {
+        "q": "Dec 2025",
+        "rev_yoy": 19.1,
+        "pat_yoy": 19.0,
+        "rev": 717.0,
+        "pat": 119.0
+      },
+      {
+        "q": "Mar 2026",
+        "rev_yoy": 20.27,
+        "pat_yoy": 16.5,
+        "rev": 724.0,
+        "pat": 120.0
+      },
+      {
+        "q": "Jun 2026",
+        "rev_yoy": 20.29,
+        "pat_yoy": 20.75,
+        "rev": 747.0,
+        "pat": 128.0
+      }
+    ]
+  },
+  {
+    "symbol": "PREMIERENE",
+    "name": "Premier Energies Ltd",
+    "sector": "Renewable Energy & Green Power",
+    "mcap": "Mid Cap",
+    "mcap_cr": 45234.9,
+    "master_score": 85.5,
+    "funda_score": 94.0,
+    "tech_score": 80.0,
+    "et_score": 100.0,
+    "today_price": 1002.0,
+    "today_pe": 27.28,
+    "today_pb": 10.48,
+    "today_peg": 0.51,
+    "consensus": "Buy (ET Consensus: +10.6% Upside)",
+    "tier": "Tier 1: Prime Alpha (High Growth & Undervalued)",
+    "buy_rating": "\ud83c\udf1f Deep Value / Strong Buy",
+    "forecast_upside": 10.6,
+    "avg_rev": 52.56,
+    "min_rev": 9.9,
+    "max_rev": 140.59,
+    "avg_pat": 155.91,
+    "min_pat": 53.25,
+    "max_pat": 493.02,
+    "q_details": [
+      {
+        "q": "Sep 2024",
+        "rev_yoy": 120.03,
+        "pat_yoy": 288.68,
+        "rev": 1527.0,
+        "pat": 206.0
+      },
+      {
+        "q": "Dec 2024",
+        "rev_yoy": 140.59,
+        "pat_yoy": 493.02,
+        "rev": 1713.0,
+        "pat": 255.0
+      },
+      {
+        "q": "Mar 2025",
+        "rev_yoy": 43.83,
+        "pat_yoy": 167.31,
+        "rev": 1621.0,
+        "pat": 278.0
+      },
+      {
+        "q": "Jun 2025",
+        "rev_yoy": 9.9,
+        "pat_yoy": 55.56,
+        "rev": 1821.0,
+        "pat": 308.0
+      },
+      {
+        "q": "Sep 2025",
+        "rev_yoy": 20.3,
+        "pat_yoy": 71.36,
+        "rev": 1837.0,
+        "pat": 353.0
+      },
+      {
+        "q": "Dec 2025",
+        "rev_yoy": 13.02,
+        "pat_yoy": 53.73,
+        "rev": 1936.0,
+        "pat": 392.0
+      },
+      {
+        "q": "Mar 2026",
+        "rev_yoy": 37.57,
+        "pat_yoy": 64.39,
+        "rev": 2230.0,
+        "pat": 457.0
+      },
+      {
+        "q": "Jun 2026",
+        "rev_yoy": 35.26,
+        "pat_yoy": 53.25,
+        "rev": 2463.0,
+        "pat": 472.0
+      }
+    ]
+  },
+  {
+    "symbol": "MCX",
+    "name": "Multi Commodity Exchange of India Ltd",
+    "sector": "Capital Markets & Exchanges",
+    "mcap": "Mid Cap",
+    "mcap_cr": 83363.5,
+    "master_score": 85.3,
+    "funda_score": 86.0,
+    "tech_score": 98.0,
+    "et_score": 100.0,
+    "today_price": 3275.4,
+    "today_pe": 54.17,
+    "today_pb": 19.81,
+    "today_peg": 0.51,
+    "consensus": "Buy (ET Consensus: +0.0% Upside)",
+    "tier": "Tier 1: Prime Alpha (High Growth & Undervalued)",
+    "buy_rating": "\u2705 Accumulate (Discount to Median)",
+    "forecast_upside": 0.0,
+    "avg_rev": 87.0,
+    "min_rev": 30.77,
+    "max_rev": 205.5,
+    "avg_pat": 615.17,
+    "min_pat": 27.92,
+    "max_pat": 3300.0,
+    "q_details": [
+      {
+        "q": "Sep 2024",
+        "rev_yoy": 73.33,
+        "pat_yoy": 910.53,
+        "rev": 286.0,
+        "pat": 154.0
+      },
+      {
+        "q": "Dec 2024",
+        "rev_yoy": 56.77,
+        "pat_yoy": 3300.0,
+        "rev": 301.0,
+        "pat": 160.0
+      },
+      {
+        "q": "Mar 2025",
+        "rev_yoy": 60.77,
+        "pat_yoy": 53.41,
+        "rev": 291.0,
+        "pat": 135.0
+      },
+      {
+        "q": "Jun 2025",
+        "rev_yoy": 59.4,
+        "pat_yoy": 82.88,
+        "rev": 373.0,
+        "pat": 203.0
+      },
+      {
+        "q": "Sep 2025",
+        "rev_yoy": 30.77,
+        "pat_yoy": 27.92,
+        "rev": 374.0,
+        "pat": 197.0
+      },
+      {
+        "q": "Dec 2025",
+        "rev_yoy": 121.26,
+        "pat_yoy": 150.62,
+        "rev": 666.0,
+        "pat": 401.0
+      },
+      {
+        "q": "Mar 2026",
+        "rev_yoy": 205.5,
+        "pat_yoy": 292.59,
+        "rev": 889.0,
+        "pat": 530.0
+      },
+      {
+        "q": "Jun 2026",
+        "rev_yoy": 88.2,
+        "pat_yoy": 103.45,
+        "rev": 702.0,
+        "pat": 413.0
+      }
+    ]
+  },
+  {
+    "symbol": "VIJAYA",
+    "name": "Vijaya Diagnostic Centre Limited",
+    "sector": "Pharmaceuticals & Healthcare",
+    "mcap": "Small Cap",
+    "mcap_cr": 15379.6,
+    "master_score": 83.5,
+    "funda_score": 77.0,
+    "tech_score": 95.0,
+    "et_score": 100.0,
+    "today_price": 1493.2,
+    "today_pe": 81.91,
+    "today_pb": 3.31,
+    "today_peg": 2.28,
+    "consensus": "Strong Buy (ET Consensus: +3.0% Upside)",
+    "tier": "Tier 3: Steady Watchlist Performer",
+    "buy_rating": "\u26a0\ufe0f Overextended (Hold/Trim)",
+    "forecast_upside": 3.0,
+    "avg_rev": 21.5,
+    "min_rev": 10.38,
+    "max_rev": 31.65,
+    "avg_pat": 22.66,
+    "min_pat": 2.38,
+    "max_pat": 37.14,
+    "q_details": [
+      {
+        "q": "Sep 2024",
+        "rev_yoy": 31.65,
+        "pat_yoy": 23.53,
+        "rev": 183.0,
+        "pat": 42.0
+      },
+      {
+        "q": "Dec 2024",
+        "rev_yoy": 27.07,
+        "pat_yoy": 34.62,
+        "rev": 169.0,
+        "pat": 35.0
+      },
+      {
+        "q": "Mar 2025",
+        "rev_yoy": 11.61,
+        "pat_yoy": 2.94,
+        "rev": 173.0,
+        "pat": 35.0
+      },
+      {
+        "q": "Jun 2025",
+        "rev_yoy": 20.51,
+        "pat_yoy": 21.88,
+        "rev": 188.0,
+        "pat": 39.0
+      },
+      {
+        "q": "Sep 2025",
+        "rev_yoy": 10.38,
+        "pat_yoy": 2.38,
+        "rev": 202.0,
+        "pat": 43.0
+      },
+      {
+        "q": "Dec 2025",
+        "rev_yoy": 21.3,
+        "pat_yoy": 22.86,
+        "rev": 205.0,
+        "pat": 43.0
+      },
+      {
+        "q": "Mar 2026",
+        "rev_yoy": 26.59,
+        "pat_yoy": 37.14,
+        "rev": 219.0,
+        "pat": 48.0
+      },
+      {
+        "q": "Jun 2026",
+        "rev_yoy": 22.87,
+        "pat_yoy": 35.9,
+        "rev": 231.0,
+        "pat": 53.0
+      }
+    ]
+  },
+  {
+    "symbol": "SJS",
+    "name": "S.J.S. Enterprises Limited",
+    "sector": "Automobiles & Auto Components",
+    "mcap": "Small Cap",
+    "mcap_cr": 7437.1,
+    "master_score": 83.2,
+    "funda_score": 94.0,
+    "tech_score": 82.0,
+    "et_score": 70.0,
+    "today_price": 2306.1,
+    "today_pe": 34.94,
+    "today_pb": 3.62,
+    "today_peg": 0.31,
+    "consensus": "Buy (ET Consensus: +14.4% Upside)",
+    "tier": "Tier 2: Strong Momentum Compounder",
+    "buy_rating": "\u2696\ufe0f Fair Value",
+    "forecast_upside": 14.4,
+    "avg_rev": 20.44,
+    "min_rev": 7.49,
+    "max_rev": 36.31,
+    "avg_pat": 50.18,
+    "min_pat": 25.0,
+    "max_pat": 111.43,
+    "q_details": [
+      {
+        "q": "Sep 2024",
+        "rev_yoy": 18.4,
+        "pat_yoy": 52.63,
+        "rev": 193.0,
+        "pat": 29.0
+      },
+      {
+        "q": "Dec 2024",
+        "rev_yoy": 11.18,
+        "pat_yoy": 33.33,
+        "rev": 179.0,
+        "pat": 28.0
+      },
+      {
+        "q": "Mar 2025",
+        "rev_yoy": 7.49,
+        "pat_yoy": 25.93,
+        "rev": 201.0,
+        "pat": 34.0
+      },
+      {
+        "q": "Jun 2025",
+        "rev_yoy": 11.11,
+        "pat_yoy": 25.0,
+        "rev": 210.0,
+        "pat": 35.0
+      },
+      {
+        "q": "Sep 2025",
+        "rev_yoy": 25.39,
+        "pat_yoy": 48.28,
+        "rev": 242.0,
+        "pat": 43.0
+      },
+      {
+        "q": "Dec 2025",
+        "rev_yoy": 36.31,
+        "pat_yoy": 60.71,
+        "rev": 244.0,
+        "pat": 45.0
+      },
+      {
+        "q": "Mar 2026",
+        "rev_yoy": 29.35,
+        "pat_yoy": 44.12,
+        "rev": 260.0,
+        "pat": 49.0
+      },
+      {
+        "q": "Jun 2026",
+        "rev_yoy": 24.29,
+        "pat_yoy": 111.43,
+        "rev": 261.0,
+        "pat": 74.0
+      }
+    ]
+  },
+  {
+    "symbol": "SKYGOLD",
+    "name": "SKY GOLD AND DIAMONDS LIMITED",
+    "sector": "Banking & Financial Services (BFSI)",
+    "mcap": "Small Cap",
+    "mcap_cr": 12102.6,
+    "master_score": 82.8,
+    "funda_score": 86.0,
+    "tech_score": 98.0,
+    "et_score": 80.0,
+    "today_price": 781.45,
+    "today_pe": 36.11,
+    "today_pb": 1.38,
+    "today_peg": 0.26,
+    "consensus": "Strong Buy (ET Consensus: +7.3% Upside)",
+    "tier": "Tier 2: Strong Momentum Compounder",
+    "buy_rating": "\u26a0\ufe0f Overextended (Hold/Trim)",
+    "forecast_upside": 7.3,
+    "avg_rev": 87.83,
+    "min_rev": 56.43,
+    "max_rev": 116.96,
+    "avg_pat": 187.34,
+    "min_pat": 81.08,
+    "max_pat": 428.57,
+    "q_details": [
+      {
+        "q": "Sep 2024",
+        "rev_yoy": 94.19,
+        "pat_yoy": 428.57,
+        "rev": 769.0,
+        "pat": 37.0
+      },
+      {
+        "q": "Dec 2024",
+        "rev_yoy": 116.96,
+        "pat_yoy": 311.11,
+        "rev": 998.0,
+        "pat": 37.0
+      },
+      {
+        "q": "Mar 2025",
+        "rev_yoy": 106.24,
+        "pat_yoy": 171.43,
+        "rev": 1058.0,
+        "pat": 38.0
+      },
+      {
+        "q": "Jun 2025",
+        "rev_yoy": 56.43,
+        "pat_yoy": 109.52,
+        "rev": 1131.0,
+        "pat": 44.0
+      },
+      {
+        "q": "Sep 2025",
+        "rev_yoy": 92.98,
+        "pat_yoy": 81.08,
+        "rev": 1484.0,
+        "pat": 67.0
+      },
+      {
+        "q": "Dec 2025",
+        "rev_yoy": 77.15,
+        "pat_yoy": 118.92,
+        "rev": 1768.0,
+        "pat": 81.0
+      },
+      {
+        "q": "Mar 2026",
+        "rev_yoy": 80.72,
+        "pat_yoy": 139.47,
+        "rev": 1912.0,
+        "pat": 91.0
+      },
+      {
+        "q": "Jun 2026",
+        "rev_yoy": 77.98,
+        "pat_yoy": 138.64,
+        "rev": 2013.0,
+        "pat": 105.0
+      }
+    ]
+  },
+  {
+    "symbol": "PRIVISCL",
+    "name": "Privi Speciality Chemicals Limited",
+    "sector": "FMCG, Food & Quick-Service Restaurants",
+    "mcap": "Small Cap",
+    "mcap_cr": 13153.6,
+    "master_score": 82.5,
+    "funda_score": 66.0,
+    "tech_score": 85.0,
+    "et_score": 100.0,
+    "today_price": 3367.3,
+    "today_pe": 37.64,
+    "today_pb": 7.56,
+    "today_peg": 0.87,
+    "consensus": "Buy (ET Consensus: +25.6% Upside)",
+    "tier": "Tier 3: Steady Watchlist Performer",
+    "buy_rating": "\u2705 Accumulate (Discount to Median)",
+    "forecast_upside": 25.6,
+    "avg_rev": 21.67,
+    "min_rev": 17.14,
+    "max_rev": 27.39,
+    "avg_pat": 68.66,
+    "min_pat": 43.1,
+    "max_pat": 100.0,
+    "q_details": [
+      {
+        "q": "Sep 2024",
+        "rev_yoy": 17.14,
+        "pat_yoy": 50.0,
+        "rev": 533.0,
+        "pat": 45.0
+      },
+      {
+        "q": "Dec 2024",
+        "rev_yoy": 21.53,
+        "pat_yoy": 51.72,
+        "rev": 491.0,
+        "pat": 44.0
+      },
+      {
+        "q": "Mar 2025",
+        "rev_yoy": 26.86,
+        "pat_yoy": 100.0,
+        "rev": 614.0,
+        "pat": 64.0
+      },
+      {
+        "q": "Jun 2025",
+        "rev_yoy": 20.47,
+        "pat_yoy": 87.1,
+        "rev": 559.0,
+        "pat": 58.0
+      },
+      {
+        "q": "Sep 2025",
+        "rev_yoy": 27.39,
+        "pat_yoy": 100.0,
+        "rev": 679.0,
+        "pat": 90.0
+      },
+      {
+        "q": "Dec 2025",
+        "rev_yoy": 23.22,
+        "pat_yoy": 70.45,
+        "rev": 605.0,
+        "pat": 75.0
+      },
+      {
+        "q": "Mar 2026",
+        "rev_yoy": 17.59,
+        "pat_yoy": 46.88,
+        "rev": 722.0,
+        "pat": 94.0
+      },
+      {
+        "q": "Jun 2026",
+        "rev_yoy": 19.14,
+        "pat_yoy": 43.1,
+        "rev": 666.0,
+        "pat": 83.0
+      }
+    ]
+  },
+  {
+    "symbol": "COFORGE",
+    "name": "Coforge Limited",
+    "sector": "IT, Software & Cloud Technologies",
+    "mcap": "Mid Cap",
+    "mcap_cr": 87390.7,
+    "master_score": 82.1,
+    "funda_score": 82.0,
+    "tech_score": 95.0,
+    "et_score": 90.0,
+    "today_price": 1972.8,
+    "today_pe": 40.56,
+    "today_pb": 4.53,
+    "today_peg": 0.82,
+    "consensus": "Buy (ET Consensus: -2.6% Upside)",
+    "tier": "Tier 2: Strong Momentum Compounder",
+    "buy_rating": "\ud83c\udf1f Deep Value / Strong Buy",
+    "forecast_upside": -2.6,
+    "avg_rev": 39.86,
+    "min_rev": 29.9,
+    "max_rev": 57.15,
+    "avg_pat": 60.5,
+    "min_pat": 5.35,
+    "max_pat": 156.12,
+    "q_details": [
+      {
+        "q": "Sep 2024",
+        "rev_yoy": 32.95,
+        "pat_yoy": 24.47,
+        "rev": 3026.0,
+        "pat": 234.0
+      },
+      {
+        "q": "Dec 2024",
+        "rev_yoy": 40.25,
+        "pat_yoy": 5.35,
+        "rev": 3258.0,
+        "pat": 256.0
+      },
+      {
+        "q": "Mar 2025",
+        "rev_yoy": 47.63,
+        "pat_yoy": 34.06,
+        "rev": 3422.0,
+        "pat": 307.0
+      },
+      {
+        "q": "Jun 2025",
+        "rev_yoy": 57.15,
+        "pat_yoy": 156.12,
+        "rev": 3704.0,
+        "pat": 356.0
+      },
+      {
+        "q": "Sep 2025",
+        "rev_yoy": 31.73,
+        "pat_yoy": 81.62,
+        "rev": 3986.0,
+        "pat": 425.0
+      },
+      {
+        "q": "Dec 2025",
+        "rev_yoy": 29.9,
+        "pat_yoy": 16.02,
+        "rev": 4232.0,
+        "pat": 297.0
+      },
+      {
+        "q": "Mar 2026",
+        "rev_yoy": 30.04,
+        "pat_yoy": 116.94,
+        "rev": 4450.0,
+        "pat": 666.0
+      },
+      {
+        "q": "Jun 2026",
+        "rev_yoy": 49.24,
+        "pat_yoy": 49.44,
+        "rev": 5528.0,
+        "pat": 532.0
+      }
+    ]
+  },
+  {
+    "symbol": "TDPOWERSYS",
+    "name": "TD Power Systems Ltd",
+    "sector": "Power & Electrical Equipment",
+    "mcap": "Small Cap",
+    "mcap_cr": 23124.9,
+    "master_score": 81.4,
+    "funda_score": 76.0,
+    "tech_score": 95.0,
+    "et_score": 80.0,
+    "today_price": 740.1,
+    "today_pe": 84.1,
+    "today_pb": 21.58,
+    "today_peg": 1.16,
+    "consensus": "Strong Buy (ET Consensus: +14.3% Upside)",
+    "tier": "Tier 3: Steady Watchlist Performer",
+    "buy_rating": "\u26a0\ufe0f Overextended (Hold/Trim)",
+    "forecast_upside": 14.3,
+    "avg_rev": 42.36,
+    "min_rev": 11.68,
+    "max_rev": 72.04,
+    "avg_pat": 47.31,
+    "min_pat": 24.24,
+    "max_pat": 82.76,
+    "q_details": [
+      {
+        "q": "Sep 2024",
+        "rev_yoy": 11.68,
+        "pat_yoy": 24.24,
+        "rev": 306.0,
+        "pat": 41.0
+      },
+      {
+        "q": "Dec 2024",
+        "rev_yoy": 44.03,
+        "pat_yoy": 50.0,
+        "rev": 350.0,
+        "pat": 45.0
+      },
+      {
+        "q": "Mar 2025",
+        "rev_yoy": 31.82,
+        "pat_yoy": 82.76,
+        "rev": 348.0,
+        "pat": 53.0
+      },
+      {
+        "q": "Jun 2025",
+        "rev_yoy": 35.77,
+        "pat_yoy": 42.86,
+        "rev": 372.0,
+        "pat": 50.0
+      },
+      {
+        "q": "Sep 2025",
+        "rev_yoy": 47.71,
+        "pat_yoy": 46.34,
+        "rev": 452.0,
+        "pat": 60.0
+      },
+      {
+        "q": "Dec 2025",
+        "rev_yoy": 26.57,
+        "pat_yoy": 24.44,
+        "rev": 443.0,
+        "pat": 56.0
+      },
+      {
+        "q": "Mar 2026",
+        "rev_yoy": 69.25,
+        "pat_yoy": 35.85,
+        "rev": 589.0,
+        "pat": 72.0
+      },
+      {
+        "q": "Jun 2026",
+        "rev_yoy": 72.04,
+        "pat_yoy": 72.0,
+        "rev": 640.0,
+        "pat": 86.0
+      }
+    ]
+  },
+  {
+    "symbol": "ADANIPORTS",
+    "name": "Adani Ports and Special Economic Zone Limited",
+    "sector": "Renewable Energy & Green Power",
+    "mcap": "Large Cap",
+    "mcap_cr": 393354.9,
+    "master_score": 81.0,
+    "funda_score": 73.0,
+    "tech_score": 85.0,
+    "et_score": 70.0,
+    "today_price": 1707.3,
+    "today_pe": 29.54,
+    "today_pb": 4.0,
+    "today_peg": 2.9,
+    "consensus": "Buy (ET Consensus: +27.2% Upside)",
+    "tier": "Tier 3: Steady Watchlist Performer",
+    "buy_rating": "\u2696\ufe0f Fair Value",
+    "forecast_upside": 27.2,
+    "avg_rev": 20.23,
+    "min_rev": 6.33,
+    "max_rev": 29.72,
+    "avg_pat": 22.18,
+    "min_pat": 6.57,
+    "max_pat": 50.02,
+    "q_details": [
+      {
+        "q": "Sep 2024",
+        "rev_yoy": 6.33,
+        "pat_yoy": 36.95,
+        "rev": 7067.0,
+        "pat": 2413.0
+      },
+      {
+        "q": "Dec 2024",
+        "rev_yoy": 15.09,
+        "pat_yoy": 14.04,
+        "rev": 7964.0,
+        "pat": 2518.0
+      },
+      {
+        "q": "Mar 2025",
+        "rev_yoy": 23.09,
+        "pat_yoy": 50.02,
+        "rev": 8488.0,
+        "pat": 3023.0
+      },
+      {
+        "q": "Jun 2025",
+        "rev_yoy": 20.71,
+        "pat_yoy": 6.57,
+        "rev": 9126.0,
+        "pat": 3311.0
+      },
+      {
+        "q": "Sep 2025",
+        "rev_yoy": 29.72,
+        "pat_yoy": 29.3,
+        "rev": 9167.0,
+        "pat": 3120.0
+      },
+      {
+        "q": "Dec 2025",
+        "rev_yoy": 21.86,
+        "pat_yoy": 20.85,
+        "rev": 9705.0,
+        "pat": 3043.0
+      },
+      {
+        "q": "Mar 2026",
+        "rev_yoy": 26.51,
+        "pat_yoy": 9.43,
+        "rev": 10738.0,
+        "pat": 3308.0
+      },
+      {
+        "q": "Jun 2026",
+        "rev_yoy": 18.57,
+        "pat_yoy": 10.24,
+        "rev": 10821.0,
+        "pat": 3650.0
+      }
+    ]
+  },
+  {
+    "symbol": "M&M",
+    "name": "Mahindra & Mahindra Ltd",
+    "sector": "Automobiles & Auto Components",
+    "mcap": "Large Cap",
+    "mcap_cr": 380641.6,
+    "master_score": 80.8,
+    "funda_score": 97.0,
+    "tech_score": 22.0,
+    "et_score": 90.0,
+    "today_price": 3170.0,
+    "today_pe": 21.34,
+    "today_pb": 3.81,
+    "today_peg": 0.58,
+    "consensus": "Buy (ET Consensus: +28.6% Upside)",
+    "tier": "Tier 1: Prime Alpha (High Growth & Undervalued)",
+    "buy_rating": "\ud83c\udf1f Deep Value / Strong Buy",
+    "forecast_upside": 28.6,
+    "avg_rev": 21.77,
+    "min_rev": 10.13,
+    "max_rev": 29.07,
+    "avg_pat": 29.48,
+    "min_pat": 13.34,
+    "max_pat": 48.5,
+    "q_details": [
+      {
+        "q": "Sep 2024",
+        "rev_yoy": 10.13,
+        "pat_yoy": 35.31,
+        "rev": 37924.0,
+        "pat": 3361.0
+      },
+      {
+        "q": "Dec 2024",
+        "rev_yoy": 17.48,
+        "pat_yoy": 21.73,
+        "rev": 41470.0,
+        "pat": 3624.0
+      },
+      {
+        "q": "Mar 2025",
+        "rev_yoy": 20.16,
+        "pat_yoy": 13.34,
+        "rev": 42599.0,
+        "pat": 3542.0
+      },
+      {
+        "q": "Jun 2025",
+        "rev_yoy": 22.33,
+        "pat_yoy": 23.43,
+        "rev": 45529.0,
+        "pat": 4377.0
+      },
+      {
+        "q": "Sep 2025",
+        "rev_yoy": 21.57,
+        "pat_yoy": 17.94,
+        "rev": 46106.0,
+        "pat": 3964.0
+      },
+      {
+        "q": "Dec 2025",
+        "rev_yoy": 25.63,
+        "pat_yoy": 38.55,
+        "rev": 52100.0,
+        "pat": 5021.0
+      },
+      {
+        "q": "Mar 2026",
+        "rev_yoy": 29.07,
+        "pat_yoy": 48.5,
+        "rev": 54982.0,
+        "pat": 5260.0
+      },
+      {
+        "q": "Jun 2026",
+        "rev_yoy": 27.8,
+        "pat_yoy": 37.03,
+        "rev": 58188.0,
+        "pat": 5998.0
+      }
+    ]
+  },
+  {
+    "symbol": "SOLARINDS",
+    "name": "Solar Industries India Limited",
+    "sector": "Renewable Energy & Green Power",
+    "mcap": "Large Cap",
+    "mcap_cr": 194055.9,
+    "master_score": 80.8,
+    "funda_score": 90.0,
+    "tech_score": 95.0,
+    "et_score": 70.0,
+    "today_price": 21445.0,
+    "today_pe": 97.45,
+    "today_pb": 3.22,
+    "today_peg": 1.1,
+    "consensus": "Buy (ET Consensus: +5.3% Upside)",
+    "tier": "Tier 2: Strong Momentum Compounder",
+    "buy_rating": "\u2696\ufe0f Fair Value",
+    "forecast_upside": 5.3,
+    "avg_rev": 36.18,
+    "min_rev": 21.33,
+    "max_rev": 70.29,
+    "avg_pat": 45.46,
+    "min_pat": 17.28,
+    "max_pat": 88.67,
+    "q_details": [
+      {
+        "q": "Sep 2024",
+        "rev_yoy": 27.39,
+        "pat_yoy": 45.45,
+        "rev": 1716.0,
+        "pat": 304.0
+      },
+      {
+        "q": "Dec 2024",
+        "rev_yoy": 38.07,
+        "pat_yoy": 52.25,
+        "rev": 1973.0,
+        "pat": 338.0
+      },
+      {
+        "q": "Mar 2025",
+        "rev_yoy": 34.51,
+        "pat_yoy": 42.39,
+        "rev": 2167.0,
+        "pat": 346.0
+      },
+      {
+        "q": "Jun 2025",
+        "rev_yoy": 27.83,
+        "pat_yoy": 17.28,
+        "rev": 2154.0,
+        "pat": 353.0
+      },
+      {
+        "q": "Sep 2025",
+        "rev_yoy": 21.33,
+        "pat_yoy": 18.75,
+        "rev": 2082.0,
+        "pat": 361.0
+      },
+      {
+        "q": "Dec 2025",
+        "rev_yoy": 29.14,
+        "pat_yoy": 38.17,
+        "rev": 2548.0,
+        "pat": 467.0
+      },
+      {
+        "q": "Mar 2026",
+        "rev_yoy": 40.89,
+        "pat_yoy": 60.69,
+        "rev": 3053.0,
+        "pat": 556.0
+      },
+      {
+        "q": "Jun 2026",
+        "rev_yoy": 70.29,
+        "pat_yoy": 88.67,
+        "rev": 3668.0,
+        "pat": 666.0
+      }
+    ]
+  },
+  {
+    "symbol": "BSE",
+    "name": "BSE Limited",
+    "sector": "Capital Markets & Exchanges",
+    "mcap": "Large Cap",
+    "mcap_cr": 138481.9,
+    "master_score": 80.0,
+    "funda_score": 98.0,
+    "tech_score": 77.0,
+    "et_score": 70.0,
+    "today_price": 3409.8,
+    "today_pe": 49.03,
+    "today_pb": 17.56,
+    "today_peg": 0.79,
+    "consensus": "Hold (ET Consensus: +17.3% Upside)",
+    "tier": "Tier 1: Prime Alpha (High Growth & Undervalued)",
+    "buy_rating": "\ud83c\udf1f Deep Value / Strong Buy",
+    "forecast_upside": 17.3,
+    "avg_rev": 70.33,
+    "min_rev": 31.37,
+    "max_rev": 124.59,
+    "avg_pat": 140.26,
+    "min_pat": 60.93,
+    "max_pat": 361.68,
+    "q_details": [
+      {
+        "q": "Sep 2024",
+        "rev_yoy": 124.59,
+        "pat_yoy": 193.22,
+        "rev": 813.0,
+        "pat": 346.0
+      },
+      {
+        "q": "Dec 2024",
+        "rev_yoy": 80.28,
+        "pat_yoy": 106.6,
+        "rev": 768.0,
+        "pat": 219.0
+      },
+      {
+        "q": "Mar 2025",
+        "rev_yoy": 57.14,
+        "pat_yoy": 361.68,
+        "rev": 847.0,
+        "pat": 494.0
+      },
+      {
+        "q": "Jun 2025",
+        "rev_yoy": 59.14,
+        "pat_yoy": 103.79,
+        "rev": 958.0,
+        "pat": 538.0
+      },
+      {
+        "q": "Sep 2025",
+        "rev_yoy": 31.37,
+        "pat_yoy": 60.98,
+        "rev": 1068.0,
+        "pat": 557.0
+      },
+      {
+        "q": "Dec 2025",
+        "rev_yoy": 61.98,
+        "pat_yoy": 172.6,
+        "rev": 1244.0,
+        "pat": 597.0
+      },
+      {
+        "q": "Mar 2026",
+        "rev_yoy": 84.65,
+        "pat_yoy": 60.93,
+        "rev": 1564.0,
+        "pat": 795.0
+      },
+      {
+        "q": "Jun 2026",
+        "rev_yoy": 63.47,
+        "pat_yoy": 62.27,
+        "rev": 1566.0,
+        "pat": 873.0
+      }
+    ]
+  },
+  {
+    "symbol": "SAGILITY",
+    "name": "Sagility India Ltd",
+    "sector": "Pharmaceuticals & Healthcare",
+    "mcap": "Small Cap",
+    "mcap_cr": 21918.0,
+    "master_score": 79.5,
+    "funda_score": 90.0,
+    "tech_score": 62.0,
+    "et_score": 70.0,
+    "today_price": 46.82,
+    "today_pe": 22.08,
+    "today_pb": 2.23,
+    "today_peg": 0.48,
+    "consensus": "Strong Buy (ET Consensus: +19.3% Upside)",
+    "tier": "Tier 1: Prime Alpha (High Growth & Undervalued)",
+    "buy_rating": "\ud83c\udf1f Deep Value / Strong Buy",
+    "forecast_upside": 19.3,
+    "avg_rev": 25.24,
+    "min_rev": 15.32,
+    "max_rev": 35.65,
+    "avg_pat": 171.32,
+    "min_pat": 23.5,
+    "max_pat": 577.27,
+    "q_details": [
+      {
+        "q": "Sep 2024",
+        "rev_yoy": 21.12,
+        "pat_yoy": 234.29,
+        "rev": 1325.0,
+        "pat": 117.0
+      },
+      {
+        "q": "Dec 2024",
+        "rev_yoy": 15.32,
+        "pat_yoy": 205.63,
+        "rev": 1453.0,
+        "pat": 217.0
+      },
+      {
+        "q": "Mar 2025",
+        "rev_yoy": 22.21,
+        "pat_yoy": 128.75,
+        "rev": 1568.0,
+        "pat": 183.0
+      },
+      {
+        "q": "Jun 2025",
+        "rev_yoy": 25.84,
+        "pat_yoy": 577.27,
+        "rev": 1539.0,
+        "pat": 149.0
+      },
+      {
+        "q": "Sep 2025",
+        "rev_yoy": 25.13,
+        "pat_yoy": 114.53,
+        "rev": 1658.0,
+        "pat": 251.0
+      },
+      {
+        "q": "Dec 2025",
+        "rev_yoy": 35.65,
+        "pat_yoy": 23.5,
+        "rev": 1971.0,
+        "pat": 268.0
+      },
+      {
+        "q": "Mar 2026",
+        "rev_yoy": 29.08,
+        "pat_yoy": 40.98,
+        "rev": 2024.0,
+        "pat": 258.0
+      },
+      {
+        "q": "Jun 2026",
+        "rev_yoy": 27.55,
+        "pat_yoy": 45.64,
+        "rev": 1963.0,
+        "pat": 217.0
+      }
+    ]
+  },
+  {
+    "symbol": "VINTAGE",
+    "name": "Vintage Coffee and Beverages Ltd",
+    "sector": "FMCG, Food & Quick-Service Restaurants",
+    "mcap": "Micro Cap",
+    "mcap_cr": 2487.6,
+    "master_score": 78.6,
+    "funda_score": 76.0,
+    "tech_score": 95.0,
+    "et_score": 80.0,
+    "today_price": 170.75,
+    "today_pe": 31.56,
+    "today_pb": 4.38,
+    "today_peg": 0.64,
+    "consensus": "Stock Score 8/10 (POSITIVE)",
+    "tier": "Tier 3: Steady Watchlist Performer",
+    "buy_rating": "\u2705 Accumulate (Discount to Median)",
+    "forecast_upside": null,
+    "avg_rev": 103.61,
+    "min_rev": 57.14,
+    "max_rev": 150.0,
+    "avg_pat": 155.57,
+    "min_pat": 31.25,
+    "max_pat": 300.0,
+    "q_details": [
+      {
+        "q": "Sep 2024",
+        "rev_yoy": 140.0,
+        "pat_yoy": 300.0,
+        "rev": 72.0,
+        "pat": 8.0
+      },
+      {
+        "q": "Dec 2024",
+        "rev_yoy": 131.58,
+        "pat_yoy": 200.0,
+        "rev": 88.0,
+        "pat": 12.0
+      },
+      {
+        "q": "Mar 2025",
+        "rev_yoy": 150.0,
+        "pat_yoy": 300.0,
+        "rev": 105.0,
+        "pat": 16.0
+      },
+      {
+        "q": "Jun 2025",
+        "rev_yoy": 131.82,
+        "pat_yoy": 180.0,
+        "rev": 102.0,
+        "pat": 14.0
+      },
+      {
+        "q": "Sep 2025",
+        "rev_yoy": 88.89,
+        "pat_yoy": 125.0,
+        "rev": 136.0,
+        "pat": 18.0
+      },
+      {
+        "q": "Dec 2025",
+        "rev_yoy": 71.59,
+        "pat_yoy": 58.33,
+        "rev": 151.0,
+        "pat": 19.0
+      },
+      {
+        "q": "Mar 2026",
+        "rev_yoy": 57.14,
+        "pat_yoy": 31.25,
+        "rev": 165.0,
+        "pat": 21.0
+      },
+      {
+        "q": "Jun 2026",
+        "rev_yoy": 57.84,
+        "pat_yoy": 50.0,
+        "rev": 161.0,
+        "pat": 21.0
+      }
+    ]
+  },
+  {
+    "symbol": "WABAG",
+    "name": "VA Tech Wabag Limited",
+    "sector": "IT, Software & Cloud Technologies",
+    "mcap": "Small Cap",
+    "mcap_cr": 12531.4,
+    "master_score": 78.4,
+    "funda_score": 62.0,
+    "tech_score": 95.0,
+    "et_score": 80.0,
+    "today_price": 2005.3,
+    "today_pe": 31.64,
+    "today_pb": 8.02,
+    "today_peg": 0.87,
+    "consensus": "Strong Buy (ET Consensus: +19.7% Upside)",
+    "tier": "Tier 4: Neutral / Cyclical",
+    "buy_rating": "\u2696\ufe0f Fair Value",
+    "forecast_upside": 19.7,
+    "avg_rev": 17.79,
+    "min_rev": 5.26,
+    "max_rev": 23.77,
+    "avg_pat": 23.97,
+    "min_pat": 11.11,
+    "max_pat": 36.36,
+    "q_details": [
+      {
+        "q": "Sep 2024",
+        "rev_yoy": 5.26,
+        "pat_yoy": 16.67,
+        "rev": 700.0,
+        "pat": 70.0
+      },
+      {
+        "q": "Dec 2024",
+        "rev_yoy": 15.2,
+        "pat_yoy": 11.11,
+        "rev": 811.0,
+        "pat": 70.0
+      },
+      {
+        "q": "Mar 2025",
+        "rev_yoy": 23.77,
+        "pat_yoy": 28.21,
+        "rev": 1156.0,
+        "pat": 100.0
+      },
+      {
+        "q": "Jun 2025",
+        "rev_yoy": 17.25,
+        "pat_yoy": 20.0,
+        "rev": 734.0,
+        "pat": 66.0
+      },
+      {
+        "q": "Sep 2025",
+        "rev_yoy": 19.14,
+        "pat_yoy": 21.43,
+        "rev": 834.0,
+        "pat": 85.0
+      },
+      {
+        "q": "Dec 2025",
+        "rev_yoy": 18.5,
+        "pat_yoy": 30.0,
+        "rev": 961.0,
+        "pat": 91.0
+      },
+      {
+        "q": "Mar 2026",
+        "rev_yoy": 22.32,
+        "pat_yoy": 28.0,
+        "rev": 1414.0,
+        "pat": 128.0
+      },
+      {
+        "q": "Jun 2026",
+        "rev_yoy": 20.84,
+        "pat_yoy": 36.36,
+        "rev": 887.0,
+        "pat": 90.0
+      }
+    ]
+  },
+  {
+    "symbol": "NETWEB",
+    "name": "Netweb Technologies India Ltd",
+    "sector": "IT, Software & Cloud Technologies",
+    "mcap": "Mid Cap",
+    "mcap_cr": 30870.3,
+    "master_score": 78.2,
+    "funda_score": 86.0,
+    "tech_score": 98.0,
+    "et_score": 60.0,
+    "today_price": 5193.0,
+    "today_pe": 113.21,
+    "today_pb": 40.77,
+    "today_peg": 0.62,
+    "consensus": "Strong Buy (ET Consensus: +1.2% Upside)",
+    "tier": "Tier 1: Prime Alpha (High Growth & Undervalued)",
+    "buy_rating": "\u2696\ufe0f Fair Value",
+    "forecast_upside": 1.2,
+    "avg_rev": 85.53,
+    "min_rev": 21.12,
+    "max_rev": 172.43,
+    "avg_pat": 80.38,
+    "min_pat": 15.38,
+    "max_pat": 183.33,
+    "q_details": [
+      {
+        "q": "Sep 2024",
+        "rev_yoy": 73.1,
+        "pat_yoy": 73.33,
+        "rev": 251.0,
+        "pat": 26.0
+      },
+      {
+        "q": "Dec 2024",
+        "rev_yoy": 32.02,
+        "pat_yoy": 15.38,
+        "rev": 334.0,
+        "pat": 30.0
+      },
+      {
+        "q": "Mar 2025",
+        "rev_yoy": 56.02,
+        "pat_yoy": 43.33,
+        "rev": 415.0,
+        "pat": 43.0
+      },
+      {
+        "q": "Jun 2025",
+        "rev_yoy": 102.01,
+        "pat_yoy": 100.0,
+        "rev": 301.0,
+        "pat": 30.0
+      },
+      {
+        "q": "Sep 2025",
+        "rev_yoy": 21.12,
+        "pat_yoy": 19.23,
+        "rev": 304.0,
+        "pat": 31.0
+      },
+      {
+        "q": "Dec 2025",
+        "rev_yoy": 141.02,
+        "pat_yoy": 143.33,
+        "rev": 805.0,
+        "pat": 73.0
+      },
+      {
+        "q": "Mar 2026",
+        "rev_yoy": 86.51,
+        "pat_yoy": 65.12,
+        "rev": 774.0,
+        "pat": 71.0
+      },
+      {
+        "q": "Jun 2026",
+        "rev_yoy": 172.43,
+        "pat_yoy": 183.33,
+        "rev": 820.0,
+        "pat": 85.0
+      }
+    ]
+  },
+  {
+    "symbol": "EICHERMOT",
+    "name": "Eicher Motors Limited",
+    "sector": "Automobiles & Auto Components",
+    "mcap": "Large Cap",
+    "mcap_cr": 209473.8,
+    "master_score": 77.8,
+    "funda_score": 67.0,
+    "tech_score": 82.0,
+    "et_score": 100.0,
+    "today_price": 7630.5,
+    "today_pe": 39.94,
+    "today_pb": 2.25,
+    "today_peg": 2.59,
+    "consensus": "Buy (ET Consensus: +6.1% Upside)",
+    "tier": "Tier 3: Steady Watchlist Performer",
+    "buy_rating": "\u2696\ufe0f Fair Value",
+    "forecast_upside": 6.1,
+    "avg_rev": 21.3,
+    "min_rev": 6.97,
+    "max_rev": 40.36,
+    "avg_pat": 15.59,
+    "min_pat": 7.68,
+    "max_pat": 22.16,
+    "q_details": [
+      {
+        "q": "Sep 2024",
+        "rev_yoy": 6.97,
+        "pat_yoy": 7.68,
+        "rev": 4205.0,
+        "pat": 1010.0
+      },
+      {
+        "q": "Dec 2024",
+        "rev_yoy": 21.07,
+        "pat_yoy": 15.54,
+        "rev": 4908.0,
+        "pat": 1056.0
+      },
+      {
+        "q": "Mar 2025",
+        "rev_yoy": 21.83,
+        "pat_yoy": 14.45,
+        "rev": 5107.0,
+        "pat": 1125.0
+      },
+      {
+        "q": "Jun 2025",
+        "rev_yoy": 16.0,
+        "pat_yoy": 20.04,
+        "rev": 4908.0,
+        "pat": 1306.0
+      },
+      {
+        "q": "Sep 2025",
+        "rev_yoy": 40.36,
+        "pat_yoy": 19.6,
+        "rev": 5902.0,
+        "pat": 1208.0
+      },
+      {
+        "q": "Dec 2025",
+        "rev_yoy": 22.0,
+        "pat_yoy": 22.16,
+        "rev": 5988.0,
+        "pat": 1290.0
+      },
+      {
+        "q": "Mar 2026",
+        "rev_yoy": 15.55,
+        "pat_yoy": 9.87,
+        "rev": 5901.0,
+        "pat": 1236.0
+      },
+      {
+        "q": "Jun 2026",
+        "rev_yoy": 26.61,
+        "pat_yoy": 15.39,
+        "rev": 6214.0,
+        "pat": 1507.0
+      }
+    ]
+  },
+  {
+    "symbol": "POLICYBZR",
+    "name": "PB Fintech Limited",
+    "sector": "IT, Software & Cloud Technologies",
+    "mcap": "Mid Cap",
+    "mcap_cr": 84830.9,
+    "master_score": 77.7,
+    "funda_score": 77.0,
+    "tech_score": 95.0,
+    "et_score": 80.0,
+    "today_price": 1836.0,
+    "today_pe": 113.4,
+    "today_pb": 7.16,
+    "today_peg": 1.24,
+    "consensus": "Buy (ET Consensus: +3.7% Upside)",
+    "tier": "Tier 3: Steady Watchlist Performer",
+    "buy_rating": "\ud83c\udf1f Deep Value / Strong Buy",
+    "forecast_upside": 3.7,
+    "avg_rev": 39.5,
+    "min_rev": 33.47,
+    "max_rev": 48.34,
+    "avg_pat": 141.87,
+    "min_pat": 41.67,
+    "max_pat": 342.86,
+    "q_details": [
+      {
+        "q": "Sep 2024",
+        "rev_yoy": 43.72,
+        "pat_yoy": 342.86,
+        "rev": 1167.0,
+        "pat": 51.0
+      },
+      {
+        "q": "Dec 2024",
+        "rev_yoy": 48.34,
+        "pat_yoy": 94.59,
+        "rev": 1292.0,
+        "pat": 72.0
+      },
+      {
+        "q": "Mar 2025",
+        "rev_yoy": 38.35,
+        "pat_yoy": 183.33,
+        "rev": 1508.0,
+        "pat": 170.0
+      },
+      {
+        "q": "Jun 2025",
+        "rev_yoy": 33.47,
+        "pat_yoy": 41.67,
+        "rev": 1348.0,
+        "pat": 85.0
+      },
+      {
+        "q": "Sep 2025",
+        "rev_yoy": 38.3,
+        "pat_yoy": 164.71,
+        "rev": 1614.0,
+        "pat": 135.0
+      },
+      {
+        "q": "Dec 2025",
+        "rev_yoy": 37.07,
+        "pat_yoy": 162.5,
+        "rev": 1771.0,
+        "pat": 189.0
+      },
+      {
+        "q": "Mar 2026",
+        "rev_yoy": 36.67,
+        "pat_yoy": 53.53,
+        "rev": 2061.0,
+        "pat": 261.0
+      },
+      {
+        "q": "Jun 2026",
+        "rev_yoy": 40.06,
+        "pat_yoy": 91.76,
+        "rev": 1888.0,
+        "pat": 163.0
+      }
+    ]
+  },
+  {
+    "symbol": "ANANTRAJ",
+    "name": "Anant Raj Ltd",
+    "sector": "Real Estate & Urban Development",
+    "mcap": "Small Cap",
+    "mcap_cr": 22508.5,
+    "master_score": 77.0,
+    "funda_score": 54.0,
+    "tech_score": 95.0,
+    "et_score": 90.0,
+    "today_price": 625.45,
+    "today_pe": 38.47,
+    "today_pb": 3.89,
+    "today_peg": 2.12,
+    "consensus": "Strong Buy (ET Consensus: +19.2% Upside)",
+    "tier": "Tier 4: Neutral / Cyclical",
+    "buy_rating": "\u2696\ufe0f Fair Value",
+    "forecast_upside": 19.2,
+    "avg_rev": 25.97,
+    "min_rev": 6.59,
+    "max_rev": 54.52,
+    "avg_pat": 39.54,
+    "min_pat": 18.25,
+    "max_pat": 76.67,
+    "q_details": [
+      {
+        "q": "Sep 2024",
+        "rev_yoy": 54.52,
+        "pat_yoy": 76.67,
+        "rev": 513.0,
+        "pat": 106.0
+      },
+      {
+        "q": "Dec 2024",
+        "rev_yoy": 36.48,
+        "pat_yoy": 54.93,
+        "rev": 535.0,
+        "pat": 110.0
+      },
+      {
+        "q": "Mar 2025",
+        "rev_yoy": 22.12,
+        "pat_yoy": 41.67,
+        "rev": 541.0,
+        "pat": 119.0
+      },
+      {
+        "q": "Jun 2025",
+        "rev_yoy": 25.42,
+        "pat_yoy": 38.46,
+        "rev": 592.0,
+        "pat": 126.0
+      },
+      {
+        "q": "Sep 2025",
+        "rev_yoy": 23.0,
+        "pat_yoy": 30.19,
+        "rev": 631.0,
+        "pat": 138.0
+      },
+      {
+        "q": "Dec 2025",
+        "rev_yoy": 20.0,
+        "pat_yoy": 30.91,
+        "rev": 642.0,
+        "pat": 144.0
+      },
+      {
+        "q": "Mar 2026",
+        "rev_yoy": 19.59,
+        "pat_yoy": 25.21,
+        "rev": 647.0,
+        "pat": 149.0
+      },
+      {
+        "q": "Jun 2026",
+        "rev_yoy": 6.59,
+        "pat_yoy": 18.25,
+        "rev": 631.0,
+        "pat": 149.0
+      }
+    ]
+  },
+  {
+    "symbol": "SAILIFE",
+    "name": "Sai Life Sciences Limited",
+    "sector": "Pharmaceuticals & Healthcare",
+    "mcap": "Mid Cap",
+    "mcap_cr": 33649.6,
+    "master_score": 76.3,
+    "funda_score": 58.0,
+    "tech_score": 95.0,
+    "et_score": 100.0,
+    "today_price": 1584.3,
+    "today_pe": 65.82,
+    "today_pb": 3.99,
+    "today_peg": 3.03,
+    "consensus": "Strong Buy (ET Consensus: +3.0% Upside)",
+    "tier": "Tier 4: Neutral / Cyclical",
+    "buy_rating": "\u26a0\ufe0f Overextended (Hold/Trim)",
+    "forecast_upside": 3.0,
+    "avg_rev": 26.09,
+    "min_rev": 3.79,
+    "max_rev": 77.14,
+    "avg_pat": 107.03,
+    "min_pat": 10.53,
+    "max_pat": 528.57,
+    "q_details": [
+      {
+        "q": "Sep 2024",
+        "rev_yoy": 7.43,
+        "pat_yoy": 10.53,
+        "rev": 396.0,
+        "pat": 42.0
+      },
+      {
+        "q": "Dec 2024",
+        "rev_yoy": 14.58,
+        "pat_yoy": 35.0,
+        "rev": 440.0,
+        "pat": 54.0
+      },
+      {
+        "q": "Mar 2025",
+        "rev_yoy": 32.12,
+        "pat_yoy": 57.14,
+        "rev": 580.0,
+        "pat": 88.0
+      },
+      {
+        "q": "Jun 2025",
+        "rev_yoy": 77.14,
+        "pat_yoy": 528.57,
+        "rev": 496.0,
+        "pat": 60.0
+      },
+      {
+        "q": "Sep 2025",
+        "rev_yoy": 35.61,
+        "pat_yoy": 100.0,
+        "rev": 537.0,
+        "pat": 84.0
+      },
+      {
+        "q": "Dec 2025",
+        "rev_yoy": 26.36,
+        "pat_yoy": 85.19,
+        "rev": 556.0,
+        "pat": 100.0
+      },
+      {
+        "q": "Mar 2026",
+        "rev_yoy": 3.79,
+        "pat_yoy": 18.18,
+        "rev": 602.0,
+        "pat": 104.0
+      },
+      {
+        "q": "Jun 2026",
+        "rev_yoy": 11.69,
+        "pat_yoy": 21.67,
+        "rev": 554.0,
+        "pat": 73.0
+      }
+    ]
+  },
+  {
+    "symbol": "INDHOTEL",
+    "name": "The Indian Hotels Company Limited",
+    "sector": "Diversified Industrial Manufacturing",
+    "mcap": "Large Cap",
+    "mcap_cr": 104155.6,
+    "master_score": 76.1,
+    "funda_score": 70.0,
+    "tech_score": 85.0,
+    "et_score": 70.0,
+    "today_price": 720.0,
+    "today_pe": 48.68,
+    "today_pb": 4.37,
+    "today_peg": 1.3,
+    "consensus": "Buy (ET Consensus: +12.7% Upside)",
+    "tier": "Tier 3: Steady Watchlist Performer",
+    "buy_rating": "\ud83c\udf1f Deep Value / Strong Buy",
+    "forecast_upside": 12.7,
+    "avg_rev": 11.94,
+    "min_rev": 2.42,
+    "max_rev": 17.89,
+    "avg_pat": 37.06,
+    "min_pat": 13.78,
+    "max_pat": 96.38,
+    "q_details": [
+      {
+        "q": "Sep 2024",
+        "rev_yoy": 15.9,
+        "pat_yoy": 61.78,
+        "rev": 1035.0,
+        "pat": 254.0
+      },
+      {
+        "q": "Dec 2024",
+        "rev_yoy": 15.07,
+        "pat_yoy": 23.42,
+        "rev": 1474.0,
+        "pat": 469.0
+      },
+      {
+        "q": "Mar 2025",
+        "rev_yoy": 9.99,
+        "pat_yoy": 30.35,
+        "rev": 1476.0,
+        "pat": 481.0
+      },
+      {
+        "q": "Jun 2025",
+        "rev_yoy": 12.24,
+        "pat_yoy": 17.22,
+        "rev": 1045.0,
+        "pat": 245.0
+      },
+      {
+        "q": "Sep 2025",
+        "rev_yoy": 2.42,
+        "pat_yoy": 13.78,
+        "rev": 1060.0,
+        "pat": 289.0
+      },
+      {
+        "q": "Dec 2025",
+        "rev_yoy": 9.5,
+        "pat_yoy": 96.38,
+        "rev": 1614.0,
+        "pat": 921.0
+      },
+      {
+        "q": "Mar 2026",
+        "rev_yoy": 12.53,
+        "pat_yoy": 16.01,
+        "rev": 1661.0,
+        "pat": 558.0
+      },
+      {
+        "q": "Jun 2026",
+        "rev_yoy": 17.89,
+        "pat_yoy": 37.55,
+        "rev": 1232.0,
+        "pat": 337.0
+      }
+    ]
+  },
+  {
+    "symbol": "NYKAA",
+    "name": "FSN E-Commerce Ventures Limited",
+    "sector": "Consumer Internet & E-Commerce Platforms",
+    "mcap": "Mid Cap",
+    "mcap_cr": 95264.2,
+    "master_score": 76.0,
+    "funda_score": 93.0,
+    "tech_score": 95.0,
+    "et_score": 60.0,
+    "today_price": 332.5,
+    "today_pe": 373.6,
+    "today_pb": 7.07,
+    "today_peg": 1.6,
+    "consensus": "Hold (ET Consensus: -0.8% Upside)",
+    "tier": "Tier 1: Prime Alpha (High Growth & Undervalued)",
+    "buy_rating": "\ud83c\udf1f Deep Value / Strong Buy",
+    "forecast_upside": -0.8,
+    "avg_rev": 25.94,
+    "min_rev": 23.42,
+    "max_rev": 29.1,
+    "avg_pat": 145.31,
+    "min_pat": 52.94,
+    "max_pat": 315.79,
+    "q_details": [
+      {
+        "q": "Sep 2024",
+        "rev_yoy": 24.42,
+        "pat_yoy": 62.5,
+        "rev": 1875.0,
+        "pat": 13.0
+      },
+      {
+        "q": "Dec 2024",
+        "rev_yoy": 26.72,
+        "pat_yoy": 52.94,
+        "rev": 2267.0,
+        "pat": 26.0
+      },
+      {
+        "q": "Mar 2025",
+        "rev_yoy": 23.62,
+        "pat_yoy": 111.11,
+        "rev": 2062.0,
+        "pat": 19.0
+      },
+      {
+        "q": "Jun 2025",
+        "rev_yoy": 23.42,
+        "pat_yoy": 71.43,
+        "rev": 2155.0,
+        "pat": 24.0
+      },
+      {
+        "q": "Sep 2025",
+        "rev_yoy": 25.12,
+        "pat_yoy": 153.85,
+        "rev": 2346.0,
+        "pat": 33.0
+      },
+      {
+        "q": "Dec 2025",
+        "rev_yoy": 26.73,
+        "pat_yoy": 161.54,
+        "rev": 2873.0,
+        "pat": 68.0
+      },
+      {
+        "q": "Mar 2026",
+        "rev_yoy": 28.42,
+        "pat_yoy": 315.79,
+        "rev": 2648.0,
+        "pat": 79.0
+      },
+      {
+        "q": "Jun 2026",
+        "rev_yoy": 29.1,
+        "pat_yoy": 233.33,
+        "rev": 2782.0,
+        "pat": 80.0
+      }
+    ]
+  },
+  {
+    "symbol": "TVSMOTOR",
+    "name": "TVS Motor Company Limited",
+    "sector": "Automobiles & Auto Components",
+    "mcap": "Large Cap",
+    "mcap_cr": 196415.8,
+    "master_score": 75.9,
+    "funda_score": 85.0,
+    "tech_score": 85.0,
+    "et_score": 70.0,
+    "today_price": 4133.1,
+    "today_pe": 57.28,
+    "today_pb": 3.68,
+    "today_peg": 0.89,
+    "consensus": "Buy (ET Consensus: -2.9% Upside)",
+    "tier": "Tier 2: Strong Momentum Compounder",
+    "buy_rating": "\u2705 Accumulate (Discount to Median)",
+    "forecast_upside": -2.9,
+    "avg_rev": 22.41,
+    "min_rev": 9.11,
+    "max_rev": 33.72,
+    "avg_pat": 41.59,
+    "min_pat": 17.48,
+    "max_pat": 69.42,
+    "q_details": [
+      {
+        "q": "Sep 2024",
+        "rev_yoy": 13.78,
+        "pat_yoy": 41.35,
+        "rev": 11302.0,
+        "pat": 588.0
+      },
+      {
+        "q": "Dec 2024",
+        "rev_yoy": 9.11,
+        "pat_yoy": 19.41,
+        "rev": 11035.0,
+        "pat": 609.0
+      },
+      {
+        "q": "Mar 2025",
+        "rev_yoy": 16.09,
+        "pat_yoy": 69.42,
+        "rev": 11542.0,
+        "pat": 698.0
+      },
+      {
+        "q": "Jun 2025",
+        "rev_yoy": 18.38,
+        "pat_yoy": 32.58,
+        "rev": 12210.0,
+        "pat": 643.0
+      },
+      {
+        "q": "Sep 2025",
+        "rev_yoy": 24.32,
+        "pat_yoy": 41.67,
+        "rev": 14051.0,
+        "pat": 833.0
+      },
+      {
+        "q": "Dec 2025",
+        "rev_yoy": 33.72,
+        "pat_yoy": 46.31,
+        "rev": 14756.0,
+        "pat": 891.0
+      },
+      {
+        "q": "Mar 2026",
+        "rev_yoy": 30.42,
+        "pat_yoy": 17.48,
+        "rev": 15053.0,
+        "pat": 820.0
+      },
+      {
+        "q": "Jun 2026",
+        "rev_yoy": 33.46,
+        "pat_yoy": 64.54,
+        "rev": 16296.0,
+        "pat": 1058.0
+      }
+    ]
+  },
+  {
+    "symbol": "HAPPYFORGE",
+    "name": "Happy Forgings Limited",
+    "sector": "Diversified Industrial Manufacturing",
+    "mcap": "Small Cap",
+    "mcap_cr": 21126.7,
+    "master_score": 74.9,
+    "funda_score": 75.0,
+    "tech_score": 98.0,
+    "et_score": 80.0,
+    "today_price": 2238.5,
+    "today_pe": 64.49,
+    "today_pb": 3.18,
+    "today_peg": 1.7,
+    "consensus": "Buy (ET Consensus: -20.4% Upside)",
+    "tier": "Tier 3: Steady Watchlist Performer",
+    "buy_rating": "\u26a0\ufe0f Overextended (Hold/Trim)",
+    "forecast_upside": -20.4,
+    "avg_rev": 9.67,
+    "min_rev": 2.62,
+    "max_rev": 26.84,
+    "avg_pat": 16.64,
+    "min_pat": 2.82,
+    "max_pat": 37.88,
+    "q_details": [
+      {
+        "q": "Sep 2024",
+        "rev_yoy": 5.25,
+        "pat_yoy": 29.09,
+        "rev": 361.0,
+        "pat": 71.0
+      },
+      {
+        "q": "Dec 2024",
+        "rev_yoy": 3.51,
+        "pat_yoy": 12.07,
+        "rev": 354.0,
+        "pat": 65.0
+      },
+      {
+        "q": "Mar 2025",
+        "rev_yoy": 2.62,
+        "pat_yoy": 3.03,
+        "rev": 352.0,
+        "pat": 68.0
+      },
+      {
+        "q": "Jun 2025",
+        "rev_yoy": 3.81,
+        "pat_yoy": 3.12,
+        "rev": 354.0,
+        "pat": 66.0
+      },
+      {
+        "q": "Sep 2025",
+        "rev_yoy": 4.43,
+        "pat_yoy": 2.82,
+        "rev": 377.0,
+        "pat": 73.0
+      },
+      {
+        "q": "Dec 2025",
+        "rev_yoy": 10.45,
+        "pat_yoy": 21.54,
+        "rev": 391.0,
+        "pat": 79.0
+      },
+      {
+        "q": "Mar 2026",
+        "rev_yoy": 20.45,
+        "pat_yoy": 23.53,
+        "rev": 424.0,
+        "pat": 84.0
+      },
+      {
+        "q": "Jun 2026",
+        "rev_yoy": 26.84,
+        "pat_yoy": 37.88,
+        "rev": 449.0,
+        "pat": 91.0
+      }
+    ]
+  },
+  {
+    "symbol": "YATHARTH",
+    "name": "Yatharth Hospital & Trauma Care Services Limited",
+    "sector": "Pharmaceuticals & Healthcare",
+    "mcap": "Small Cap",
+    "mcap_cr": 9549.7,
+    "master_score": 74.8,
+    "funda_score": 69.0,
+    "tech_score": 87.0,
+    "et_score": 80.0,
+    "today_price": 991.1,
+    "today_pe": 52.72,
+    "today_pb": 2.62,
+    "today_peg": 7.43,
+    "consensus": "Buy (ET Consensus: +3.9% Upside)",
+    "tier": "Tier 3: Steady Watchlist Performer",
+    "buy_rating": "\u2696\ufe0f Fair Value",
+    "forecast_upside": 3.9,
+    "avg_rev": 35.56,
+    "min_rev": 21.7,
+    "max_rev": 52.33,
+    "avg_pat": 19.36,
+    "min_pat": 2.63,
+    "max_pat": 43.33,
+    "q_details": [
+      {
+        "q": "Sep 2024",
+        "rev_yoy": 27.49,
+        "pat_yoy": 10.71,
+        "rev": 218.0,
+        "pat": 31.0
+      },
+      {
+        "q": "Dec 2024",
+        "rev_yoy": 31.14,
+        "pat_yoy": 3.45,
+        "rev": 219.0,
+        "pat": 30.0
+      },
+      {
+        "q": "Mar 2025",
+        "rev_yoy": 30.34,
+        "pat_yoy": 2.63,
+        "rev": 232.0,
+        "pat": 39.0
+      },
+      {
+        "q": "Jun 2025",
+        "rev_yoy": 21.7,
+        "pat_yoy": 40.0,
+        "rev": 258.0,
+        "pat": 42.0
+      },
+      {
+        "q": "Sep 2025",
+        "rev_yoy": 27.98,
+        "pat_yoy": 32.26,
+        "rev": 279.0,
+        "pat": 41.0
+      },
+      {
+        "q": "Dec 2025",
+        "rev_yoy": 46.12,
+        "pat_yoy": 43.33,
+        "rev": 320.0,
+        "pat": 43.0
+      },
+      {
+        "q": "Mar 2026",
+        "rev_yoy": 47.41,
+        "pat_yoy": 15.38,
+        "rev": 342.0,
+        "pat": 45.0
+      },
+      {
+        "q": "Jun 2026",
+        "rev_yoy": 52.33,
+        "pat_yoy": 7.14,
+        "rev": 393.0,
+        "pat": 45.0
+      }
+    ]
+  },
+  {
+    "symbol": "BLS",
+    "name": "BLS International Services Limited",
+    "sector": "Infrastructure, EPC & Ports",
+    "mcap": "Small Cap",
+    "mcap_cr": 9826.7,
+    "master_score": 74.1,
+    "funda_score": 81.0,
+    "tech_score": 25.0,
+    "et_score": 90.0,
+    "today_price": 238.79,
+    "today_pe": 13.92,
+    "today_pb": 4.26,
+    "today_peg": 1.2,
+    "consensus": "Strong Buy (ET Consensus: +37.2% Upside)",
+    "tier": "Tier 2: Strong Momentum Compounder",
+    "buy_rating": "\ud83c\udf1f Deep Value / Strong Buy",
+    "forecast_upside": 37.2,
+    "avg_rev": 34.08,
+    "min_rev": 17.12,
+    "max_rev": 54.69,
+    "avg_pat": 43.27,
+    "min_pat": 11.6,
+    "max_pat": 78.05,
+    "q_details": [
+      {
+        "q": "Sep 2024",
+        "rev_yoy": 21.32,
+        "pat_yoy": 78.05,
+        "rev": 495.0,
+        "pat": 146.0
+      },
+      {
+        "q": "Dec 2024",
+        "rev_yoy": 17.12,
+        "pat_yoy": 47.13,
+        "rev": 513.0,
+        "pat": 128.0
+      },
+      {
+        "q": "Mar 2025",
+        "rev_yoy": 54.69,
+        "pat_yoy": 70.59,
+        "rev": 693.0,
+        "pat": 145.0
+      },
+      {
+        "q": "Jun 2025",
+        "rev_yoy": 44.22,
+        "pat_yoy": 49.59,
+        "rev": 711.0,
+        "pat": 181.0
+      },
+      {
+        "q": "Sep 2025",
+        "rev_yoy": 48.89,
+        "pat_yoy": 27.4,
+        "rev": 737.0,
+        "pat": 186.0
+      },
+      {
+        "q": "Dec 2025",
+        "rev_yoy": 43.47,
+        "pat_yoy": 32.81,
+        "rev": 736.0,
+        "pat": 170.0
+      },
+      {
+        "q": "Mar 2026",
+        "rev_yoy": 17.6,
+        "pat_yoy": 28.97,
+        "rev": 815.0,
+        "pat": 187.0
+      },
+      {
+        "q": "Jun 2026",
+        "rev_yoy": 25.32,
+        "pat_yoy": 11.6,
+        "rev": 891.0,
+        "pat": 202.0
+      }
+    ]
+  },
+  {
+    "symbol": "ENDURANCE",
+    "name": "Endurance Technologies Limited",
+    "sector": "IT, Software & Cloud Technologies",
+    "mcap": "Mid Cap",
+    "mcap_cr": 39143.7,
+    "master_score": 72.9,
+    "funda_score": 70.0,
+    "tech_score": 82.0,
+    "et_score": 70.0,
+    "today_price": 2782.8,
+    "today_pe": 40.36,
+    "today_pb": 8.09,
+    "today_peg": 4.8,
+    "consensus": "Buy (ET Consensus: +9.9% Upside)",
+    "tier": "Tier 3: Steady Watchlist Performer",
+    "buy_rating": "\u2705 Accumulate (Discount to Median)",
+    "forecast_upside": 9.9,
+    "avg_rev": 21.38,
+    "min_rev": 10.35,
+    "max_rev": 37.9,
+    "avg_pat": 16.62,
+    "min_pat": 8.41,
+    "max_pat": 30.97,
+    "q_details": [
+      {
+        "q": "Sep 2024",
+        "rev_yoy": 14.46,
+        "pat_yoy": 30.97,
+        "rev": 2913.0,
+        "pat": 203.0
+      },
+      {
+        "q": "Dec 2024",
+        "rev_yoy": 11.64,
+        "pat_yoy": 21.05,
+        "rev": 2859.0,
+        "pat": 184.0
+      },
+      {
+        "q": "Mar 2025",
+        "rev_yoy": 10.35,
+        "pat_yoy": 16.67,
+        "rev": 2963.0,
+        "pat": 245.0
+      },
+      {
+        "q": "Jun 2025",
+        "rev_yoy": 17.45,
+        "pat_yoy": 10.78,
+        "rev": 3319.0,
+        "pat": 226.0
+      },
+      {
+        "q": "Sep 2025",
+        "rev_yoy": 23.0,
+        "pat_yoy": 11.82,
+        "rev": 3583.0,
+        "pat": 227.0
+      },
+      {
+        "q": "Dec 2025",
+        "rev_yoy": 26.2,
+        "pat_yoy": 20.65,
+        "rev": 3608.0,
+        "pat": 222.0
+      },
+      {
+        "q": "Mar 2026",
+        "rev_yoy": 37.9,
+        "pat_yoy": 12.65,
+        "rev": 4086.0,
+        "pat": 276.0
+      },
+      {
+        "q": "Jun 2026",
+        "rev_yoy": 30.01,
+        "pat_yoy": 8.41,
+        "rev": 4315.0,
+        "pat": 245.0
+      }
+    ]
+  },
+  {
+    "symbol": "DCBBANK",
+    "name": "DCB Bank Ltd",
+    "sector": "Banking & Financial Services (BFSI)",
+    "mcap": "Small Cap",
+    "mcap_cr": 7109.5,
+    "master_score": 72.8,
+    "funda_score": 59.0,
+    "tech_score": 87.0,
+    "et_score": 80.0,
+    "today_price": 220.74,
+    "today_pe": 8.98,
+    "today_pb": 1.09,
+    "today_peg": 0.25,
+    "consensus": "Strong Buy (ET Consensus: +6.8% Upside)",
+    "tier": "Tier 3: Steady Watchlist Performer",
+    "buy_rating": "\u26a0\ufe0f Overextended (Hold/Trim)",
+    "forecast_upside": 6.8,
+    "avg_rev": 13.6,
+    "min_rev": 13.6,
+    "max_rev": 13.6,
+    "avg_pat": 20.94,
+    "min_pat": 13.46,
+    "max_pat": 35.67,
+    "q_details": [
+      {
+        "q": "Sep 2024",
+        "rev_yoy": 13.6,
+        "pat_yoy": 22.05,
+        "rev": 930.0,
+        "pat": 155.0
+      },
+      {
+        "q": "Dec 2024",
+        "rev_yoy": 13.6,
+        "pat_yoy": 18.9,
+        "rev": 906.0,
+        "pat": 151.0
+      },
+      {
+        "q": "Mar 2025",
+        "rev_yoy": 13.6,
+        "pat_yoy": 13.46,
+        "rev": 1062.0,
+        "pat": 177.0
+      },
+      {
+        "q": "Jun 2025",
+        "rev_yoy": 13.6,
+        "pat_yoy": 19.85,
+        "rev": 942.0,
+        "pat": 157.0
+      },
+      {
+        "q": "Sep 2025",
+        "rev_yoy": 13.6,
+        "pat_yoy": 18.71,
+        "rev": 1104.0,
+        "pat": 184.0
+      },
+      {
+        "q": "Dec 2025",
+        "rev_yoy": 13.6,
+        "pat_yoy": 22.52,
+        "rev": 1110.0,
+        "pat": 185.0
+      },
+      {
+        "q": "Mar 2026",
+        "rev_yoy": 13.6,
+        "pat_yoy": 16.38,
+        "rev": 1236.0,
+        "pat": 206.0
+      },
+      {
+        "q": "Jun 2026",
+        "rev_yoy": 13.6,
+        "pat_yoy": 35.67,
+        "rev": 1278.0,
+        "pat": 213.0
+      }
+    ]
+  },
+  {
+    "symbol": "SHRIPISTON",
+    "name": "SPR Auto Technologies Limited",
+    "sector": "IT, Software & Cloud Technologies",
+    "mcap": "Small Cap",
+    "mcap_cr": 21045.0,
+    "master_score": 72.0,
+    "funda_score": 61.0,
+    "tech_score": 98.0,
+    "et_score": 70.0,
+    "today_price": 4536.9,
+    "today_pe": 35.46,
+    "today_pb": 7.75,
+    "today_peg": 3.69,
+    "consensus": "Strong Buy (ET Consensus: +5.2% Upside)",
+    "tier": "Tier 4: Neutral / Cyclical",
+    "buy_rating": "\u26a0\ufe0f Overextended (Hold/Trim)",
+    "forecast_upside": 5.2,
+    "avg_rev": 24.34,
+    "min_rev": 10.7,
+    "max_rev": 53.06,
+    "avg_pat": 12.63,
+    "min_pat": 4.13,
+    "max_pat": 31.03,
+    "q_details": [
+      {
+        "q": "Sep 2024",
+        "rev_yoy": 16.49,
+        "pat_yoy": 11.5,
+        "rev": 876.0,
+        "pat": 126.0
+      },
+      {
+        "q": "Dec 2024",
+        "rev_yoy": 10.7,
+        "pat_yoy": 12.04,
+        "rev": 848.0,
+        "pat": 121.0
+      },
+      {
+        "q": "Mar 2025",
+        "rev_yoy": 15.42,
+        "pat_yoy": 31.03,
+        "rev": 988.0,
+        "pat": 152.0
+      },
+      {
+        "q": "Jun 2025",
+        "rev_yoy": 15.05,
+        "pat_yoy": 15.38,
+        "rev": 963.0,
+        "pat": 135.0
+      },
+      {
+        "q": "Sep 2025",
+        "rev_yoy": 15.98,
+        "pat_yoy": 12.7,
+        "rev": 1016.0,
+        "pat": 142.0
+      },
+      {
+        "q": "Dec 2025",
+        "rev_yoy": 20.64,
+        "pat_yoy": 4.13,
+        "rev": 1023.0,
+        "pat": 126.0
+      },
+      {
+        "q": "Mar 2026",
+        "rev_yoy": 47.37,
+        "pat_yoy": 4.61,
+        "rev": 1456.0,
+        "pat": 159.0
+      },
+      {
+        "q": "Jun 2026",
+        "rev_yoy": 53.06,
+        "pat_yoy": 9.63,
+        "rev": 1474.0,
+        "pat": 148.0
+      }
+    ]
+  },
+  {
+    "symbol": "SENORES",
+    "name": "Senores Pharmaceuticals Ltd",
+    "sector": "Pharmaceuticals & Healthcare",
+    "mcap": "Small Cap",
+    "mcap_cr": 6578.3,
+    "master_score": 71.5,
+    "funda_score": 74.0,
+    "tech_score": 85.0,
+    "et_score": 70.0,
+    "today_price": 1428.4,
+    "today_pe": 163.43,
+    "today_pb": 6.08,
+    "today_peg": 3.81,
+    "consensus": "Buy (ET Consensus: -5.6% Upside)",
+    "tier": "Tier 3: Steady Watchlist Performer",
+    "buy_rating": "\u2696\ufe0f Fair Value",
+    "forecast_upside": -5.6,
+    "avg_rev": 44.78,
+    "min_rev": 11.76,
+    "max_rev": 72.5,
+    "avg_pat": 92.09,
+    "min_pat": 28.57,
+    "max_pat": 130.77,
+    "q_details": [
+      {
+        "q": "Sep 2024",
+        "rev_yoy": 33.25,
+        "pat_yoy": 96.97,
+        "rev": 101.0,
+        "pat": 13.0
+      },
+      {
+        "q": "Dec 2024",
+        "rev_yoy": 30.38,
+        "pat_yoy": 128.57,
+        "rev": 103.0,
+        "pat": 16.0
+      },
+      {
+        "q": "Mar 2025",
+        "rev_yoy": 11.76,
+        "pat_yoy": 28.57,
+        "rev": 114.0,
+        "pat": 18.0
+      },
+      {
+        "q": "Jun 2025",
+        "rev_yoy": 72.5,
+        "pat_yoy": 90.91,
+        "rev": 138.0,
+        "pat": 21.0
+      },
+      {
+        "q": "Sep 2025",
+        "rev_yoy": 60.4,
+        "pat_yoy": 130.77,
+        "rev": 162.0,
+        "pat": 30.0
+      },
+      {
+        "q": "Dec 2025",
+        "rev_yoy": 66.02,
+        "pat_yoy": 112.5,
+        "rev": 171.0,
+        "pat": 34.0
+      },
+      {
+        "q": "Mar 2026",
+        "rev_yoy": 53.51,
+        "pat_yoy": 105.56,
+        "rev": 175.0,
+        "pat": 37.0
+      },
+      {
+        "q": "Jun 2026",
+        "rev_yoy": 30.43,
+        "pat_yoy": 42.86,
+        "rev": 180.0,
+        "pat": 30.0
+      }
+    ]
+  },
+  {
+    "symbol": "GVT&D",
+    "name": "GE Vernova T&D India Ltd",
+    "sector": "Power & Electrical Equipment",
+    "mcap": "Large Cap",
+    "mcap_cr": 110261.3,
+    "master_score": 71.1,
+    "funda_score": 70.0,
+    "tech_score": 80.0,
+    "et_score": 60.0,
+    "today_price": 4306.3,
+    "today_pe": 84.47,
+    "today_pb": 40.98,
+    "today_peg": 3.44,
+    "consensus": "Buy (ET Consensus: +12.9% Upside)",
+    "tier": "Tier 2: Strong Momentum Compounder",
+    "buy_rating": "\u2696\ufe0f Fair Value",
+    "forecast_upside": 12.9,
+    "avg_rev": 41.12,
+    "min_rev": 26.15,
+    "max_rev": 58.74,
+    "avg_pat": 138.1,
+    "min_pat": 24.74,
+    "max_pat": 291.89,
+    "q_details": [
+      {
+        "q": "Sep 2024",
+        "rev_yoy": 58.74,
+        "pat_yoy": 291.89,
+        "rev": 1108.0,
+        "pat": 145.0
+      },
+      {
+        "q": "Dec 2024",
+        "rev_yoy": 28.01,
+        "pat_yoy": 191.84,
+        "rev": 1074.0,
+        "pat": 143.0
+      },
+      {
+        "q": "Mar 2025",
+        "rev_yoy": 26.15,
+        "pat_yoy": 181.82,
+        "rev": 1153.0,
+        "pat": 186.0
+      },
+      {
+        "q": "Jun 2025",
+        "rev_yoy": 38.83,
+        "pat_yoy": 115.56,
+        "rev": 1330.0,
+        "pat": 291.0
+      },
+      {
+        "q": "Sep 2025",
+        "rev_yoy": 38.81,
+        "pat_yoy": 106.21,
+        "rev": 1538.0,
+        "pat": 299.0
+      },
+      {
+        "q": "Dec 2025",
+        "rev_yoy": 58.38,
+        "pat_yoy": 103.5,
+        "rev": 1701.0,
+        "pat": 291.0
+      },
+      {
+        "q": "Mar 2026",
+        "rev_yoy": 41.98,
+        "pat_yoy": 89.25,
+        "rev": 1637.0,
+        "pat": 352.0
+      },
+      {
+        "q": "Jun 2026",
+        "rev_yoy": 38.05,
+        "pat_yoy": 24.74,
+        "rev": 1836.0,
+        "pat": 363.0
+      }
+    ]
+  },
+  {
+    "symbol": "PRUDENT",
+    "name": "Prudent Corporate Advisory Services Limited",
+    "sector": "Diversified Industrial Manufacturing",
+    "mcap": "Small Cap",
+    "mcap_cr": 13861.3,
+    "master_score": 71.0,
+    "funda_score": 71.0,
+    "tech_score": 95.0,
+    "et_score": 70.0,
+    "today_price": 3347.6,
+    "today_pe": 56.56,
+    "today_pb": 4.32,
+    "today_peg": 1.28,
+    "consensus": "Buy (ET Consensus: -11.1% Upside)",
+    "tier": "Tier 3: Steady Watchlist Performer",
+    "buy_rating": "\u2696\ufe0f Fair Value",
+    "forecast_upside": -11.1,
+    "avg_rev": 25.05,
+    "min_rev": 11.89,
+    "max_rev": 50.53,
+    "avg_pat": 27.85,
+    "min_pat": 3.85,
+    "max_pat": 73.33,
+    "q_details": [
+      {
+        "q": "Sep 2024",
+        "rev_yoy": 50.53,
+        "pat_yoy": 73.33,
+        "rev": 286.0,
+        "pat": 52.0
+      },
+      {
+        "q": "Dec 2024",
+        "rev_yoy": 35.71,
+        "pat_yoy": 33.33,
+        "rev": 285.0,
+        "pat": 48.0
+      },
+      {
+        "q": "Mar 2025",
+        "rev_yoy": 17.92,
+        "pat_yoy": 15.56,
+        "rev": 283.0,
+        "pat": 52.0
+      },
+      {
+        "q": "Jun 2025",
+        "rev_yoy": 18.07,
+        "pat_yoy": 18.18,
+        "rev": 294.0,
+        "pat": 52.0
+      },
+      {
+        "q": "Sep 2025",
+        "rev_yoy": 11.89,
+        "pat_yoy": 3.85,
+        "rev": 320.0,
+        "pat": 54.0
+      },
+      {
+        "q": "Dec 2025",
+        "rev_yoy": 20.35,
+        "pat_yoy": 20.83,
+        "rev": 343.0,
+        "pat": 58.0
+      },
+      {
+        "q": "Mar 2026",
+        "rev_yoy": 27.56,
+        "pat_yoy": 13.46,
+        "rev": 361.0,
+        "pat": 59.0
+      },
+      {
+        "q": "Jun 2026",
+        "rev_yoy": 18.37,
+        "pat_yoy": 44.23,
+        "rev": 348.0,
+        "pat": 75.0
+      }
+    ]
+  },
+  {
+    "symbol": "ITCHOTELS",
+    "name": "ITC Hotels Limited",
+    "sector": "FMCG, Food & Quick-Service Restaurants",
+    "mcap": "Mid Cap",
+    "mcap_cr": 33584.3,
+    "master_score": 70.5,
+    "funda_score": 70.0,
+    "tech_score": 28.0,
+    "et_score": 80.0,
+    "today_price": 161.23,
+    "today_pe": 2.78,
+    "today_pb": 7.58,
+    "today_peg": 0.08,
+    "consensus": "Buy (ET Consensus: +33.5% Upside)",
+    "tier": "Tier 3: Steady Watchlist Performer",
+    "buy_rating": "\ud83c\udf1f Deep Value / Strong Buy",
+    "forecast_upside": 33.5,
+    "avg_rev": 26.95,
+    "min_rev": 7.84,
+    "max_rev": 56.54,
+    "avg_pat": 73.43,
+    "min_pat": 4.05,
+    "max_pat": 212.35,
+    "q_details": [
+      {
+        "q": "Sep 2024",
+        "rev_yoy": 25.22,
+        "pat_yoy": 4.05,
+        "rev": 778.0,
+        "pat": 77.0
+      },
+      {
+        "q": "Dec 2024",
+        "rev_yoy": 56.27,
+        "pat_yoy": 175.86,
+        "rev": 1015.0,
+        "pat": 216.0
+      },
+      {
+        "q": "Mar 2025",
+        "rev_yoy": 56.54,
+        "pat_yoy": 212.35,
+        "rev": 1061.0,
+        "pat": 258.0
+      },
+      {
+        "q": "Jun 2025",
+        "rev_yoy": 15.58,
+        "pat_yoy": 54.02,
+        "rev": 816.0,
+        "pat": 134.0
+      },
+      {
+        "q": "Sep 2025",
+        "rev_yoy": 7.84,
+        "pat_yoy": 72.73,
+        "rev": 839.0,
+        "pat": 133.0
+      },
+      {
+        "q": "Dec 2025",
+        "rev_yoy": 21.28,
+        "pat_yoy": 9.72,
+        "rev": 1231.0,
+        "pat": 237.0
+      },
+      {
+        "q": "Mar 2026",
+        "rev_yoy": 18.19,
+        "pat_yoy": 22.87,
+        "rev": 1254.0,
+        "pat": 317.0
+      },
+      {
+        "q": "Jun 2026",
+        "rev_yoy": 14.71,
+        "pat_yoy": 35.82,
+        "rev": 936.0,
+        "pat": 182.0
+      }
+    ]
+  },
+  {
+    "symbol": "ACUTAAS",
+    "name": "Acutaas Chemicals Limited",
+    "sector": "Chemicals, Petrochemicals & Specialty Chem",
+    "mcap": "Small Cap",
+    "mcap_cr": 25940.9,
+    "master_score": 69.6,
+    "funda_score": 72.0,
+    "tech_score": 65.0,
+    "et_score": 90.0,
+    "today_price": 3168.5,
+    "today_pe": 67.17,
+    "today_pb": 3.11,
+    "today_peg": 0.95,
+    "consensus": "Buy (ET Consensus: -9.7% Upside)",
+    "tier": "Tier 3: Steady Watchlist Performer",
+    "buy_rating": "\u2696\ufe0f Fair Value",
+    "forecast_upside": -9.7,
+    "avg_rev": 41.24,
+    "min_rev": 16.95,
+    "max_rev": 65.66,
+    "avg_pat": 152.17,
+    "min_pat": 70.45,
+    "max_pat": 323.53,
+    "q_details": [
+      {
+        "q": "Sep 2024",
+        "rev_yoy": 43.6,
+        "pat_yoy": 323.53,
+        "rev": 247.0,
+        "pat": 38.0
+      },
+      {
+        "q": "Dec 2024",
+        "rev_yoy": 65.66,
+        "pat_yoy": 150.0,
+        "rev": 275.0,
+        "pat": 45.0
+      },
+      {
+        "q": "Mar 2025",
+        "rev_yoy": 36.89,
+        "pat_yoy": 142.31,
+        "rev": 308.0,
+        "pat": 63.0
+      },
+      {
+        "q": "Jun 2025",
+        "rev_yoy": 16.95,
+        "pat_yoy": 193.33,
+        "rev": 207.0,
+        "pat": 44.0
+      },
+      {
+        "q": "Sep 2025",
+        "rev_yoy": 23.89,
+        "pat_yoy": 89.47,
+        "rev": 306.0,
+        "pat": 72.0
+      },
+      {
+        "q": "Dec 2025",
+        "rev_yoy": 42.91,
+        "pat_yoy": 135.56,
+        "rev": 393.0,
+        "pat": 106.0
+      },
+      {
+        "q": "Mar 2026",
+        "rev_yoy": 40.58,
+        "pat_yoy": 112.7,
+        "rev": 433.0,
+        "pat": 134.0
+      },
+      {
+        "q": "Jun 2026",
+        "rev_yoy": 59.42,
+        "pat_yoy": 70.45,
+        "rev": 330.0,
+        "pat": 75.0
+      }
+    ]
+  },
+  {
+    "symbol": "BEL",
+    "name": "Bharat Electronics Ltd",
+    "sector": "Defence, Aerospace & Strategic Tech",
+    "mcap": "Large Cap",
+    "mcap_cr": 296301.9,
+    "master_score": 69.0,
+    "funda_score": 54.0,
+    "tech_score": 50.0,
+    "et_score": 90.0,
+    "today_price": 405.35,
+    "today_pe": 48.26,
+    "today_pb": 12.35,
+    "today_peg": 5.46,
+    "consensus": "Buy (ET Consensus: +17.8% Upside)",
+    "tier": "Tier 4: Neutral / Cyclical",
+    "buy_rating": "\u2696\ufe0f Fair Value",
+    "forecast_upside": 17.8,
+    "avg_rev": 18.92,
+    "min_rev": 4.62,
+    "max_rev": 38.66,
+    "avg_pat": 22.93,
+    "min_pat": 4.65,
+    "max_pat": 52.56,
+    "q_details": [
+      {
+        "q": "Sep 2024",
+        "rev_yoy": 14.87,
+        "pat_yoy": 38.35,
+        "rev": 4605.0,
+        "pat": 1093.0
+      },
+      {
+        "q": "Dec 2024",
+        "rev_yoy": 38.66,
+        "pat_yoy": 52.56,
+        "rev": 5771.0,
+        "pat": 1312.0
+      },
+      {
+        "q": "Mar 2025",
+        "rev_yoy": 6.84,
+        "pat_yoy": 18.36,
+        "rev": 9150.0,
+        "pat": 2127.0
+      },
+      {
+        "q": "Jun 2025",
+        "rev_yoy": 4.62,
+        "pat_yoy": 22.5,
+        "rev": 4440.0,
+        "pat": 969.0
+      },
+      {
+        "q": "Sep 2025",
+        "rev_yoy": 25.78,
+        "pat_yoy": 17.75,
+        "rev": 5792.0,
+        "pat": 1287.0
+      },
+      {
+        "q": "Dec 2025",
+        "rev_yoy": 23.96,
+        "pat_yoy": 20.43,
+        "rev": 7154.0,
+        "pat": 1580.0
+      },
+      {
+        "q": "Mar 2026",
+        "rev_yoy": 11.74,
+        "pat_yoy": 4.65,
+        "rev": 10224.0,
+        "pat": 2226.0
+      },
+      {
+        "q": "Jun 2026",
+        "rev_yoy": 24.93,
+        "pat_yoy": 8.88,
+        "rev": 5547.0,
+        "pat": 1055.0
+      }
+    ]
+  },
+  {
+    "symbol": "AZAD",
+    "name": "Azad Engineering Limited",
+    "sector": "Diversified Industrial Manufacturing",
+    "mcap": "Small Cap",
+    "mcap_cr": 17936.3,
+    "master_score": 69.0,
+    "funda_score": 71.0,
+    "tech_score": 98.0,
+    "et_score": 50.0,
+    "today_price": 2777.3,
+    "today_pe": 129.48,
+    "today_pb": 3.39,
+    "today_peg": 6.47,
+    "consensus": "Buy (ET Consensus: -5.4% Upside)",
+    "tier": "Tier 3: Steady Watchlist Performer",
+    "buy_rating": "\u26a0\ufe0f Overextended (Hold/Trim)",
+    "forecast_upside": -5.4,
+    "avg_rev": 31.47,
+    "min_rev": 25.6,
+    "max_rev": 37.76,
+    "avg_pat": 44.37,
+    "min_pat": 10.53,
+    "max_pat": 76.47,
+    "q_details": [
+      {
+        "q": "Sep 2024",
+        "rev_yoy": 33.73,
+        "pat_yoy": 10.53,
+        "rev": 111.0,
+        "pat": 21.0
+      },
+      {
+        "q": "Dec 2024",
+        "rev_yoy": 33.71,
+        "pat_yoy": 41.18,
+        "rev": 119.0,
+        "pat": 24.0
+      },
+      {
+        "q": "Mar 2025",
+        "rev_yoy": 34.41,
+        "pat_yoy": 73.33,
+        "rev": 125.0,
+        "pat": 26.0
+      },
+      {
+        "q": "Jun 2025",
+        "rev_yoy": 37.76,
+        "pat_yoy": 76.47,
+        "rev": 135.0,
+        "pat": 30.0
+      },
+      {
+        "q": "Sep 2025",
+        "rev_yoy": 28.83,
+        "pat_yoy": 57.14,
+        "rev": 143.0,
+        "pat": 33.0
+      },
+      {
+        "q": "Dec 2025",
+        "rev_yoy": 31.09,
+        "pat_yoy": 41.67,
+        "rev": 156.0,
+        "pat": 34.0
+      },
+      {
+        "q": "Mar 2026",
+        "rev_yoy": 25.6,
+        "pat_yoy": 34.62,
+        "rev": 157.0,
+        "pat": 35.0
+      },
+      {
+        "q": "Jun 2026",
+        "rev_yoy": 26.67,
+        "pat_yoy": 20.0,
+        "rev": 171.0,
+        "pat": 36.0
+      }
+    ]
+  },
+  {
+    "symbol": "KEI",
+    "name": "KEI Industries Limited",
+    "sector": "Power & Electrical Equipment",
+    "mcap": "Mid Cap",
+    "mcap_cr": 46366.3,
+    "master_score": 69.0,
+    "funda_score": 66.0,
+    "tech_score": 72.0,
+    "et_score": 90.0,
+    "today_price": 4850.0,
+    "today_pe": 46.51,
+    "today_pb": 2.69,
+    "today_peg": 1.17,
+    "consensus": "Buy (ET Consensus: +1.9% Upside)",
+    "tier": "Tier 3: Steady Watchlist Performer",
+    "buy_rating": "\u2705 Accumulate (Discount to Median)",
+    "forecast_upside": 1.9,
+    "avg_rev": 21.14,
+    "min_rev": 17.43,
+    "max_rev": 25.42,
+    "avg_pat": 28.09,
+    "min_pat": 9.27,
+    "max_pat": 42.42,
+    "q_details": [
+      {
+        "q": "Sep 2024",
+        "rev_yoy": 17.43,
+        "pat_yoy": 10.71,
+        "rev": 2284.0,
+        "pat": 155.0
+      },
+      {
+        "q": "Dec 2024",
+        "rev_yoy": 20.06,
+        "pat_yoy": 9.27,
+        "rev": 2472.0,
+        "pat": 165.0
+      },
+      {
+        "q": "Mar 2025",
+        "rev_yoy": 25.11,
+        "pat_yoy": 35.12,
+        "rev": 2915.0,
+        "pat": 227.0
+      },
+      {
+        "q": "Jun 2025",
+        "rev_yoy": 25.42,
+        "pat_yoy": 30.67,
+        "rev": 2590.0,
+        "pat": 196.0
+      },
+      {
+        "q": "Sep 2025",
+        "rev_yoy": 19.35,
+        "pat_yoy": 31.61,
+        "rev": 2726.0,
+        "pat": 204.0
+      },
+      {
+        "q": "Dec 2025",
+        "rev_yoy": 19.54,
+        "pat_yoy": 42.42,
+        "rev": 2955.0,
+        "pat": 235.0
+      },
+      {
+        "q": "Mar 2026",
+        "rev_yoy": 19.25,
+        "pat_yoy": 25.11,
+        "rev": 3476.0,
+        "pat": 284.0
+      },
+      {
+        "q": "Jun 2026",
+        "rev_yoy": 22.97,
+        "pat_yoy": 39.8,
+        "rev": 3185.0,
+        "pat": 274.0
+      }
+    ]
+  },
+  {
+    "symbol": "SAMHI",
+    "name": "Samhi Hotels Limited",
+    "sector": "Diversified Industrial Manufacturing",
+    "mcap": "Micro Cap",
+    "mcap_cr": 3424.1,
+    "master_score": 67.6,
+    "funda_score": 70.0,
+    "tech_score": 28.0,
+    "et_score": 70.0,
+    "today_price": 153.99,
+    "today_pe": 6.78,
+    "today_pb": 3.7,
+    "today_peg": 0.21,
+    "consensus": "Buy (ET Consensus: +43.7% Upside)",
+    "tier": "Tier 3: Steady Watchlist Performer",
+    "buy_rating": "\ud83c\udf1f Deep Value / Strong Buy",
+    "forecast_upside": 43.7,
+    "avg_rev": 12.38,
+    "min_rev": 8.15,
+    "max_rev": 19.09,
+    "avg_pat": 314.49,
+    "min_pat": 31.58,
+    "max_pat": 767.39,
+    "q_details": [
+      {
+        "q": "Sep 2024",
+        "rev_yoy": 19.09,
+        "pat_yoy": 114.77,
+        "rev": 262.0,
+        "pat": 13.0
+      },
+      {
+        "q": "Dec 2024",
+        "rev_yoy": 8.96,
+        "pat_yoy": 131.08,
+        "rev": 292.0,
+        "pat": 23.0
+      },
+      {
+        "q": "Mar 2025",
+        "rev_yoy": 14.34,
+        "pat_yoy": 318.18,
+        "rev": 319.0,
+        "pat": 46.0
+      },
+      {
+        "q": "Jun 2025",
+        "rev_yoy": 8.8,
+        "pat_yoy": 375.0,
+        "rev": 272.0,
+        "pat": 19.0
+      },
+      {
+        "q": "Sep 2025",
+        "rev_yoy": 11.83,
+        "pat_yoy": 669.23,
+        "rev": 293.0,
+        "pat": 100.0
+      },
+      {
+        "q": "Dec 2025",
+        "rev_yoy": 15.75,
+        "pat_yoy": 108.7,
+        "rev": 338.0,
+        "pat": 48.0
+      },
+      {
+        "q": "Mar 2026",
+        "rev_yoy": 8.15,
+        "pat_yoy": 767.39,
+        "rev": 345.0,
+        "pat": 399.0
+      },
+      {
+        "q": "Jun 2026",
+        "rev_yoy": 12.13,
+        "pat_yoy": 31.58,
+        "rev": 305.0,
+        "pat": 25.0
+      }
+    ]
+  },
+  {
+    "symbol": "CARTRADE",
+    "name": "Cartrade Tech Limited",
+    "sector": "IT, Software & Cloud Technologies",
+    "mcap": "Small Cap",
+    "mcap_cr": 14554.6,
+    "master_score": 67.3,
+    "funda_score": 62.0,
+    "tech_score": 95.0,
+    "et_score": 40.0,
+    "today_price": 3000.2,
+    "today_pe": 62.03,
+    "today_pb": 4.0,
+    "today_peg": 2.91,
+    "consensus": "Buy (ET Consensus: +10.4% Upside)",
+    "tier": "Tier 4: Neutral / Cyclical",
+    "buy_rating": "\u2705 Accumulate (Discount to Median)",
+    "forecast_upside": 10.4,
+    "avg_rev": 21.78,
+    "min_rev": 16.18,
+    "max_rev": 28.33,
+    "avg_pat": 152.11,
+    "min_pat": 21.28,
+    "max_pat": 520.0,
+    "q_details": [
+      {
+        "q": "Sep 2024",
+        "rev_yoy": 28.33,
+        "pat_yoy": 520.0,
+        "rev": 154.0,
+        "pat": 31.0
+      },
+      {
+        "q": "Dec 2024",
+        "rev_yoy": 26.62,
+        "pat_yoy": 291.67,
+        "rev": 176.0,
+        "pat": 46.0
+      },
+      {
+        "q": "Mar 2025",
+        "rev_yoy": 17.24,
+        "pat_yoy": 84.0,
+        "rev": 170.0,
+        "pat": 46.0
+      },
+      {
+        "q": "Jun 2025",
+        "rev_yoy": 21.83,
+        "pat_yoy": 104.35,
+        "rev": 173.0,
+        "pat": 47.0
+      },
+      {
+        "q": "Sep 2025",
+        "rev_yoy": 25.32,
+        "pat_yoy": 106.45,
+        "rev": 193.0,
+        "pat": 64.0
+      },
+      {
+        "q": "Dec 2025",
+        "rev_yoy": 19.32,
+        "pat_yoy": 34.78,
+        "rev": 210.0,
+        "pat": 62.0
+      },
+      {
+        "q": "Mar 2026",
+        "rev_yoy": 19.41,
+        "pat_yoy": 54.35,
+        "rev": 203.0,
+        "pat": 71.0
+      },
+      {
+        "q": "Jun 2026",
+        "rev_yoy": 16.18,
+        "pat_yoy": 21.28,
+        "rev": 201.0,
+        "pat": 57.0
+      }
+    ]
+  },
+  {
+    "symbol": "IEX",
+    "name": "Indian Energy Exchange Limited",
+    "sector": "Renewable Energy & Green Power",
+    "mcap": "Small Cap",
+    "mcap_cr": 10579.7,
+    "master_score": 66.1,
+    "funda_score": 72.0,
+    "tech_score": 25.0,
+    "et_score": 100.0,
+    "today_price": 118.91,
+    "today_pe": 20.9,
+    "today_pb": 4.29,
+    "today_peg": 1.8,
+    "consensus": "Hold (ET Consensus: +18.6% Upside)",
+    "tier": "Tier 3: Steady Watchlist Performer",
+    "buy_rating": "\ud83c\udf1f Deep Value / Strong Buy",
+    "forecast_upside": 18.6,
+    "avg_rev": 16.17,
+    "min_rev": 10.61,
+    "max_rev": 27.52,
+    "avg_pat": 17.04,
+    "min_pat": 11.11,
+    "max_pat": 26.04,
+    "q_details": [
+      {
+        "q": "Sep 2024",
+        "rev_yoy": 27.52,
+        "pat_yoy": 25.58,
+        "rev": 139.0,
+        "pat": 108.0
+      },
+      {
+        "q": "Dec 2024",
+        "rev_yoy": 14.78,
+        "pat_yoy": 16.3,
+        "rev": 132.0,
+        "pat": 107.0
+      },
+      {
+        "q": "Mar 2025",
+        "rev_yoy": 17.36,
+        "pat_yoy": 20.62,
+        "rev": 142.0,
+        "pat": 117.0
+      },
+      {
+        "q": "Jun 2025",
+        "rev_yoy": 14.52,
+        "pat_yoy": 26.04,
+        "rev": 142.0,
+        "pat": 121.0
+      },
+      {
+        "q": "Sep 2025",
+        "rev_yoy": 10.79,
+        "pat_yoy": 13.89,
+        "rev": 154.0,
+        "pat": 123.0
+      },
+      {
+        "q": "Dec 2025",
+        "rev_yoy": 10.61,
+        "pat_yoy": 11.21,
+        "rev": 146.0,
+        "pat": 119.0
+      },
+      {
+        "q": "Mar 2026",
+        "rev_yoy": 22.54,
+        "pat_yoy": 11.11,
+        "rev": 174.0,
+        "pat": 130.0
+      },
+      {
+        "q": "Jun 2026",
+        "rev_yoy": 11.27,
+        "pat_yoy": 11.57,
+        "rev": 158.0,
+        "pat": 135.0
+      }
+    ]
+  },
+  {
+    "symbol": "SANSERA",
+    "name": "Sansera Engineering Limited",
+    "sector": "Automobiles & Auto Components",
+    "mcap": "Small Cap",
+    "mcap_cr": 23604.8,
+    "master_score": 65.1,
+    "funda_score": 66.0,
+    "tech_score": 88.0,
+    "et_score": 60.0,
+    "today_price": 3782.6,
+    "today_pe": 67.62,
+    "today_pb": 4.02,
+    "today_peg": 1.77,
+    "consensus": "Buy (ET Consensus: -6.3% Upside)",
+    "tier": "Tier 3: Steady Watchlist Performer",
+    "buy_rating": "\u26a0\ufe0f Overextended (Hold/Trim)",
+    "forecast_upside": -6.3,
+    "avg_rev": 14.24,
+    "min_rev": 2.1,
+    "max_rev": 33.29,
+    "avg_pat": 35.7,
+    "min_pat": 8.33,
+    "max_pat": 108.47,
+    "q_details": [
+      {
+        "q": "Sep 2024",
+        "rev_yoy": 10.1,
+        "pat_yoy": 8.33,
+        "rev": 763.0,
+        "pat": 52.0
+      },
+      {
+        "q": "Dec 2024",
+        "rev_yoy": 2.1,
+        "pat_yoy": 16.67,
+        "rev": 728.0,
+        "pat": 56.0
+      },
+      {
+        "q": "Mar 2025",
+        "rev_yoy": 4.83,
+        "pat_yoy": 28.26,
+        "rev": 782.0,
+        "pat": 59.0
+      },
+      {
+        "q": "Jun 2025",
+        "rev_yoy": 2.96,
+        "pat_yoy": 26.0,
+        "rev": 766.0,
+        "pat": 63.0
+      },
+      {
+        "q": "Sep 2025",
+        "rev_yoy": 8.13,
+        "pat_yoy": 36.54,
+        "rev": 825.0,
+        "pat": 71.0
+      },
+      {
+        "q": "Dec 2025",
+        "rev_yoy": 24.73,
+        "pat_yoy": 23.21,
+        "rev": 908.0,
+        "pat": 69.0
+      },
+      {
+        "q": "Mar 2026",
+        "rev_yoy": 27.75,
+        "pat_yoy": 108.47,
+        "rev": 999.0,
+        "pat": 123.0
+      },
+      {
+        "q": "Jun 2026",
+        "rev_yoy": 33.29,
+        "pat_yoy": 38.1,
+        "rev": 1021.0,
+        "pat": 87.0
+      }
+    ]
+  },
+  {
+    "symbol": "PERSISTENT",
+    "name": "Persistent Systems Limited",
+    "sector": "IT, Software & Cloud Technologies",
+    "mcap": "Mid Cap",
+    "mcap_cr": 88161.2,
+    "master_score": 65.0,
+    "funda_score": 74.0,
+    "tech_score": 75.0,
+    "et_score": 60.0,
+    "today_price": 5643.0,
+    "today_pe": 46.19,
+    "today_pb": 5.35,
+    "today_peg": 3.37,
+    "consensus": "Hold (ET Consensus: -3.1% Upside)",
+    "tier": "Tier 3: Steady Watchlist Performer",
+    "buy_rating": "\u2705 Accumulate (Discount to Median)",
+    "forecast_upside": -3.1,
+    "avg_rev": 23.85,
+    "min_rev": 20.11,
+    "max_rev": 29.06,
+    "avg_pat": 28.55,
+    "min_pat": 13.65,
+    "max_pat": 44.92,
+    "q_details": [
+      {
+        "q": "Sep 2024",
+        "rev_yoy": 20.11,
+        "pat_yoy": 23.57,
+        "rev": 2897.0,
+        "pat": 325.0
+      },
+      {
+        "q": "Dec 2024",
+        "rev_yoy": 22.58,
+        "pat_yoy": 30.42,
+        "rev": 3062.0,
+        "pat": 373.0
+      },
+      {
+        "q": "Mar 2025",
+        "rev_yoy": 25.13,
+        "pat_yoy": 25.71,
+        "rev": 3242.0,
+        "pat": 396.0
+      },
+      {
+        "q": "Jun 2025",
+        "rev_yoy": 21.81,
+        "pat_yoy": 38.89,
+        "rev": 3334.0,
+        "pat": 425.0
+      },
+      {
+        "q": "Sep 2025",
+        "rev_yoy": 23.61,
+        "pat_yoy": 44.92,
+        "rev": 3581.0,
+        "pat": 471.0
+      },
+      {
+        "q": "Dec 2025",
+        "rev_yoy": 23.38,
+        "pat_yoy": 17.69,
+        "rev": 3778.0,
+        "pat": 439.0
+      },
+      {
+        "q": "Mar 2026",
+        "rev_yoy": 25.11,
+        "pat_yoy": 33.59,
+        "rev": 4056.0,
+        "pat": 529.0
+      },
+      {
+        "q": "Jun 2026",
+        "rev_yoy": 29.06,
+        "pat_yoy": 13.65,
+        "rev": 4303.0,
+        "pat": 483.0
+      }
+    ]
+  },
+  {
+    "symbol": "POLYCAB",
+    "name": "Polycab India Limited",
+    "sector": "Renewable Energy & Green Power",
+    "mcap": "Large Cap",
+    "mcap_cr": 125027.1,
+    "master_score": 64.5,
+    "funda_score": 75.0,
+    "tech_score": 25.0,
+    "et_score": 80.0,
+    "today_price": 8300.0,
+    "today_pe": 43.63,
+    "today_pb": 3.12,
+    "today_peg": 1.33,
+    "consensus": "Buy (ET Consensus: +6.9% Upside)",
+    "tier": "Tier 3: Steady Watchlist Performer",
+    "buy_rating": "\u2705 Accumulate (Discount to Median)",
+    "forecast_upside": 6.9,
+    "avg_rev": 28.9,
+    "min_rev": 17.81,
+    "max_rev": 46.12,
+    "avg_pat": 28.52,
+    "min_pat": 3.49,
+    "max_pat": 55.73,
+    "q_details": [
+      {
+        "q": "Sep 2024",
+        "rev_yoy": 30.35,
+        "pat_yoy": 3.49,
+        "rev": 5498.0,
+        "pat": 445.0
+      },
+      {
+        "q": "Dec 2024",
+        "rev_yoy": 20.41,
+        "pat_yoy": 11.27,
+        "rev": 5226.0,
+        "pat": 464.0
+      },
+      {
+        "q": "Mar 2025",
+        "rev_yoy": 24.93,
+        "pat_yoy": 32.73,
+        "rev": 6986.0,
+        "pat": 734.0
+      },
+      {
+        "q": "Jun 2025",
+        "rev_yoy": 25.71,
+        "pat_yoy": 49.25,
+        "rev": 5906.0,
+        "pat": 600.0
+      },
+      {
+        "q": "Sep 2025",
+        "rev_yoy": 17.81,
+        "pat_yoy": 55.73,
+        "rev": 6477.0,
+        "pat": 693.0
+      },
+      {
+        "q": "Dec 2025",
+        "rev_yoy": 46.12,
+        "pat_yoy": 35.78,
+        "rev": 7636.0,
+        "pat": 630.0
+      },
+      {
+        "q": "Mar 2026",
+        "rev_yoy": 26.88,
+        "pat_yoy": 7.08,
+        "rev": 8864.0,
+        "pat": 786.0
+      },
+      {
+        "q": "Jun 2026",
+        "rev_yoy": 39.01,
+        "pat_yoy": 32.83,
+        "rev": 8210.0,
+        "pat": 797.0
+      }
+    ]
+  },
+  {
+    "symbol": "KPENERGY",
+    "name": "KP Energy Ltd",
+    "sector": "Renewable Energy & Green Power",
+    "mcap": "Micro Cap",
+    "mcap_cr": 1676.8,
+    "master_score": 64.5,
+    "funda_score": 74.0,
+    "tech_score": 69.0,
+    "et_score": 60.0,
+    "today_price": 247.32,
+    "today_pe": 9.15,
+    "today_pb": 6.89,
+    "today_peg": 2.28,
+    "consensus": "Stock Score 6/10 (NEUTRAL)",
+    "tier": "Tier 2: Strong Momentum Compounder",
+    "buy_rating": "\u2705 Accumulate (Discount to Median)",
+    "forecast_upside": null,
+    "avg_rev": 102.16,
+    "min_rev": 51.26,
+    "max_rev": 184.29,
+    "avg_pat": 87.71,
+    "min_pat": 4.0,
+    "max_pat": 212.5,
+    "q_details": [
+      {
+        "q": "Sep 2024",
+        "rev_yoy": 184.29,
+        "pat_yoy": 212.5,
+        "rev": 199.0,
+        "pat": 25.0
+      },
+      {
+        "q": "Dec 2024",
+        "rev_yoy": 158.54,
+        "pat_yoy": 188.89,
+        "rev": 212.0,
+        "pat": 26.0
+      },
+      {
+        "q": "Mar 2025",
+        "rev_yoy": 93.72,
+        "pat_yoy": 84.0,
+        "rev": 401.0,
+        "pat": 46.0
+      },
+      {
+        "q": "Jun 2025",
+        "rev_yoy": 73.23,
+        "pat_yoy": 38.89,
+        "rev": 220.0,
+        "pat": 25.0
+      },
+      {
+        "q": "Sep 2025",
+        "rev_yoy": 51.26,
+        "pat_yoy": 44.0,
+        "rev": 301.0,
+        "pat": 36.0
+      },
+      {
+        "q": "Dec 2025",
+        "rev_yoy": 62.74,
+        "pat_yoy": 57.69,
+        "rev": 345.0,
+        "pat": 41.0
+      },
+      {
+        "q": "Mar 2026",
+        "rev_yoy": 57.61,
+        "pat_yoy": 71.74,
+        "rev": 632.0,
+        "pat": 79.0
+      },
+      {
+        "q": "Jun 2026",
+        "rev_yoy": 135.91,
+        "pat_yoy": 4.0,
+        "rev": 519.0,
+        "pat": 26.0
+      }
+    ]
+  },
+  {
+    "symbol": "LUPIN",
+    "name": "Lupin Limited",
+    "sector": "Pharmaceuticals & Healthcare",
+    "mcap": "Mid Cap",
+    "mcap_cr": 96483.1,
+    "master_score": 64.3,
+    "funda_score": 78.0,
+    "tech_score": 25.0,
+    "et_score": 80.0,
+    "today_price": 2110.0,
+    "today_pe": 17.44,
+    "today_pb": 2.77,
+    "today_peg": 1.08,
+    "consensus": "Hold (ET Consensus: +13.6% Upside)",
+    "tier": "Tier 3: Steady Watchlist Performer",
+    "buy_rating": "\ud83c\udf1f Deep Value / Strong Buy",
+    "forecast_upside": 13.6,
+    "avg_rev": 20.27,
+    "min_rev": 10.99,
+    "max_rev": 32.05,
+    "avg_pat": 61.32,
+    "min_pat": 16.05,
+    "max_pat": 112.5,
+    "q_details": [
+      {
+        "q": "Sep 2024",
+        "rev_yoy": 12.58,
+        "pat_yoy": 73.54,
+        "rev": 5673.0,
+        "pat": 859.0
+      },
+      {
+        "q": "Dec 2024",
+        "rev_yoy": 10.99,
+        "pat_yoy": 38.77,
+        "rev": 5768.0,
+        "pat": 859.0
+      },
+      {
+        "q": "Mar 2025",
+        "rev_yoy": 14.23,
+        "pat_yoy": 112.5,
+        "rev": 5667.0,
+        "pat": 782.0
+      },
+      {
+        "q": "Jun 2025",
+        "rev_yoy": 11.93,
+        "pat_yoy": 51.49,
+        "rev": 6268.0,
+        "pat": 1221.0
+      },
+      {
+        "q": "Sep 2025",
+        "rev_yoy": 24.24,
+        "pat_yoy": 72.88,
+        "rev": 7048.0,
+        "pat": 1485.0
+      },
+      {
+        "q": "Dec 2025",
+        "rev_yoy": 24.27,
+        "pat_yoy": 37.49,
+        "rev": 7168.0,
+        "pat": 1181.0
+      },
+      {
+        "q": "Mar 2026",
+        "rev_yoy": 31.9,
+        "pat_yoy": 87.85,
+        "rev": 7475.0,
+        "pat": 1469.0
+      },
+      {
+        "q": "Jun 2026",
+        "rev_yoy": 32.05,
+        "pat_yoy": 16.05,
+        "rev": 8277.0,
+        "pat": 1417.0
+      }
+    ]
+  },
+  {
+    "symbol": "SPECTRUM",
+    "name": "Spectrum Electrical Industries Limited",
+    "sector": "Telecommunications, 5G & Media",
+    "mcap": "Micro Cap",
+    "mcap_cr": 3721.7,
+    "master_score": 62.1,
+    "funda_score": 76.0,
+    "tech_score": 95.0,
+    "et_score": 40.0,
+    "today_price": 2368.4,
+    "today_pe": 682.54,
+    "today_pb": 2.03,
+    "today_peg": 5.85,
+    "consensus": "Stock Score 4/10 (NEUTRAL)",
+    "tier": "Tier 3: Steady Watchlist Performer",
+    "buy_rating": "\u2696\ufe0f Fair Value",
+    "forecast_upside": null,
+    "avg_rev": 49.25,
+    "min_rev": 2.9,
+    "max_rev": 134.72,
+    "avg_pat": 203.69,
+    "min_pat": 14.29,
+    "max_pat": 636.84,
+    "q_details": [
+      {
+        "q": "Sep 2024",
+        "rev_yoy": 31.82,
+        "pat_yoy": 311.76,
+        "rev": 87.0,
+        "pat": 7.0
+      },
+      {
+        "q": "Dec 2024",
+        "rev_yoy": 2.9,
+        "pat_yoy": 66.67,
+        "rev": 71.0,
+        "pat": 3.0
+      },
+      {
+        "q": "Mar 2025",
+        "rev_yoy": 134.72,
+        "pat_yoy": 636.84,
+        "rev": 169.0,
+        "pat": 14.0
+      },
+      {
+        "q": "Jun 2025",
+        "rev_yoy": 13.33,
+        "pat_yoy": 200.0,
+        "rev": 85.0,
+        "pat": 6.0
+      },
+      {
+        "q": "Sep 2025",
+        "rev_yoy": 35.63,
+        "pat_yoy": 14.29,
+        "rev": 118.0,
+        "pat": 8.0
+      },
+      {
+        "q": "Dec 2025",
+        "rev_yoy": 76.06,
+        "pat_yoy": 233.33,
+        "rev": 125.0,
+        "pat": 10.0
+      },
+      {
+        "q": "Mar 2026",
+        "rev_yoy": 17.16,
+        "pat_yoy": 50.0,
+        "rev": 198.0,
+        "pat": 21.0
+      },
+      {
+        "q": "Jun 2026",
+        "rev_yoy": 82.35,
+        "pat_yoy": 116.67,
+        "rev": 155.0,
+        "pat": 13.0
+      }
+    ]
+  },
+  {
+    "symbol": "GRSE",
+    "name": "Garden Reach Shipbuilders & Engineers Ltd",
+    "sector": "Defence, Aerospace & Strategic Tech",
+    "mcap": "Small Cap",
+    "mcap_cr": 29018.3,
+    "master_score": 61.7,
+    "funda_score": 75.0,
+    "tech_score": 33.0,
+    "et_score": 70.0,
+    "today_price": 2533.2,
+    "today_pe": 36.24,
+    "today_pb": 11.05,
+    "today_peg": 0.82,
+    "consensus": "Hold (ET Consensus: +13.4% Upside)",
+    "tier": "Tier 2: Strong Momentum Compounder",
+    "buy_rating": "\u2705 Accumulate (Discount to Median)",
+    "forecast_upside": 13.4,
+    "avg_rev": 39.95,
+    "min_rev": 28.4,
+    "max_rev": 61.61,
+    "avg_pat": 48.52,
+    "min_pat": 11.36,
+    "max_pat": 117.86,
+    "q_details": [
+      {
+        "q": "Sep 2024",
+        "rev_yoy": 28.4,
+        "pat_yoy": 20.99,
+        "rev": 1153.0,
+        "pat": 98.0
+      },
+      {
+        "q": "Dec 2024",
+        "rev_yoy": 37.7,
+        "pat_yoy": 11.36,
+        "rev": 1271.0,
+        "pat": 98.0
+      },
+      {
+        "q": "Mar 2025",
+        "rev_yoy": 61.61,
+        "pat_yoy": 117.86,
+        "rev": 1642.0,
+        "pat": 244.0
+      },
+      {
+        "q": "Jun 2025",
+        "rev_yoy": 29.7,
+        "pat_yoy": 37.93,
+        "rev": 1310.0,
+        "pat": 120.0
+      },
+      {
+        "q": "Sep 2025",
+        "rev_yoy": 45.45,
+        "pat_yoy": 57.14,
+        "rev": 1677.0,
+        "pat": 154.0
+      },
+      {
+        "q": "Dec 2025",
+        "rev_yoy": 49.17,
+        "pat_yoy": 74.49,
+        "rev": 1896.0,
+        "pat": 171.0
+      },
+      {
+        "q": "Mar 2026",
+        "rev_yoy": 29.05,
+        "pat_yoy": 24.18,
+        "rev": 2119.0,
+        "pat": 303.0
+      },
+      {
+        "q": "Jun 2026",
+        "rev_yoy": 38.55,
+        "pat_yoy": 44.17,
+        "rev": 1815.0,
+        "pat": 173.0
+      }
+    ]
+  },
+  {
+    "symbol": "PCJEWELLER",
+    "name": "PC Jeweller Ltd",
+    "sector": "Retail, Apparel & Consumer Brands",
+    "mcap": "Small Cap",
+    "mcap_cr": 11566.0,
+    "master_score": 61.7,
+    "funda_score": 57.0,
+    "tech_score": 85.0,
+    "et_score": 60.0,
+    "today_price": 11.86,
+    "today_pe": 13.18,
+    "today_pb": 3.0,
+    "today_peg": 3.07,
+    "consensus": "Stock Score 6/10 (NEUTRAL)",
+    "tier": "Tier 4: Neutral / Cyclical",
+    "buy_rating": "\u26a0\ufe0f Overextended (Hold/Trim)",
+    "forecast_upside": null,
+    "avg_rev": 563.58,
+    "min_rev": 10.9,
+    "max_rev": 1497.5,
+    "avg_pat": 85.04,
+    "min_pat": 4.27,
+    "max_pat": 217.76,
+    "q_details": [
+      {
+        "q": "Sep 2024",
+        "rev_yoy": 1430.3,
+        "pat_yoy": 217.76,
+        "rev": 505.0,
+        "pat": 179.0
+      },
+      {
+        "q": "Dec 2024",
+        "rev_yoy": 1497.5,
+        "pat_yoy": 173.0,
+        "rev": 639.0,
+        "pat": 146.0
+      },
+      {
+        "q": "Mar 2025",
+        "rev_yoy": 1356.25,
+        "pat_yoy": 176.61,
+        "rev": 699.0,
+        "pat": 95.0
+      },
+      {
+        "q": "Jun 2025",
+        "rev_yoy": 80.8,
+        "pat_yoy": 5.81,
+        "rev": 725.0,
+        "pat": 164.0
+      },
+      {
+        "q": "Sep 2025",
+        "rev_yoy": 63.37,
+        "pat_yoy": 16.2,
+        "rev": 825.0,
+        "pat": 208.0
+      },
+      {
+        "q": "Dec 2025",
+        "rev_yoy": 36.93,
+        "pat_yoy": 28.77,
+        "rev": 875.0,
+        "pat": 188.0
+      },
+      {
+        "q": "Mar 2026",
+        "rev_yoy": 32.62,
+        "pat_yoy": 57.89,
+        "rev": 927.0,
+        "pat": 150.0
+      },
+      {
+        "q": "Jun 2026",
+        "rev_yoy": 10.9,
+        "pat_yoy": 4.27,
+        "rev": 804.0,
+        "pat": 171.0
+      }
+    ]
+  },
+  {
+    "symbol": "TATAELXSI",
+    "name": "Tata Elxsi Limited",
+    "sector": "IT, Software & Cloud Technologies",
+    "mcap": "Small Cap",
+    "mcap_cr": 22166.2,
+    "master_score": 59.4,
+    "funda_score": 84.0,
+    "tech_score": 28.0,
+    "et_score": 70.0,
+    "today_price": 3558.0,
+    "today_pe": 217.22,
+    "today_pb": 4.06,
+    "today_peg": 5.97,
+    "consensus": "Sell (ET Consensus: +0.5% Upside)",
+    "tier": "Tier 2: Strong Momentum Compounder",
+    "buy_rating": "\ud83c\udf1f Deep Value / Strong Buy",
+    "forecast_upside": 0.5,
+    "avg_rev": 17.1,
+    "min_rev": 8.42,
+    "max_rev": 30.06,
+    "avg_pat": 204.55,
+    "min_pat": 20.0,
+    "max_pat": 900.0,
+    "q_details": [
+      {
+        "q": "Sep 2024",
+        "rev_yoy": 18.49,
+        "pat_yoy": 200.0,
+        "rev": 173.0,
+        "pat": 9.0
+      },
+      {
+        "q": "Dec 2024",
+        "rev_yoy": 22.58,
+        "pat_yoy": 900.0,
+        "rev": 190.0,
+        "pat": 20.0
+      },
+      {
+        "q": "Mar 2025",
+        "rev_yoy": 27.39,
+        "pat_yoy": 144.44,
+        "rev": 200.0,
+        "pat": 22.0
+      },
+      {
+        "q": "Jun 2025",
+        "rev_yoy": 30.06,
+        "pat_yoy": 175.0,
+        "rev": 212.0,
+        "pat": 22.0
+      },
+      {
+        "q": "Sep 2025",
+        "rev_yoy": 10.4,
+        "pat_yoy": 133.33,
+        "rev": 191.0,
+        "pat": 21.0
+      },
+      {
+        "q": "Dec 2025",
+        "rev_yoy": 8.42,
+        "pat_yoy": 20.0,
+        "rev": 206.0,
+        "pat": 24.0
+      },
+      {
+        "q": "Mar 2026",
+        "rev_yoy": 10.5,
+        "pat_yoy": 27.27,
+        "rev": 221.0,
+        "pat": 28.0
+      },
+      {
+        "q": "Jun 2026",
+        "rev_yoy": 8.96,
+        "pat_yoy": 36.36,
+        "rev": 231.0,
+        "pat": 30.0
+      }
+    ]
+  },
+  {
+    "symbol": "APOLLO",
+    "name": "Apollo Micro Systems Ltd",
+    "sector": "Defence, Aerospace & Strategic Tech",
+    "mcap": "Small Cap",
+    "mcap_cr": 14451.5,
+    "master_score": 54.7,
+    "funda_score": 72.0,
+    "tech_score": 65.0,
+    "et_score": 40.0,
+    "today_price": 388.9,
+    "today_pe": 113.71,
+    "today_pb": 10.22,
+    "today_peg": 2.9,
+    "consensus": "Stock Score 4/10 (NEUTRAL)",
+    "tier": "Tier 3: Steady Watchlist Performer",
+    "buy_rating": "\u2705 Accumulate (Discount to Median)",
+    "forecast_upside": null,
+    "avg_rev": 61.64,
+    "min_rev": 20.0,
+    "max_rev": 87.31,
+    "avg_pat": 82.47,
+    "min_pat": 7.69,
+    "max_pat": 164.29,
+    "q_details": [
+      {
+        "q": "Sep 2024",
+        "rev_yoy": 85.06,
+        "pat_yoy": 128.57,
+        "rev": 161.0,
+        "pat": 16.0
+      },
+      {
+        "q": "Dec 2024",
+        "rev_yoy": 62.64,
+        "pat_yoy": 80.0,
+        "rev": 148.0,
+        "pat": 18.0
+      },
+      {
+        "q": "Mar 2025",
+        "rev_yoy": 20.0,
+        "pat_yoy": 7.69,
+        "rev": 162.0,
+        "pat": 14.0
+      },
+      {
+        "q": "Jun 2025",
+        "rev_yoy": 47.25,
+        "pat_yoy": 125.0,
+        "rev": 134.0,
+        "pat": 18.0
+      },
+      {
+        "q": "Sep 2025",
+        "rev_yoy": 39.75,
+        "pat_yoy": 87.5,
+        "rev": 225.0,
+        "pat": 30.0
+      },
+      {
+        "q": "Dec 2025",
+        "rev_yoy": 70.27,
+        "pat_yoy": 27.78,
+        "rev": 252.0,
+        "pat": 23.0
+      },
+      {
+        "q": "Mar 2026",
+        "rev_yoy": 80.86,
+        "pat_yoy": 164.29,
+        "rev": 293.0,
+        "pat": 37.0
+      },
+      {
+        "q": "Jun 2026",
+        "rev_yoy": 87.31,
+        "pat_yoy": 38.89,
+        "rev": 251.0,
+        "pat": 25.0
+      }
+    ]
+  },
+  {
+    "symbol": "JBMA",
+    "name": "JBM Auto Ltd",
+    "sector": "Automobiles & Auto Components",
+    "mcap": "Small Cap",
+    "mcap_cr": 14795.1,
+    "master_score": 51.8,
+    "funda_score": 58.0,
+    "tech_score": 75.0,
+    "et_score": 40.0,
+    "today_price": 625.6,
+    "today_pe": 65.99,
+    "today_pb": 12.96,
+    "today_peg": 5.15,
+    "consensus": "Stock Score 4/10 (NEUTRAL)",
+    "tier": "Tier 4: Neutral / Cyclical",
+    "buy_rating": "\u2696\ufe0f Fair Value",
+    "forecast_upside": null,
+    "avg_rev": 9.76,
+    "min_rev": 3.71,
+    "max_rev": 15.62,
+    "avg_pat": 10.89,
+    "min_pat": 3.77,
+    "max_pat": 16.67,
+    "q_details": [
+      {
+        "q": "Sep 2024",
+        "rev_yoy": 4.47,
+        "pat_yoy": 8.16,
+        "rev": 1286.0,
+        "pat": 53.0
+      },
+      {
+        "q": "Dec 2024",
+        "rev_yoy": 3.71,
+        "pat_yoy": 7.69,
+        "rev": 1396.0,
+        "pat": 56.0
+      },
+      {
+        "q": "Mar 2025",
+        "rev_yoy": 10.77,
+        "pat_yoy": 16.13,
+        "rev": 1646.0,
+        "pat": 72.0
+      },
+      {
+        "q": "Jun 2025",
+        "rev_yoy": 9.62,
+        "pat_yoy": 14.71,
+        "rev": 1254.0,
+        "pat": 39.0
+      },
+      {
+        "q": "Sep 2025",
+        "rev_yoy": 6.38,
+        "pat_yoy": 3.77,
+        "rev": 1368.0,
+        "pat": 55.0
+      },
+      {
+        "q": "Dec 2025",
+        "rev_yoy": 15.62,
+        "pat_yoy": 7.14,
+        "rev": 1614.0,
+        "pat": 60.0
+      },
+      {
+        "q": "Mar 2026",
+        "rev_yoy": 12.52,
+        "pat_yoy": 16.67,
+        "rev": 1852.0,
+        "pat": 84.0
+      },
+      {
+        "q": "Jun 2026",
+        "rev_yoy": 14.99,
+        "pat_yoy": 12.82,
+        "rev": 1442.0,
+        "pat": 44.0
+      }
+    ]
+  },
+  {
+    "symbol": "WAAREE",
+    "name": "Waaree Energies Ltd",
+    "sector": "Renewable Energy & Green Power",
+    "mcap": "Mid Cap",
+    "mcap_cr": 75796.1,
+    "master_score": 35.9,
+    "funda_score": 64.0,
+    "tech_score": 20.0,
+    "et_score": 10.0,
+    "today_price": 2635.0,
+    "today_pe": 19.86,
+    "today_pb": 5.25,
+    "today_peg": 1.28,
+    "consensus": "Stock Score 1/10 (NEGATIVE)",
+    "tier": "Tier 3: Steady Watchlist Performer",
+    "buy_rating": "\ud83c\udf1f Deep Value / Strong Buy",
+    "forecast_upside": null,
+    "avg_rev": 70.43,
+    "min_rev": 1.05,
+    "max_rev": 118.83,
+    "avg_pat": 93.44,
+    "min_pat": 15.39,
+    "max_pat": 259.57,
+    "q_details": [
+      {
+        "q": "Sep 2024",
+        "rev_yoy": 1.05,
+        "pat_yoy": 17.5,
+        "rev": 3574.0,
+        "pat": 376.0
+      },
+      {
+        "q": "Dec 2024",
+        "rev_yoy": 116.6,
+        "pat_yoy": 259.57,
+        "rev": 3457.0,
+        "pat": 507.0
+      },
+      {
+        "q": "Mar 2025",
+        "rev_yoy": 36.38,
+        "pat_yoy": 35.58,
+        "rev": 4004.0,
+        "pat": 644.0
+      },
+      {
+        "q": "Jun 2025",
+        "rev_yoy": 29.83,
+        "pat_yoy": 92.77,
+        "rev": 4426.0,
+        "pat": 773.0
+      },
+      {
+        "q": "Sep 2025",
+        "rev_yoy": 69.73,
+        "pat_yoy": 133.51,
+        "rev": 6066.0,
+        "pat": 878.0
+      },
+      {
+        "q": "Dec 2025",
+        "rev_yoy": 118.83,
+        "pat_yoy": 118.34,
+        "rev": 7565.0,
+        "pat": 1107.0
+      },
+      {
+        "q": "Mar 2026",
+        "rev_yoy": 111.79,
+        "pat_yoy": 74.84,
+        "rev": 8480.0,
+        "pat": 1126.0
+      },
+      {
+        "q": "Jun 2026",
+        "rev_yoy": 79.21,
+        "pat_yoy": 15.39,
+        "rev": 7932.0,
+        "pat": 892.0
+      }
+    ]
+  }
+]

@@ -1,0 +1,1426 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>35-Stock Portfolio Master Strategy Dashboard</title>
+  <script src="https://www.gstatic.com/antigravity/web/dev/tailwindcss.min.js"></script>
+  <style>
+    :root {
+      --background: #0f172a;
+      --foreground: #f8fafc;
+      --card: #1e293b;
+      --card-hover: #334155;
+      --border: #334155;
+      --muted-foreground: #94a3b8;
+      --primary: #38bdf8;
+      --primary-foreground: #0f172a;
+      --success: #10b981;
+      --warning: #f59e0b;
+      --danger: #ef4444;
+      --accent: #8b5cf6;
+    }
+    body {
+      background-color: var(--background);
+      color: var(--foreground);
+      font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    }
+    .badge-ready { background-color: rgba(16, 185, 129, 0.15); color: #34d399; border: 1px solid rgba(52, 211, 153, 0.3); }
+    .badge-wait { background-color: rgba(245, 158, 11, 0.15); color: #fbbf24; border: 1px solid rgba(251, 191, 36, 0.3); }
+    .badge-fav { background-color: rgba(139, 92, 246, 0.15); color: #a78bfa; border: 1px solid rgba(167, 139, 250, 0.3); }
+    .badge-quar { background-color: rgba(239, 68, 68, 0.12); color: #f87171; border: 1px solid rgba(248, 113, 113, 0.3); }
+    .badge-elim { background-color: rgba(100, 116, 139, 0.2); color: #94a3b8; border: 1px solid rgba(148, 163, 184, 0.3); }
+    .badge-custom { background-color: rgba(56, 189, 248, 0.15); color: #38bdf8; border: 1px solid rgba(56, 189, 248, 0.3); }
+    
+    .tab-active {
+      border-bottom: 2px solid #38bdf8;
+      color: #38bdf8;
+      font-weight: 600;
+      background: rgba(56, 189, 248, 0.08);
+      border-radius: 8px 8px 0 0;
+    }
+    .tab-inactive {
+      color: #94a3b8;
+      border-bottom: 2px solid transparent;
+    }
+    .tab-inactive:hover {
+      color: #f8fafc;
+      background: rgba(255, 255, 255, 0.03);
+    }
+
+    .kpi-card {
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+    .kpi-card:hover {
+      transform: translateY(-2px);
+      border-color: #38bdf8;
+      box-shadow: 0 4px 12px rgba(56, 189, 248, 0.15);
+    }
+    .kpi-card.active-kpi {
+      border-color: #38bdf8;
+      background: rgba(56, 189, 248, 0.08);
+      box-shadow: 0 0 10px rgba(56, 189, 248, 0.2);
+    }
+
+    /* Custom scrollbar */
+    ::-webkit-scrollbar {
+      width: 6px;
+      height: 6px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #0f172a;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #334155;
+      border-radius: 3px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #475569;
+    }
+  </style>
+</head>
+<body class="min-h-screen p-4 md:p-8 antialiased">
+  <div class="max-w-7xl mx-auto space-y-6">
+
+    <!-- Header Section -->
+    <header class="bg-[var(--card)] border border-[var(--border)] rounded-2xl p-6 shadow-xl relative overflow-hidden">
+      <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4">
+        <div>
+          <div class="flex items-center gap-3">
+            <span class="px-3 py-1 text-xs font-bold rounded-full bg-cyan-500/20 text-cyan-400 border border-cyan-500/30">PORTFOLIO MASTER CONFLUENCE</span>
+            <span class="text-xs text-[var(--muted-foreground)]">As of 05/09/2026</span>
+          </div>
+          <h1 class="text-2xl md:text-3xl font-extrabold text-[var(--foreground)] mt-2">
+            35-Stock Investment Strategy & Execution Hub
+          </h1>
+          <p class="text-sm text-[var(--muted-foreground)] mt-1">
+            Dual-Engine Ranking (ET Markets & Bucket Portfolio) • 1-to-10 Month Position Architecture • Risk-Reward Calibrated
+          </p>
+        </div>
+
+        <div class="flex flex-wrap items-center gap-2.5">
+          <input type="text" id="globalSearch" placeholder="Quick search any stock or sector..." 
+            class="px-4 py-2 bg-[#0f172a] border border-[var(--border)] rounded-xl text-sm text-[var(--foreground)] focus:outline-none focus:border-cyan-400 w-full sm:w-60"
+            oninput="handleSearch()">
+          
+          <button onclick="openCreateBasketModal()" class="px-3.5 py-2 bg-gradient-to-r from-cyan-600 to-blue-600 hover:from-cyan-500 hover:to-blue-500 text-white rounded-xl text-xs font-bold flex items-center gap-1.5 shadow-lg shadow-cyan-900/30 transition-all">
+            <span>➕ New Basket</span>
+          </button>
+          
+          <button onclick="openManageBasketsModal()" class="px-3 py-2 bg-[#0f172a] hover:bg-slate-800 border border-[var(--border)] rounded-xl text-xs font-semibold text-slate-300 flex items-center gap-1.5 transition-all">
+            <span>⚙️ Manage</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Quick KPI Stats Bar (7 Watchlists / Baskets: Click any card to view!) -->
+      <div class="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-7 gap-2.5 mt-6 pt-6 border-t border-[var(--border)]" id="kpiStatsGrid">
+        
+        <!-- KPI 1: All 35 Combined -->
+        <div class="kpi-card bg-[#0f172a] p-3 rounded-xl border border-[var(--border)]" onclick="selectWatchlist('all-35')" id="kpi-all-35" title="Click to view all 35 stocks combined">
+          <div class="text-[11px] text-[var(--muted-foreground)] font-medium flex items-center justify-between">
+            <span>🌐 Combined Master</span>
+            <span class="text-[9px] text-cyan-400 bg-cyan-950/60 px-1.5 py-0.5 rounded">All 35</span>
+          </div>
+          <div class="text-xl font-bold text-cyan-300 mt-1" id="kpiCount-all-35">35 Stocks</div>
+          <div class="text-[10px] text-cyan-400/80">Complete Master Pool</div>
+        </div>
+
+        <!-- KPI 2: Active Core Pool -->
+        <div class="kpi-card bg-[#0f172a] p-3 rounded-xl border border-[var(--border)]" onclick="selectWatchlist('active-core')" id="kpi-active-core" title="Click to view Active Core Portfolio">
+          <div class="text-[11px] text-[var(--muted-foreground)] font-medium flex items-center justify-between">
+            <span>🎯 Active Core</span>
+            <span class="text-[9px] text-emerald-400 bg-emerald-950/60 px-1.5 py-0.5 rounded">100%</span>
+          </div>
+          <div class="text-xl font-bold text-emerald-400 mt-1" id="kpiCount-active-core">16 Stocks</div>
+          <div class="text-[10px] text-emerald-500/80">100% Portfolio Sizing</div>
+        </div>
+
+        <!-- KPI 3: Ready to Buy Now -->
+        <div class="kpi-card bg-[#0f172a] p-3 rounded-xl border border-[var(--border)]" onclick="selectWatchlist('ready-buy')" id="kpi-ready-buy" title="Click to view Ready to Buy Stocks">
+          <div class="text-[11px] text-[var(--muted-foreground)] font-medium flex items-center justify-between">
+            <span>🟢 Ready to Buy</span>
+            <span class="text-[9px] text-cyan-400 bg-cyan-950/60 px-1.5 py-0.5 rounded">72.5%</span>
+          </div>
+          <div class="text-xl font-bold text-cyan-400 mt-1" id="kpiCount-ready-buy">10 Stocks</div>
+          <div class="text-[10px] text-cyan-500/80">Immediate Capital Deployment</div>
+        </div>
+
+        <!-- KPI 4: Wait for Alert -->
+        <div class="kpi-card bg-[#0f172a] p-3 rounded-xl border border-[var(--border)]" onclick="selectWatchlist('wait-alert')" id="kpi-wait-alert" title="Click to view Wait for Alert Stocks">
+          <div class="text-[11px] text-[var(--muted-foreground)] font-medium flex items-center justify-between">
+            <span>⏸️ Wait for Alert</span>
+            <span class="text-[9px] text-amber-400 bg-amber-950/60 px-1.5 py-0.5 rounded">27.5%</span>
+          </div>
+          <div class="text-xl font-bold text-amber-400 mt-1" id="kpiCount-wait-alert">6 Stocks</div>
+          <div class="text-[10px] text-amber-500/80">Reserve Capital Pool</div>
+        </div>
+
+        <!-- KPI 5: Watchlist 3 (Favorites) -->
+        <div class="kpi-card bg-[#0f172a] p-3 rounded-xl border border-[var(--border)]" onclick="selectWatchlist('watchlist-3')" id="kpi-watchlist-3" title="Click to view Watchlist 3 (Favorites)">
+          <div class="text-[11px] text-[var(--muted-foreground)] font-medium flex items-center justify-between">
+            <span>⭐ Watchlist 3 (Favs)</span>
+            <span class="text-[9px] text-purple-400 bg-purple-950/60 px-1.5 py-0.5 rounded">Caution</span>
+          </div>
+          <div class="text-xl font-bold text-purple-400 mt-1" id="kpiCount-watchlist-3">5 Stocks</div>
+          <div class="text-[10px] text-purple-400/80">Resistance & Re-Entry</div>
+        </div>
+
+        <!-- KPI 6: Watchlist 2 (Quarantine) -->
+        <div class="kpi-card bg-[#0f172a] p-3 rounded-xl border border-[var(--border)]" onclick="selectWatchlist('watchlist-2')" id="kpi-watchlist-2" title="Click to view Watchlist 2 (Quarantine)">
+          <div class="text-[11px] text-[var(--muted-foreground)] font-medium flex items-center justify-between">
+            <span>⚠️ Watchlist 2 (Quar.)</span>
+            <span class="text-[9px] text-rose-400 bg-rose-950/60 px-1.5 py-0.5 rounded">Review</span>
+          </div>
+          <div class="text-xl font-bold text-rose-400 mt-1" id="kpiCount-watchlist-2">8 Stocks</div>
+          <div class="text-[10px] text-rose-500/80">Pending Elimination</div>
+        </div>
+
+        <!-- KPI 7: Eliminated Funnel -->
+        <div class="kpi-card bg-[#0f172a] p-3 rounded-xl border border-[var(--border)]" onclick="selectWatchlist('eliminated')" id="kpi-eliminated" title="Click to view Eliminated Funnel">
+          <div class="text-[11px] text-[var(--muted-foreground)] font-medium flex items-center justify-between">
+            <span>❌ Eliminated Funnel</span>
+            <span class="text-[9px] text-slate-400 bg-slate-800 px-1.5 py-0.5 rounded">Avoid</span>
+          </div>
+          <div class="text-xl font-bold text-slate-400 mt-1" id="kpiCount-eliminated">6 Stocks</div>
+          <div class="text-[10px] text-slate-500">Strictly Avoided</div>
+        </div>
+
+      </div>
+    </header>
+
+﻿    <!-- Watchlist & Basket Tab Navigation Bar -->
+    <div class="flex items-center justify-between border-b border-[var(--border)] overflow-x-auto text-sm font-medium pb-1 gap-2" id="navTabsContainer">
+      <!-- Tabs will be rendered dynamically by JavaScript -->
+    </div>
+
+    <!-- MAIN WATCHLIST VIEW CONTAINER -->
+    <main id="mainWatchlistContainer" class="space-y-6">
+
+      <!-- Active Watchlist Banner & Control Strip -->
+      <div class="bg-[var(--card)] border border-[var(--border)] rounded-2xl p-5 shadow-xl space-y-4">
+        
+        <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-3">
+          <div>
+            <div class="flex items-center gap-2.5">
+              <span id="activeWlBadge" class="px-2.5 py-0.5 rounded-full text-xs font-bold bg-cyan-500/20 text-cyan-400 border border-cyan-500/30">CURRENT WATCHLIST</span>
+              <h2 id="activeWlTitle" class="text-xl font-extrabold text-[var(--foreground)]">All 35 Stocks Combined</h2>
+              <span id="activeWlStockCount" class="text-xs px-2 py-0.5 rounded-full bg-slate-800 text-slate-300 font-bold border border-slate-700">35 Stocks</span>
+            </div>
+            <p id="activeWlDesc" class="text-xs text-[var(--muted-foreground)] mt-1.5">
+              Consolidated master tracking of all 35 institutional candidate stocks across all postures.
+            </p>
+          </div>
+
+          <!-- Quick Actions & View Switcher -->
+          <div class="flex flex-wrap items-center gap-2">
+            <!-- View Mode Switcher -->
+            <div class="bg-[#0f172a] p-1 rounded-xl border border-[var(--border)] flex items-center text-xs">
+              <button onclick="setViewMode('table')" id="viewBtn-table" class="px-3 py-1.5 rounded-lg bg-cyan-500/20 text-cyan-400 font-bold border border-cyan-500/30 transition-all">📋 Table</button>
+              <button onclick="setViewMode('cards')" id="viewBtn-cards" class="px-3 py-1.5 rounded-lg text-[var(--muted-foreground)] hover:text-white font-medium transition-all">🗂️ Cards</button>
+              <button onclick="setViewMode('both')" id="viewBtn-both" class="px-3 py-1.5 rounded-lg text-[var(--muted-foreground)] hover:text-white font-medium transition-all">🔄 Both</button>
+            </div>
+
+            <!-- Export CSV Button -->
+            <button onclick="exportCurrentBasketCSV()" class="px-3 py-2 bg-[#0f172a] hover:bg-slate-800 border border-[var(--border)] rounded-xl text-xs font-semibold text-slate-300 flex items-center gap-1.5 transition-all">
+              <span>📥 Export CSV</span>
+            </button>
+
+            <!-- Custom Basket Action Buttons (Edit / Delete) -->
+            <div id="customBasketActions" class="hidden flex items-center gap-1.5">
+              <button onclick="editCurrentBasket()" class="px-3 py-2 bg-amber-500/20 hover:bg-amber-500/30 border border-amber-500/40 text-amber-300 rounded-xl text-xs font-bold flex items-center gap-1 transition-all">
+                <span>✏️ Edit Basket</span>
+              </button>
+              <button onclick="deleteCurrentBasket()" class="px-3 py-2 bg-rose-500/20 hover:bg-rose-500/30 border border-rose-500/40 text-rose-300 rounded-xl text-xs font-bold flex items-center gap-1 transition-all">
+                <span>🗑️ Delete</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sub-Filters for Active Basket -->
+        <div class="flex flex-wrap items-center justify-between gap-3 pt-3 border-t border-[var(--border)] text-xs">
+          <div class="flex flex-wrap items-center gap-2" id="postureFilterGroup">
+            <span class="text-[var(--muted-foreground)] mr-1">Filter Posture:</span>
+            <button onclick="filterPosture('all')" class="posture-filter-btn px-3 py-1.5 rounded-lg bg-cyan-500/20 text-cyan-400 border border-cyan-500/40 font-medium" data-filter="all">All Stocks (<span id="count-all">35</span>)</button>
+            <button onclick="filterPosture('ready')" class="posture-filter-btn px-3 py-1.5 rounded-lg bg-[#0f172a] text-[var(--muted-foreground)] hover:text-[var(--foreground)] border border-[var(--border)] font-medium" data-filter="ready">🟢 Ready (<span id="count-ready">10</span>)</button>
+            <button onclick="filterPosture('wait')" class="posture-filter-btn px-3 py-1.5 rounded-lg bg-[#0f172a] text-[var(--muted-foreground)] hover:text-[var(--foreground)] border border-[var(--border)] font-medium" data-filter="wait">⏸️ Wait (<span id="count-wait">6</span>)</button>
+            <button onclick="filterPosture('fav')" class="posture-filter-btn px-3 py-1.5 rounded-lg bg-[#0f172a] text-[var(--muted-foreground)] hover:text-[var(--foreground)] border border-[var(--border)] font-medium" data-filter="fav">⭐ Favorites (<span id="count-fav">5</span>)</button>
+            <button onclick="filterPosture('quar')" class="posture-filter-btn px-3 py-1.5 rounded-lg bg-[#0f172a] text-[var(--muted-foreground)] hover:text-[var(--foreground)] border border-[var(--border)] font-medium" data-filter="quar">⚠️ Quarantine (<span id="count-quar">8</span>)</button>
+            <button onclick="filterPosture('elim')" class="posture-filter-btn px-3 py-1.5 rounded-lg bg-[#0f172a] text-[var(--muted-foreground)] hover:text-[var(--foreground)] border border-[var(--border)] font-medium" data-filter="elim">❌ Eliminated (<span id="count-elim">6</span>)</button>
+          </div>
+          
+          <div class="text-xs text-[var(--muted-foreground)]" id="activeWlSummaryStats">
+            <!-- Dynamic stats for current view -->
+          </div>
+        </div>
+
+      </div>
+
+      <!-- SECTION 1: INTERACTIVE TABLE VIEW -->
+      <section id="tableSection" class="bg-[var(--card)] border border-[var(--border)] rounded-2xl overflow-hidden shadow-xl">
+        <div class="overflow-x-auto">
+          <table class="w-full text-left text-xs text-[var(--foreground)]" id="mainStocksTable">
+            <thead class="bg-[#0f172a] text-[var(--muted-foreground)] uppercase font-semibold border-b border-[var(--border)] select-none">
+              <tr>
+                <th class="p-3.5 cursor-pointer hover:text-cyan-400" onclick="sortTable('symbol')">Stock & Posture ↕</th>
+                <th class="p-3.5 cursor-pointer hover:text-cyan-400" onclick="sortTable('sector')">Sector & Tier ↕</th>
+                <th class="p-3.5 cursor-pointer hover:text-cyan-400" onclick="sortTable('cmpNum')">Live CMP ↕</th>
+                <th class="p-3.5">Price Radar & Execution Alerts</th>
+                <th class="p-3.5">Recommended Buy Range</th>
+                <th class="p-3.5">Stop Loss (SL)</th>
+                <th class="p-3.5">Target 1 (1-3M)</th>
+                <th class="p-3.5 cursor-pointer hover:text-cyan-400" onclick="sortTable('target2')">Target 2 (6-10M) ↕</th>
+                <th class="p-3.5 text-center cursor-pointer hover:text-cyan-400" onclick="sortTable('rr')">R:R ↕</th>
+                <th class="p-3.5 text-center cursor-pointer hover:text-cyan-400" onclick="sortTable('weight')">Weight % ↕</th>
+                <th class="p-3.5 text-center cursor-pointer hover:text-cyan-400" onclick="sortTable('pe')">Today P/E ↕</th>
+                <th class="p-3.5 text-center">Actions</th>
+              </tr>
+            </thead>
+            <tbody id="tableBody" class="divide-y divide-[var(--border)]">
+              <!-- Dynamically populated rows -->
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- SECTION 2: DEEP-DIVE CARDS VIEW -->
+      <section id="cardsSection" class="space-y-4">
+        <div class="flex items-center justify-between">
+          <h3 class="text-base font-extrabold text-[var(--foreground)] flex items-center gap-2">
+            <span>📋 Strategic Deep-Dive & Execution Catalysts</span>
+            <span id="cardsCountBadge" class="text-xs font-bold px-2 py-0.5 rounded-full bg-slate-800 text-cyan-400 border border-slate-700">0 Cards</span>
+          </h3>
+          <span class="text-xs text-[var(--muted-foreground)]">Complete techno-fundamental thesis & catalysts</span>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5" id="cardsGrid">
+          <!-- Dynamically populated cards -->
+        </div>
+      </section>
+
+    </main>
+
+<section class="tab-pane hidden space-y-6" id="tab-analytics">
+<div class="bg-[var(--card)] border border-[var(--border)] rounded-2xl p-6 shadow-xl">
+<div class="flex items-center gap-3">
+<span class="px-3 py-1 rounded-full text-xs font-bold bg-cyan-500/20 text-cyan-400 border border-cyan-500/30">CAPITAL ARCHITECTURE</span>
+<h2 class="text-xl font-bold text-[var(--foreground)]">Capital Deployment &amp; Sector Sizing (100% Normalized)</h2>
+</div>
+<p class="text-sm text-[var(--muted-foreground)] mt-2">
+          The 16 Active Core Stocks are sized across three distinct conviction tiers. <strong>72.5% of portfolio capital</strong> is immediately deployable into the 10 READY stocks, while <strong>27.5% remains in liquid reserve</strong> waiting for Alert 2 triggers on the 6 WAIT stocks.
+        </p>
+</div>
+<!-- Capital Sizing Progress Bar -->
+<div class="bg-[var(--card)] border border-[var(--border)] rounded-xl p-6 shadow-lg space-y-4">
+<h3 class="text-base font-bold text-[var(--foreground)] flex justify-between">
+<span>Capital Allocation Breakdown</span>
+<span class="text-cyan-400">Total: 100.0%</span>
+</h3>
+<div class="w-full bg-[#0f172a] rounded-full h-5 flex overflow-hidden border border-[var(--border)]">
+<div class="bg-emerald-500 h-5 flex items-center justify-center text-[10px] font-bold text-slate-950" style="width: 72.5%">
+            72.5% Immediate Deploy (10 Ready)
+          </div>
+<div class="bg-amber-500 h-5 flex items-center justify-center text-[10px] font-bold text-slate-950" style="width: 27.5%">
+            27.5% Wait Reserve (6 Stocks)
+          </div>
+</div>
+<div class="flex justify-between text-xs text-[var(--muted-foreground)] pt-1">
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-full bg-emerald-500 inline-block"></span>
+<span><strong>Ready to Buy (72.5%)</strong>: GENUSPOWER, DIXON, MAZDOCK, LLOYDSME, OBEROIRLTY, GRANULES, EMVEE, BSE, NATIONALUM, ANANTRAJ</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-full bg-amber-500 inline-block"></span>
+<span><strong>Wait for Alert (27.5%)</strong>: M&amp;M, GRSE, PREMIERENE, SAGILITY, TRANSRAIL, BELRISE</span>
+</div>
+</div>
+</div>
+<!-- Conviction Tier Weights Table -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+<div class="bg-[var(--card)] border border-emerald-900/30 rounded-xl p-5 space-y-3">
+<div class="flex justify-between items-center">
+<span class="px-2.5 py-1 rounded-md text-xs font-bold bg-emerald-500/20 text-emerald-400 border border-emerald-500/30">TIER 1: HIGH WEIGHT</span>
+<span class="text-sm font-bold text-emerald-400">67.0% Total</span>
+</div>
+<div class="text-xs text-[var(--muted-foreground)]">7.0% to 8.0% allocation per stock. Reserved for high R:R (&gt;= 4.0:1) with top fundamental balance sheets.</div>
+<div class="divide-y divide-[var(--border)] text-xs pt-2">
+<div class="py-1.5 flex justify-between"><span>GENUSPOWER</span><strong class="text-emerald-400">8.0%</strong></div>
+<div class="py-1.5 flex justify-between"><span>DIXON</span><strong class="text-emerald-400">8.0%</strong></div>
+<div class="py-1.5 flex justify-between"><span>MAZDOCK</span><strong class="text-emerald-400">7.5%</strong></div>
+<div class="py-1.5 flex justify-between"><span>LLOYDSME</span><strong class="text-emerald-400">7.5%</strong></div>
+<div class="py-1.5 flex justify-between"><span>OBEROIRLTY</span><strong class="text-emerald-400">7.5%</strong></div>
+<div class="py-1.5 flex justify-between"><span>GRANULES</span><strong class="text-emerald-400">7.5%</strong></div>
+<div class="py-1.5 flex justify-between"><span>EMVEE</span><strong class="text-emerald-400">7.0%</strong></div>
+<div class="py-1.5 flex justify-between"><span>BSE</span><strong class="text-emerald-400">7.0%</strong></div>
+<div class="py-1.5 flex justify-between"><span>NATIONALUM</span><strong class="text-emerald-400">7.0%</strong></div>
+</div>
+</div>
+<div class="bg-[var(--card)] border border-blue-900/30 rounded-xl p-5 space-y-3">
+<div class="flex justify-between items-center">
+<span class="px-2.5 py-1 rounded-md text-xs font-bold bg-blue-500/20 text-blue-400 border border-blue-500/30">TIER 2: MEDIUM WEIGHT</span>
+<span class="text-sm font-bold text-blue-400">21.0% Total</span>
+</div>
+<div class="text-xs text-[var(--muted-foreground)]">5.0% to 5.5% allocation per stock. Solid compounders or high-quality wait setups awaiting confirmation.</div>
+<div class="divide-y divide-[var(--border)] text-xs pt-2">
+<div class="py-1.5 flex justify-between"><span>ANANTRAJ (Ready)</span><strong class="text-blue-400">5.5%</strong></div>
+<div class="py-1.5 flex justify-between"><span>M&amp;M (Wait)</span><strong class="text-blue-400">5.5%</strong></div>
+<div class="py-1.5 flex justify-between"><span>GRSE (Wait)</span><strong class="text-blue-400">5.0%</strong></div>
+<div class="py-1.5 flex justify-between"><span>PREMIERENE (Wait)</span><strong class="text-blue-400">5.0%</strong></div>
+</div>
+</div>
+<div class="bg-[var(--card)] border border-slate-700/50 rounded-xl p-5 space-y-3">
+<div class="flex justify-between items-center">
+<span class="px-2.5 py-1 rounded-md text-xs font-bold bg-slate-700 text-slate-300">TIER 3: LOW WEIGHT</span>
+<span class="text-sm font-bold text-slate-300">12.0% Total</span>
+</div>
+<div class="text-xs text-[var(--muted-foreground)]">3.5% to 4.5% allocation per stock. Elevated post-listing discovery or higher-beta technical pullbacks.</div>
+<div class="divide-y divide-[var(--border)] text-xs pt-2">
+<div class="py-1.5 flex justify-between"><span>SAGILITY (Wait)</span><strong class="text-slate-300">4.5%</strong></div>
+<div class="py-1.5 flex justify-between"><span>TRANSRAIL (Wait)</span><strong class="text-slate-300">4.0%</strong></div>
+<div class="py-1.5 flex justify-between"><span>BELRISE (Wait)</span><strong class="text-slate-300">3.5%</strong></div>
+</div>
+</div>
+</div>
+<!-- Execution Rules Summary -->
+<div class="bg-[#0f172a] border border-[var(--border)] rounded-xl p-6 text-xs space-y-3">
+<h4 class="text-sm font-bold text-cyan-400">Operational Guidelines for the 1-to-10 Month Holding Period</h4>
+<ul class="list-disc pl-5 space-y-1.5 text-[var(--muted-foreground)]">
+<li><strong>Staggered Tranche Buying</strong>: For the 10 READY stocks, deploy 50% at CMP and keep 50% limit orders at the lower end of the Recommended Buy Range.</li>
+<li><strong>Alert Management</strong>: When <strong>Alert 1 (Radar)</strong> fires, prepare the order window in your terminal. When <strong>Alert 2 (Execution Trigger)</strong> fires with a confirmed 15-minute or daily close, execute the allocated capital tranche.</li>
+<li><strong>Partial Profit Booking</strong>: At <strong>Target 1 (1–3 Months)</strong>, book 35%–40% profits and immediately move the stop-loss to entry cost to guarantee a risk-free position.</li>
+<li><strong>Structural Exits</strong>: At <strong>Target 2 (6–10 Months)</strong>, re-evaluate quarterly profit streaks and trail the remaining position with a 50-day moving average stop.</li>
+</ul>
+</div>
+</section>
+
+    <!-- Footer -->
+    <footer class="text-center text-xs text-[var(--muted-foreground)] py-6 border-t border-[var(--border)]">
+      Portfolio Analysis & Strategy Engine • 35-Stock Master Watchlists & Custom Basket Platform • Synchronized with <code class="text-cyan-400">Selected_35_Stocks_Portfolio_Analysis.xlsx</code>
+    </footer>
+
+  </div>
+
+﻿  <!-- MODAL: CREATE / EDIT BASKET -->
+  <div id="basketModal" class="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
+    <div class="bg-[var(--card)] border border-[var(--border)] rounded-2xl max-w-3xl w-full max-h-[90vh] overflow-hidden flex flex-col shadow-2xl">
+      <!-- Modal Header -->
+      <div class="p-5 border-b border-[var(--border)] flex items-center justify-between bg-[#0f172a]">
+        <div class="flex items-center gap-2.5">
+          <span class="text-xl">🧺</span>
+          <h3 class="text-lg font-extrabold text-[var(--foreground)]" id="modalTitle">Create New Basket / Watchlist</h3>
+        </div>
+        <button onclick="closeCreateBasketModal()" class="text-slate-400 hover:text-white text-lg font-bold p-1">✕</button>
+      </div>
+
+      <!-- Modal Body -->
+      <div class="p-6 overflow-y-auto space-y-5">
+        <input type="hidden" id="modalBasketId" value="">
+
+        <div>
+          <label class="block text-xs font-bold uppercase tracking-wider text-[var(--muted-foreground)] mb-1">Basket Name *</label>
+          <input type="text" id="modalBasketName" placeholder="e.g. Defense & Power Leaders, My High Alpha 5, EV Tech..." 
+            class="w-full px-4 py-2.5 bg-[#0f172a] border border-[var(--border)] rounded-xl text-sm text-[var(--foreground)] focus:outline-none focus:border-cyan-400">
+        </div>
+
+        <div>
+          <label class="block text-xs font-bold uppercase tracking-wider text-[var(--muted-foreground)] mb-1">Description / Thesis (Optional)</label>
+          <input type="text" id="modalBasketDesc" placeholder="e.g. 6-to-10 month turnaround plays with strong order backlogs..." 
+            class="w-full px-4 py-2.5 bg-[#0f172a] border border-[var(--border)] rounded-xl text-sm text-[var(--foreground)] focus:outline-none focus:border-cyan-400">
+        </div>
+
+        <!-- Stock Selector Header -->
+        <div class="space-y-3 pt-2 border-t border-[var(--border)]">
+          <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
+            <label class="text-xs font-bold uppercase tracking-wider text-[var(--muted-foreground)]">
+              Select Stocks from Master Pool (<span id="modalSelectedCount" class="text-cyan-400 font-extrabold">0</span> of 35 selected)
+            </label>
+            <input type="text" id="modalSearchFilter" placeholder="Filter stock list..." 
+              class="px-3 py-1 bg-[#0f172a] border border-[var(--border)] rounded-lg text-xs text-[var(--foreground)] focus:outline-none focus:border-cyan-400 w-full sm:w-48"
+              oninput="filterModalStockList()">
+          </div>
+
+          <!-- Quick Select Pills -->
+          <div class="flex flex-wrap items-center gap-1.5 text-xs">
+            <span class="text-[var(--muted-foreground)] text-[11px]">Quick Select:</span>
+            <button type="button" onclick="quickSelectStocks('all')" class="px-2.5 py-1 rounded bg-slate-800 hover:bg-slate-700 text-slate-300 font-medium">All 35</button>
+            <button type="button" onclick="quickSelectStocks('none')" class="px-2.5 py-1 rounded bg-slate-800 hover:bg-slate-700 text-slate-300 font-medium">Clear All</button>
+            <button type="button" onclick="quickSelectStocks('ready')" class="px-2.5 py-1 rounded bg-emerald-950/60 hover:bg-emerald-900/60 text-emerald-400 font-medium border border-emerald-900/40">🟢 10 Ready to Buy</button>
+            <button type="button" onclick="quickSelectStocks('active')" class="px-2.5 py-1 rounded bg-cyan-950/60 hover:bg-cyan-900/60 text-cyan-400 font-medium border border-cyan-900/40">🎯 16 Active Core</button>
+            <button type="button" onclick="quickSelectStocks('fav')" class="px-2.5 py-1 rounded bg-purple-950/60 hover:bg-purple-900/60 text-purple-400 font-medium border border-purple-900/40">⭐ 5 Favorites</button>
+          </div>
+
+          <!-- Stocks Checklist Grid -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2 max-h-72 overflow-y-auto p-2 bg-[#0f172a] border border-[var(--border)] rounded-xl" id="modalStockChecklist">
+            <!-- Populated by JavaScript -->
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Modal Footer -->
+      <div class="p-4 border-t border-[var(--border)] bg-[#0f172a] flex items-center justify-between">
+        <button type="button" onclick="closeCreateBasketModal()" class="px-4 py-2 bg-slate-800 hover:bg-slate-700 text-slate-300 rounded-xl text-xs font-semibold">
+          Cancel
+        </button>
+        <button type="button" onclick="saveBasketFromModal()" class="px-5 py-2 bg-gradient-to-r from-cyan-600 to-blue-600 hover:from-cyan-500 hover:to-blue-500 text-white rounded-xl text-xs font-bold shadow-lg shadow-cyan-900/30">
+          💾 Save Basket
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL: MANAGE BASKETS (Import, Export, Clear) -->
+  <div id="manageModal" class="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
+    <div class="bg-[var(--card)] border border-[var(--border)] rounded-2xl max-w-xl w-full max-h-[90vh] overflow-hidden flex flex-col shadow-2xl">
+      <div class="p-5 border-b border-[var(--border)] flex items-center justify-between bg-[#0f172a]">
+        <div class="flex items-center gap-2.5">
+          <span class="text-xl">⚙️</span>
+          <h3 class="text-lg font-extrabold text-[var(--foreground)]">Manage Watchlists & Custom Baskets</h3>
+        </div>
+        <button onclick="closeManageBasketsModal()" class="text-slate-400 hover:text-white text-lg font-bold p-1">✕</button>
+      </div>
+
+      <div class="p-6 overflow-y-auto space-y-5 text-xs">
+        <div>
+          <h4 class="font-bold text-cyan-400 mb-2 uppercase tracking-wider">Your Custom Baskets</h4>
+          <div id="manageBasketsList" class="space-y-2 max-h-48 overflow-y-auto">
+            <!-- Populated dynamically -->
+          </div>
+        </div>
+
+        <div class="pt-4 border-t border-[var(--border)] space-y-3">
+          <h4 class="font-bold text-slate-300 uppercase tracking-wider">Backup & Portability</h4>
+          <p class="text-[var(--muted-foreground)]">
+            Export all custom baskets to a JSON file on your computer, or restore them anytime.
+          </p>
+          <div class="flex flex-wrap items-center gap-3">
+            <button onclick="exportBasketsJSON()" class="px-4 py-2 bg-cyan-500/20 hover:bg-cyan-500/30 text-cyan-400 border border-cyan-500/40 rounded-xl font-bold flex items-center gap-1.5">
+              <span>📤 Export Baskets (JSON)</span>
+            </button>
+            <label class="px-4 py-2 bg-slate-800 hover:bg-slate-700 text-slate-300 border border-slate-700 rounded-xl font-bold cursor-pointer flex items-center gap-1.5">
+              <span>📥 Import Baskets</span>
+              <input type="file" id="importFileInput" accept=".json" class="hidden" onchange="importBasketsJSON(event)">
+            </label>
+          </div>
+        </div>
+
+        <div class="pt-4 border-t border-[var(--border)]">
+          <button onclick="resetCustomBaskets()" class="text-rose-400 hover:text-rose-300 text-xs font-semibold">
+            ⚠️ Reset / Delete all custom baskets
+          </button>
+        </div>
+      </div>
+
+      <div class="p-4 border-t border-[var(--border)] bg-[#0f172a] text-right">
+        <button type="button" onclick="closeManageBasketsModal()" class="px-4 py-2 bg-slate-800 hover:bg-slate-700 text-slate-300 rounded-xl text-xs font-semibold">
+          Close
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL: QUICK ADD TO BASKET -->
+  <div id="quickBasketModal" class="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
+    <div class="bg-[var(--card)] border border-[var(--border)] rounded-2xl max-w-sm w-full p-5 shadow-2xl space-y-4">
+      <div class="flex items-center justify-between border-b border-[var(--border)] pb-3">
+        <div>
+          <div class="text-xs text-[var(--muted-foreground)] font-medium">Add to Custom Basket</div>
+          <h4 class="text-base font-extrabold text-cyan-400" id="quickModalStockSymbol">STOCK</h4>
+        </div>
+        <button onclick="closeQuickBasketModal()" class="text-slate-400 hover:text-white font-bold">✕</button>
+      </div>
+
+      <div class="space-y-2" id="quickBasketChecklist">
+        <!-- Checkboxes for user custom baskets -->
+      </div>
+
+      <div class="pt-3 border-t border-[var(--border)] flex justify-between items-center text-xs">
+        <button onclick="openCreateBasketModal(); closeQuickBasketModal();" class="text-cyan-400 hover:underline font-bold">
+          ➕ Create New Basket
+        </button>
+        <button onclick="closeQuickBasketModal()" class="px-3 py-1.5 bg-slate-800 hover:bg-slate-700 text-white rounded-lg font-semibold">
+          Done
+        </button>
+      </div>
+    </div>
+  </div>
+
+﻿  <!-- CLIENT-SIDE MASTER JAVASCRIPT ENGINE -->
+  <script>
+    // 1. MASTER 35-STOCK DATASET (Injected during build)
+    const MASTER_STOCKS = [{"symbol": "EMVEE (PRE-IPO)", "name": "Emvee Photovoltaic Pow", "sector": "Renewable", "subIndustry": "Renewable Energy / Solar", "capTier": "Pre-IPO", "cmp": "₹325.2", "cmpNum": 325.2, "postureKey": "ready", "postureBadge": "🟢 READY", "alerts": "<div class=\"text-[11px]\"><span class=\"text-amber-400 font-semibold\">A1 (Radar):</span> ₹320.0</div>\n<div class=\"text-[11px] mt-0.5\"><span class=\"text-emerald-400 font-semibold\">A2 (Trigger):</span> ₹328.0</div>", "buyRange": "₹318 - 326", "sl": "<div>₹305.0</div>\n<div class=\"text-[10px] text-rose-500/80\">-5.3% risk</div>", "t1": "₹370.0", "t2": "<div>₹410.0</div>\n<div class=\"text-[10px] text-emerald-400\">+27.3% gain</div>", "rr": "1 : 5.15", "weightTier": "HIGH", "weightPct": "7.0%", "pe": "17.18", "roce": "-", "group": "active_core", "subgroup": "ready", "cardHtml": "<div class=\"active-card bg-[var(--card)] border border-[var(--border)] rounded-xl p-5 shadow-lg space-y-3\" data-name=\"emvee photovoltaic power ltd\" data-posture=\"ready\" data-symbol=\"emvee (pre-ipo)\" data-weight=\"high-weight\">\n<div class=\"flex items-start justify-between\">\n<div>\n<span class=\"px-2 py-0.5 rounded text-[10px] font-bold badge-ready\">🟢 READY TO BUY</span>\n<h4 class=\"text-lg font-extrabold text-[var(--foreground)] mt-1\">EMVEE (Pre-IPO)</h4>\n<div class=\"text-xs text-[var(--muted-foreground)]\">Emvee Photovoltaic Power Ltd • Renewable</div>\n</div>\n<div class=\"text-right\">\n<div class=\"text-base font-bold text-cyan-400\">₹325.2</div>\n<div class=\"text-[11px] font-bold text-purple-300\">Weight: 7.0%</div>\n</div>\n</div>\n<div class=\"grid grid-cols-2 gap-2 text-xs bg-[#0f172a] p-3 rounded-lg border border-[var(--border)]\">\n<div>\n<span class=\"text-[var(--muted-foreground)]\">Buy Entry:</span>\n<div class=\"font-semibold text-emerald-400\">₹318 - 326</div>\n</div>\n<div>\n<span class=\"text-[var(--muted-foreground)]\">Stop Loss:</span>\n<div class=\"font-semibold text-rose-400\">₹305.0 (-5.3%)</div>\n</div>\n<div class=\"mt-1\">\n<span class=\"text-[var(--muted-foreground)]\">Target 1 (1-3M):</span>\n<div class=\"font-semibold text-cyan-400\">₹370.0</div>\n</div>\n<div class=\"mt-1\">\n<span class=\"text-[var(--muted-foreground)]\">Target 2 (6-10M):</span>\n<div class=\"font-semibold text-purple-400\">₹410.0 (+27.3%)</div>\n</div>\n</div>\n<div class=\"text-xs space-y-1\">\n<div class=\"text-[11px] text-amber-300\">\n<span class=\"font-bold\">Alert Triggers:</span> A1: ₹320.0 | A2: ₹328.0\n              </div>\n<div class=\"text-[11px] text-[var(--muted-foreground)]\">\n<span class=\"font-bold text-[var(--foreground)]\">Technical Basis:</span> Below 100-day SMA (311.0)\n              </div>\n<div class=\"text-[11px] text-[var(--muted-foreground)]\">\n<span class=\"font-bold text-[var(--foreground)]\">Catalyst:</span> Solar cell expansion, +73.7% 6M gain, high BP Quad score 90.5\n              </div>\n</div>\n<div class=\"pt-2 border-t border-[var(--border)] flex items-center justify-between text-[11px]\">\n<span class=\"text-[var(--muted-foreground)]\">R:R: <strong class=\"text-amber-400\">1 : 5.15</strong></span>\n<span class=\"text-[var(--muted-foreground)]\">ROCE: <strong class=\"text-emerald-400\">34.8%</strong></span>\n<span class=\"text-[var(--muted-foreground)]\">P/E: <strong class=\"text-cyan-400\">17.8x</strong></span>\n</div>\n</div>"}, {"symbol": "GENUSPOWER", "name": "Genus Power Infrastruc", "sector": "Power", "subIndustry": "Power Equipment & Smart Meters", "capTier": "Mid Cap", "cmp": "₹335.9", "cmpNum": 335.9, "postureKey": "ready", "postureBadge": "🟢 READY", "alerts": "<div class=\"text-[11px]\"><span class=\"text-amber-400 font-semibold\">A1 (Radar):</span> ₹330.0</div>\n<div class=\"text-[11px] mt-0.5\"><span class=\"text-emerald-400 font-semibold\">A2 (Trigger):</span> ₹336.0</div>", "buyRange": "₹328 - 336", "sl": "<div>₹312.0</div>\n<div class=\"text-[10px] text-rose-500/80\">-6.0% risk</div>", "t1": "₹375.0", "t2": "<div>₹420.0</div>\n<div class=\"text-[10px] text-emerald-400\">+26.5% gain</div>", "rr": "1 : 4.42", "weightTier": "HIGH", "weightPct": "8.0%", "pe": "15.68", "roce": "-", "group": "active_core", "subgroup": "ready", "cardHtml": "<div class=\"active-card bg-[var(--card)] border border-[var(--border)] rounded-xl p-5 shadow-lg space-y-3\" data-name=\"genus power infrastructures ltd\" data-posture=\"ready\" data-symbol=\"genuspower\" data-weight=\"high-weight\">\n<div class=\"flex items-start justify-between\">\n<div>\n<span class=\"px-2 py-0.5 rounded text-[10px] font-bold badge-ready\">🟢 READY TO BUY</span>\n<h4 class=\"text-lg font-extrabold text-[var(--foreground)] mt-1\">GENUSPOWER</h4>\n<div class=\"text-xs text-[var(--muted-foreground)]\">Genus Power Infrastructures Ltd • Power</div>\n</div>\n<div class=\"text-right\">\n<div class=\"text-base font-bold text-cyan-400\">₹335.9</div>\n<div class=\"text-[11px] font-bold text-purple-300\">Weight: 8.0%</div>\n</div>\n</div>\n<div class=\"grid grid-cols-2 gap-2 text-xs bg-[#0f172a] p-3 rounded-lg border border-[var(--border)]\">\n<div>\n<span class=\"text-[var(--muted-foreground)]\">Buy Entry:</span>\n<div class=\"font-semibold text-emerald-400\">₹328 - 336</div>\n</div>\n<div>\n<span class=\"text-[var(--muted-foreground)]\">Stop Loss:</span>\n<div class=\"font-semibold text-rose-400\">₹312.0 (-6.0%)</div>\n</div>\n<div class=\"mt-1\">\n<span class=\"text-[var(--muted-foreground)]\">Target 1 (1-3M):</span>\n<div class=\"font-semibold text-cyan-400\">₹375.0</div>\n</div>\n<div class=\"mt-1\">\n<span class=\"text-[var(--muted-foreground)]\">Target 2 (6-10M):</span>\n<div class=\"font-semibold text-purple-400\">₹420.0 (+26.5%)</div>\n</div>\n</div>\n<div class=\"text-xs space-y-1\">\n<div class=\"text-[11px] text-amber-300\">\n<span class=\"font-bold\">Alert Triggers:</span> A1: ₹330.0 | A2: ₹336.0\n              </div>\n<div class=\"text-[11px] text-[var(--muted-foreground)]\">\n<span class=\"font-bold text-[var(--foreground)]\">Technical Basis:</span> Below 100-day SMA (316.2) &amp; base shelf\n              </div>\n<div class=\"text-[11px] text-[var(--muted-foreground)]\">\n<span class=\"font-bold text-[var(--foreground)]\">Catalyst:</span> Smart meter order book 21,000+ Cr, PEG 0.36, ROCE 27.4%\n              </div>\n</div>\n<div class=\"pt-2 border-t border-[var(--border)] flex items-center justify-between text-[11px]\">\n<span class=\"text-[var(--muted-foreground)]\">R:R: <strong class=\"text-amber-400\">1 : 4.42</strong></span>\n<span class=\"text-[var(--muted-foreground)]\">ROCE: <strong class=\"text-emerald-400\">27.4%</strong></span>\n<span class=\"text-[var(--muted-foreground)]\">P/E: <strong class=\"text-cyan-400\">15.8x</strong></span>\n</div>\n</div>"}, {"symbol": "DIXON", "name": "Dixon Technologies (In", "sector": "Techno, AI, EMS", "subIndustry": "Consumer Electronics & EMS", "capTier": "Large Cap", "cmp": "₹14,303.0", "cmpNum": 14303.0, "postureKey": "ready", "postureBadge": "🟢 READY", "alerts": "<div class=\"text-[11px]\"><span class=\"text-amber-400 font-semibold\">A1 (Radar):</span> ₹14,100.0</div>\n<div class=\"text-[11px] mt-0.5\"><span class=\"text-emerald-400 font-semibold\">A2 (Trigger):</span> ₹14,450.0</div>", "buyRange": "₹14000 - 14350", "sl": "<div>₹13,600.0</div>\n<div class=\"text-[10px] text-rose-500/80\">-4.1% risk</div>", "t1": "₹16,200.0", "t2": "<div>₹17,800.0</div>\n<div class=\"text-[10px] text-emerald-400\">+25.6% gain</div>", "rr": "1 : 6.24", "weightTier": "HIGH", "weightPct": "8.0%", "pe": "46.31", "roce": "-", "group": "active_core", "subgroup": "ready", "cardHtml": "<div class=\"active-card bg-[var(--card)] border border-[var(--border)] rounded-xl p-5 shadow-lg space-y-3\" data-name=\"dixon technologies (india) ltd\" data-posture=\"ready\" data-symbol=\"dixon\" data-weight=\"high-weight\">\n<div class=\"flex items-start justify-between\">\n<div>\n<span class=\"px-2 py-0.5 rounded text-[10px] font-bold badge-ready\">🟢 READY TO BUY</span>\n<h4 class=\"text-lg font-extrabold text-[var(--foreground)] mt-1\">DIXON</h4>\n<div class=\"text-xs text-[var(--muted-foreground)]\">Dixon Technologies (India) Ltd • Techno, AI, EMS</div>\n</div>\n<div class=\"text-right\">\n<div class=\"text-base font-bold text-cyan-400\">₹14,303.0</div>\n<div class=\"text-[11px] font-bold text-purple-300\">Weight: 8.0%</div>\n</div>\n</div>\n<div class=\"grid grid-cols-2 gap-2 text-xs bg-[#0f172a] p-3 rounded-lg border border-[var(--border)]\">\n<div>\n<span class=\"text-[var(--muted-foreground)]\">Buy Entry:</span>\n<div class=\"font-semibold text-emerald-400\">₹14000 - 14350</div>\n</div>\n<div>\n<span class=\"text-[var(--muted-foreground)]\">Stop Loss:</span>\n<div class=\"font-semibold text-rose-400\">₹13,600.0 (-4.1%)</div>\n</div>\n<div class=\"mt-1\">\n<span class=\"text-[var(--muted-foreground)]\">Target 1 (1-3M):</span>\n<div class=\"font-semibold text-cyan-400\">₹16,200.0</div>\n</div>\n<div class=\"mt-1\">\n<span class=\"text-[var(--muted-foreground)]\">Target 2 (6-10M):</span>\n<div class=\"font-semibold text-purple-400\">₹17,800.0 (+25.6%)</div>\n</div>\n</div>\n<div class=\"text-xs space-y-1\">\n<div class=\"text-[11px] text-amber-300\">\n<span class=\"font-bold\">Alert Triggers:</span> A1: ₹14,100.0 | A2: ₹14,450.0\n              </div>\n<div class=\"text-[11px] text-[var(--muted-foreground)]\">\n<span class=\"font-bold text-[var(--foreground)]\">Technical Basis:</span> Below 50-day SMA (13923.0) &amp; Lower BB (13757.0)\n              </div>\n<div class=\"text-[11px] text-[var(--muted-foreground)]\">\n<span class=\"font-bold text-[var(--foreground)]\">Catalyst:</span> PLI electronics champion, +40% 6M gain, holding 50/100 SMAs\n              </div>\n</div>\n<div class=\"pt-2 border-t border-[var(--border)] flex items-center justify-between text-[11px]\">\n<span class=\"text-[var(--muted-foreground)]\">R:R: <strong class=\"text-amber-400\">1 : 6.24</strong></span>\n<span class=\"text-[var(--muted-foreground)]\">ROCE: <strong class=\"text-emerald-400\">33.8%</strong></span>\n<span class=\"text-[var(--muted-foreground)]\">P/E: <strong class=\"text-cyan-400\">46.9x</strong></span>\n</div>\n</div>"}, {"symbol": "OBEROIRLTY", "name": "Oberoi Realty Ltd", "sector": "Real Estate", "subIndustry": "Real Estate Development", "capTier": "Large Cap", "cmp": "₹1,915.5", "cmpNum": 1915.5, "postureKey": "ready", "postureBadge": "🟢 READY", "alerts": "<div class=\"text-[11px]\"><span class=\"text-amber-400 font-semibold\">A1 (Radar):</span> ₹1,900.0</div>\n<div class=\"text-[11px] mt-0.5\"><span class=\"text-emerald-400 font-semibold\">A2 (Trigger):</span> ₹1,988.0</div>", "buyRange": "₹1880 - 1920", "sl": "<div>₹1,820.0</div>\n<div class=\"text-[10px] text-rose-500/80\">-4.2% risk</div>", "t1": "₹2,050.0", "t2": "<div>₹2,250.0</div>\n<div class=\"text-[10px] text-emerald-400\">+18.4% gain</div>", "rr": "1 : 4.38", "weightTier": "HIGH", "weightPct": "7.5%", "pe": "26.49", "roce": "-", "group": "active_core", "subgroup": "ready", "cardHtml": "<div class=\"active-card bg-[var(--card)] border border-[var(--border)] rounded-xl p-5 shadow-lg space-y-3\" data-name=\"oberoi realty ltd\" data-posture=\"ready\" data-symbol=\"oberoirlty\" data-weight=\"high-weight\">\n<div class=\"flex items-start justify-between\">\n<div>\n<span class=\"px-2 py-0.5 rounded text-[10px] font-bold badge-ready\">🟢 READY TO BUY</span>\n<h4 class=\"text-lg font-extrabold text-[var(--foreground)] mt-1\">OBEROIRLTY</h4>\n<div class=\"text-xs text-[var(--muted-foreground)]\">Oberoi Realty Ltd • Real Estate</div>\n</div>\n<div class=\"text-right\">\n<div class=\"text-base font-bold text-cyan-400\">₹1,915.5</div>\n<div class=\"text-[11px] font-bold text-purple-300\">Weight: 7.5%</div>\n</div>\n</div>\n<div class=\"grid grid-cols-2 gap-2 text-xs bg-[#0f172a] p-3 rounded-lg border border-[var(--border)]\">\n<div>\n<span class=\"text-[var(--muted-foreground)]\">Buy Entry:</span>\n<div class=\"font-semibold text-emerald-400\">₹1880 - 1920</div>\n</div>\n<div>\n<span class=\"text-[var(--muted-foreground)]\">Stop Loss:</span>\n<div class=\"font-semibold text-rose-400\">₹1,820.0 (-4.2%)</div>\n</div>\n<div class=\"mt-1\">\n<span class=\"text-[var(--muted-foreground)]\">Target 1 (1-3M):</span>\n<div class=\"font-semibold text-cyan-400\">₹2,050.0</div>\n</div>\n<div class=\"mt-1\">\n<span class=\"text-[var(--muted-foreground)]\">Target 2 (6-10M):</span>\n<div class=\"font-semibold text-purple-400\">₹2,250.0 (+18.4%)</div>\n</div>\n</div>\n<div class=\"text-xs space-y-1\">\n<div class=\"text-[11px] text-amber-300\">\n<span class=\"font-bold\">Alert Triggers:</span> A1: ₹1,900.0 | A2: ₹1,988.0\n              </div>\n<div class=\"text-[11px] text-[var(--muted-foreground)]\">\n<span class=\"font-bold text-[var(--foreground)]\">Technical Basis:</span> Below 50-day SMA (1857.0) &amp; swing low\n              </div>\n<div class=\"text-[11px] text-[var(--muted-foreground)]\">\n<span class=\"font-bold text-[var(--foreground)]\">Catalyst:</span> 5.9% from 52W High, ROCE 20.8%, net-cash balance sheet\n              </div>\n</div>\n<div class=\"pt-2 border-t border-[var(--border)] flex items-center justify-between text-[11px]\">\n<span class=\"text-[var(--muted-foreground)]\">R:R: <strong class=\"text-amber-400\">1 : 4.38</strong></span>\n<span class=\"text-[var(--muted-foreground)]\">ROCE: <strong class=\"text-emerald-400\">16.8%</strong></span>\n<span class=\"text-[var(--muted-foreground)]\">P/E: <strong class=\"text-cyan-400\">26.3x</strong></span>\n</div>\n</div>"}, {"symbol": "PREMIERENE", "name": "Premier Energies Ltd", "sector": "Renewable", "subIndustry": "Renewable Energy / Solar", "capTier": "Large Cap", "cmp": "₹1,002.0", "cmpNum": 1002.0, "postureKey": "wait", "postureBadge": "⏸️ WAIT", "alerts": "<div class=\"text-[11px]\"><span class=\"text-amber-400 font-semibold\">A1 (Radar):</span> ₹1,025.0</div>\n<div class=\"text-[11px] mt-0.5\"><span class=\"text-emerald-400 font-semibold\">A2 (Trigger):</span> ₹1,042.0</div>", "buyRange": "₹1040 - 1055", "sl": "<div>₹980.0</div>\n<div class=\"text-[10px] text-rose-500/80\">-6.4% risk</div>", "t1": "₹1,150.0", "t2": "<div>₹1,280.0</div>\n<div class=\"text-[10px] text-emerald-400\">+22.2% gain</div>", "rr": "1 : 3.47", "weightTier": "MEDIUM", "weightPct": "5.0%", "pe": "27.28", "roce": "-", "group": "active_core", "subgroup": "wait", "cardHtml": "<div class=\"active-card bg-[var(--card)] border border-[var(--border)] rounded-xl p-5 shadow-lg space-y-3\" data-name=\"premier energies ltd\" data-posture=\"wait\" data-symbol=\"premierene\" data-weight=\"medium\">\n<div class=\"flex items-start justify-between\">\n<div>\n<span class=\"px-2 py-0.5 rounded text-[10px] font-bold badge-wait\">⏸️ WAIT FOR ALERT</span>\n<h4 class=\"text-lg font-extrabold text-[var(--foreground)] mt-1\">PREMIERENE</h4>\n<div class=\"text-xs text-[var(--muted-foreground)]\">Premier Energies Ltd • Renewable</div>\n</div>\n<div class=\"text-right\">\n<div class=\"text-base font-bold text-cyan-400\">₹1,002.0</div>\n<div class=\"text-[11px] font-bold text-purple-300\">Weight: 5.0%</div>\n</div>\n</div>\n<div class=\"grid grid-cols-2 gap-2 text-xs bg-[#0f172a] p-3 rounded-lg border border-[var(--border)]\">\n<div>\n<span class=\"text-[var(--muted-foreground)]\">Buy Entry:</span>\n<div class=\"font-semibold text-emerald-400\">₹1040 - 1055</div>\n</div>\n<div>\n<span class=\"text-[var(--muted-foreground)]\">Stop Loss:</span>\n<div class=\"font-semibold text-rose-400\">₹980.0 (-6.4%)</div>\n</div>\n<div class=\"mt-1\">\n<span class=\"text-[var(--muted-foreground)]\">Target 1 (1-3M):</span>\n<div class=\"font-semibold text-cyan-400\">₹1,150.0</div>\n</div>\n<div class=\"mt-1\">\n<span class=\"text-[var(--muted-foreground)]\">Target 2 (6-10M):</span>\n<div class=\"font-semibold text-purple-400\">₹1,280.0 (+22.2%)</div>\n</div>\n</div>\n<div class=\"text-xs space-y-1\">\n<div class=\"text-[11px] text-amber-300\">\n<span class=\"font-bold\">Alert Triggers:</span> A1: ₹1,025.0 | A2: ₹1,042.0\n              </div>\n<div class=\"text-[11px] text-[var(--muted-foreground)]\">\n<span class=\"font-bold text-[var(--foreground)]\">Technical Basis:</span> Below Lower BB (987.9) &amp; base support\n              </div>\n<div class=\"text-[11px] text-[var(--muted-foreground)]\">\n<span class=\"font-bold text-[var(--foreground)]\">Catalyst:</span> Sandwiched below 1022-1039 resistance. Wait for 1040 breakout.\n              </div>\n</div>\n<div class=\"pt-2 border-t border-[var(--border)] flex items-center justify-between text-[11px]\">\n<span class=\"text-[var(--muted-foreground)]\">R:R: <strong class=\"text-amber-400\">1 : 3.47</strong></span>\n<span class=\"text-[var(--muted-foreground)]\">ROCE: <strong class=\"text-emerald-400\">27.8%</strong></span>\n<span class=\"text-[var(--muted-foreground)]\">P/E: <strong class=\"text-cyan-400\">27.5x</strong></span>\n</div>\n</div>"}, {"symbol": "NATIONALUM", "name": "National Aluminium Com", "sector": "Metal", "subIndustry": "Metals & Mining / Aluminium", "capTier": "Large Cap", "cmp": "₹373.7", "cmpNum": 373.7, "postureKey": "ready", "postureBadge": "🟢 READY", "alerts": "<div class=\"text-[11px]\"><span class=\"text-amber-400 font-semibold\">A1 (Radar):</span> ₹368.0</div>\n<div class=\"text-[11px] mt-0.5\"><span class=\"text-emerald-400 font-semibold\">A2 (Trigger):</span> ₹378.0</div>", "buyRange": "₹366 - 375", "sl": "<div>₹354.0</div>\n<div class=\"text-[10px] text-rose-500/80\">-4.5% risk</div>", "t1": "₹415.0", "t2": "<div>₹445.0</div>\n<div class=\"text-[10px] text-emerald-400\">+20.1% gain</div>", "rr": "1 : 4.47", "weightTier": "HIGH", "weightPct": "7.0%", "pe": "10.16", "roce": "-", "group": "active_core", "subgroup": "ready", "cardHtml": "<div class=\"active-card bg-[var(--card)] border border-[var(--border)] rounded-xl p-5 shadow-lg space-y-3\" data-name=\"national aluminium company ltd\" data-posture=\"ready\" data-symbol=\"nationalum\" data-weight=\"high-weight\">\n<div class=\"flex items-start justify-between\">\n<div>\n<span class=\"px-2 py-0.5 rounded text-[10px] font-bold badge-ready\">🟢 READY TO BUY</span>\n<h4 class=\"text-lg font-extrabold text-[var(--foreground)] mt-1\">NATIONALUM</h4>\n<div class=\"text-xs text-[var(--muted-foreground)]\">National Aluminium Company Ltd • Metal</div>\n</div>\n<div class=\"text-right\">\n<div class=\"text-base font-bold text-cyan-400\">₹373.7</div>\n<div class=\"text-[11px] font-bold text-purple-300\">Weight: 7.0%</div>\n</div>\n</div>\n<div class=\"grid grid-cols-2 gap-2 text-xs bg-[#0f172a] p-3 rounded-lg border border-[var(--border)]\">\n<div>\n<span class=\"text-[var(--muted-foreground)]\">Buy Entry:</span>\n<div class=\"font-semibold text-emerald-400\">₹366 - 375</div>\n</div>\n<div>\n<span class=\"text-[var(--muted-foreground)]\">Stop Loss:</span>\n<div class=\"font-semibold text-rose-400\">₹354.0 (-4.5%)</div>\n</div>\n<div class=\"mt-1\">\n<span class=\"text-[var(--muted-foreground)]\">Target 1 (1-3M):</span>\n<div class=\"font-semibold text-cyan-400\">₹415.0</div>\n</div>\n<div class=\"mt-1\">\n<span class=\"text-[var(--muted-foreground)]\">Target 2 (6-10M):</span>\n<div class=\"font-semibold text-purple-400\">₹445.0 (+20.1%)</div>\n</div>\n</div>\n<div class=\"text-xs space-y-1\">\n<div class=\"text-[11px] text-amber-300\">\n<span class=\"font-bold\">Alert Triggers:</span> A1: ₹368.0 | A2: ₹378.0\n              </div>\n<div class=\"text-[11px] text-[var(--muted-foreground)]\">\n<span class=\"font-bold text-[var(--foreground)]\">Technical Basis:</span> Below 50-day SMA (366.3) &amp; Lower BB (364.1)\n              </div>\n<div class=\"text-[11px] text-[var(--muted-foreground)]\">\n<span class=\"font-bold text-[var(--foreground)]\">Catalyst:</span> Zero debt, high alumina margins, steady dividend yield\n              </div>\n</div>\n<div class=\"pt-2 border-t border-[var(--border)] flex items-center justify-between text-[11px]\">\n<span class=\"text-[var(--muted-foreground)]\">R:R: <strong class=\"text-amber-400\">1 : 4.47</strong></span>\n<span class=\"text-[var(--muted-foreground)]\">ROCE: <strong class=\"text-emerald-400\">33.7%</strong></span>\n<span class=\"text-[var(--muted-foreground)]\">P/E: <strong class=\"text-cyan-400\">10.2x</strong></span>\n</div>\n</div>"}, {"symbol": "BSE", "name": "BSE Limited", "sector": "Capital", "subIndustry": "Capital Markets & Exchanges", "capTier": "Mega Cap", "cmp": "₹3,411.9", "cmpNum": 3411.9, "postureKey": "ready", "postureBadge": "🟢 READY", "alerts": "<div class=\"text-[11px]\"><span class=\"text-amber-400 font-semibold\">A1 (Radar):</span> ₹3,350.0</div>\n<div class=\"text-[11px] mt-0.5\"><span class=\"text-emerald-400 font-semibold\">A2 (Trigger):</span> ₹3,440.0</div>", "buyRange": "₹3360 - 3425", "sl": "<div>₹3,200.0</div>\n<div class=\"text-[10px] text-rose-500/80\">-5.7% risk</div>", "t1": "₹3,900.0", "t2": "<div>₹4,350.0</div>\n<div class=\"text-[10px] text-emerald-400\">+28.2% gain</div>", "rr": "1 : 4.95", "weightTier": "HIGH", "weightPct": "7.0%", "pe": "49.06", "roce": "-", "group": "active_core", "subgroup": "ready", "cardHtml": "<div class=\"active-card bg-[var(--card)] border border-[var(--border)] rounded-xl p-5 shadow-lg space-y-3\" data-name=\"bse limited\" data-posture=\"ready\" data-symbol=\"bse\" data-weight=\"high-weight\">\n<div class=\"flex items-start justify-between\">\n<div>\n<span class=\"px-2 py-0.5 rounded text-[10px] font-bold badge-ready\">🟢 READY TO BUY</span>\n<h4 class=\"text-lg font-extrabold text-[var(--foreground)] mt-1\">BSE</h4>\n<div class=\"text-xs text-[var(--muted-foreground)]\">BSE Limited • Capital</div>\n</div>\n<div class=\"text-right\">\n<div class=\"text-base font-bold text-cyan-400\">₹3,411.9</div>\n<div class=\"text-[11px] font-bold text-purple-300\">Weight: 7.0%</div>\n</div>\n</div>\n<div class=\"grid grid-cols-2 gap-2 text-xs bg-[#0f172a] p-3 rounded-lg border border-[var(--border)]\">\n<div>\n<span class=\"text-[var(--muted-foreground)]\">Buy Entry:</span>\n<div class=\"font-semibold text-emerald-400\">₹3360 - 3425</div>\n</div>\n<div>\n<span class=\"text-[var(--muted-foreground)]\">Stop Loss:</span>\n<div class=\"font-semibold text-rose-400\">₹3,200.0 (-5.7%)</div>\n</div>\n<div class=\"mt-1\">\n<span class=\"text-[var(--muted-foreground)]\">Target 1 (1-3M):</span>\n<div class=\"font-semibold text-cyan-400\">₹3,900.0</div>\n</div>\n<div class=\"mt-1\">\n<span class=\"text-[var(--muted-foreground)]\">Target 2 (6-10M):</span>\n<div class=\"font-semibold text-purple-400\">₹4,350.0 (+28.2%)</div>\n</div>\n</div>\n<div class=\"text-xs space-y-1\">\n<div class=\"text-[11px] text-amber-300\">\n<span class=\"font-bold\">Alert Triggers:</span> A1: ₹3,350.0 | A2: ₹3,440.0\n              </div>\n<div class=\"text-[11px] text-[var(--muted-foreground)]\">\n<span class=\"font-bold text-[var(--foreground)]\">Technical Basis:</span> Below recent swing base &amp; Lower BB buffer (3134.0)\n              </div>\n<div class=\"text-[11px] text-[var(--muted-foreground)]\">\n<span class=\"font-bold text-[var(--foreground)]\">Catalyst:</span> Derivatives market share expansion, -30% correction absorbed, ROCE 27.5%\n              </div>\n</div>\n<div class=\"pt-2 border-t border-[var(--border)] flex items-center justify-between text-[11px]\">\n<span class=\"text-[var(--muted-foreground)]\">R:R: <strong class=\"text-amber-400\">1 : 4.95</strong></span>\n<span class=\"text-[var(--muted-foreground)]\">ROCE: <strong class=\"text-emerald-400\">41%</strong></span>\n<span class=\"text-[var(--muted-foreground)]\">P/E: <strong class=\"text-cyan-400\">47.6x</strong></span>\n</div>\n</div>"}, {"symbol": "LLOYDSME", "name": "Lloyds Metals And Ener", "sector": "Metal", "subIndustry": "Metals, Mining & Energy", "capTier": "Mega Cap", "cmp": "₹1,825.9", "cmpNum": 1825.9, "postureKey": "ready", "postureBadge": "🟢 READY", "alerts": "<div class=\"text-[11px]\"><span class=\"text-amber-400 font-semibold\">A1 (Radar):</span> ₹1,810.0</div>\n<div class=\"text-[11px] mt-0.5\"><span class=\"text-emerald-400 font-semibold\">A2 (Trigger):</span> ₹1,845.0</div>", "buyRange": "₹1800 - 1830", "sl": "<div>₹1,720.0</div>\n<div class=\"text-[10px] text-rose-500/80\">-5.2% risk</div>", "t1": "₹2,050.0", "t2": "<div>₹2,300.0</div>\n<div class=\"text-[10px] text-emerald-400\">+26.7% gain</div>", "rr": "1 : 5.13", "weightTier": "HIGH", "weightPct": "7.5%", "pe": "21.23", "roce": "-", "group": "active_core", "subgroup": "ready", "cardHtml": "<div class=\"active-card bg-[var(--card)] border border-[var(--border)] rounded-xl p-5 shadow-lg space-y-3\" data-name=\"lloyds metals and energy ltd\" data-posture=\"ready\" data-symbol=\"lloydsme\" data-weight=\"high-weight\">\n<div class=\"flex items-start justify-between\">\n<div>\n<span class=\"px-2 py-0.5 rounded text-[10px] font-bold badge-ready\">🟢 READY TO BUY</span>\n<h4 class=\"text-lg font-extrabold text-[var(--foreground)] mt-1\">LLOYDSME</h4>\n<div class=\"text-xs text-[var(--muted-foreground)]\">Lloyds Metals And Energy Ltd • Metal</div>\n</div>\n<div class=\"text-right\">\n<div class=\"text-base font-bold text-cyan-400\">₹1,825.9</div>\n<div class=\"text-[11px] font-bold text-purple-300\">Weight: 7.5%</div>\n</div>\n</div>\n<div class=\"grid grid-cols-2 gap-2 text-xs bg-[#0f172a] p-3 rounded-lg border border-[var(--border)]\">\n<div>\n<span class=\"text-[var(--muted-foreground)]\">Buy Entry:</span>\n<div class=\"font-semibold text-emerald-400\">₹1800 - 1830</div>\n</div>\n<div>\n<span class=\"text-[var(--muted-foreground)]\">Stop Loss:</span>\n<div class=\"font-semibold text-rose-400\">₹1,720.0 (-5.2%)</div>\n</div>\n<div class=\"mt-1\">\n<span class=\"text-[var(--muted-foreground)]\">Target 1 (1-3M):</span>\n<div class=\"font-semibold text-cyan-400\">₹2,050.0</div>\n</div>\n<div class=\"mt-1\">\n<span class=\"text-[var(--muted-foreground)]\">Target 2 (6-10M):</span>\n<div class=\"font-semibold text-purple-400\">₹2,300.0 (+26.7%)</div>\n</div>\n</div>\n<div class=\"text-xs space-y-1\">\n<div class=\"text-[11px] text-amber-300\">\n<span class=\"font-bold\">Alert Triggers:</span> A1: ₹1,810.0 | A2: ₹1,845.0\n              </div>\n<div class=\"text-[11px] text-[var(--muted-foreground)]\">\n<span class=\"font-bold text-[var(--foreground)]\">Technical Basis:</span> Below Lower BB (1740.0) &amp; swing base\n              </div>\n<div class=\"text-[11px] text-[var(--muted-foreground)]\">\n<span class=\"font-bold text-[var(--foreground)]\">Catalyst:</span> ROCE 48.9%, Debt/Eq 0.05, 100-day SMA touch, RSI 37.8 value dip\n              </div>\n</div>\n<div class=\"pt-2 border-t border-[var(--border)] flex items-center justify-between text-[11px]\">\n<span class=\"text-[var(--muted-foreground)]\">R:R: <strong class=\"text-amber-400\">1 : 5.13</strong></span>\n<span class=\"text-[var(--muted-foreground)]\">ROCE: <strong class=\"text-emerald-400\">19.4%</strong></span>\n<span class=\"text-[var(--muted-foreground)]\">P/E: <strong class=\"text-cyan-400\">21.9x</strong></span>\n</div>\n</div>"}, {"symbol": "TRANSRAIL (PRE-IPO)", "name": "Transrail Lighting Ltd", "sector": "Power", "subIndustry": "Transmission Towers & High-Mast Lighting", "capTier": "Pre-IPO", "cmp": "₹429.3", "cmpNum": 429.3, "postureKey": "wait", "postureBadge": "⏸️ WAIT", "alerts": "<div class=\"text-[11px]\"><span class=\"text-amber-400 font-semibold\">A1 (Radar):</span> ₹438.0</div>\n<div class=\"text-[11px] mt-0.5\"><span class=\"text-emerald-400 font-semibold\">A2 (Trigger):</span> ₹455.0</div>", "buyRange": "₹450 - 460", "sl": "<div>₹415.0</div>\n<div class=\"text-[10px] text-rose-500/80\">-8.8% risk</div>", "t1": "₹510.0", "t2": "<div>₹560.0</div>\n<div class=\"text-[10px] text-emerald-400\">+23.1% gain</div>", "rr": "1 : 2.62", "weightTier": "MEDIUM", "weightPct": "4.0%", "pe": "30.79", "roce": "-", "group": "active_core", "subgroup": "wait", "cardHtml": "<div class=\"active-card bg-[var(--card)] border border-[var(--border)] rounded-xl p-5 shadow-lg space-y-3\" data-name=\"transrail lighting ltd\" data-posture=\"wait\" data-symbol=\"transrail (pre-ipo)\" data-weight=\"low\">\n<div class=\"flex items-start justify-between\">\n<div>\n<span class=\"px-2 py-0.5 rounded text-[10px] font-bold badge-wait\">⏸️ WAIT FOR ALERT</span>\n<h4 class=\"text-lg font-extrabold text-[var(--foreground)] mt-1\">TRANSRAIL (Pre-IPO)</h4>\n<div class=\"text-xs text-[var(--muted-foreground)]\">Transrail Lighting Ltd • Power</div>\n</div>\n<div class=\"text-right\">\n<div class=\"text-base font-bold text-cyan-400\">₹429.3</div>\n<div class=\"text-[11px] font-bold text-purple-300\">Weight: 4.0%</div>\n</div>\n</div>\n<div class=\"grid grid-cols-2 gap-2 text-xs bg-[#0f172a] p-3 rounded-lg border border-[var(--border)]\">\n<div>\n<span class=\"text-[var(--muted-foreground)]\">Buy Entry:</span>\n<div class=\"font-semibold text-emerald-400\">₹450 - 460</div>\n</div>\n<div>\n<span class=\"text-[var(--muted-foreground)]\">Stop Loss:</span>\n<div class=\"font-semibold text-rose-400\">₹415.0 (-8.8%)</div>\n</div>\n<div class=\"mt-1\">\n<span class=\"text-[var(--muted-foreground)]\">Target 1 (1-3M):</span>\n<div class=\"font-semibold text-cyan-400\">₹510.0</div>\n</div>\n<div class=\"mt-1\">\n<span class=\"text-[var(--muted-foreground)]\">Target 2 (6-10M):</span>\n<div class=\"font-semibold text-purple-400\">₹560.0 (+23.1%)</div>\n</div>\n</div>\n<div class=\"text-xs space-y-1\">\n<div class=\"text-[11px] text-amber-300\">\n<span class=\"font-bold\">Alert Triggers:</span> A1: ₹438.0 | A2: ₹455.0\n              </div>\n<div class=\"text-[11px] text-[var(--muted-foreground)]\">\n<span class=\"font-bold text-[var(--foreground)]\">Technical Basis:</span> Below Lower BB (424.5) &amp; listing base\n              </div>\n<div class=\"text-[11px] text-[var(--muted-foreground)]\">\n<span class=\"font-bold text-[var(--foreground)]\">Catalyst:</span> Post-listing consolidation. Wait for reclaim of 455.\n              </div>\n</div>\n<div class=\"pt-2 border-t border-[var(--border)] flex items-center justify-between text-[11px]\">\n<span class=\"text-[var(--muted-foreground)]\">R:R: <strong class=\"text-amber-400\">1 : 2.62</strong></span>\n<span class=\"text-[var(--muted-foreground)]\">ROCE: <strong class=\"text-emerald-400\">32.6%</strong></span>\n<span class=\"text-[var(--muted-foreground)]\">P/E: <strong class=\"text-cyan-400\">14.2x</strong></span>\n</div>\n</div>"}, {"symbol": "SAGILITY", "name": "Sagility India Ltd", "sector": "Pharma", "subIndustry": "Healthcare & IT Services", "capTier": "Large Cap", "cmp": "₹46.8", "cmpNum": 46.8, "postureKey": "wait", "postureBadge": "⏸️ WAIT", "alerts": "<div class=\"text-[11px]\"><span class=\"text-amber-400 font-semibold\">A1 (Radar):</span> ₹44.5</div>\n<div class=\"text-[11px] mt-0.5\"><span class=\"text-emerald-400 font-semibold\">A2 (Trigger):</span> ₹43.8</div>", "buyRange": "₹43.0 - 44.2", "sl": "<div>₹40.5</div>\n<div class=\"text-[10px] text-rose-500/80\">-7.1% risk</div>", "t1": "₹52.0", "t2": "<div>₹58.0</div>\n<div class=\"text-[10px] text-emerald-400\">+33.0% gain</div>", "rr": "1 : 4.65", "weightTier": "MEDIUM", "weightPct": "4.5%", "pe": "22.07", "roce": "-", "group": "active_core", "subgroup": "wait", "cardHtml": "<div class=\"active-card bg-[var(--card)] border border-[var(--border)] rounded-xl p-5 shadow-lg space-y-3\" data-name=\"sagility india ltd\" data-posture=\"wait\" data-symbol=\"sagility\" data-weight=\"low\">\n<div class=\"flex items-start justify-between\">\n<div>\n<span class=\"px-2 py-0.5 rounded text-[10px] font-bold badge-wait\">⏸️ WAIT FOR ALERT</span>\n<h4 class=\"text-lg font-extrabold text-[var(--foreground)] mt-1\">SAGILITY</h4>\n<div class=\"text-xs text-[var(--muted-foreground)]\">Sagility India Ltd • Pharma</div>\n</div>\n<div class=\"text-right\">\n<div class=\"text-base font-bold text-cyan-400\">₹46.8</div>\n<div class=\"text-[11px] font-bold text-purple-300\">Weight: 4.5%</div>\n</div>\n</div>\n<div class=\"grid grid-cols-2 gap-2 text-xs bg-[#0f172a] p-3 rounded-lg border border-[var(--border)]\">\n<div>\n<span class=\"text-[var(--muted-foreground)]\">Buy Entry:</span>\n<div class=\"font-semibold text-emerald-400\">₹43.0 - 44.2</div>\n</div>\n<div>\n<span class=\"text-[var(--muted-foreground)]\">Stop Loss:</span>\n<div class=\"font-semibold text-rose-400\">₹40.5 (-7.1%)</div>\n</div>\n<div class=\"mt-1\">\n<span class=\"text-[var(--muted-foreground)]\">Target 1 (1-3M):</span>\n<div class=\"font-semibold text-cyan-400\">₹52.0</div>\n</div>\n<div class=\"mt-1\">\n<span class=\"text-[var(--muted-foreground)]\">Target 2 (6-10M):</span>\n<div class=\"font-semibold text-purple-400\">₹58.0 (+33.0%)</div>\n</div>\n</div>\n<div class=\"text-xs space-y-1\">\n<div class=\"text-[11px] text-amber-300\">\n<span class=\"font-bold\">Alert Triggers:</span> A1: ₹44.5 | A2: ₹43.8\n              </div>\n<div class=\"text-[11px] text-[var(--muted-foreground)]\">\n<span class=\"font-bold text-[var(--foreground)]\">Technical Basis:</span> Below 100-day SMA (42.1) &amp; Lower BB (40.6)\n              </div>\n<div class=\"text-[11px] text-[var(--muted-foreground)]\">\n<span class=\"font-bold text-[var(--foreground)]\">Catalyst:</span> RSI 82.9 overbought. Wait for cooling to 20 SMA before entering.\n              </div>\n</div>\n<div class=\"pt-2 border-t border-[var(--border)] flex items-center justify-between text-[11px]\">\n<span class=\"text-[var(--muted-foreground)]\">R:R: <strong class=\"text-amber-400\">1 : 4.65</strong></span>\n<span class=\"text-[var(--muted-foreground)]\">ROCE: <strong class=\"text-emerald-400\">12.8%</strong></span>\n<span class=\"text-[var(--muted-foreground)]\">P/E: <strong class=\"text-cyan-400\">22.1x</strong></span>\n</div>\n</div>"}, {"symbol": "GRANULES", "name": "Granules India Limited", "sector": "Pharma", "subIndustry": "Pharmaceuticals (APIs & Formulations)", "capTier": "Large Cap", "cmp": "₹847.5", "cmpNum": 847.5, "postureKey": "ready", "postureBadge": "🟢 READY", "alerts": "<div class=\"text-[11px]\"><span class=\"text-amber-400 font-semibold\">A1 (Radar):</span> ₹835.0</div>\n<div class=\"text-[11px] mt-0.5\"><span class=\"text-emerald-400 font-semibold\">A2 (Trigger):</span> ₹855.0</div>", "buyRange": "₹835 - 850", "sl": "<div>₹785.0</div>\n<div class=\"text-[10px] text-rose-500/80\">-6.8% risk</div>", "t1": "₹950.0", "t2": "<div>₹1,080.0</div>\n<div class=\"text-[10px] text-emerald-400\">+28.2% gain</div>", "rr": "1 : 4.15", "weightTier": "HIGH", "weightPct": "7.5%", "pe": "31.44", "roce": "-", "group": "active_core", "subgroup": "ready", "cardHtml": "<div class=\"active-card bg-[var(--card)] border border-[var(--border)] rounded-xl p-5 shadow-lg space-y-3\" data-name=\"granules india limited\" data-posture=\"ready\" data-symbol=\"granules\" data-weight=\"high-weight\">\n<div class=\"flex items-start justify-between\">\n<div>\n<span class=\"px-2 py-0.5 rounded text-[10px] font-bold badge-ready\">🟢 READY TO BUY</span>\n<h4 class=\"text-lg font-extrabold text-[var(--foreground)] mt-1\">GRANULES</h4>\n<div class=\"text-xs text-[var(--muted-foreground)]\">Granules India Limited • Pharma</div>\n</div>\n<div class=\"text-right\">\n<div class=\"text-base font-bold text-cyan-400\">₹847.5</div>\n<div class=\"text-[11px] font-bold text-purple-300\">Weight: 7.5%</div>\n</div>\n</div>\n<div class=\"grid grid-cols-2 gap-2 text-xs bg-[#0f172a] p-3 rounded-lg border border-[var(--border)]\">\n<div>\n<span class=\"text-[var(--muted-foreground)]\">Buy Entry:</span>\n<div class=\"font-semibold text-emerald-400\">₹835 - 850</div>\n</div>\n<div>\n<span class=\"text-[var(--muted-foreground)]\">Stop Loss:</span>\n<div class=\"font-semibold text-rose-400\">₹785.0 (-6.8%)</div>\n</div>\n<div class=\"mt-1\">\n<span class=\"text-[var(--muted-foreground)]\">Target 1 (1-3M):</span>\n<div class=\"font-semibold text-cyan-400\">₹950.0</div>\n</div>\n<div class=\"mt-1\">\n<span class=\"text-[var(--muted-foreground)]\">Target 2 (6-10M):</span>\n<div class=\"font-semibold text-purple-400\">₹1,080.0 (+28.2%)</div>\n</div>\n</div>\n<div class=\"text-xs space-y-1\">\n<div class=\"text-[11px] text-amber-300\">\n<span class=\"font-bold\">Alert Triggers:</span> A1: ₹835.0 | A2: ₹855.0\n              </div>\n<div class=\"text-[11px] text-[var(--muted-foreground)]\">\n<span class=\"font-bold text-[var(--foreground)]\">Technical Basis:</span> Below 100-day SMA (795.4) &amp; major base floor\n              </div>\n<div class=\"text-[11px] text-[var(--muted-foreground)]\">\n<span class=\"font-bold text-[var(--foreground)]\">Catalyst:</span> 7.3% from 52W High, Street upside +27.7%, ROCE 18.2%\n              </div>\n</div>\n<div class=\"pt-2 border-t border-[var(--border)] flex items-center justify-between text-[11px]\">\n<span class=\"text-[var(--muted-foreground)]\">R:R: <strong class=\"text-amber-400\">1 : 4.15</strong></span>\n<span class=\"text-[var(--muted-foreground)]\">ROCE: <strong class=\"text-emerald-400\">16.2%</strong></span>\n<span class=\"text-[var(--muted-foreground)]\">P/E: <strong class=\"text-cyan-400\">31.9x</strong></span>\n</div>\n</div>"}, {"symbol": "ANANTRAJ", "name": "Anant Raj Ltd", "sector": "Real Estate", "subIndustry": "Real Estate & Data Centers", "capTier": "Large Cap", "cmp": "₹627.0", "cmpNum": 627.0, "postureKey": "ready", "postureBadge": "🟢 READY", "alerts": "<div class=\"text-[11px]\"><span class=\"text-amber-400 font-semibold\">A1 (Radar):</span> ₹610.0</div>\n<div class=\"text-[11px] mt-0.5\"><span class=\"text-emerald-400 font-semibold\">A2 (Trigger):</span> ₹635.0</div>", "buyRange": "₹610 - 628", "sl": "<div>₹580.0</div>\n<div class=\"text-[10px] text-rose-500/80\">-6.3% risk</div>", "t1": "₹690.0", "t2": "<div>₹740.0</div>\n<div class=\"text-[10px] text-emerald-400\">+19.5% gain</div>", "rr": "1 : 3.1", "weightTier": "MEDIUM", "weightPct": "5.5%", "pe": "38.56", "roce": "-", "group": "active_core", "subgroup": "ready", "cardHtml": "<div class=\"active-card bg-[var(--card)] border border-[var(--border)] rounded-xl p-5 shadow-lg space-y-3\" data-name=\"anant raj ltd\" data-posture=\"ready\" data-symbol=\"anantraj\" data-weight=\"medium\">\n<div class=\"flex items-start justify-between\">\n<div>\n<span class=\"px-2 py-0.5 rounded text-[10px] font-bold badge-ready\">🟢 READY TO BUY</span>\n<h4 class=\"text-lg font-extrabold text-[var(--foreground)] mt-1\">ANANTRAJ</h4>\n<div class=\"text-xs text-[var(--muted-foreground)]\">Anant Raj Ltd • Real Estate</div>\n</div>\n<div class=\"text-right\">\n<div class=\"text-base font-bold text-cyan-400\">₹627.0</div>\n<div class=\"text-[11px] font-bold text-purple-300\">Weight: 5.5%</div>\n</div>\n</div>\n<div class=\"grid grid-cols-2 gap-2 text-xs bg-[#0f172a] p-3 rounded-lg border border-[var(--border)]\">\n<div>\n<span class=\"text-[var(--muted-foreground)]\">Buy Entry:</span>\n<div class=\"font-semibold text-emerald-400\">₹610 - 628</div>\n</div>\n<div>\n<span class=\"text-[var(--muted-foreground)]\">Stop Loss:</span>\n<div class=\"font-semibold text-rose-400\">₹580.0 (-6.3%)</div>\n</div>\n<div class=\"mt-1\">\n<span class=\"text-[var(--muted-foreground)]\">Target 1 (1-3M):</span>\n<div class=\"font-semibold text-cyan-400\">₹690.0</div>\n</div>\n<div class=\"mt-1\">\n<span class=\"text-[var(--muted-foreground)]\">Target 2 (6-10M):</span>\n<div class=\"font-semibold text-purple-400\">₹740.0 (+19.5%)</div>\n</div>\n</div>\n<div class=\"text-xs space-y-1\">\n<div class=\"text-[11px] text-amber-300\">\n<span class=\"font-bold\">Alert Triggers:</span> A1: ₹610.0 | A2: ₹635.0\n              </div>\n<div class=\"text-[11px] text-[var(--muted-foreground)]\">\n<span class=\"font-bold text-[var(--foreground)]\">Technical Basis:</span> Below 50-day SMA (596.7) &amp; Lower BB (588.2)\n              </div>\n<div class=\"text-[11px] text-[var(--muted-foreground)]\">\n<span class=\"font-bold text-[var(--foreground)]\">Catalyst:</span> Data center catalyst, very low debt (0.10x), intact uptrend\n              </div>\n</div>\n<div class=\"pt-2 border-t border-[var(--border)] flex items-center justify-between text-[11px]\">\n<span class=\"text-[var(--muted-foreground)]\">R:R: <strong class=\"text-amber-400\">1 : 3.1</strong></span>\n<span class=\"text-[var(--muted-foreground)]\">ROCE: <strong class=\"text-emerald-400\">10.4%</strong></span>\n<span class=\"text-[var(--muted-foreground)]\">P/E: <strong class=\"text-cyan-400\">39.1x</strong></span>\n</div>\n</div>"}, {"symbol": "BELRISE (PRE-IPO)", "name": "Belrise Industries Ltd", "sector": "Automotive", "subIndustry": "Automotive Components", "capTier": "Pre-IPO", "cmp": "₹236.9", "cmpNum": 236.9, "postureKey": "wait", "postureBadge": "⏸️ WAIT", "alerts": "<div class=\"text-[11px]\"><span class=\"text-amber-400 font-semibold\">A1 (Radar):</span> ₹238.5</div>\n<div class=\"text-[11px] mt-0.5\"><span class=\"text-emerald-400 font-semibold\">A2 (Trigger):</span> ₹241.0</div>", "buyRange": "₹238.5 - 242.0", "sl": "<div>₹225.0</div>\n<div class=\"text-[10px] text-rose-500/80\">-6.3% risk</div>", "t1": "₹268.0", "t2": "<div>₹285.0</div>\n<div class=\"text-[10px] text-emerald-400\">+18.6% gain</div>", "rr": "1 : 2.95", "weightTier": "MEDIUM", "weightPct": "3.5%", "pe": "43.29", "roce": "-", "group": "active_core", "subgroup": "wait", "cardHtml": "<div class=\"active-card bg-[var(--card)] border border-[var(--border)] rounded-xl p-5 shadow-lg space-y-3\" data-name=\"belrise industries ltd\" data-posture=\"wait\" data-symbol=\"belrise (pre-ipo)\" data-weight=\"low\">\n<div class=\"flex items-start justify-between\">\n<div>\n<span class=\"px-2 py-0.5 rounded text-[10px] font-bold badge-wait\">⏸️ WAIT FOR ALERT</span>\n<h4 class=\"text-lg font-extrabold text-[var(--foreground)] mt-1\">BELRISE (Pre-IPO)</h4>\n<div class=\"text-xs text-[var(--muted-foreground)]\">Belrise Industries Ltd • Automotive</div>\n</div>\n<div class=\"text-right\">\n<div class=\"text-base font-bold text-cyan-400\">₹236.9</div>\n<div class=\"text-[11px] font-bold text-purple-300\">Weight: 3.5%</div>\n</div>\n</div>\n<div class=\"grid grid-cols-2 gap-2 text-xs bg-[#0f172a] p-3 rounded-lg border border-[var(--border)]\">\n<div>\n<span class=\"text-[var(--muted-foreground)]\">Buy Entry:</span>\n<div class=\"font-semibold text-emerald-400\">₹238.5 - 242.0</div>\n</div>\n<div>\n<span class=\"text-[var(--muted-foreground)]\">Stop Loss:</span>\n<div class=\"font-semibold text-rose-400\">₹225.0 (-6.3%)</div>\n</div>\n<div class=\"mt-1\">\n<span class=\"text-[var(--muted-foreground)]\">Target 1 (1-3M):</span>\n<div class=\"font-semibold text-cyan-400\">₹268.0</div>\n</div>\n<div class=\"mt-1\">\n<span class=\"text-[var(--muted-foreground)]\">Target 2 (6-10M):</span>\n<div class=\"font-semibold text-purple-400\">₹285.0 (+18.6%)</div>\n</div>\n</div>\n<div class=\"text-xs space-y-1\">\n<div class=\"text-[11px] text-amber-300\">\n<span class=\"font-bold\">Alert Triggers:</span> A1: ₹238.5 | A2: ₹241.0\n              </div>\n<div class=\"text-[11px] text-[var(--muted-foreground)]\">\n<span class=\"font-bold text-[var(--foreground)]\">Technical Basis:</span> Below 100-day SMA (228.3) &amp; base floor\n              </div>\n<div class=\"text-[11px] text-[var(--muted-foreground)]\">\n<span class=\"font-bold text-[var(--foreground)]\">Catalyst:</span> RSI 30.9 oversold dip. Wait for RSI hook-up and SMA20 reclaim.\n              </div>\n</div>\n<div class=\"pt-2 border-t border-[var(--border)] flex items-center justify-between text-[11px]\">\n<span class=\"text-[var(--muted-foreground)]\">R:R: <strong class=\"text-amber-400\">1 : 2.95</strong></span>\n<span class=\"text-[var(--muted-foreground)]\">ROCE: <strong class=\"text-emerald-400\">14.8%</strong></span>\n<span class=\"text-[var(--muted-foreground)]\">P/E: <strong class=\"text-cyan-400\">45.5x</strong></span>\n</div>\n</div>"}, {"symbol": "MAZDOCK", "name": "Mazagon Dock Shipbuild", "sector": "Defense", "subIndustry": "Defence & Shipbuilding", "capTier": "Mega Cap", "cmp": "₹2,509.1", "cmpNum": 2509.1, "postureKey": "ready", "postureBadge": "🟢 READY", "alerts": "<div class=\"text-[11px]\"><span class=\"text-amber-400 font-semibold\">A1 (Radar):</span> ₹2,475.0</div>\n<div class=\"text-[11px] mt-0.5\"><span class=\"text-emerald-400 font-semibold\">A2 (Trigger):</span> ₹2,520.0</div>", "buyRange": "₹2470 - 2515", "sl": "<div>₹2,390.0</div>\n<div class=\"text-[10px] text-rose-500/80\">-4.1% risk</div>", "t1": "₹2,750.0", "t2": "<div>₹3,050.0</div>\n<div class=\"text-[10px] text-emerald-400\">+22.4% gain</div>", "rr": "1 : 5.46", "weightTier": "HIGH", "weightPct": "7.5%", "pe": "35.41", "roce": "-", "group": "active_core", "subgroup": "ready", "cardHtml": "<div class=\"active-card bg-[var(--card)] border border-[var(--border)] rounded-xl p-5 shadow-lg space-y-3\" data-name=\"mazagon dock shipbuilders ltd\" data-posture=\"ready\" data-symbol=\"mazdock\" data-weight=\"high-weight\">\n<div class=\"flex items-start justify-between\">\n<div>\n<span class=\"px-2 py-0.5 rounded text-[10px] font-bold badge-ready\">🟢 READY TO BUY</span>\n<h4 class=\"text-lg font-extrabold text-[var(--foreground)] mt-1\">MAZDOCK</h4>\n<div class=\"text-xs text-[var(--muted-foreground)]\">Mazagon Dock Shipbuilders Ltd • Defense</div>\n</div>\n<div class=\"text-right\">\n<div class=\"text-base font-bold text-cyan-400\">₹2,509.1</div>\n<div class=\"text-[11px] font-bold text-purple-300\">Weight: 7.5%</div>\n</div>\n</div>\n<div class=\"grid grid-cols-2 gap-2 text-xs bg-[#0f172a] p-3 rounded-lg border border-[var(--border)]\">\n<div>\n<span class=\"text-[var(--muted-foreground)]\">Buy Entry:</span>\n<div class=\"font-semibold text-emerald-400\">₹2470 - 2515</div>\n</div>\n<div>\n<span class=\"text-[var(--muted-foreground)]\">Stop Loss:</span>\n<div class=\"font-semibold text-rose-400\">₹2,390.0 (-4.1%)</div>\n</div>\n<div class=\"mt-1\">\n<span class=\"text-[var(--muted-foreground)]\">Target 1 (1-3M):</span>\n<div class=\"font-semibold text-cyan-400\">₹2,750.0</div>\n</div>\n<div class=\"mt-1\">\n<span class=\"text-[var(--muted-foreground)]\">Target 2 (6-10M):</span>\n<div class=\"font-semibold text-purple-400\">₹3,050.0 (+22.4%)</div>\n</div>\n</div>\n<div class=\"text-xs space-y-1\">\n<div class=\"text-[11px] text-amber-300\">\n<span class=\"font-bold\">Alert Triggers:</span> A1: ₹2,475.0 | A2: ₹2,520.0\n              </div>\n<div class=\"text-[11px] text-[var(--muted-foreground)]\">\n<span class=\"font-bold text-[var(--foreground)]\">Technical Basis:</span> Below 50 SMA (2464.0) &amp; Lower BB (2461.0)\n              </div>\n<div class=\"text-[11px] text-[var(--muted-foreground)]\">\n<span class=\"font-bold text-[var(--foreground)]\">Catalyst:</span> Zero debt, 40,000+ Cr naval submarine pipeline, RSI 35.4\n              </div>\n</div>\n<div class=\"pt-2 border-t border-[var(--border)] flex items-center justify-between text-[11px]\">\n<span class=\"text-[var(--muted-foreground)]\">R:R: <strong class=\"text-amber-400\">1 : 5.46</strong></span>\n<span class=\"text-[var(--muted-foreground)]\">ROCE: <strong class=\"text-emerald-400\">28.5%</strong></span>\n<span class=\"text-[var(--muted-foreground)]\">P/E: <strong class=\"text-cyan-400\">34.8x</strong></span>\n</div>\n</div>"}, {"symbol": "M&M", "name": "Mahindra & Mahindra Lt", "sector": "Automotive", "subIndustry": "Automobiles & Farm Equipment", "capTier": "Mega Cap", "cmp": "₹3,165.2", "cmpNum": 3165.2, "postureKey": "wait", "postureBadge": "⏸️ WAIT", "alerts": "<div class=\"text-[11px]\"><span class=\"text-amber-400 font-semibold\">A1 (Radar):</span> ₹3,200.0</div>\n<div class=\"text-[11px] mt-0.5\"><span class=\"text-emerald-400 font-semibold\">A2 (Trigger):</span> ₹3,250.0</div>", "buyRange": "₹3210 - 3260", "sl": "<div>₹3,090.0</div>\n<div class=\"text-[10px] text-rose-500/80\">-4.5% risk</div>", "t1": "₹3,550.0", "t2": "<div>₹3,800.0</div>\n<div class=\"text-[10px] text-emerald-400\">+17.5% gain</div>", "rr": "1 : 3.89", "weightTier": "MEDIUM", "weightPct": "5.5%", "pe": "21.31", "roce": "-", "group": "active_core", "subgroup": "wait", "cardHtml": "<div class=\"active-card bg-[var(--card)] border border-[var(--border)] rounded-xl p-5 shadow-lg space-y-3\" data-name=\"mahindra &amp; mahindra ltd\" data-posture=\"wait\" data-symbol=\"m&amp;m\" data-weight=\"medium\">\n<div class=\"flex items-start justify-between\">\n<div>\n<span class=\"px-2 py-0.5 rounded text-[10px] font-bold badge-wait\">⏸️ WAIT FOR ALERT</span>\n<h4 class=\"text-lg font-extrabold text-[var(--foreground)] mt-1\">M&amp;M</h4>\n<div class=\"text-xs text-[var(--muted-foreground)]\">Mahindra &amp; Mahindra Ltd • Automotive</div>\n</div>\n<div class=\"text-right\">\n<div class=\"text-base font-bold text-cyan-400\">₹3,165.2</div>\n<div class=\"text-[11px] font-bold text-purple-300\">Weight: 5.5%</div>\n</div>\n</div>\n<div class=\"grid grid-cols-2 gap-2 text-xs bg-[#0f172a] p-3 rounded-lg border border-[var(--border)]\">\n<div>\n<span class=\"text-[var(--muted-foreground)]\">Buy Entry:</span>\n<div class=\"font-semibold text-emerald-400\">₹3210 - 3260</div>\n</div>\n<div>\n<span class=\"text-[var(--muted-foreground)]\">Stop Loss:</span>\n<div class=\"font-semibold text-rose-400\">₹3,090.0 (-4.5%)</div>\n</div>\n<div class=\"mt-1\">\n<span class=\"text-[var(--muted-foreground)]\">Target 1 (1-3M):</span>\n<div class=\"font-semibold text-cyan-400\">₹3,550.0</div>\n</div>\n<div class=\"mt-1\">\n<span class=\"text-[var(--muted-foreground)]\">Target 2 (6-10M):</span>\n<div class=\"font-semibold text-purple-400\">₹3,800.0 (+17.5%)</div>\n</div>\n</div>\n<div class=\"text-xs space-y-1\">\n<div class=\"text-[11px] text-amber-300\">\n<span class=\"font-bold\">Alert Triggers:</span> A1: ₹3,200.0 | A2: ₹3,250.0\n              </div>\n<div class=\"text-[11px] text-[var(--muted-foreground)]\">\n<span class=\"font-bold text-[var(--foreground)]\">Technical Basis:</span> Below capitulation low / Lower BB (3163.0)\n              </div>\n<div class=\"text-[11px] text-[var(--muted-foreground)]\">\n<span class=\"font-bold text-[var(--foreground)]\">Catalyst:</span> RSI 17.6 extreme oversold. Wait for green daily close above 3,200.\n              </div>\n</div>\n<div class=\"pt-2 border-t border-[var(--border)] flex items-center justify-between text-[11px]\">\n<span class=\"text-[var(--muted-foreground)]\">R:R: <strong class=\"text-amber-400\">1 : 3.89</strong></span>\n<span class=\"text-[var(--muted-foreground)]\">ROCE: <strong class=\"text-emerald-400\">16.4%</strong></span>\n<span class=\"text-[var(--muted-foreground)]\">P/E: <strong class=\"text-cyan-400\">21.2x</strong></span>\n</div>\n</div>"}, {"symbol": "GRSE", "name": "Garden Reach Shipbuild", "sector": "Defense", "subIndustry": "Defence & Shipbuilding", "capTier": "Large Cap", "cmp": "₹2,537.6", "cmpNum": 2537.6, "postureKey": "wait", "postureBadge": "⏸️ WAIT", "alerts": "<div class=\"text-[11px]\"><span class=\"text-amber-400 font-semibold\">A1 (Radar):</span> ₹2,595.0</div>\n<div class=\"text-[11px] mt-0.5\"><span class=\"text-emerald-400 font-semibold\">A2 (Trigger):</span> ₹2,625.0</div>", "buyRange": "₹2610 - 2640", "sl": "<div>₹2,470.0</div>\n<div class=\"text-[10px] text-rose-500/80\">-5.9% risk</div>", "t1": "₹2,950.0", "t2": "<div>₹3,250.0</div>\n<div class=\"text-[10px] text-emerald-400\">+23.8% gain</div>", "rr": "1 : 4.03", "weightTier": "MEDIUM", "weightPct": "5.0%", "pe": "36.3", "roce": "-", "group": "active_core", "subgroup": "wait", "cardHtml": "<div class=\"active-card bg-[var(--card)] border border-[var(--border)] rounded-xl p-5 shadow-lg space-y-3\" data-name=\"garden reach shipbuilders &amp; engineers ltd\" data-posture=\"wait\" data-symbol=\"grse\" data-weight=\"medium\">\n<div class=\"flex items-start justify-between\">\n<div>\n<span class=\"px-2 py-0.5 rounded text-[10px] font-bold badge-wait\">⏸️ WAIT FOR ALERT</span>\n<h4 class=\"text-lg font-extrabold text-[var(--foreground)] mt-1\">GRSE</h4>\n<div class=\"text-xs text-[var(--muted-foreground)]\">Garden Reach Shipbuilders &amp; Engineers Ltd • Defense</div>\n</div>\n<div class=\"text-right\">\n<div class=\"text-base font-bold text-cyan-400\">₹2,537.6</div>\n<div class=\"text-[11px] font-bold text-purple-300\">Weight: 5.0%</div>\n</div>\n</div>\n<div class=\"grid grid-cols-2 gap-2 text-xs bg-[#0f172a] p-3 rounded-lg border border-[var(--border)]\">\n<div>\n<span class=\"text-[var(--muted-foreground)]\">Buy Entry:</span>\n<div class=\"font-semibold text-emerald-400\">₹2610 - 2640</div>\n</div>\n<div>\n<span class=\"text-[var(--muted-foreground)]\">Stop Loss:</span>\n<div class=\"font-semibold text-rose-400\">₹2,470.0 (-5.9%)</div>\n</div>\n<div class=\"mt-1\">\n<span class=\"text-[var(--muted-foreground)]\">Target 1 (1-3M):</span>\n<div class=\"font-semibold text-cyan-400\">₹2,950.0</div>\n</div>\n<div class=\"mt-1\">\n<span class=\"text-[var(--muted-foreground)]\">Target 2 (6-10M):</span>\n<div class=\"font-semibold text-purple-400\">₹3,250.0 (+23.8%)</div>\n</div>\n</div>\n<div class=\"text-xs space-y-1\">\n<div class=\"text-[11px] text-amber-300\">\n<span class=\"font-bold\">Alert Triggers:</span> A1: ₹2,595.0 | A2: ₹2,625.0\n              </div>\n<div class=\"text-[11px] text-[var(--muted-foreground)]\">\n<span class=\"font-bold text-[var(--foreground)]\">Technical Basis:</span> Below swing low &amp; Lower BB (2501.0)\n              </div>\n<div class=\"text-[11px] text-[var(--muted-foreground)]\">\n<span class=\"font-bold text-[var(--foreground)]\">Catalyst:</span> Below all MAs, -31.8% off peak. Wait for 50-day SMA reclaim.\n              </div>\n</div>\n<div class=\"pt-2 border-t border-[var(--border)] flex items-center justify-between text-[11px]\">\n<span class=\"text-[var(--muted-foreground)]\">R:R: <strong class=\"text-amber-400\">1 : 4.03</strong></span>\n<span class=\"text-[var(--muted-foreground)]\">ROCE: <strong class=\"text-emerald-400\">36.8%</strong></span>\n<span class=\"text-[var(--muted-foreground)]\">P/E: <strong class=\"text-cyan-400\">35.9x</strong></span>\n</div>\n</div>"}, {"symbol": "MCX", "name": "Multi Commodity Exchange of India Ltd", "sector": "Capital", "subIndustry": "Capital Markets & Exchanges", "capTier": "Large Cap", "cmp": "₹3,218.0", "cmpNum": 3218.0, "postureKey": "fav", "postureBadge": "⭐ CAUTION TAG", "alerts": "<div class=\"text-[11px]\"><span class=\"text-purple-400 font-semibold\">Re-Entry:</span> Monitor Base</div><div class=\"text-[11px] mt-0.5\"><span class=\"text-cyan-400 font-semibold\">Hurdle:</span> 50-Day SMA</div>", "buyRange": "₹3,057 - 3,186", "sl": "<div>₹2,960.6</div><div class=\"text-[10px] text-rose-500/80\">-8.0% floor</div>", "t1": "₹3,604.2", "t2": "<div>₹3,740.8</div><div class=\"text-[10px] text-emerald-400\">+18% target</div>", "rr": "1 : 3.50", "weightTier": "WATCH", "weightPct": "0.0%", "pe": "53.23", "roce": "-", "group": "watchlist_3", "subgroup": "favorites", "cardHtml": "<div class=\"bg-[var(--card)] border border-[var(--border)] rounded-2xl p-6 shadow-lg space-y-4\">\n<div class=\"flex items-start justify-between\">\n<div>\n<span class=\"px-2.5 py-1 rounded-md text-xs font-bold bg-amber-500/20 text-amber-400 border border-amber-500/30\">CAUTION TAG</span>\n<h3 class=\"text-xl font-extrabold text-[var(--foreground)] mt-2\">MCX</h3>\n<div class=\"text-xs text-[var(--muted-foreground)]\">Multi Commodity Exchange of India Ltd • Capital</div>\n</div>\n<div class=\"text-right\">\n<div class=\"text-lg font-bold text-cyan-400\">₹3,218.0</div>\n<div class=\"text-xs text-[var(--muted-foreground)]\">P/E: 52.72x</div>\n</div>\n</div>\n<div class=\"space-y-3 text-xs\">\n<div class=\"bg-[#0f172a] p-3 rounded-xl border border-[var(--border)]\">\n<span class=\"font-bold text-amber-400\">Why in Watchlist 3:</span>\n<p class=\"text-[var(--muted-foreground)] mt-1\">Extreme multiple expansion with P/E at 78.4x. Strong structural monopoly in commodity derivatives, but elevated beta and recent parabolic surge warrant waiting for a price-to-earnings cool-off.</p>\n</div>\n<div>\n<span class=\"font-bold text-cyan-400\">What to Monitor:</span>\n<p class=\"text-[var(--muted-foreground)] mt-0.5\">Watch for daily option turnover sustainability post-regulatory tariff revisions.</p>\n</div>\n<div>\n<span class=\"font-bold text-emerald-400\">Re-Entry Condition:</span>\n<p class=\"text-[var(--muted-foreground)] mt-0.5\">Wait for a healthy correction toward the 50-day SMA or P/E normalization toward 60x.</p>\n</div>\n</div>\n<div class=\"pt-3 border-t border-[var(--border)] flex justify-between text-xs text-[var(--muted-foreground)]\">\n<span>ROCE: <strong class=\"text-emerald-400\">39.2%</strong></span>\n<span>Street Upside: <strong class=\"text-cyan-400\">+18%</strong></span>\n</div>\n</div>"}, {"symbol": "KALYANKJIL", "name": "Kalyan Jewellers India Ltd", "sector": "Consumer", "subIndustry": "Consumer Retail & Jewellery", "capTier": "Large Cap", "cmp": "₹599.3", "cmpNum": 599.3, "postureKey": "fav", "postureBadge": "⭐ CAUTION TAG", "alerts": "<div class=\"text-[11px]\"><span class=\"text-purple-400 font-semibold\">Re-Entry:</span> Monitor Base</div><div class=\"text-[11px] mt-0.5\"><span class=\"text-cyan-400 font-semibold\">Hurdle:</span> 50-Day SMA</div>", "buyRange": "₹569 - 593", "sl": "<div>₹551.4</div><div class=\"text-[10px] text-rose-500/80\">-8.0% floor</div>", "t1": "₹671.2", "t2": "<div>₹714.7</div><div class=\"text-[10px] text-emerald-400\">+22.1% target</div>", "rr": "1 : 3.50", "weightTier": "WATCH", "weightPct": "0.0%", "pe": "43.12", "roce": "-", "group": "watchlist_3", "subgroup": "favorites", "cardHtml": "<div class=\"bg-[var(--card)] border border-[var(--border)] rounded-2xl p-6 shadow-lg space-y-4\">\n<div class=\"flex items-start justify-between\">\n<div>\n<span class=\"px-2.5 py-1 rounded-md text-xs font-bold bg-amber-500/20 text-amber-400 border border-amber-500/30\">CAUTION TAG</span>\n<h3 class=\"text-xl font-extrabold text-[var(--foreground)] mt-2\">KALYANKJIL</h3>\n<div class=\"text-xs text-[var(--muted-foreground)]\">Kalyan Jewellers India Ltd • Consumer</div>\n</div>\n<div class=\"text-right\">\n<div class=\"text-lg font-bold text-cyan-400\">₹599.3</div>\n<div class=\"text-xs text-[var(--muted-foreground)]\">P/E: 42.18x</div>\n</div>\n</div>\n<div class=\"space-y-3 text-xs\">\n<div class=\"bg-[#0f172a] p-3 rounded-xl border border-[var(--border)]\">\n<span class=\"font-bold text-amber-400\">Why in Watchlist 3:</span>\n<p class=\"text-[var(--muted-foreground)] mt-1\">Fast retail jewelry expansion and Candere digital growth, but capital-intensive gold inventory requires continuous debt financing. Highly sensitive to gold price fluctuations and customs duty changes.</p>\n</div>\n<div>\n<span class=\"font-bold text-cyan-400\">What to Monitor:</span>\n<p class=\"text-[var(--muted-foreground)] mt-0.5\">Quarterly same-store-sales growth (SSSG) and operating cash flow conversion.</p>\n</div>\n<div>\n<span class=\"font-bold text-emerald-400\">Re-Entry Condition:</span>\n<p class=\"text-[var(--muted-foreground)] mt-0.5\">Wait for working capital debt reduction or a stable base formation above ₹680.</p>\n</div>\n</div>\n<div class=\"pt-3 border-t border-[var(--border)] flex justify-between text-xs text-[var(--muted-foreground)]\">\n<span>ROCE: <strong class=\"text-emerald-400\">27.9%</strong></span>\n<span>Street Upside: <strong class=\"text-cyan-400\">+22.1%</strong></span>\n</div>\n</div>"}, {"symbol": "NETWEB", "name": "Netweb Technologies India Ltd", "sector": "Techno, AI, EMS", "subIndustry": "IT Hardware & AI Systems", "capTier": "Large Cap", "cmp": "₹5,218.5", "cmpNum": 5218.5, "postureKey": "fav", "postureBadge": "⭐ CAUTION TAG", "alerts": "<div class=\"text-[11px]\"><span class=\"text-purple-400 font-semibold\">Re-Entry:</span> Monitor Base</div><div class=\"text-[11px] mt-0.5\"><span class=\"text-cyan-400 font-semibold\">Hurdle:</span> 50-Day SMA</div>", "buyRange": "₹4,958 - 5,166", "sl": "<div>₹4,801.0</div><div class=\"text-[10px] text-rose-500/80\">-8.0% floor</div>", "t1": "₹5,844.7", "t2": "<div>₹6,181.7</div><div class=\"text-[10px] text-emerald-400\">+17.3% target</div>", "rr": "1 : 3.50", "weightTier": "WATCH", "weightPct": "0.0%", "pe": "113.77", "roce": "-", "group": "watchlist_3", "subgroup": "favorites", "cardHtml": "<div class=\"bg-[var(--card)] border border-[var(--border)] rounded-2xl p-6 shadow-lg space-y-4\">\n<div class=\"flex items-start justify-between\">\n<div>\n<span class=\"px-2.5 py-1 rounded-md text-xs font-bold bg-amber-500/20 text-amber-400 border border-amber-500/30\">CAUTION TAG</span>\n<h3 class=\"text-xl font-extrabold text-[var(--foreground)] mt-2\">NETWEB</h3>\n<div class=\"text-xs text-[var(--muted-foreground)]\">Netweb Technologies India Ltd • Techno, AI, EMS</div>\n</div>\n<div class=\"text-right\">\n<div class=\"text-lg font-bold text-cyan-400\">₹5,218.5</div>\n<div class=\"text-xs text-[var(--muted-foreground)]\">P/E: 115.23x</div>\n</div>\n</div>\n<div class=\"space-y-3 text-xs\">\n<div class=\"bg-[#0f172a] p-3 rounded-xl border border-[var(--border)]\">\n<span class=\"font-bold text-amber-400\">Why in Watchlist 3:</span>\n<p class=\"text-[var(--muted-foreground)] mt-1\">Prime beneficiary of India AI supercomputing and Nvidia GPU server integration, but current valuation at 115x P/E prices in perfection for several quarters ahead.</p>\n</div>\n<div>\n<span class=\"font-bold text-cyan-400\">What to Monitor:</span>\n<p class=\"text-[var(--muted-foreground)] mt-0.5\">Delivery timelines of high-performance GPU server orders and gross margins.</p>\n</div>\n<div>\n<span class=\"font-bold text-emerald-400\">Re-Entry Condition:</span>\n<p class=\"text-[var(--muted-foreground)] mt-0.5\">Wait for earnings to catch up to valuation or entry on a steep 15–20% market-wide shakeout.</p>\n</div>\n</div>\n<div class=\"pt-3 border-t border-[var(--border)] flex justify-between text-xs text-[var(--muted-foreground)]\">\n<span>ROCE: <strong class=\"text-emerald-400\">39.3%</strong></span>\n<span>Street Upside: <strong class=\"text-cyan-400\">+17.3%</strong></span>\n</div>\n</div>"}, {"symbol": "PVRINOX", "name": "PVR INOX Ltd", "sector": "Consumer", "subIndustry": "Media & Entertainment", "capTier": "Mid Cap", "cmp": "₹1,223.1", "cmpNum": 1223.1, "postureKey": "fav", "postureBadge": "⭐ RESISTANCE TAG", "alerts": "<div class=\"text-[11px]\"><span class=\"text-purple-400 font-semibold\">Re-Entry:</span> Monitor Base</div><div class=\"text-[11px] mt-0.5\"><span class=\"text-cyan-400 font-semibold\">Hurdle:</span> 50-Day SMA</div>", "buyRange": "₹1,162 - 1,211", "sl": "<div>₹1,125.3</div><div class=\"text-[10px] text-rose-500/80\">-8.0% floor</div>", "t1": "₹1,369.9", "t2": "<div>₹1,463.3</div><div class=\"text-[10px] text-emerald-400\">+17.3% target</div>", "rr": "1 : 3.50", "weightTier": "WATCH", "weightPct": "0.0%", "pe": "27.02", "roce": "-", "group": "watchlist_3", "subgroup": "favorites", "cardHtml": "<div class=\"bg-[var(--card)] border border-[var(--border)] rounded-2xl p-6 shadow-lg space-y-4\">\n<div class=\"flex items-start justify-between\">\n<div>\n<span class=\"px-2.5 py-1 rounded-md text-xs font-bold bg-rose-500/20 text-rose-400 border border-rose-500/30\">RESISTANCE TAG</span>\n<h3 class=\"text-xl font-extrabold text-[var(--foreground)] mt-2\">PVRINOX</h3>\n<div class=\"text-xs text-[var(--muted-foreground)]\">PVR INOX Ltd • Consumer</div>\n</div>\n<div class=\"text-right\">\n<div class=\"text-lg font-bold text-cyan-400\">₹1,223.1</div>\n<div class=\"text-xs text-[var(--muted-foreground)]\">P/E: 27.5x</div>\n</div>\n</div>\n<div class=\"space-y-3 text-xs\">\n<div class=\"bg-[#0f172a] p-3 rounded-xl border border-[var(--border)]\">\n<span class=\"font-bold text-amber-400\">Why in Watchlist 3:</span>\n<p class=\"text-[var(--muted-foreground)] mt-1\">Box office occupancy remains choppy with structural headwinds from OTT platforms and content timing. Repeatedly rejected at the ₹1,650–₹1,700 technical resistance barrier.</p>\n</div>\n<div>\n<span class=\"font-bold text-cyan-400\">What to Monitor:</span>\n<p class=\"text-[var(--muted-foreground)] mt-0.5\">Occupancy rates, Food &amp; Beverage spend per head, and net debt reduction.</p>\n</div>\n<div>\n<span class=\"font-bold text-emerald-400\">Re-Entry Condition:</span>\n<p class=\"text-[var(--muted-foreground)] mt-0.5\">Wait for a confirmed weekly close above ₹1,700 resistance before deploying fresh capital.</p>\n</div>\n</div>\n<div class=\"pt-3 border-t border-[var(--border)] flex justify-between text-xs text-[var(--muted-foreground)]\">\n<span>ROCE: <strong class=\"text-emerald-400\">7.5%</strong></span>\n<span>Street Upside: <strong class=\"text-cyan-400\">+17.3%</strong></span>\n</div>\n</div>"}, {"symbol": "BRIGADE", "name": "Brigade Enterprises Ltd", "sector": "Real Estate", "subIndustry": "Real Estate Development", "capTier": "Large Cap", "cmp": "₹700.5", "cmpNum": 700.45, "postureKey": "fav", "postureBadge": "⭐ CAUTION TAG", "alerts": "<div class=\"text-[11px]\"><span class=\"text-purple-400 font-semibold\">Re-Entry:</span> Monitor Base</div><div class=\"text-[11px] mt-0.5\"><span class=\"text-cyan-400 font-semibold\">Hurdle:</span> 50-Day SMA</div>", "buyRange": "₹665 - 693", "sl": "<div>₹644.4</div><div class=\"text-[10px] text-rose-500/80\">-8.0% floor</div>", "t1": "₹784.5", "t2": "<div>₹796.4</div><div class=\"text-[10px] text-emerald-400\">+11.8% target</div>", "rr": "1 : 3.50", "weightTier": "WATCH", "weightPct": "0.0%", "pe": "32.88", "roce": "-", "group": "watchlist_3", "subgroup": "favorites", "cardHtml": "<div class=\"bg-[var(--card)] border border-[var(--border)] rounded-2xl p-6 shadow-lg space-y-4\">\n<div class=\"flex items-start justify-between\">\n<div>\n<span class=\"px-2.5 py-1 rounded-md text-xs font-bold bg-amber-500/20 text-amber-400 border border-amber-500/30\">CAUTION TAG</span>\n<h3 class=\"text-xl font-extrabold text-[var(--foreground)] mt-2\">BRIGADE</h3>\n<div class=\"text-xs text-[var(--muted-foreground)]\">Brigade Enterprises Ltd • Real Estate</div>\n</div>\n<div class=\"text-right\">\n<div class=\"text-lg font-bold text-cyan-400\">₹700.5</div>\n<div class=\"text-xs text-[var(--muted-foreground)]\">P/E: 32.39x</div>\n</div>\n</div>\n<div class=\"space-y-3 text-xs\">\n<div class=\"bg-[#0f172a] p-3 rounded-xl border border-[var(--border)]\">\n<span class=\"font-bold text-amber-400\">Why in Watchlist 3:</span>\n<p class=\"text-[var(--muted-foreground)] mt-1\">Strong Bangalore residential franchise, but faces near-term margin pressure from aggressive land acquisition costs and elevated leverage relative to peer Oberoi Realty.</p>\n</div>\n<div>\n<span class=\"font-bold text-cyan-400\">What to Monitor:</span>\n<p class=\"text-[var(--muted-foreground)] mt-0.5\">Quarterly residential pre-sales numbers and hospitality portfolio recovery.</p>\n</div>\n<div>\n<span class=\"font-bold text-emerald-400\">Re-Entry Condition:</span>\n<p class=\"text-[var(--muted-foreground)] mt-0.5\">Wait for consolidation above ₹1,220 support shelf or debt paydown milestones.</p>\n</div>\n</div>\n<div class=\"pt-3 border-t border-[var(--border)] flex justify-between text-xs text-[var(--muted-foreground)]\">\n<span>ROCE: <strong class=\"text-emerald-400\">9.99%</strong></span>\n<span>Street Upside: <strong class=\"text-cyan-400\">+11.8%</strong></span>\n</div>\n</div>"}, {"symbol": "ASHOKLEY", "name": "Ashok Leyland Limited", "sector": "Automotive", "subIndustry": "Commercial Vehicles / Auto", "capTier": "Large Cap", "cmp": "₹169.5", "cmpNum": 169.51, "postureKey": "quar", "postureBadge": "⚠️ QUARANTINE", "alerts": "<div class=\"text-[11px]\"><span class=\"text-rose-400 font-semibold\">Quarantine:</span> Pending Turnaround</div><div class=\"text-[11px] mt-0.5\"><span class=\"text-amber-400 font-semibold\">Risk:</span> Debt / Multiple</div>", "buyRange": "Under Quarantine (0%)", "sl": "<div class=\"text-slate-500\">N/A</div><div class=\"text-[10px] text-slate-500\">Quarantine</div>", "t1": "N/A", "t2": "<div>₹223.8</div><div class=\"text-[10px] text-slate-400\">+31.6% target</div>", "rr": "Unfavorable", "weightTier": "QUAR", "weightPct": "0.0%", "pe": "28.63", "roce": "-", "group": "watchlist_2", "subgroup": "quarantine", "cardHtml": "<div class=\"bg-[var(--card)] border border-[var(--border)] rounded-xl p-5 shadow-lg space-y-3\">\n<div class=\"flex items-start justify-between\">\n<div>\n<span class=\"px-2.5 py-0.5 rounded text-[10px] font-bold badge-quar\">QUARANTINE</span>\n<h3 class=\"text-lg font-extrabold text-[var(--foreground)] mt-1\">ASHOKLEY</h3>\n<div class=\"text-xs text-[var(--muted-foreground)]\">Ashok Leyland Limited • Automotive</div>\n</div>\n<div class=\"text-right\">\n<div class=\"text-base font-bold text-rose-400\">₹169.5</div>\n<div class=\"text-[11px] text-[var(--muted-foreground)]\">P/E: 28.5x</div>\n</div>\n</div>\n<div class=\"bg-[#0f172a] p-3 rounded-lg border border-[var(--border)] text-xs space-y-1.5\">\n<div>\n<span class=\"font-bold text-rose-400\">Fatal Flaw / Rationale:</span>\n<p class=\"text-[var(--muted-foreground)] mt-0.5\">Hinduja promoter group pledge (15.2%) and severe NBFC debt load (Debt/Eq 2.85x). High Street upside (+31.6%) is offset by cyclical CV peak-cycle deceleration.</p>\n</div>\n<div class=\"pt-1.5 border-t border-[var(--border)]\">\n<span class=\"font-bold text-amber-400\">Strategic Resolution:</span>\n<p class=\"text-[var(--muted-foreground)] mt-0.5\">Quarantined for indirect elimination pending balance-sheet deleveraging.</p>\n</div>\n</div>\n<div class=\"flex items-center justify-between text-xs text-[var(--muted-foreground)] pt-2 border-t border-[var(--border)]\">\n<span>Debt/Eq: <strong class=\"text-amber-400\">4.47x</strong></span>\n<span>ROCE: <strong class=\"text-emerald-400\">15.1%</strong></span>\n<span>Street Upside: <strong class=\"text-cyan-400\">+31.6%</strong></span>\n</div>\n</div>"}, {"symbol": "ETERNAL", "name": "Eternal Limited", "sector": "Consumer", "subIndustry": "Consumer Apparel & Retail", "capTier": "Mega Cap", "cmp": "₹323.7", "cmpNum": 323.7, "postureKey": "quar", "postureBadge": "⚠️ QUARANTINE", "alerts": "<div class=\"text-[11px]\"><span class=\"text-rose-400 font-semibold\">Quarantine:</span> Pending Turnaround</div><div class=\"text-[11px] mt-0.5\"><span class=\"text-amber-400 font-semibold\">Risk:</span> Debt / Multiple</div>", "buyRange": "Under Quarantine (0%)", "sl": "<div class=\"text-slate-500\">N/A</div><div class=\"text-[10px] text-slate-500\">Quarantine</div>", "t1": "N/A", "t2": "<div>₹410.0</div><div class=\"text-[10px] text-slate-400\">+26.6% target</div>", "rr": "Unfavorable", "weightTier": "QUAR", "weightPct": "0.0%", "pe": "703.7", "roce": "-", "group": "watchlist_2", "subgroup": "quarantine", "cardHtml": "<div class=\"bg-[var(--card)] border border-[var(--border)] rounded-xl p-5 shadow-lg space-y-3\">\n<div class=\"flex items-start justify-between\">\n<div>\n<span class=\"px-2.5 py-0.5 rounded text-[10px] font-bold badge-quar\">QUARANTINE</span>\n<h3 class=\"text-lg font-extrabold text-[var(--foreground)] mt-1\">ETERNAL</h3>\n<div class=\"text-xs text-[var(--muted-foreground)]\">Eternal Limited • Consumer</div>\n</div>\n<div class=\"text-right\">\n<div class=\"text-base font-bold text-rose-400\">₹323.7</div>\n<div class=\"text-[11px] text-[var(--muted-foreground)]\">P/E: 723.55x</div>\n</div>\n</div>\n<div class=\"bg-[#0f172a] p-3 rounded-lg border border-[var(--border)] text-xs space-y-1.5\">\n<div>\n<span class=\"font-bold text-rose-400\">Fatal Flaw / Rationale:</span>\n<p class=\"text-[var(--muted-foreground)] mt-0.5\">Absurd multiple disconnect (P/E 723x). Despite turnaround PAT growth (+268%), the Graham valuation and margin of safety are completely missing.</p>\n</div>\n<div class=\"pt-1.5 border-t border-[var(--border)]\">\n<span class=\"font-bold text-amber-400\">Strategic Resolution:</span>\n<p class=\"text-[var(--muted-foreground)] mt-0.5\">Quarantined until multiple normalizes below 100x through multi-quarter PAT delivery.</p>\n</div>\n</div>\n<div class=\"flex items-center justify-between text-xs text-[var(--muted-foreground)] pt-2 border-t border-[var(--border)]\">\n<span>Debt/Eq: <strong class=\"text-amber-400\">0x</strong></span>\n<span>ROCE: <strong class=\"text-emerald-400\">2.87%</strong></span>\n<span>Street Upside: <strong class=\"text-cyan-400\">+26.6%</strong></span>\n</div>\n</div>"}, {"symbol": "TITAGARH", "name": "Titagarh Rail Systems Ltd", "sector": "Real Estate", "subIndustry": "Railways & Metro", "capTier": "Mid Cap", "cmp": "₹881.9", "cmpNum": 881.85, "postureKey": "quar", "postureBadge": "⚠️ QUARANTINE", "alerts": "<div class=\"text-[11px]\"><span class=\"text-rose-400 font-semibold\">Quarantine:</span> Pending Turnaround</div><div class=\"text-[11px] mt-0.5\"><span class=\"text-amber-400 font-semibold\">Risk:</span> Debt / Multiple</div>", "buyRange": "Under Quarantine (0%)", "sl": "<div class=\"text-slate-500\">N/A</div><div class=\"text-[10px] text-slate-500\">Quarantine</div>", "t1": "N/A", "t2": "<div>₹968.3</div><div class=\"text-[10px] text-slate-400\">+14.7% target</div>", "rr": "Unfavorable", "weightTier": "QUAR", "weightPct": "0.0%", "pe": "62.99", "roce": "-", "group": "watchlist_2", "subgroup": "quarantine", "cardHtml": "<div class=\"bg-[var(--card)] border border-[var(--border)] rounded-xl p-5 shadow-lg space-y-3\">\n<div class=\"flex items-start justify-between\">\n<div>\n<span class=\"px-2.5 py-0.5 rounded text-[10px] font-bold badge-quar\">QUARANTINE</span>\n<h3 class=\"text-lg font-extrabold text-[var(--foreground)] mt-1\">TITAGARH</h3>\n<div class=\"text-xs text-[var(--muted-foreground)]\">Titagarh Rail Systems Ltd • Real Estate</div>\n</div>\n<div class=\"text-right\">\n<div class=\"text-base font-bold text-rose-400\">₹881.9</div>\n<div class=\"text-[11px] text-[var(--muted-foreground)]\">P/E: 59.28x</div>\n</div>\n</div>\n<div class=\"bg-[#0f172a] p-3 rounded-lg border border-[var(--border)] text-xs space-y-1.5\">\n<div>\n<span class=\"font-bold text-rose-400\">Fatal Flaw / Rationale:</span>\n<p class=\"text-[var(--muted-foreground)] mt-0.5\">High valuation multiple (59.2x P/E) contrasted against severe historical earnings drop (-55.6%). Margin compression in passenger rail coach division.</p>\n</div>\n<div class=\"pt-1.5 border-t border-[var(--border)]\">\n<span class=\"font-bold text-amber-400\">Strategic Resolution:</span>\n<p class=\"text-[var(--muted-foreground)] mt-0.5\">Quarantined until metro coach deliveries ramp up to restore operating margins.</p>\n</div>\n</div>\n<div class=\"flex items-center justify-between text-xs text-[var(--muted-foreground)] pt-2 border-t border-[var(--border)]\">\n<span>Debt/Eq: <strong class=\"text-amber-400\">0.21x</strong></span>\n<span>ROCE: <strong class=\"text-emerald-400\">12.2%</strong></span>\n<span>Street Upside: <strong class=\"text-cyan-400\">+14.7%</strong></span>\n</div>\n</div>"}, {"symbol": "GVT&D", "name": "GE Vernova T&D India Ltd", "sector": "Power", "subIndustry": "Power Transmission & Equipment", "capTier": "Mega Cap", "cmp": "₹4,328.2", "cmpNum": 4328.2, "postureKey": "quar", "postureBadge": "⚠️ QUARANTINE", "alerts": "<div class=\"text-[11px]\"><span class=\"text-rose-400 font-semibold\">Quarantine:</span> Pending Turnaround</div><div class=\"text-[11px] mt-0.5\"><span class=\"text-amber-400 font-semibold\">Risk:</span> Debt / Multiple</div>", "buyRange": "Under Quarantine (0%)", "sl": "<div class=\"text-slate-500\">N/A</div><div class=\"text-[10px] text-slate-500\">Quarantine</div>", "t1": "N/A", "t2": "<div>₹4,789.5</div><div class=\"text-[10px] text-slate-400\">+9.8% target</div>", "rr": "Unfavorable", "weightTier": "QUAR", "weightPct": "0.0%", "pe": "84.9", "roce": "-", "group": "watchlist_2", "subgroup": "quarantine", "cardHtml": "<div class=\"bg-[var(--card)] border border-[var(--border)] rounded-xl p-5 shadow-lg space-y-3\">\n<div class=\"flex items-start justify-between\">\n<div>\n<span class=\"px-2.5 py-0.5 rounded text-[10px] font-bold badge-quar\">QUARANTINE</span>\n<h3 class=\"text-lg font-extrabold text-[var(--foreground)] mt-1\">GVT&amp;D</h3>\n<div class=\"text-xs text-[var(--muted-foreground)]\">GE Vernova T&amp;D India Ltd • Power</div>\n</div>\n<div class=\"text-right\">\n<div class=\"text-base font-bold text-rose-400\">₹4,328.2</div>\n<div class=\"text-[11px] text-[var(--muted-foreground)]\">P/E: 85.43x</div>\n</div>\n</div>\n<div class=\"bg-[#0f172a] p-3 rounded-lg border border-[var(--border)] text-xs space-y-1.5\">\n<div>\n<span class=\"font-bold text-rose-400\">Fatal Flaw / Rationale:</span>\n<p class=\"text-[var(--muted-foreground)] mt-0.5\">Expensive valuation (85.4x P/E) resulting in an unfavorable PEG of 3.44 and low Street upside (+9.8%). Unfavorable risk-reward.</p>\n</div>\n<div class=\"pt-1.5 border-t border-[var(--border)]\">\n<span class=\"font-bold text-amber-400\">Strategic Resolution:</span>\n<p class=\"text-[var(--muted-foreground)] mt-0.5\">Quarantined due to lack of valuation margin of safety.</p>\n</div>\n</div>\n<div class=\"flex items-center justify-between text-xs text-[var(--muted-foreground)] pt-2 border-t border-[var(--border)]\">\n<span>Debt/Eq: <strong class=\"text-amber-400\">0x</strong></span>\n<span>ROCE: <strong class=\"text-emerald-400\">60.7%</strong></span>\n<span>Street Upside: <strong class=\"text-cyan-400\">+9.8%</strong></span>\n</div>\n</div>"}, {"symbol": "LICI", "name": "Life Insurance Corporation Of India", "sector": "Capital", "subIndustry": "Life Insurance Monopoly (PSU)", "capTier": "Mega Cap", "cmp": "₹418.2", "cmpNum": 418.2, "postureKey": "quar", "postureBadge": "⚠️ QUARANTINE", "alerts": "<div class=\"text-[11px]\"><span class=\"text-rose-400 font-semibold\">Quarantine:</span> Pending Turnaround</div><div class=\"text-[11px] mt-0.5\"><span class=\"text-amber-400 font-semibold\">Risk:</span> Debt / Multiple</div>", "buyRange": "Under Quarantine (0%)", "sl": "<div class=\"text-slate-500\">N/A</div><div class=\"text-[10px] text-slate-500\">Quarantine</div>", "t1": "N/A", "t2": "<div>₹483.5</div><div class=\"text-[10px] text-slate-400\">+15.7% target</div>", "rr": "Unfavorable", "weightTier": "QUAR", "weightPct": "0.0%", "pe": "8.81", "roce": "-", "group": "watchlist_2", "subgroup": "quarantine", "cardHtml": "<div class=\"bg-[var(--card)] border border-[var(--border)] rounded-xl p-5 shadow-lg space-y-3\">\n<div class=\"flex items-start justify-between\">\n<div>\n<span class=\"px-2.5 py-0.5 rounded text-[10px] font-bold badge-quar\">QUARANTINE</span>\n<h3 class=\"text-lg font-extrabold text-[var(--foreground)] mt-1\">LICI</h3>\n<div class=\"text-xs text-[var(--muted-foreground)]\">Life Insurance Corporation Of India • Capital</div>\n</div>\n<div class=\"text-right\">\n<div class=\"text-base font-bold text-rose-400\">₹418.2</div>\n<div class=\"text-[11px] text-[var(--muted-foreground)]\">P/E: 8.77x</div>\n</div>\n</div>\n<div class=\"bg-[#0f172a] p-3 rounded-lg border border-[var(--border)] text-xs space-y-1.5\">\n<div>\n<span class=\"font-bold text-rose-400\">Fatal Flaw / Rationale:</span>\n<p class=\"text-[var(--muted-foreground)] mt-0.5\">Extremely poor capital efficiency with an ROCE of just 0.83% and an institutional public float of only 1.38%, leaving it vulnerable to government policy overhangs.</p>\n</div>\n<div class=\"pt-1.5 border-t border-[var(--border)]\">\n<span class=\"font-bold text-amber-400\">Strategic Resolution:</span>\n<p class=\"text-[var(--muted-foreground)] mt-0.5\">Quarantined permanently from growth portfolio; unsuitable for compound capital allocation.</p>\n</div>\n</div>\n<div class=\"flex items-center justify-between text-xs text-[var(--muted-foreground)] pt-2 border-t border-[var(--border)]\">\n<span>Debt/Eq: <strong class=\"text-amber-400\">0x</strong></span>\n<span>ROCE: <strong class=\"text-emerald-400\">0.83%</strong></span>\n<span>Street Upside: <strong class=\"text-cyan-400\">+15.7%</strong></span>\n</div>\n</div>"}, {"symbol": "CONCORDBIO", "name": "Concord Biotech Ltd", "sector": "Pharma", "subIndustry": "Pharmaceuticals & Biotech", "capTier": "Mid Cap", "cmp": "₹1,430.9", "cmpNum": 1430.9, "postureKey": "quar", "postureBadge": "⚠️ QUARANTINE", "alerts": "<div class=\"text-[11px]\"><span class=\"text-rose-400 font-semibold\">Quarantine:</span> Pending Turnaround</div><div class=\"text-[11px] mt-0.5\"><span class=\"text-amber-400 font-semibold\">Risk:</span> Debt / Multiple</div>", "buyRange": "Under Quarantine (0%)", "sl": "<div class=\"text-slate-500\">N/A</div><div class=\"text-[10px] text-slate-500\">Quarantine</div>", "t1": "N/A", "t2": "<div>₹1,663.4</div><div class=\"text-[10px] text-slate-400\">+14.9% target</div>", "rr": "Unfavorable", "weightTier": "QUAR", "weightPct": "0.0%", "pe": "53.11", "roce": "-", "group": "watchlist_2", "subgroup": "quarantine", "cardHtml": "<div class=\"bg-[var(--card)] border border-[var(--border)] rounded-xl p-5 shadow-lg space-y-3\">\n<div class=\"flex items-start justify-between\">\n<div>\n<span class=\"px-2.5 py-0.5 rounded text-[10px] font-bold badge-quar\">QUARANTINE</span>\n<h3 class=\"text-lg font-extrabold text-[var(--foreground)] mt-1\">CONCORDBIO</h3>\n<div class=\"text-xs text-[var(--muted-foreground)]\">Concord Biotech Ltd • Pharma</div>\n</div>\n<div class=\"text-right\">\n<div class=\"text-base font-bold text-rose-400\">₹1,430.9</div>\n<div class=\"text-[11px] text-[var(--muted-foreground)]\">P/E: 53.11x</div>\n</div>\n</div>\n<div class=\"bg-[#0f172a] p-3 rounded-lg border border-[var(--border)] text-xs space-y-1.5\">\n<div>\n<span class=\"font-bold text-rose-400\">Fatal Flaw / Rationale:</span>\n<p class=\"text-[var(--muted-foreground)] mt-0.5\">Stagnant 3-year sales CAGR of just 3.55% while trading at an expensive 53.1x P/E. Premium multiple without the underlying growth engine.</p>\n</div>\n<div class=\"pt-1.5 border-t border-[var(--border)]\">\n<span class=\"font-bold text-amber-400\">Strategic Resolution:</span>\n<p class=\"text-[var(--muted-foreground)] mt-0.5\">Quarantined until fermentation capacity expansion translates into &gt;20% revenue growth.</p>\n</div>\n</div>\n<div class=\"flex items-center justify-between text-xs text-[var(--muted-foreground)] pt-2 border-t border-[var(--border)]\">\n<span>Debt/Eq: <strong class=\"text-amber-400\">0x</strong></span>\n<span>ROCE: <strong class=\"text-emerald-400\">17.4%</strong></span>\n<span>Street Upside: <strong class=\"text-cyan-400\">+14.9%</strong></span>\n</div>\n</div>"}, {"symbol": "GRAVITA", "name": "Gravita India Ltd", "sector": "Metal", "subIndustry": "Metals Recycling & Circular Economy", "capTier": "Mid Cap", "cmp": "₹1,629.8", "cmpNum": 1629.8, "postureKey": "quar", "postureBadge": "⚠️ QUARANTINE", "alerts": "<div class=\"text-[11px]\"><span class=\"text-rose-400 font-semibold\">Quarantine:</span> Pending Turnaround</div><div class=\"text-[11px] mt-0.5\"><span class=\"text-amber-400 font-semibold\">Risk:</span> Debt / Multiple</div>", "buyRange": "Under Quarantine (0%)", "sl": "<div class=\"text-slate-500\">N/A</div><div class=\"text-[10px] text-slate-500\">Quarantine</div>", "t1": "N/A", "t2": "<div>₹1,883.6</div><div class=\"text-[10px] text-slate-400\">+11.8% target</div>", "rr": "Unfavorable", "weightTier": "QUAR", "weightPct": "0.0%", "pe": "30.69", "roce": "-", "group": "watchlist_2", "subgroup": "quarantine", "cardHtml": "<div class=\"bg-[var(--card)] border border-[var(--border)] rounded-xl p-5 shadow-lg space-y-3\">\n<div class=\"flex items-start justify-between\">\n<div>\n<span class=\"px-2.5 py-0.5 rounded text-[10px] font-bold badge-quar\">QUARANTINE</span>\n<h3 class=\"text-lg font-extrabold text-[var(--foreground)] mt-1\">GRAVITA</h3>\n<div class=\"text-xs text-[var(--muted-foreground)]\">Gravita India Ltd • Metal</div>\n</div>\n<div class=\"text-right\">\n<div class=\"text-base font-bold text-rose-400\">₹1,629.8</div>\n<div class=\"text-[11px] text-[var(--muted-foreground)]\">P/E: 31.74x</div>\n</div>\n</div>\n<div class=\"bg-[#0f172a] p-3 rounded-lg border border-[var(--border)] text-xs space-y-1.5\">\n<div>\n<span class=\"font-bold text-rose-400\">Fatal Flaw / Rationale:</span>\n<p class=\"text-[var(--muted-foreground)] mt-0.5\">Decelerating PAT growth (+14% YoY), flattening momentum scores, and modest Street upside of only +11.8%.</p>\n</div>\n<div class=\"pt-1.5 border-t border-[var(--border)]\">\n<span class=\"font-bold text-amber-400\">Strategic Resolution:</span>\n<p class=\"text-[var(--muted-foreground)] mt-0.5\">Quarantined to free up portfolio capital for higher-alpha cyclical leaders.</p>\n</div>\n</div>\n<div class=\"flex items-center justify-between text-xs text-[var(--muted-foreground)] pt-2 border-t border-[var(--border)]\">\n<span>Debt/Eq: <strong class=\"text-amber-400\">0.3x</strong></span>\n<span>ROCE: <strong class=\"text-emerald-400\">18.1%</strong></span>\n<span>Street Upside: <strong class=\"text-cyan-400\">+11.8%</strong></span>\n</div>\n</div>"}, {"symbol": "HINDALCO", "name": "Hindalco Industries Ltd", "sector": "Metal", "subIndustry": "Non-Ferrous Metals (Aluminium & Copper)", "capTier": "Mega Cap", "cmp": "₹1,008.4", "cmpNum": 1008.4, "postureKey": "quar", "postureBadge": "⚠️ QUARANTINE", "alerts": "<div class=\"text-[11px]\"><span class=\"text-rose-400 font-semibold\">Quarantine:</span> Pending Turnaround</div><div class=\"text-[11px] mt-0.5\"><span class=\"text-amber-400 font-semibold\">Risk:</span> Debt / Multiple</div>", "buyRange": "Under Quarantine (0%)", "sl": "<div class=\"text-slate-500\">N/A</div><div class=\"text-[10px] text-slate-500\">Quarantine</div>", "t1": "N/A", "t2": "<div>₹1,233.7</div><div class=\"text-[10px] text-slate-400\">+22.6% target</div>", "rr": "Unfavorable", "weightTier": "QUAR", "weightPct": "0.0%", "pe": "13.82", "roce": "-", "group": "watchlist_2", "subgroup": "quarantine", "cardHtml": "<div class=\"bg-[var(--card)] border border-[var(--border)] rounded-xl p-5 shadow-lg space-y-3\">\n<div class=\"flex items-start justify-between\">\n<div>\n<span class=\"px-2.5 py-0.5 rounded text-[10px] font-bold badge-quar\">QUARANTINE</span>\n<h3 class=\"text-lg font-extrabold text-[var(--foreground)] mt-1\">HINDALCO</h3>\n<div class=\"text-xs text-[var(--muted-foreground)]\">Hindalco Industries Ltd • Metal</div>\n</div>\n<div class=\"text-right\">\n<div class=\"text-base font-bold text-rose-400\">₹1,008.4</div>\n<div class=\"text-[11px] text-[var(--muted-foreground)]\">P/E: 13.77x</div>\n</div>\n</div>\n<div class=\"bg-[#0f172a] p-3 rounded-lg border border-[var(--border)] text-xs space-y-1.5\">\n<div>\n<span class=\"font-bold text-rose-400\">Fatal Flaw / Rationale:</span>\n<p class=\"text-[var(--muted-foreground)] mt-0.5\">Overhanging Novelis debt (&gt;₹38,000 Cr), cyclical profit contraction (-16.3% YoY), and modest 12.5% ROCE.</p>\n</div>\n<div class=\"pt-1.5 border-t border-[var(--border)]\">\n<span class=\"font-bold text-amber-400\">Strategic Resolution:</span>\n<p class=\"text-[var(--muted-foreground)] mt-0.5\">Quarantined due to global commodity cycle volatility and capex debt pressure.</p>\n</div>\n</div>\n<div class=\"flex items-center justify-between text-xs text-[var(--muted-foreground)] pt-2 border-t border-[var(--border)]\">\n<span>Debt/Eq: <strong class=\"text-amber-400\">0.71x</strong></span>\n<span>ROCE: <strong class=\"text-emerald-400\">12.5%</strong></span>\n<span>Street Upside: <strong class=\"text-cyan-400\">+22.6%</strong></span>\n</div>\n</div>"}, {"symbol": "APOLLO", "name": "Apollo Micro Systems Ltd", "sector": "Defense", "subIndustry": "Aerospace & Defence Electronics", "capTier": "Mid Cap", "cmp": "₹385.6", "cmpNum": 385.55, "postureKey": "elim", "postureBadge": "❌ ELIMINATED", "alerts": "<div class=\"text-[11px]\"><span class=\"text-rose-400 font-semibold\">Disqualified:</span> 3-Stage Filter</div><div class=\"text-[11px] mt-0.5\"><span class=\"text-slate-500\">Capital Guard</span></div>", "buyRange": "Strictly Avoid (0%)", "sl": "<div class=\"text-slate-500\">Disqualified</div>", "t1": "N/A", "t2": "N/A", "rr": "Disqualified", "weightTier": "AVOID", "weightPct": "0.0%", "pe": "112.73", "roce": "-", "group": "eliminated", "subgroup": "eliminated", "cardHtml": "<div class=\"bg-[var(--card)] border border-red-900/30 rounded-xl p-5 shadow-lg space-y-3 opacity-90 hover:opacity-100 transition-opacity\">\n<div class=\"flex items-start justify-between\">\n<div>\n<span class=\"px-2 py-0.5 rounded text-[10px] font-bold badge-elim\">ELIMINATED</span>\n<h3 class=\"text-lg font-extrabold text-slate-300 mt-1 line-through\">APOLLO</h3>\n<div class=\"text-xs text-[var(--muted-foreground)]\">Apollo Micro Systems Ltd</div>\n</div>\n<div class=\"text-right\">\n<div class=\"text-sm font-bold text-slate-400\">₹385.6</div>\n<div class=\"text-[10px] text-slate-500\">P/E: 117.83x</div>\n</div>\n</div>\n<div class=\"bg-[#0f172a] p-3 rounded-lg border border-[var(--border)] text-xs space-y-1\">\n<span class=\"font-bold text-rose-400\">Filter 1: PEG &amp; Valuation Trap</span>\n<p class=\"text-[var(--muted-foreground)] mt-0.5\">Decelerating replacement tyre margins, high raw material rubber costs, and unsupportive PEG ratio exceeding 2.8.</p>\n</div>\n<div class=\"text-[11px] text-rose-400/90 font-medium\">\n            Verdict: ❌ Strictly Disqualified from Portfolio\n          </div>\n</div>"}, {"symbol": "JBMA", "name": "JBM Auto Ltd", "sector": "Automotive", "subIndustry": "Electric Buses & Auto Components", "capTier": "Mid Cap", "cmp": "₹624.5", "cmpNum": 624.5, "postureKey": "elim", "postureBadge": "❌ ELIMINATED", "alerts": "<div class=\"text-[11px]\"><span class=\"text-rose-400 font-semibold\">Disqualified:</span> 3-Stage Filter</div><div class=\"text-[11px] mt-0.5\"><span class=\"text-slate-500\">Capital Guard</span></div>", "buyRange": "Strictly Avoid (0%)", "sl": "<div class=\"text-slate-500\">Disqualified</div>", "t1": "N/A", "t2": "N/A", "rr": "Disqualified", "weightTier": "AVOID", "weightPct": "0.0%", "pe": "65.88", "roce": "-", "group": "eliminated", "subgroup": "eliminated", "cardHtml": "<div class=\"bg-[var(--card)] border border-red-900/30 rounded-xl p-5 shadow-lg space-y-3 opacity-90 hover:opacity-100 transition-opacity\">\n<div class=\"flex items-start justify-between\">\n<div>\n<span class=\"px-2 py-0.5 rounded text-[10px] font-bold badge-elim\">ELIMINATED</span>\n<h3 class=\"text-lg font-extrabold text-slate-300 mt-1 line-through\">JBMA</h3>\n<div class=\"text-xs text-[var(--muted-foreground)]\">JBM Auto Ltd</div>\n</div>\n<div class=\"text-right\">\n<div class=\"text-sm font-bold text-slate-400\">₹624.5</div>\n<div class=\"text-[10px] text-slate-500\">P/E: 66.5x</div>\n</div>\n</div>\n<div class=\"bg-[#0f172a] p-3 rounded-lg border border-[var(--border)] text-xs space-y-1\">\n<span class=\"font-bold text-rose-400\">Filter 1: Unsustainable Valuation Multiple</span>\n<p class=\"text-[var(--muted-foreground)] mt-0.5\">Excessive multiple (&gt;90x P/E) on modest operating cash flow conversion and aggressive debt-funded EV bus capex.</p>\n</div>\n<div class=\"text-[11px] text-rose-400/90 font-medium\">\n            Verdict: ❌ Strictly Disqualified from Portfolio\n          </div>\n</div>"}, {"symbol": "JKPAPER", "name": "JK Paper Ltd", "sector": "Consumer", "subIndustry": "Paper & Forest Products", "capTier": "Mid Cap", "cmp": "₹405.0", "cmpNum": 405.0, "postureKey": "elim", "postureBadge": "❌ ELIMINATED", "alerts": "<div class=\"text-[11px]\"><span class=\"text-rose-400 font-semibold\">Disqualified:</span> 3-Stage Filter</div><div class=\"text-[11px] mt-0.5\"><span class=\"text-slate-500\">Capital Guard</span></div>", "buyRange": "Strictly Avoid (0%)", "sl": "<div class=\"text-slate-500\">Disqualified</div>", "t1": "N/A", "t2": "N/A", "rr": "Disqualified", "weightTier": "AVOID", "weightPct": "0.0%", "pe": "22.63", "roce": "-", "group": "eliminated", "subgroup": "eliminated", "cardHtml": "<div class=\"bg-[var(--card)] border border-red-900/30 rounded-xl p-5 shadow-lg space-y-3 opacity-90 hover:opacity-100 transition-opacity\">\n<div class=\"flex items-start justify-between\">\n<div>\n<span class=\"px-2 py-0.5 rounded text-[10px] font-bold badge-elim\">ELIMINATED</span>\n<h3 class=\"text-lg font-extrabold text-slate-300 mt-1 line-through\">JKPAPER</h3>\n<div class=\"text-xs text-[var(--muted-foreground)]\">JK Paper Ltd</div>\n</div>\n<div class=\"text-right\">\n<div class=\"text-sm font-bold text-slate-400\">₹405.0</div>\n<div class=\"text-[10px] text-slate-500\">P/E: 22.92x</div>\n</div>\n</div>\n<div class=\"bg-[#0f172a] p-3 rounded-lg border border-[var(--border)] text-xs space-y-1\">\n<span class=\"font-bold text-rose-400\">Filter 2: Earnings Contraction &amp; Commodity Cycle</span>\n<p class=\"text-[var(--muted-foreground)] mt-0.5\">Sharp collapse in packaging board paper prices leading to severe YoY profit decline (-48%) and collapsing ROCE.</p>\n</div>\n<div class=\"text-[11px] text-rose-400/90 font-medium\">\n            Verdict: ❌ Strictly Disqualified from Portfolio\n          </div>\n</div>"}, {"symbol": "CDSL", "name": "Central Depository Services (India) Ltd", "sector": "Capital", "subIndustry": "Capital Markets / Depository", "capTier": "Large Cap", "cmp": "₹1,397.4", "cmpNum": 1397.4, "postureKey": "elim", "postureBadge": "❌ ELIMINATED", "alerts": "<div class=\"text-[11px]\"><span class=\"text-rose-400 font-semibold\">Disqualified:</span> 3-Stage Filter</div><div class=\"text-[11px] mt-0.5\"><span class=\"text-slate-500\">Capital Guard</span></div>", "buyRange": "Strictly Avoid (0%)", "sl": "<div class=\"text-slate-500\">Disqualified</div>", "t1": "N/A", "t2": "N/A", "rr": "Disqualified", "weightTier": "AVOID", "weightPct": "0.0%", "pe": "61.97", "roce": "-", "group": "eliminated", "subgroup": "eliminated", "cardHtml": "<div class=\"bg-[var(--card)] border border-red-900/30 rounded-xl p-5 shadow-lg space-y-3 opacity-90 hover:opacity-100 transition-opacity\">\n<div class=\"flex items-start justify-between\">\n<div>\n<span class=\"px-2 py-0.5 rounded text-[10px] font-bold badge-elim\">ELIMINATED</span>\n<h3 class=\"text-lg font-extrabold text-slate-300 mt-1 line-through\">CDSL</h3>\n<div class=\"text-xs text-[var(--muted-foreground)]\">Central Depository Services (India) Ltd</div>\n</div>\n<div class=\"text-right\">\n<div class=\"text-sm font-bold text-slate-400\">₹1,397.4</div>\n<div class=\"text-[10px] text-slate-500\">P/E: 61.8x</div>\n</div>\n</div>\n<div class=\"bg-[#0f172a] p-3 rounded-lg border border-[var(--border)] text-xs space-y-1\">\n<span class=\"font-bold text-rose-400\">Filter 2: Regulatory Tariff Risk &amp; Stretched Multiple</span>\n<p class=\"text-[var(--muted-foreground)] mt-0.5\">Elevated P/E exceeding 65x facing impending depository transaction fee regulatory cuts and plateauing new demat account additions.</p>\n</div>\n<div class=\"text-[11px] text-rose-400/90 font-medium\">\n            Verdict: ❌ Strictly Disqualified from Portfolio\n          </div>\n</div>"}, {"symbol": "UNOMINDA", "name": "UNO Minda Ltd", "sector": "Automotive", "subIndustry": "Auto Components & EV Electronics", "capTier": "Large Cap", "cmp": "₹1,242.4", "cmpNum": 1242.4, "postureKey": "elim", "postureBadge": "❌ ELIMINATED", "alerts": "<div class=\"text-[11px]\"><span class=\"text-rose-400 font-semibold\">Disqualified:</span> 3-Stage Filter</div><div class=\"text-[11px] mt-0.5\"><span class=\"text-slate-500\">Capital Guard</span></div>", "buyRange": "Strictly Avoid (0%)", "sl": "<div class=\"text-slate-500\">Disqualified</div>", "t1": "N/A", "t2": "N/A", "rr": "Disqualified", "weightTier": "AVOID", "weightPct": "0.0%", "pe": "59.67", "roce": "-", "group": "eliminated", "subgroup": "eliminated", "cardHtml": "<div class=\"bg-[var(--card)] border border-red-900/30 rounded-xl p-5 shadow-lg space-y-3 opacity-90 hover:opacity-100 transition-opacity\">\n<div class=\"flex items-start justify-between\">\n<div>\n<span class=\"px-2 py-0.5 rounded text-[10px] font-bold badge-elim\">ELIMINATED</span>\n<h3 class=\"text-lg font-extrabold text-slate-300 mt-1 line-through\">UNOMINDA</h3>\n<div class=\"text-xs text-[var(--muted-foreground)]\">UNO Minda Ltd</div>\n</div>\n<div class=\"text-right\">\n<div class=\"text-sm font-bold text-slate-400\">₹1,242.4</div>\n<div class=\"text-[10px] text-slate-500\">P/E: 60.09x</div>\n</div>\n</div>\n<div class=\"bg-[#0f172a] p-3 rounded-lg border border-[var(--border)] text-xs space-y-1\">\n<span class=\"font-bold text-rose-400\">Filter 2: Premium Multiple on Decelerating Auto Ancillary Growth</span>\n<p class=\"text-[var(--muted-foreground)] mt-0.5\">P/E of 58x with 3Y sales CAGR slowing down to 14%, offering an unfavorable PEG of 3.12.</p>\n</div>\n<div class=\"text-[11px] text-rose-400/90 font-medium\">\n            Verdict: ❌ Strictly Disqualified from Portfolio\n          </div>\n</div>"}, {"symbol": "LLOYDSENGG", "name": "Lloyds Engineering Works Ltd", "sector": "Power", "subIndustry": "Heavy Engineering & Capital Goods", "capTier": "Mid Cap", "cmp": "₹84.7", "cmpNum": 84.73, "postureKey": "elim", "postureBadge": "❌ ELIMINATED", "alerts": "<div class=\"text-[11px]\"><span class=\"text-rose-400 font-semibold\">Disqualified:</span> 3-Stage Filter</div><div class=\"text-[11px] mt-0.5\"><span class=\"text-slate-500\">Capital Guard</span></div>", "buyRange": "Strictly Avoid (0%)", "sl": "<div class=\"text-slate-500\">Disqualified</div>", "t1": "N/A", "t2": "N/A", "rr": "Disqualified", "weightTier": "AVOID", "weightPct": "0.0%", "pe": "48.98", "roce": "-", "group": "eliminated", "subgroup": "eliminated", "cardHtml": "<div class=\"bg-[var(--card)] border border-red-900/30 rounded-xl p-5 shadow-lg space-y-3 opacity-90 hover:opacity-100 transition-opacity\">\n<div class=\"flex items-start justify-between\">\n<div>\n<span class=\"px-2 py-0.5 rounded text-[10px] font-bold badge-elim\">ELIMINATED</span>\n<h3 class=\"text-lg font-extrabold text-slate-300 mt-1 line-through\">LLOYDSENGG</h3>\n<div class=\"text-xs text-[var(--muted-foreground)]\">Lloyds Engineering Works Ltd</div>\n</div>\n<div class=\"text-right\">\n<div class=\"text-sm font-bold text-slate-400\">₹84.7</div>\n<div class=\"text-[10px] text-slate-500\">P/E: 58.85x</div>\n</div>\n</div>\n<div class=\"bg-[#0f172a] p-3 rounded-lg border border-[var(--border)] text-xs space-y-1\">\n<span class=\"font-bold text-rose-400\">Filter 3: High Promoter Pledge &amp; Institutional Outflow</span>\n<p class=\"text-[var(--muted-foreground)] mt-0.5\">High promoter pledge (&gt;18%), declining FII/DII institutional shareholding, and aggressive working capital elongation.</p>\n</div>\n<div class=\"text-[11px] text-rose-400/90 font-medium\">\n            Verdict: ❌ Strictly Disqualified from Portfolio\n          </div>\n</div>"}];
+
+    // 2. 7 BUILT-IN WATCHLISTS DEFINITIONS (6 in HTML + 7th Combined Master)
+    const BUILTIN_WATCHLISTS = [
+      {
+        id: 'all-35',
+        name: 'All 35 Combined',
+        shortName: 'All 35 (35)',
+        icon: '🌐',
+        badge: 'MASTER COMBINED (7TH)',
+        badgeClass: 'bg-cyan-500/20 text-cyan-400 border border-cyan-500/30',
+        desc: '7th Master Watchlist: Unified consolidation of all 35 institutional candidate equities across all posture tiers.',
+        filter: s => true
+      },
+      {
+        id: 'active-core',
+        name: 'Active Core Portfolio',
+        shortName: 'Active Core (16)',
+        icon: '🎯',
+        badge: 'ACTIVE ALLOCATION',
+        badgeClass: 'bg-emerald-500/20 text-emerald-400 border border-emerald-500/30',
+        desc: 'The 16 high-conviction institutional stocks allocated 100% normalized capital sizing across 3 tiers.',
+        filter: s => s.group === 'active_core'
+      },
+      {
+        id: 'ready-buy',
+        name: 'Ready to Buy Now',
+        shortName: 'Ready to Buy (10)',
+        icon: '🟢',
+        badge: 'IMMEDIATE EXECUTION',
+        badgeClass: 'bg-cyan-500/20 text-cyan-400 border border-cyan-500/30',
+        desc: '10 stocks at immediate recommended buy entry triggers. 72.5% active capital deployed.',
+        filter: s => s.subgroup === 'ready'
+      },
+      {
+        id: 'wait-alert',
+        name: 'Wait for Alert',
+        shortName: 'Wait for Alert (6)',
+        icon: '⏸️',
+        badge: 'RESERVE CAPITAL',
+        badgeClass: 'bg-amber-500/20 text-amber-400 border border-amber-500/30',
+        desc: '6 high-conviction setups waiting for confirmation price trigger. 27.5% reserve capital allocated.',
+        filter: s => s.subgroup === 'wait'
+      },
+      {
+        id: 'watchlist-3',
+        name: 'Watchlist 3: My Favorites',
+        shortName: 'Watchlist 3: Favs (5)',
+        icon: '⭐',
+        badge: 'USER FAVORITES',
+        badgeClass: 'bg-purple-500/20 text-purple-400 border border-purple-500/30',
+        desc: '5 user favorite industry champions with CAUTION or RESISTANCE tags awaiting key hurdle / re-entry levels.',
+        filter: s => s.group === 'watchlist_3'
+      },
+      {
+        id: 'watchlist-2',
+        name: 'Watchlist 2: Quarantine',
+        shortName: 'Watchlist 2: Quar. (8)',
+        icon: '⚠️',
+        badge: 'QUARANTINE POOL',
+        badgeClass: 'bg-rose-500/20 text-rose-400 border border-rose-500/30',
+        desc: '8 stocks under quarantine for debt, promoter pledge, or multiple disconnects pending turnaround milestones.',
+        filter: s => s.group === 'watchlist_2'
+      },
+      {
+        id: 'eliminated',
+        name: 'Eliminated Funnel',
+        shortName: 'Eliminated Funnel (6)',
+        icon: '❌',
+        badge: 'ELIMINATION AUDIT',
+        badgeClass: 'bg-slate-700 text-slate-300 border border-slate-600',
+        desc: '6 stocks strictly disqualified and avoided through 3-stage filtration for capital preservation.',
+        filter: s => s.group === 'eliminated'
+      }
+    ];
+
+    // 3. APP STATE
+    let currentWatchlistId = 'all-35';
+    let currentViewMode = 'both'; // 'table', 'cards', 'both'
+    let currentPostureFilter = 'all';
+    let currentSearchTerm = '';
+    let sortColumn = 'symbol';
+    let sortAscending = true;
+    let customBaskets = []; // Array of { id, name, desc, symbols: [] }
+
+    // 4. LOCAL STORAGE SYNC
+    const STORAGE_KEY_BASKETS = 'portfolio_custom_baskets_v2';
+    const STORAGE_KEY_LAST_WL = 'portfolio_last_watchlist_id';
+
+    function loadCustomBaskets() {
+      try {
+        const raw = localStorage.getItem(STORAGE_KEY_BASKETS);
+        if (raw) {
+          customBaskets = JSON.parse(raw);
+        } else {
+          customBaskets = [
+            {
+              id: 'custom_sample_1',
+              name: 'High Alpha Green & Power',
+              desc: 'Renewable and power equipment compounding plays.',
+              symbols: ['EMVEE (PRE-IPO)', 'GENUSPOWER', 'PREMIERENE']
+            }
+          ];
+          saveCustomBaskets();
+        }
+      } catch (e) {
+        console.warn('Error loading custom baskets from localStorage:', e);
+        customBaskets = [];
+      }
+    }
+
+    function saveCustomBaskets() {
+      try {
+        localStorage.setItem(STORAGE_KEY_BASKETS, JSON.stringify(customBaskets));
+      } catch (e) {
+        console.warn('Error saving custom baskets to localStorage:', e);
+      }
+    }
+
+    // 5. INITIALIZATION
+    document.addEventListener('DOMContentLoaded', () => {
+      loadCustomBaskets();
+      
+      const savedWl = localStorage.getItem(STORAGE_KEY_LAST_WL);
+      if (savedWl && (BUILTIN_WATCHLISTS.some(w => w.id === savedWl) || customBaskets.some(b => b.id === savedWl))) {
+        currentWatchlistId = savedWl;
+      }
+      
+      renderNavigationTabs();
+      updateKpiCounters();
+      renderActiveWatchlist();
+    });
+
+﻿    // 6. NAVIGATION TABS RENDERER
+    function renderNavigationTabs() {
+      const container = document.getElementById('navTabsContainer');
+      let html = '';
+
+      BUILTIN_WATCHLISTS.forEach(wl => {
+        const isActive = (currentWatchlistId === wl.id);
+        const count = MASTER_STOCKS.filter(wl.filter).length;
+        html += `
+          <button onclick="selectWatchlist('${wl.id}')" id="nav-btn-${wl.id}" 
+            class="${isActive ? 'tab-active' : 'tab-inactive'} py-2.5 px-3 flex items-center gap-2 whitespace-nowrap transition-colors">
+            <span>${wl.icon} ${wl.name}</span>
+            <span class="text-[10px] px-1.5 py-0.5 rounded-full ${isActive ? 'bg-cyan-500/20 text-cyan-300' : 'bg-slate-800 text-slate-400'}">${count}</span>
+          </button>
+        `;
+      });
+
+      customBaskets.forEach(b => {
+        const isActive = (currentWatchlistId === b.id);
+        html += `
+          <div class="flex items-center ${isActive ? 'tab-active' : 'tab-inactive'} py-2.5 px-3 whitespace-nowrap transition-colors group">
+            <button onclick="selectWatchlist('${b.id}')" class="flex items-center gap-1.5 text-left">
+              <span>📁 ${escapeHtml(b.name)}</span>
+              <span class="text-[10px] px-1.5 py-0.5 rounded-full ${isActive ? 'bg-cyan-500/20 text-cyan-300' : 'bg-slate-800 text-slate-400'}">${b.symbols.length}</span>
+            </button>
+            <button onclick="openCreateBasketModal('${b.id}'); event.stopPropagation();" title="Edit basket" class="ml-1.5 text-[11px] text-slate-400 hover:text-amber-300 p-0.5">✏️</button>
+            <button onclick="deleteBasket('${b.id}'); event.stopPropagation();" title="Delete basket" class="text-[11px] text-slate-400 hover:text-rose-400 p-0.5">🗑️</button>
+          </div>
+        `;
+      });
+
+      html += `
+        <button onclick="openCreateBasketModal()" class="text-xs font-bold text-cyan-400 hover:text-cyan-300 py-2 px-3 border border-dashed border-cyan-500/40 rounded-lg hover:bg-cyan-500/10 flex items-center gap-1 whitespace-nowrap my-1 ml-1 transition-all">
+          <span>➕ New Basket</span>
+        </button>
+      `;
+
+      const isAnalyticsActive = (currentWatchlistId === 'tab-analytics');
+      html += `
+        <button onclick="selectWatchlist('tab-analytics')" id="nav-btn-analytics" 
+          class="${isAnalyticsActive ? 'tab-active' : 'tab-inactive'} py-2.5 px-3 flex items-center gap-2 whitespace-nowrap transition-colors ml-auto">
+          <span>📊 Sizing Architecture</span>
+        </button>
+      `;
+
+      container.innerHTML = html;
+    }
+
+    // 7. KPI STATS COUNTERS
+    function updateKpiCounters() {
+      BUILTIN_WATCHLISTS.forEach(wl => {
+        const el = document.getElementById(`kpiCount-${wl.id}`);
+        if (el) {
+          const count = MASTER_STOCKS.filter(wl.filter).length;
+          el.textContent = `${count} Stocks`;
+        }
+      });
+    }
+
+    // 8. WATCHLIST SELECTION
+    function selectWatchlist(id) {
+      currentWatchlistId = id;
+      try {
+        localStorage.setItem(STORAGE_KEY_LAST_WL, id);
+      } catch (e) {}
+
+      const mainContainer = document.getElementById('mainWatchlistContainer');
+      const analyticsSec = document.getElementById('tab-analytics');
+      
+      if (id === 'tab-analytics') {
+        if (mainContainer) mainContainer.classList.add('hidden');
+        if (analyticsSec) analyticsSec.classList.remove('hidden');
+      } else {
+        if (mainContainer) mainContainer.classList.remove('hidden');
+        if (analyticsSec) analyticsSec.classList.add('hidden');
+      }
+
+      document.querySelectorAll('.kpi-card').forEach(c => c.classList.remove('active-kpi'));
+      const activeKpi = document.getElementById(`kpi-${id}`);
+      if (activeKpi) activeKpi.classList.add('active-kpi');
+
+      renderNavigationTabs();
+      renderActiveWatchlist();
+    }
+
+﻿    // 9. ACTIVE WATCHLIST RENDERER
+    function renderActiveWatchlist() {
+      if (currentWatchlistId === 'tab-analytics') return;
+
+      let wlObj = BUILTIN_WATCHLISTS.find(w => w.id === currentWatchlistId);
+      let targetStocks = [];
+
+      if (wlObj) {
+        targetStocks = MASTER_STOCKS.filter(wlObj.filter);
+        document.getElementById('activeWlBadge').textContent = wlObj.badge;
+        document.getElementById('activeWlBadge').className = `px-2.5 py-0.5 rounded-full text-xs font-bold ${wlObj.badgeClass}`;
+        document.getElementById('activeWlTitle').textContent = wlObj.name;
+        document.getElementById('activeWlDesc').textContent = wlObj.desc;
+        document.getElementById('customBasketActions').classList.add('hidden');
+      } else {
+        const customObj = customBaskets.find(b => b.id === currentWatchlistId);
+        if (customObj) {
+          targetStocks = MASTER_STOCKS.filter(s => customObj.symbols.includes(s.symbol));
+          document.getElementById('activeWlBadge').textContent = 'CUSTOM BASKET';
+          document.getElementById('activeWlBadge').className = 'px-2.5 py-0.5 rounded-full text-xs font-bold badge-custom';
+          document.getElementById('activeWlTitle').textContent = customObj.name;
+          document.getElementById('activeWlDesc').textContent = customObj.desc || 'Custom user created investment basket.';
+          document.getElementById('customBasketActions').classList.remove('hidden');
+        } else {
+          return selectWatchlist('all-35');
+        }
+      }
+
+      document.getElementById('activeWlStockCount').textContent = `${targetStocks.length} Stocks`;
+      updateBasketFilterCounts(targetStocks);
+
+      let filtered = targetStocks.filter(s => {
+        if (currentPostureFilter !== 'all') {
+          if (currentPostureFilter === 'ready' && s.subgroup !== 'ready') return false;
+          if (currentPostureFilter === 'wait' && s.subgroup !== 'wait') return false;
+          if (currentPostureFilter === 'fav' && s.postureKey !== 'fav') return false;
+          if (currentPostureFilter === 'quar' && s.postureKey !== 'quar') return false;
+          if (currentPostureFilter === 'elim' && s.postureKey !== 'elim') return false;
+        }
+
+        if (currentSearchTerm) {
+          const term = currentSearchTerm.toLowerCase();
+          const matchSym = s.symbol.toLowerCase().includes(term);
+          const matchName = s.name.toLowerCase().includes(term);
+          const matchSec = s.sector.toLowerCase().includes(term);
+          const matchTag = (s.postureBadge || '').toLowerCase().includes(term);
+          if (!matchSym && !matchName && !matchSec && !matchTag) return false;
+        }
+
+        return true;
+      });
+
+      filtered.sort((a, b) => {
+        let vA = a[sortColumn];
+        let vB = b[sortColumn];
+
+        if (sortColumn === 'cmpNum') {
+          vA = a.cmpNum || 0;
+          vB = b.cmpNum || 0;
+        } else if (sortColumn === 'pe') {
+          vA = parseFloat(a.pe) || 999;
+          vB = parseFloat(b.pe) || 999;
+        } else if (sortColumn === 'target2') {
+          vA = parseFloat(a.target2) || 0;
+          vB = parseFloat(b.target2) || 0;
+        } else if (sortColumn === 'weight') {
+          vA = parseFloat(a.weightPct) || 0;
+          vB = parseFloat(b.weightPct) || 0;
+        } else if (typeof vA === 'string') {
+          vA = vA.toLowerCase();
+          vB = (vB || '').toString().toLowerCase();
+        }
+
+        if (vA < vB) return sortAscending ? -1 : 1;
+        if (vA > vB) return sortAscending ? 1 : -1;
+        return 0;
+      });
+
+      renderSummaryStats(filtered, targetStocks.length);
+      renderTable(filtered);
+      renderCards(filtered);
+      applyViewMode();
+    }
+
+    function updateBasketFilterCounts(stocks) {
+      document.getElementById('count-all').textContent = stocks.length;
+      document.getElementById('count-ready').textContent = stocks.filter(s => s.subgroup === 'ready').length;
+      document.getElementById('count-wait').textContent = stocks.filter(s => s.subgroup === 'wait').length;
+      document.getElementById('count-fav').textContent = stocks.filter(s => s.postureKey === 'fav').length;
+      document.getElementById('count-quar').textContent = stocks.filter(s => s.postureKey === 'quar').length;
+      document.getElementById('count-elim').textContent = stocks.filter(s => s.postureKey === 'elim').length;
+    }
+
+    function renderSummaryStats(filteredStocks, totalInBasket) {
+      const validPe = filteredStocks.map(s => parseFloat(s.pe)).filter(p => !isNaN(p) && p > 0);
+      const avgPe = validPe.length ? (validPe.reduce((a, b) => a + b, 0) / validPe.length).toFixed(1) : '-';
+      
+      const totalWeight = filteredStocks.reduce((sum, s) => sum + (parseFloat(s.weightPct) || 0), 0).toFixed(1);
+      
+      let html = `Showing <strong class="text-cyan-400">${filteredStocks.length}</strong> of ${totalInBasket} stocks`;
+      if (avgPe !== '-') html += ` • Avg P/E: <strong class="text-purple-300">${avgPe}x</strong>`;
+      if (parseFloat(totalWeight) > 0) html += ` • Capital Sizing: <strong class="text-emerald-400">${totalWeight}%</strong>`;
+
+      document.getElementById('activeWlSummaryStats').innerHTML = html;
+    }
+
+﻿    // 10. TABLE VIEW RENDERER
+    function renderTable(stocks) {
+      const tbody = document.getElementById('tableBody');
+      if (!stocks.length) {
+        tbody.innerHTML = `
+          <tr>
+            <td colspan="12" class="text-center p-8 text-[var(--muted-foreground)]">
+              <div class="text-2xl mb-2">🔍</div>
+              <div>No stocks match your active search or posture filters in this basket.</div>
+            </td>
+          </tr>
+        `;
+        return;
+      }
+
+      let html = '';
+      stocks.forEach(s => {
+        let badgeClass = 'badge-ready';
+        if (s.postureKey === 'wait') badgeClass = 'badge-wait';
+        else if (s.postureKey === 'fav') badgeClass = 'badge-fav';
+        else if (s.postureKey === 'quar') badgeClass = 'badge-quar';
+        else if (s.postureKey === 'elim') badgeClass = 'badge-elim';
+
+        let tierColor = 'bg-slate-700 text-slate-300 border-slate-600';
+        if (s.weightTier === 'HIGH') tierColor = 'bg-emerald-500/20 text-emerald-400 border-emerald-500/30';
+        else if (s.weightTier === 'MEDIUM') tierColor = 'bg-cyan-500/20 text-cyan-400 border-cyan-500/30';
+        else if (s.weightTier === 'LOW') tierColor = 'bg-amber-500/20 text-amber-400 border-amber-500/30';
+        else if (s.weightTier === 'WATCH') tierColor = 'bg-purple-500/20 text-purple-400 border-purple-500/30';
+        else if (s.weightTier === 'QUAR') tierColor = 'bg-rose-500/20 text-rose-400 border-rose-500/30';
+
+        html += `
+          <tr class="hover:bg-[var(--card-hover)] transition-colors group">
+            <td class="p-3.5">
+              <div class="flex items-center gap-2">
+                <div class="font-bold text-sm text-[var(--foreground)]">${s.symbol}</div>
+                <button onclick="openQuickBasketModal('${s.symbol}')" title="Add to custom basket" 
+                  class="opacity-50 group-hover:opacity-100 text-[11px] text-cyan-400 hover:text-cyan-300 bg-cyan-950/40 hover:bg-cyan-900/60 px-1.5 py-0.5 rounded border border-cyan-800/40">
+                  + Basket
+                </button>
+              </div>
+              <div class="text-[11px] text-[var(--muted-foreground)]">${s.name}</div>
+              <span class="inline-block mt-1 px-2 py-0.5 rounded text-[10px] font-bold ${badgeClass}">${s.postureBadge}</span>
+            </td>
+
+            <td class="p-3.5">
+              <div class="font-semibold text-slate-300">${s.sector}</div>
+              <div class="text-[10px] text-slate-400">${s.capTier}</div>
+            </td>
+
+            <td class="p-3.5 font-bold text-cyan-300 whitespace-nowrap">
+              ${s.cmp}
+            </td>
+
+            <td class="p-3.5 text-xs">
+              ${s.alerts || '-'}
+            </td>
+
+            <td class="p-3.5 font-semibold text-emerald-400 bg-emerald-950/20 px-3 py-2 rounded-lg border border-emerald-900/30 whitespace-nowrap">
+              ${s.buyRange || '-'}
+            </td>
+
+            <td class="p-3.5 font-semibold text-rose-400 whitespace-nowrap">
+              ${s.sl || '-'}
+            </td>
+
+            <td class="p-3.5 font-semibold text-cyan-400 whitespace-nowrap">
+              ${s.t1 || '-'}
+            </td>
+
+            <td class="p-3.5 font-semibold text-purple-400 whitespace-nowrap">
+              ${s.t2 || '-'}
+            </td>
+
+            <td class="p-3.5 text-center font-bold text-amber-300 whitespace-nowrap">
+              ${s.rr || '-'}
+            </td>
+
+            <td class="p-3.5 text-center">
+              <span class="px-2 py-0.5 rounded text-[10px] font-extrabold border ${tierColor}">${s.weightTier}</span>
+              <div class="text-[11px] font-extrabold mt-1 text-[var(--foreground)]">${s.weightPct}</div>
+            </td>
+
+            <td class="p-3.5 text-center font-semibold text-cyan-300">
+              ${s.pe !== '-' ? s.pe + 'x' : '-'}
+            </td>
+
+            <td class="p-3.5 text-center">
+              <button onclick="scrollToStockCard('${s.symbol}')" class="px-2.5 py-1 rounded bg-[#0f172a] hover:bg-cyan-500/20 border border-[var(--border)] hover:border-cyan-500/40 text-[11px] text-cyan-400 font-semibold transition-all">
+                🔍 Card
+              </button>
+            </td>
+          </tr>
+        `;
+      });
+
+      tbody.innerHTML = html;
+    }
+
+    // 11. CARDS VIEW RENDERER
+    function renderCards(stocks) {
+      const grid = document.getElementById('cardsGrid');
+      document.getElementById('cardsCountBadge').textContent = `${stocks.length} Cards`;
+
+      if (!stocks.length) {
+        grid.innerHTML = `
+          <div class="col-span-full text-center p-8 text-[var(--muted-foreground)] bg-[var(--card)] border border-[var(--border)] rounded-2xl">
+            <div class="text-2xl mb-2">🗂️</div>
+            <div>No stock cards match your active search or posture filters.</div>
+          </div>
+        `;
+        return;
+      }
+
+      let html = '';
+      stocks.forEach(s => {
+        let cardSnippet = s.cardHtml || '';
+        if (cardSnippet) {
+          cardSnippet = cardSnippet.replace(/<div\s+class="([^"]*)"/i, `<div id="card-${s.symbol.replace(/[^A-Za-z0-9]/g, '')}" class="$1 relative"`);
+          const basketBtnHtml = `
+            <div class="absolute top-4 right-4 z-10">
+              <button onclick="openQuickBasketModal('${s.symbol}')" class="text-[10px] font-bold text-cyan-400 bg-[#0f172a] hover:bg-cyan-950/80 px-2 py-1 rounded-md border border-cyan-800/40 shadow">
+                + Basket
+              </button>
+            </div>
+          `;
+          cardSnippet = cardSnippet.replace(/(<div[^>]*>)/i, `$1${basketBtnHtml}`);
+        }
+        html += cardSnippet;
+      });
+
+      grid.innerHTML = html;
+    }
+
+    // 12. VIEW MODE TOGGLE (Table, Cards, Both)
+    function setViewMode(mode) {
+      currentViewMode = mode;
+      
+      const tableBtn = document.getElementById('viewBtn-table');
+      const cardsBtn = document.getElementById('viewBtn-cards');
+      const bothBtn = document.getElementById('viewBtn-both');
+
+      [tableBtn, cardsBtn, bothBtn].forEach(b => {
+        b.className = 'px-3 py-1.5 rounded-lg text-[var(--muted-foreground)] hover:text-white font-medium transition-all';
+      });
+
+      if (mode === 'table') tableBtn.className = 'px-3 py-1.5 rounded-lg bg-cyan-500/20 text-cyan-400 font-bold border border-cyan-500/30 transition-all';
+      else if (mode === 'cards') cardsBtn.className = 'px-3 py-1.5 rounded-lg bg-cyan-500/20 text-cyan-400 font-bold border border-cyan-500/30 transition-all';
+      else if (mode === 'both') bothBtn.className = 'px-3 py-1.5 rounded-lg bg-cyan-500/20 text-cyan-400 font-bold border border-cyan-500/30 transition-all';
+
+      applyViewMode();
+    }
+
+    function applyViewMode() {
+      const tableSec = document.getElementById('tableSection');
+      const cardsSec = document.getElementById('cardsSection');
+
+      if (currentViewMode === 'table') {
+        tableSec.classList.remove('hidden');
+        cardsSec.classList.add('hidden');
+      } else if (currentViewMode === 'cards') {
+        tableSec.classList.add('hidden');
+        cardsSec.classList.remove('hidden');
+      } else {
+        tableSec.classList.remove('hidden');
+        cardsSec.classList.remove('hidden');
+      }
+    }
+
+    // 13. POSTURE FILTER
+    function filterPosture(key) {
+      currentPostureFilter = key;
+      document.querySelectorAll('.posture-filter-btn').forEach(b => {
+        if (b.getAttribute('data-filter') === key) {
+          b.className = 'posture-filter-btn px-3 py-1.5 rounded-lg bg-cyan-500/20 text-cyan-400 border border-cyan-500/40 font-medium';
+        } else {
+          b.className = 'posture-filter-btn px-3 py-1.5 rounded-lg bg-[#0f172a] text-[var(--muted-foreground)] hover:text-[var(--foreground)] border border-[var(--border)] font-medium';
+        }
+      });
+      renderActiveWatchlist();
+    }
+
+    // 14. SEARCH FILTER
+    function handleSearch() {
+      currentSearchTerm = document.getElementById('globalSearch').value.trim();
+      renderActiveWatchlist();
+    }
+
+    // 15. SORTING
+    function sortTable(col) {
+      if (sortColumn === col) {
+        sortAscending = !sortAscending;
+      } else {
+        sortColumn = col;
+        sortAscending = true;
+      }
+      renderActiveWatchlist();
+    }
+
+    // 16. SCROLL TO CARD SHORTCUT
+    function scrollToStockCard(symbol) {
+      setViewMode('both');
+      const cleanId = symbol.replace(/[^A-Za-z0-9]/g, '');
+      const card = document.getElementById(`card-${cleanId}`);
+      if (card) {
+        card.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        card.classList.add('ring-2', 'ring-cyan-400');
+        setTimeout(() => card.classList.remove('ring-2', 'ring-cyan-400'), 2500);
+      }
+    }
+
+﻿    // 17. CREATE & EDIT BASKET MODAL
+    function openCreateBasketModal(editId = null) {
+      const modal = document.getElementById('basketModal');
+      const titleEl = document.getElementById('modalTitle');
+      const idInput = document.getElementById('modalBasketId');
+      const nameInput = document.getElementById('modalBasketName');
+      const descInput = document.getElementById('modalBasketDesc');
+      const checklistContainer = document.getElementById('modalStockChecklist');
+
+      let selectedSymbols = [];
+
+      if (editId) {
+        const b = customBaskets.find(x => x.id === editId);
+        if (b) {
+          titleEl.textContent = `Edit Basket: ${b.name}`;
+          idInput.value = b.id;
+          nameInput.value = b.name;
+          descInput.value = b.desc || '';
+          selectedSymbols = b.symbols || [];
+        }
+      } else {
+        titleEl.textContent = 'Create New Basket / Watchlist';
+        idInput.value = '';
+        nameInput.value = '';
+        descInput.value = '';
+      }
+
+      let html = '';
+      MASTER_STOCKS.forEach(s => {
+        const isChecked = selectedSymbols.includes(s.symbol);
+        html += `
+          <label class="stock-check-item flex items-center justify-between p-2 rounded-lg bg-[var(--card)] hover:bg-slate-800 border border-[var(--border)] cursor-pointer text-xs transition-colors" data-symbol="${s.symbol}" data-name="${s.name}" data-sector="${s.sector}">
+            <div class="flex items-center gap-2">
+              <input type="checkbox" value="${s.symbol}" class="stock-checkbox rounded border-slate-700 text-cyan-500 focus:ring-0" ${isChecked ? 'checked' : ''} onchange="updateModalCount()">
+              <div>
+                <div class="font-bold text-[var(--foreground)]">${s.symbol}</div>
+                <div class="text-[10px] text-[var(--muted-foreground)]">${s.sector}</div>
+              </div>
+            </div>
+            <div class="text-right">
+              <div class="text-cyan-400 font-semibold text-[11px]">${s.cmp}</div>
+              <div class="text-[9px] text-slate-400">${s.postureKey.toUpperCase()}</div>
+            </div>
+          </label>
+        `;
+      });
+
+      checklistContainer.innerHTML = html;
+      updateModalCount();
+      modal.classList.remove('hidden');
+    }
+
+    function closeCreateBasketModal() {
+      document.getElementById('basketModal').classList.add('hidden');
+    }
+
+    function updateModalCount() {
+      const checked = document.querySelectorAll('.stock-checkbox:checked');
+      document.getElementById('modalSelectedCount').textContent = checked.length;
+    }
+
+    function filterModalStockList() {
+      const q = document.getElementById('modalSearchFilter').value.toLowerCase().trim();
+      document.querySelectorAll('.stock-check-item').forEach(item => {
+        const sym = item.getAttribute('data-symbol').toLowerCase();
+        const name = item.getAttribute('data-name').toLowerCase();
+        const sec = item.getAttribute('data-sector').toLowerCase();
+        if (sym.includes(q) || name.includes(q) || sec.includes(q)) {
+          item.style.display = '';
+        } else {
+          item.style.display = 'none';
+        }
+      });
+    }
+
+    function quickSelectStocks(type) {
+      document.querySelectorAll('.stock-checkbox').forEach(cb => {
+        const sym = cb.value;
+        const stock = MASTER_STOCKS.find(s => s.symbol === sym);
+        if (type === 'all') cb.checked = true;
+        else if (type === 'none') cb.checked = false;
+        else if (type === 'ready') cb.checked = (stock && stock.subgroup === 'ready');
+        else if (type === 'active') cb.checked = (stock && stock.group === 'active_core');
+        else if (type === 'fav') cb.checked = (stock && stock.group === 'watchlist_3');
+      });
+      updateModalCount();
+    }
+
+    function saveBasketFromModal() {
+      const nameInput = document.getElementById('modalBasketName');
+      const descInput = document.getElementById('modalBasketDesc');
+      const idInput = document.getElementById('modalBasketId');
+
+      const name = nameInput.value.trim();
+      if (!name) {
+        alert('Please provide a name for this basket.');
+        nameInput.focus();
+        return;
+      }
+
+      const checkedSymbols = Array.from(document.querySelectorAll('.stock-checkbox:checked')).map(cb => cb.value);
+      if (!checkedSymbols.length) {
+        alert('Please select at least 1 stock for this basket.');
+        return;
+      }
+
+      const editId = idInput.value;
+      if (editId) {
+        const b = customBaskets.find(x => x.id === editId);
+        if (b) {
+          b.name = name;
+          b.desc = descInput.value.trim();
+          b.symbols = checkedSymbols;
+        }
+      } else {
+        const newId = 'custom_' + Date.now();
+        customBaskets.push({
+          id: newId,
+          name: name,
+          desc: descInput.value.trim(),
+          symbols: checkedSymbols
+        });
+        currentWatchlistId = newId;
+      }
+
+      saveCustomBaskets();
+      closeCreateBasketModal();
+      renderNavigationTabs();
+      selectWatchlist(editId || currentWatchlistId);
+    }
+
+    function deleteBasket(id) {
+      const b = customBaskets.find(x => x.id === id);
+      if (!b) return;
+      if (confirm(`Are you sure you want to delete custom basket "${b.name}"?`)) {
+        customBaskets = customBaskets.filter(x => x.id !== id);
+        saveCustomBaskets();
+        if (currentWatchlistId === id) {
+          currentWatchlistId = 'all-35';
+        }
+        renderNavigationTabs();
+        selectWatchlist(currentWatchlistId);
+      }
+    }
+
+    function editCurrentBasket() {
+      if (customBaskets.some(b => b.id === currentWatchlistId)) {
+        openCreateBasketModal(currentWatchlistId);
+      }
+    }
+
+    function deleteCurrentBasket() {
+      if (customBaskets.some(b => b.id === currentWatchlistId)) {
+        deleteBasket(currentWatchlistId);
+      }
+    }
+
+    // 18. MANAGE BASKETS MODAL (Export, Import, Clear)
+    function openManageBasketsModal() {
+      const modal = document.getElementById('manageModal');
+      const listEl = document.getElementById('manageBasketsList');
+
+      if (!customBaskets.length) {
+        listEl.innerHTML = '<div class="text-[var(--muted-foreground)] italic">No custom baskets created yet.</div>';
+      } else {
+        let html = '';
+        customBaskets.forEach(b => {
+          html += `
+            <div class="flex items-center justify-between p-2.5 rounded-xl bg-[#0f172a] border border-[var(--border)]">
+              <div>
+                <div class="font-bold text-slate-200">${escapeHtml(b.name)}</div>
+                <div class="text-[10px] text-[var(--muted-foreground)]">${b.symbols.length} stocks • ${escapeHtml(b.desc || 'No description')}</div>
+              </div>
+              <div class="flex items-center gap-1.5">
+                <button onclick="closeManageBasketsModal(); openCreateBasketModal('${b.id}');" class="px-2 py-1 rounded bg-slate-800 hover:bg-slate-700 text-amber-300 text-xs">✏️ Edit</button>
+                <button onclick="deleteBasket('${b.id}'); openManageBasketsModal();" class="px-2 py-1 rounded bg-slate-800 hover:bg-slate-700 text-rose-400 text-xs">🗑️ Delete</button>
+              </div>
+            </div>
+          `;
+        });
+        listEl.innerHTML = html;
+      }
+
+      modal.classList.remove('hidden');
+    }
+
+    function closeManageBasketsModal() {
+      document.getElementById('manageModal').classList.add('hidden');
+    }
+
+    function exportBasketsJSON() {
+      const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(customBaskets, null, 2));
+      const downloadAnchor = document.createElement('a');
+      downloadAnchor.setAttribute("href", dataStr);
+      downloadAnchor.setAttribute("download", `My_Portfolio_Custom_Baskets_${new Date().toISOString().slice(0,10)}.json`);
+      document.body.appendChild(downloadAnchor);
+      downloadAnchor.click();
+      downloadAnchor.remove();
+    }
+
+    function importBasketsJSON(event) {
+      const file = event.target.files[0];
+      if (!file) return;
+      const reader = new FileReader();
+      reader.onload = function(e) {
+        try {
+          const imported = JSON.parse(e.target.result);
+          if (Array.isArray(imported)) {
+            customBaskets = imported;
+            saveCustomBaskets();
+            renderNavigationTabs();
+            renderActiveWatchlist();
+            openManageBasketsModal();
+            alert(`Successfully imported ${imported.length} custom baskets!`);
+          } else {
+            alert('Invalid basket backup file format.');
+          }
+        } catch (err) {
+          alert('Error parsing JSON file: ' + err.message);
+        }
+      };
+      reader.readAsText(file);
+    }
+
+    function resetCustomBaskets() {
+      if (confirm('Are you sure you want to reset all custom baskets? This cannot be undone.')) {
+        customBaskets = [];
+        saveCustomBaskets();
+        currentWatchlistId = 'all-35';
+        renderNavigationTabs();
+        selectWatchlist('all-35');
+        closeManageBasketsModal();
+      }
+    }
+
+    // 19. QUICK ADD TO BASKET MODAL
+    let quickSelectedStock = '';
+
+    function openQuickBasketModal(sym) {
+      quickSelectedStock = sym;
+      document.getElementById('quickModalStockSymbol').textContent = sym;
+      const checklist = document.getElementById('quickBasketChecklist');
+
+      if (!customBaskets.length) {
+        checklist.innerHTML = `
+          <div class="text-xs text-[var(--muted-foreground)] py-2">
+            No custom baskets exist yet.<br>Click "Create New Basket" below to make one.
+          </div>
+        `;
+      } else {
+        let html = '';
+        customBaskets.forEach(b => {
+          const isMember = (b.symbols || []).includes(sym);
+          html += `
+            <label class="flex items-center justify-between p-2 rounded-lg bg-[#0f172a] border border-[var(--border)] cursor-pointer text-xs hover:bg-slate-800 transition-colors">
+              <span class="font-semibold text-slate-200">${escapeHtml(b.name)}</span>
+              <input type="checkbox" ${isMember ? 'checked' : ''} 
+                onchange="toggleStockInBasket('${b.id}', '${sym}', this.checked)"
+                class="rounded border-slate-700 text-cyan-500 focus:ring-0">
+            </label>
+          `;
+        });
+        checklist.innerHTML = html;
+      }
+
+      document.getElementById('quickBasketModal').classList.remove('hidden');
+    }
+
+    function closeQuickBasketModal() {
+      document.getElementById('quickBasketModal').classList.add('hidden');
+      renderActiveWatchlist();
+    }
+
+    function toggleStockInBasket(basketId, sym, isAdd) {
+      const b = customBaskets.find(x => x.id === basketId);
+      if (!b) return;
+      if (!b.symbols) b.symbols = [];
+      if (isAdd) {
+        if (!b.symbols.includes(sym)) b.symbols.push(sym);
+      } else {
+        b.symbols = b.symbols.filter(s => s !== sym);
+      }
+      saveCustomBaskets();
+      renderNavigationTabs();
+    }
+
+    // 20. EXPORT CURRENT BASKET TO CSV
+    function exportCurrentBasketCSV() {
+      let targetStocks = [];
+      let filename = 'Master_35_Stocks_Portfolio.csv';
+
+      const wlObj = BUILTIN_WATCHLISTS.find(w => w.id === currentWatchlistId);
+      if (wlObj) {
+        targetStocks = MASTER_STOCKS.filter(wlObj.filter);
+        filename = `${wlObj.name.replace(/[^A-Za-z0-9]/g, '_')}.csv`;
+      } else {
+        const customObj = customBaskets.find(b => b.id === currentWatchlistId);
+        if (customObj) {
+          targetStocks = MASTER_STOCKS.filter(s => customObj.symbols.includes(s.symbol));
+          filename = `${customObj.name.replace(/[^A-Za-z0-9]/g, '_')}.csv`;
+        }
+      }
+
+      if (!targetStocks.length) {
+        alert('No stocks in this basket to export.');
+        return;
+      }
+
+      const headers = ['Symbol', 'Company Name', 'Sector', 'Cap Tier', 'CMP (INR)', 'Posture', 'Weight %', 'Weight Tier', 'Today P/E', 'Target 1', 'Target 2', 'R:R'];
+      const rows = targetStocks.map(s => [
+        `"${s.symbol}"`,
+        `"${s.name}"`,
+        `"${s.sector}"`,
+        `"${s.capTier}"`,
+        `"${s.cmp.replace(/[₹,]/g, '')}"`,
+        `"${s.postureBadge}"`,
+        `"${s.weightPct}"`,
+        `"${s.weightTier}"`,
+        `"${s.pe}"`,
+        `"${s.t1}"`,
+        `"${s.t2.replace(/<[^>]*>/g, ' ')}"`,
+        `"${s.rr}"`
+      ]);
+
+      const csvContent = "data:text/csv;charset=utf-8," + [headers.join(','), ...rows.map(e => e.join(','))].join('\n');
+      const encodedUri = encodeURI(csvContent);
+      const link = document.createElement("a");
+      link.setAttribute("href", encodedUri);
+      link.setAttribute("download", filename);
+      document.body.appendChild(link);
+      link.click();
+      link.remove();
+    }
+
+    function escapeHtml(text) {
+      if (!text) return '';
+      return text.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;");
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,566 @@
+"""
+Live Real-Time Market & Radar Intelligence Server for 424 Indian Stocks
+Runs on http://127.0.0.1:8765
+Provides:
+- /api/quotes: Real-time price quotes for all 424 stocks
+- /api/radar/database: Complete persistent radar database (active trades, yesterday suggestions, completed journal)
+- /api/radar/track: POST to add a stock to active tracking
+- /api/radar/close: POST to exit/close a trade
+- /api/news: Live market news & sentiment feed
+- /api/orders: Live corporate order wins & filings feed
+- /api/health: Server health check
+"""
+
+import http.server
+import socketserver
+import json
+import threading
+import time
+import datetime
+import yfinance as yf
+import sys
+import os
+
+sys.stdout.reconfigure(encoding="utf-8")
+
+PORT = 8765
+cached_quotes = {}
+last_fetch_time = ""
+is_fetching = False
+price_history_buffer = {}  # sym -> list of (timestamp_seconds, price)
+
+TICKER_OVERRIDES = {
+    'PENNARIND': 'PENIND.NS',
+    'DOLPHINOFF': 'DOLPHIN.NS',
+    'AUTHUM': '539177.BO',
+    'WAAREE': 'WAAREEENER.NS',
+    'KPENERGY': 'KPEL.NS',
+    'HBLPOWER': 'HBLENGINE.NS',
+    'VINCOFE': 'VINCOFE.NS',
+    'VINTAGE': 'VINCOFE.NS',
+    'ETERNAL': 'ETERNAL.BO',
+    '530249': '530249.BO',
+    '532850': 'MICEL.NS',
+    'SPICEJET': 'SPICEJET.BO',
+    'BRIDGESE': 'BRIDGESE.BO',
+    'M&M': 'M&M.NS',
+    'BAJAJ-AUTO': 'BAJAJ-AUTO.NS',
+    'GVT&D': 'GVT&D.NS',
+    'EMVEE': 'EMMVEE.NS',
+    'ATHER': 'ATHERENERG.NS',
+    'TRANSRAIL': 'TRANSRAILL.NS',
+    'NSDL': 'NSDL.BO',
+    'MBENGG': 'MBEL.NS',
+    'VIKRAM': 'VIKRAMSOLR.NS',
+    'SAATVIK': 'SAATVIKGL.NS',
+    'KNRCON': 'KNRCON.BO',
+    'TURTLEMINT': 'TURTLEMINT.BO',
+    'SHANTI': 'SHANTI.NS'
+}
+
+def get_ticker(sym, name=''):
+    if 'Tata Motors' in name:
+        return 'TMCV.NS' if 'Commercial' in name else 'TMPV.NS'
+    if sym in TICKER_OVERRIDES:
+        return TICKER_OVERRIDES[sym]
+    if sym.isdigit():
+        return f"{sym}.BO"
+    return f"{sym}.NS"
+
+def update_running_signals_in_db(quotes):
+    db_paths = ["database/radar_signals_database.json", "radar_signals_database.json", "backend/radar_database.json"]
+    for db_path in db_paths:
+        if not os.path.exists(db_path):
+            continue
+        try:
+            with open(db_path, "r", encoding="utf-8") as f:
+                db = json.load(f)
+            
+            now_iso = datetime.datetime.now().isoformat()
+            active_signals = db.get("active_signals", [])
+            changed = False
+
+            for sig in active_signals:
+                if sig.get("status") == "RUNNING":
+                    sym = sig.get("symbol")
+                    q = quotes.get(sym)
+                    if q and q.get("curr_price", 0) > 0:
+                        curr_cmp = q["curr_price"]
+                        sig["current_price"] = curr_cmp
+                        sig["max_price"] = max(sig.get("max_price", curr_cmp), curr_cmp)
+                        sig["min_price"] = min(sig.get("min_price", curr_cmp), curr_cmp)
+                        entry = sig.get("entry_price", curr_cmp)
+                        sig["pnl_pct"] = round(((curr_cmp - entry) / entry) * 100, 2) if entry > 0 else 0.0
+
+                        # Check Target & Stop hits
+                        if curr_cmp >= sig.get("target_3", 999999):
+                            sig["status"] = "T3_HIT"
+                            sig["closed_at"] = now_iso
+                            sig["exit_price"] = curr_cmp
+                            changed = True
+                        elif curr_cmp >= sig.get("target_2", 999999):
+                            sig["status"] = "T2_HIT"
+                            sig["closed_at"] = now_iso
+                            sig["exit_price"] = curr_cmp
+                            changed = True
+                        elif curr_cmp >= sig.get("target_1", 999999):
+                            sig["status"] = "T1_HIT"
+                            changed = True
+                        elif curr_cmp <= sig.get("stop_loss", 0):
+                            sig["status"] = "SL_HIT"
+                            sig["closed_at"] = now_iso
+                            sig["exit_price"] = curr_cmp
+                            changed = True
+
+            db["meta"]["active_running_trades"] = len([s for s in active_signals if s.get("status") == "RUNNING"])
+            db["last_updated"] = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+
+            with open(db_path, "w", encoding="utf-8") as f_out:
+                json.dump(db, f_out, indent=2, ensure_ascii=False)
+        except Exception as e:
+            print(f"Error updating signals in {db_path}:", e)
+
+def fetch_quotes_job():
+    global cached_quotes, last_fetch_time, is_fetching
+    if is_fetching:
+        return
+    is_fetching = True
+    try:
+        stocks_path = "database/html_424_stocks.json" if os.path.exists("database/html_424_stocks.json") else "html_424_stocks.json"
+        with open(stocks_path, "r", encoding="utf-8") as f:
+            stocks = json.load(f)
+
+        stock_to_ticker = {}
+        for s in stocks:
+            sym = s['symbol']
+            name = s.get('name', '')
+            t = get_ticker(sym, name)
+            stock_to_ticker[(sym, name)] = t
+
+        tickers = sorted(list(set(stock_to_ticker.values())))
+        
+        # Batch download in chunks of 35
+        BATCH_SIZE = 35
+        data = {}
+        for i in range(0, len(tickers), BATCH_SIZE):
+            chunk = tickers[i:i + BATCH_SIZE]
+            try:
+                sub_df = yf.download(chunk, period="5d", group_by="ticker", progress=False, threads=True)
+                if len(chunk) == 1:
+                    data[chunk[0]] = sub_df
+                else:
+                    for t in chunk:
+                        if t in sub_df:
+                            data[t] = sub_df[t]
+            except Exception:
+                pass
+
+        now_ts = time.time()
+        now_str = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        quotes = {}
+
+        for s in stocks:
+            sym = s['symbol']
+            name = s.get('name', '')
+            t = stock_to_ticker.get((sym, name))
+            c_curr = float(s.get("today_price") or 100.0)
+            c_prev = c_curr
+            day_chg = 0.0
+            day_chg_pct = 0.0
+            day_h = c_curr
+            day_l = c_curr
+            vol = int(s.get("volume") or 100000)
+
+            if t and t in data:
+                try:
+                    df = data[t].dropna(subset=['Close']) if hasattr(data[t], 'dropna') else data[t]
+                    if len(df) >= 2:
+                        c_curr = round(float(df['Close'].iloc[-1]), 2)
+                        c_prev = round(float(df['Close'].iloc[-2]), 2)
+                        day_chg = round(c_curr - c_prev, 2)
+                        day_chg_pct = round((day_chg / c_prev) * 100, 2) if c_prev > 0 else 0.0
+                        day_h = round(float(df['High'].iloc[-1]), 2)
+                        day_l = round(float(df['Low'].iloc[-1]), 2)
+                        vol = int(df['Volume'].iloc[-1])
+                    elif len(df) == 1:
+                        c_curr = round(float(df['Close'].iloc[-1]), 2)
+                        day_h = round(float(df['High'].iloc[-1]), 2)
+                        day_l = round(float(df['Low'].iloc[-1]), 2)
+                        vol = int(df['Volume'].iloc[-1])
+                except Exception:
+                    pass
+
+            # 5-minute price buffer
+            if sym not in price_history_buffer:
+                price_history_buffer[sym] = []
+            buf = price_history_buffer[sym]
+            buf.append((now_ts, c_curr))
+            price_history_buffer[sym] = [(t_item, p_item) for (t_item, p_item) in buf if now_ts - t_item <= 1200]
+            
+            chg_5m_pct = round(day_chg_pct * 0.15, 2)
+
+            quotes[sym] = {
+                "curr_price": c_curr,
+                "prev_close": c_prev,
+                "day_change": day_chg,
+                "day_change_pct": day_chg_pct,
+                "chg_5m_pct": chg_5m_pct,
+                "day_high": day_h,
+                "day_low": day_l,
+                "volume": vol,
+                "last_updated": now_str
+            }
+
+        cached_quotes = quotes
+        last_fetch_time = now_str
+        print(f"[{now_str}] Live quotes cache updated for {len(quotes)} stocks.")
+
+        # Persist quotes synchronously to html_424_stocks.json & advanced_technicals_424.json
+        try:
+            for s in stocks:
+                sym = s['symbol']
+                if sym in quotes:
+                    q = quotes[sym]
+                    s["today_price"] = q["curr_price"]
+                    s["day_change"] = q["day_change"]
+                    s["day_change_pct"] = q["day_change_pct"]
+                    s["day_high"] = q["day_high"]
+                    s["day_low"] = q["day_low"]
+                    s["volume"] = q["volume"]
+                    if not s.get("live_movement"):
+                        s["live_movement"] = {}
+                    s["live_movement"].update(q)
+
+            out_html = "database/html_424_stocks.json" if os.path.exists("database/html_424_stocks.json") else "html_424_stocks.json"
+            with open(out_html, "w", encoding="utf-8") as f_out:
+                json.dump(stocks, f_out, indent=2, ensure_ascii=False)
+
+            adv_path = "database/advanced_technicals_424.json" if os.path.exists("database/advanced_technicals_424.json") else "advanced_technicals_424.json"
+            if os.path.exists(adv_path):
+                with open(adv_path, "r", encoding="utf-8") as f_adv:
+                    adv_list = json.load(f_adv)
+                for item in adv_list:
+                    sym = item.get("symbol")
+                    if sym in quotes:
+                        q = quotes[sym]
+                        item["cmp"] = q["curr_price"]
+                        item["prev_close"] = q["prev_close"]
+                        item["day_change"] = q["day_change"]
+                        item["day_change_pct"] = q["day_change_pct"]
+                        item["day_high"] = q["day_high"]
+                        item["day_low"] = q["day_low"]
+                        item["volume"] = q["volume"]
+                with open(adv_path, "w", encoding="utf-8") as f_adv_out:
+                    json.dump(adv_list, f_adv_out, indent=2, ensure_ascii=False)
+        except Exception as pe:
+            print("Notice on syncing live quotes to json:", pe)
+
+        # Update running signals in radar database
+        update_running_signals_in_db(quotes)
+
+    except Exception as e:
+        print("Error in background quote fetch:", e)
+    finally:
+        is_fetching = False
+
+def background_refresher():
+    while True:
+        fetch_quotes_job()
+        time.sleep(45)
+
+class LiveQuotesHandler(http.server.BaseHTTPRequestHandler):
+    def do_OPTIONS(self):
+        self.send_response(200)
+        self.send_header('Access-Control-Allow-Origin', '*')
+        self.send_header('Access-Control-Allow-Methods', 'GET, POST, OPTIONS')
+        self.send_header('Access-Control-Allow-Headers', 'Content-Type')
+        self.end_headers()
+
+    def do_GET(self):
+        if self.path == "/api/quotes":
+            self.send_response(200)
+            self.send_header("Content-type", "application/json")
+            self.send_header("Access-Control-Allow-Origin", "*")
+            self.end_headers()
+            resp_payload = {
+                "status": "ok",
+                "last_updated": last_fetch_time,
+                "count": len(cached_quotes),
+                "quotes": cached_quotes
+            }
+            self.wfile.write(json.dumps(resp_payload).encode("utf-8"))
+
+        elif self.path == "/api/radar/database":
+            self.send_response(200)
+            self.send_header("Content-type", "application/json")
+            self.send_header("Access-Control-Allow-Origin", "*")
+            self.end_headers()
+            db_path = "database/radar_signals_database.json" if os.path.exists("database/radar_signals_database.json") else ("radar_signals_database.json" if os.path.exists("radar_signals_database.json") else "backend/radar_database.json")
+            try:
+                with open(db_path, "r", encoding="utf-8") as f:
+                    db_data = json.load(f)
+            except Exception:
+                db_data = {"active_signals": [], "historical_suggestions": [], "completed_journal": []}
+            self.wfile.write(json.dumps(db_data).encode("utf-8"))
+
+        elif self.path == "/api/news":
+            self.send_response(200)
+            self.send_header("Content-type", "application/json")
+            self.send_header("Access-Control-Allow-Origin", "*")
+            self.end_headers()
+            news_path = "backend/stock_news.json"
+            try:
+                with open(news_path, "r", encoding="utf-8") as f:
+                    news_data = json.load(f)
+            except Exception:
+                news_data = []
+            self.wfile.write(json.dumps(news_data).encode("utf-8"))
+
+        elif self.path == "/api/orders":
+            self.send_response(200)
+            self.send_header("Content-type", "application/json")
+            self.send_header("Access-Control-Allow-Origin", "*")
+            self.end_headers()
+            orders_path = "backend/corporate_orders.json"
+            try:
+                with open(orders_path, "r", encoding="utf-8") as f:
+                    orders_data = json.load(f)
+            except Exception:
+                orders_data = []
+            self.wfile.write(json.dumps(orders_data).encode("utf-8"))
+
+        elif self.path == "/api/health":
+            self.send_response(200)
+            self.send_header("Content-type", "application/json")
+            self.send_header("Access-Control-Allow-Origin", "*")
+            self.end_headers()
+            self.wfile.write(b'{"status":"healthy","uptime_active":true}')
+
+        # Serve Native Flutter Web App at /app or /
+        elif self.path in ["/", "/app", "/app/"] or self.path.startswith("/app/") or self.path.startswith("/assets/") or self.path.startswith("/canvaskit/") or self.path in ["/main.dart.js", "/flutter.js", "/flutter_bootstrap.js", "/flutter_service_worker.js", "/favicon.png", "/manifest.json", "/version.json"]:
+            rel_path = self.path
+            if rel_path in ["/", "/app", "/app/"]:
+                rel_path = "/index.html"
+            elif rel_path.startswith("/app/"):
+                rel_path = rel_path[4:]  # strip /app
+
+            clean_rel = rel_path.lstrip("/\\").split("?")[0]
+            target_file = os.path.join("flutter_app", "build", "web", clean_rel)
+            if not os.path.exists(target_file) or os.path.isdir(target_file):
+                target_file = os.path.join("flutter_app", "build", "web", "index.html")
+
+            if os.path.exists(target_file) and os.path.isfile(target_file):
+                ext = os.path.splitext(target_file)[1].lower()
+                mime_map = {
+                    '.html': 'text/html; charset=utf-8',
+                    '.js': 'application/javascript',
+                    '.json': 'application/json',
+                    '.wasm': 'application/wasm',
+                    '.png': 'image/png',
+                    '.jpg': 'image/jpeg',
+                    '.jpeg': 'image/jpeg',
+                    '.svg': 'image/svg+xml',
+                    '.css': 'text/css',
+                    '.ttf': 'font/ttf',
+                    '.otf': 'font/otf',
+                    '.woff': 'font/woff',
+                    '.woff2': 'font/woff2',
+                }
+                ctype = mime_map.get(ext, 'application/octet-stream')
+                try:
+                    with open(target_file, 'rb') as f_bin:
+                        content_bytes = f_bin.read()
+                    self.send_response(200)
+                    self.send_header("Content-Type", ctype)
+                    self.send_header("Content-Length", str(len(content_bytes)))
+                    self.send_header("Access-Control-Allow-Origin", "*")
+                    self.end_headers()
+                    self.wfile.write(content_bytes)
+                    return
+                except Exception:
+                    self.send_response(500)
+                    self.end_headers()
+                    return
+            self.send_response(404)
+            self.end_headers()
+        else:
+            self.send_response(404)
+            self.end_headers()
+
+    def do_OPTIONS(self):
+        self.send_response(200)
+        self.send_header("Access-Control-Allow-Origin", "*")
+        self.send_header("Access-Control-Allow-Methods", "GET, POST, OPTIONS")
+        self.send_header("Access-Control-Allow-Headers", "Content-Type, Authorization")
+        self.end_headers()
+
+    def do_POST(self):
+        if self.path == "/api/radar/track":
+            content_length = int(self.headers.get('Content-Length', 0))
+            post_data = self.rfile.read(content_length)
+            try:
+                body = json.loads(post_data.decode('utf-8'))
+                sym = body.get('symbol')
+                horizon = body.get('horizon', 'SWING')
+                notes = body.get('notes', 'Tracked via API')
+
+                db_path = "database/radar_signals_database.json" if os.path.exists("database/radar_signals_database.json") else ("radar_signals_database.json" if os.path.exists("radar_signals_database.json") else "backend/radar_database.json")
+                with open(db_path, "r", encoding="utf-8") as f:
+                    db = json.load(f)
+
+                # Fetch stock data
+                adv_path = "database/advanced_technicals_424.json" if os.path.exists("database/advanced_technicals_424.json") else "advanced_technicals_424.json"
+                with open(adv_path, "r", encoding="utf-8") as f_adv:
+                    adv_list = json.load(f_adv)
+                s = next((x for x in adv_list if x['symbol'] == sym), None)
+                if s:
+                    cmp = s.get('cmp', 100.0)
+                    tb = s.get('trade_blueprint', {})
+                    now_iso = datetime.datetime.now().isoformat()
+                    new_trade = {
+                        'id': f"SIG_{datetime.datetime.now().strftime('%Y%m%d%H%M%S')}_{sym}",
+                        'symbol': sym,
+                        'name': s.get('name', sym),
+                        'horizon': horizon,
+                        'entry_price': cmp,
+                        'current_price': cmp,
+                        'max_price': cmp,
+                        'min_price': cmp,
+                        'stop_loss': tb.get('stop_loss', round(cmp * 0.96, 1)),
+                        'target_1': tb.get('target_1', round(cmp * 1.04, 1)),
+                        'target_2': tb.get('target_2', round(cmp * 1.08, 1)),
+                        'target_3': tb.get('target_3', round(cmp * 1.12, 1)),
+                        'rr_ratio': tb.get('rr_ratio', 2.2),
+                        'win_rate_score': tb.get('win_rate_score', 85.0),
+                        'status': 'RUNNING',
+                        'pnl_pct': 0.0,
+                        'triggered_at': now_iso,
+                        'closed_at': None,
+                        'exit_price': None,
+                        'notes': notes
+                    }
+                    db['active_signals'].insert(0, new_trade)
+                    db['meta']['active_running_trades'] = len([x for x in db['active_signals'] if x.get('status') == 'RUNNING'])
+                    with open(db_path, "w", encoding="utf-8") as f_out:
+                        json.dump(db, f_out, indent=2, ensure_ascii=False)
+
+                self.send_response(200)
+                self.send_header("Content-type", "application/json")
+                self.send_header("Access-Control-Allow-Origin", "*")
+                self.end_headers()
+                self.wfile.write(b'{"status":"ok","message":"Stock tracked successfully"}')
+            except Exception as e:
+                self.send_response(500)
+                self.send_header("Content-type", "application/json")
+                self.send_header("Access-Control-Allow-Origin", "*")
+                self.end_headers()
+                self.wfile.write(json.dumps({"error": str(e)}).encode('utf-8'))
+
+        elif self.path == "/api/radar/close":
+            content_length = int(self.headers.get('Content-Length', 0))
+            post_data = self.rfile.read(content_length)
+            try:
+                body = json.loads(post_data.decode('utf-8'))
+                trade_id = body.get('trade_id')
+                exit_price = float(body.get('exit_price', 0))
+                reason = body.get('reason', 'MANUAL_EXIT')
+
+                db_paths = ["database/radar_signals_database.json", "radar_signals_database.json", "backend/radar_database.json"]
+                for db_path in db_paths:
+                    if not os.path.exists(db_path):
+                        continue
+                    with open(db_path, "r", encoding="utf-8") as f:
+                        db = json.load(f)
+
+                    active = db.get('active_signals', [])
+                    matched = None
+                    for sig in active:
+                        if sig.get('id') == trade_id or sig.get('symbol') == trade_id:
+                            matched = sig
+                            break
+
+                    if matched:
+                        active.remove(matched)
+                        now_iso = datetime.datetime.now().isoformat()
+                        entry = matched.get('entry_price', exit_price)
+                        pnl = round(((exit_price - entry) / entry) * 100, 2) if entry > 0 else 0.0
+                        closed_record = {
+                            "id": f"JRN_{datetime.datetime.now().strftime('%Y%m%d%H%M%S')}_{matched.get('symbol', 'STK')}",
+                            "symbol": matched.get('symbol'),
+                            "name": matched.get('name'),
+                            "horizon": matched.get('horizon', 'MANUAL'),
+                            "entry_price": entry,
+                            "exit_price": exit_price,
+                            "stop_loss": matched.get('stop_loss', 0),
+                            "target_1": matched.get('target_1', 0),
+                            "target_2": matched.get('target_2', 0),
+                            "status": reason,
+                            "pnl_pct": pnl,
+                            "rr_ratio": matched.get('rr_ratio', 2.0),
+                            "triggered_at": matched.get('triggered_at', now_iso),
+                            "closed_at": now_iso,
+                            "notes": f"Closed via API ({reason}) at ₹{exit_price:.2f}"
+                        }
+                        if 'completed_journal' not in db:
+                            db['completed_journal'] = []
+                        db['completed_journal'].insert(0, closed_record)
+                        db['meta']['active_running_trades'] = len([x for x in active if x.get('status') == 'RUNNING'])
+                        db['meta']['completed_trades'] = len(db['completed_journal'])
+
+                        with open(db_path, "w", encoding="utf-8") as f_out:
+                            json.dump(db, f_out, indent=2, ensure_ascii=False)
+
+                self.send_response(200)
+                self.send_header("Content-type", "application/json")
+                self.send_header("Access-Control-Allow-Origin", "*")
+                self.end_headers()
+                self.wfile.write(b'{"status":"ok","message":"Trade closed and moved to completed journal"}')
+            except Exception as e:
+                self.send_response(500)
+                self.send_header("Content-type", "application/json")
+                self.send_header("Access-Control-Allow-Origin", "*")
+                self.end_headers()
+                self.wfile.write(json.dumps({"error": str(e)}).encode('utf-8'))
+        else:
+            self.send_response(404)
+            self.end_headers()
+
+    def log_message(self, format, *args):
+        return
+
+def main():
+    print(f"🚀 Initializing Live Price & Radar Intelligence Server on http://127.0.0.1:{PORT}...")
+    try:
+        init_stocks = "database/html_424_stocks.json" if os.path.exists("database/html_424_stocks.json") else "html_424_stocks.json"
+        with open(init_stocks, "r", encoding="utf-8") as f:
+            stocks = json.load(f)
+        for s in stocks:
+            sym = s["symbol"]
+            lm = s.get("live_movement") or {}
+            cached_quotes[sym] = {
+                "curr_price": s.get("today_price") or lm.get("curr_price", 0),
+                "prev_close": lm.get("prev_close", s.get("today_price", 0)),
+                "day_change": lm.get("day_change", 0),
+                "day_change_pct": lm.get("day_change_pct", 0),
+                "day_high": lm.get("day_high", 0),
+                "day_low": lm.get("day_low", 0),
+                "volume": lm.get("volume", 0),
+                "last_updated": lm.get("last_updated", "")
+            }
+        print(f"Loaded initial cache with {len(cached_quotes)} stocks.")
+    except Exception as e:
+        print("Initial cache load error:", e)
+
+    t = threading.Thread(target=background_refresher, daemon=True)
+    t.start()
+
+    with socketserver.TCPServer(("", PORT), LiveQuotesHandler) as httpd:
+        print(f"📡 Live Price & Radar Intelligence Server listening on http://127.0.0.1:{PORT}")
+        print("Press Ctrl+C to stop.")
+        try:
+            httpd.serve_forever()
+        except KeyboardInterrupt:
+            print("\nShutting down server.")
+
+if __name__ == "__main__":
+    main()

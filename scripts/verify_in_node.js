@@ -1,0 +1,25 @@
+﻿const fs = require('fs');
+const html = fs.readFileSync('Advance_Technical_Analysis_424_Stocks.html', 'utf8');
+const marker = 'const STOCKS_DATA = ';
+const idx = html.indexOf(marker);
+console.log('Index of STOCKS_DATA:', idx);
+const endMarker = 'let currentData';
+const endIdx = html.indexOf(endMarker, idx);
+console.log('End index of currentData:', endIdx);
+const rawSubstring = html.substring(idx + marker.length, endIdx);
+// trim trailing semicolon and whitespace
+const jsonStr = rawSubstring.trim().replace(/;$/, '');
+const stocks = JSON.parse(jsonStr);
+console.log('Successfully loaded stocks count from HTML:', stocks.length);
+const tr = stocks.find(s => s.symbol === 'TRANSRAIL');
+console.log('TRANSRAIL in HTML STOCKS_DATA:');
+console.log('  CMP:', tr.cmp);
+console.log('  52W Range:', tr.low_52w, 'to', tr.high_52w);
+console.log('  EMA9:', tr.moving_averages.ema9);
+console.log('  EMA20:', tr.moving_averages.ema20);
+console.log('  EMA50:', tr.moving_averages.ema50);
+console.log('  SMA200:', tr.moving_averages.sma200);
+console.log('  Dist from 200 SMA:', tr.moving_averages.dist_200_sma + '%');
+console.log('  BB Mid:', tr.volatility.bb_mid, 'Upper:', tr.volatility.bb_upper, 'Lower:', tr.volatility.bb_lower, '%B:', tr.volatility.bb_pct_b + '%');
+console.log('  Timeframe 1D:', JSON.stringify(tr.timeframes['1D']));
+console.log('  Candles Count:', tr.candles.length, 'Latest:', JSON.stringify(tr.candles[tr.candles.length-1]));
