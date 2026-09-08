@@ -466,49 +466,100 @@ class Stock {
     this.isBucket = false,
   });
 
+  static double _toDouble(dynamic val, [double fallback = 0.0]) {
+    if (val == null) return fallback;
+    if (val is num) return val.toDouble();
+    if (val is String) {
+      return double.tryParse(val) ?? fallback;
+    }
+    return fallback;
+  }
+
+  static double? _toDoubleOrNull(dynamic val) {
+    if (val == null) return null;
+    if (val is num) return val.toDouble();
+    if (val is String) {
+      return double.tryParse(val);
+    }
+    return null;
+  }
+
+  static int _toInt(dynamic val, [int fallback = 0]) {
+    if (val == null) return fallback;
+    if (val is num) return val.toInt();
+    if (val is String) {
+      return int.tryParse(val) ?? fallback;
+    }
+    return fallback;
+  }
+
   factory Stock.fromJson(Map<String, dynamic> json) {
-    final tb = json['trade_blueprint'] as Map<String, dynamic>? ?? {};
-    final osc = json['oscillators'] as Map<String, dynamic>? ?? {};
-    final ma = json['moving_averages'] as Map<String, dynamic>? ?? {};
-    final vol = json['volatility'] as Map<String, dynamic>? ?? {};
-    final piv = json['pivots'] as Map<String, dynamic>? ?? {};
-    final fib = json['fibonacci'] as Map<String, dynamic>? ?? {};
-    final conf = json['confluence'] as Map<String, dynamic>? ?? {};
+    final tb = json['trade_blueprint'] is Map ? Map<String, dynamic>.from(json['trade_blueprint'] as Map) : <String, dynamic>{};
+    final osc = json['oscillators'] is Map ? Map<String, dynamic>.from(json['oscillators'] as Map) : <String, dynamic>{};
+    final ma = json['moving_averages'] is Map ? Map<String, dynamic>.from(json['moving_averages'] as Map) : <String, dynamic>{};
+    final vol = json['volatility'] is Map ? Map<String, dynamic>.from(json['volatility'] as Map) : <String, dynamic>{};
+    final piv = json['pivots'] is Map ? Map<String, dynamic>.from(json['pivots'] as Map) : <String, dynamic>{};
+    final fib = json['fibonacci'] is Map ? Map<String, dynamic>.from(json['fibonacci'] as Map) : <String, dynamic>{};
+    final conf = json['confluence'] is Map ? Map<String, dynamic>.from(json['confluence'] as Map) : <String, dynamic>{};
 
-    final candleList = (json['candles'] as List<dynamic>?)
-            ?.map((c) => CandleData.fromJson(c as Map<String, dynamic>))
-            .toList() ??
-        [];
+    final List<CandleData> candleList = [];
+    final rawCandles = json['candles'];
+    if (rawCandles is List) {
+      for (var c in rawCandles) {
+        if (c is Map) {
+          candleList.add(CandleData.fromJson(Map<String, dynamic>.from(c)));
+        }
+      }
+    }
 
-    final tfList = (json['timeframes'] as List<dynamic>?)
-            ?.map((t) => TimeframeItem.fromJson(t as Map<String, dynamic>))
-            .toList() ??
-        [];
+    final List<TimeframeItem> tfList = [];
+    final rawTf = json['timeframes'];
+    if (rawTf is Map) {
+      rawTf.forEach((k, v) {
+        if (v is Map) {
+          final m = Map<String, dynamic>.from(v);
+          m.putIfAbsent('timeframe', () => k.toString());
+          tfList.add(TimeframeItem.fromJson(m));
+        }
+      });
+    } else if (rawTf is List) {
+      for (var t in rawTf) {
+        if (t is Map) {
+          tfList.add(TimeframeItem.fromJson(Map<String, dynamic>.from(t)));
+        }
+      }
+    }
 
-    final qhList = (json['quarters_history'] as List<dynamic>?)
-            ?.map((q) => QuarterData.fromJson(q as Map<String, dynamic>))
-            .toList() ??
-        [];
+    final List<QuarterData> qhList = [];
+    final rawQh = json['quarters_history'];
+    if (rawQh is List) {
+      for (var q in rawQh) {
+        if (q is Map) {
+          qhList.add(QuarterData.fromJson(Map<String, dynamic>.from(q)));
+        }
+      }
+    }
 
     ForecastData? fc;
-    if (json['forecast'] != null && json['forecast'] is Map<String, dynamic>) {
-      fc = ForecastData.fromJson(json['forecast'] as Map<String, dynamic>);
+    if (json['forecast'] != null && json['forecast'] is Map) {
+      fc = ForecastData.fromJson(Map<String, dynamic>.from(json['forecast'] as Map));
     }
 
     EtPrimeData? et;
-    if (json['et_prime'] != null && json['et_prime'] is Map<String, dynamic>) {
-      et = EtPrimeData.fromJson(json['et_prime'] as Map<String, dynamic>);
+    if (json['et_prime'] != null && json['et_prime'] is Map) {
+      et = EtPrimeData.fromJson(Map<String, dynamic>.from(json['et_prime'] as Map));
     }
 
-    final bullets = (json['summary_bullets'] as List<dynamic>?)
-            ?.map((b) => b.toString())
-            .toList() ??
-        [];
+    final List<String> bullets = [];
+    final rawBullets = json['summary_bullets'];
+    if (rawBullets is List) {
+      bullets.addAll(rawBullets.map((b) => b.toString()));
+    }
 
-    final price = (json['cmp'] ?? json['today_price'] as num?)?.toDouble() ?? 100.0;
-    final pClose = (json['prev_close'] as num?)?.toDouble() ?? price;
-    final chg = (json['day_change'] as num?)?.toDouble() ?? (price - pClose);
-    final chgPct = (json['day_change_pct'] as num?)?.toDouble() ?? (pClose > 0 ? ((chg / pClose) * 100) : 0.0);
+    final price = _toDouble(json['cmp'] ?? json['today_price'], 100.0);
+    final pClose = _toDouble(json['prev_close'], price);
+    final chg = _toDouble(json['day_change'], price - pClose);
+    final chgPct = _toDouble(json['day_change_pct'], pClose > 0 ? ((chg / pClose) * 100) : 0.0);
 
     return Stock(
       symbol: json['symbol']?.toString() ?? '',
@@ -519,98 +570,98 @@ class Stock {
       prevClose: pClose,
       dayChange: chg,
       dayChangePct: chgPct,
-      chg5mPct: (json['chg_5m_pct'] as num?)?.toDouble() ?? 0.0,
-      dayHigh: (json['day_high'] as num?)?.toDouble() ?? price * 1.01,
-      dayLow: (json['day_low'] as num?)?.toDouble() ?? price * 0.99,
-      volume: (json['volume'] as num?)?.toInt() ?? 100000,
-      avgVol20d: (json['avg_vol_20d'] as num?)?.toInt() ?? 100000,
-      volRatio: (json['vol_ratio'] as num?)?.toDouble() ?? 1.0,
+      chg5mPct: _toDouble(json['chg_5m_pct'], 0.0),
+      dayHigh: _toDouble(json['day_high'], price * 1.01),
+      dayLow: _toDouble(json['day_low'], price * 0.99),
+      volume: _toInt(json['volume'], 100000),
+      avgVol20d: _toInt(json['avg_vol_20d'], 100000),
+      volRatio: _toDouble(json['vol_ratio'], 1.0),
       volStatus: json['vol_status']?.toString() ?? 'Active Inflow',
-      techScore: (json['tech_score'] as num?)?.toDouble() ?? 75.0,
+      techScore: _toDouble(json['tech_score'], 75.0),
       action: json['action']?.toString() ?? 'BUY ON DIPS',
       actionBadge: json['action_badge']?.toString() ?? (json['action']?.toString() ?? 'BUY ON DIPS'),
       setupType: json['setup_type']?.toString() ?? 'Stage 2 Momentum',
       pattern: json['primary_pattern']?.toString() ?? 'Consolidation Breakout',
-      high52w: (json['high_52w'] as num?)?.toDouble() ?? (price * 1.15),
-      low52w: (json['low_52w'] as num?)?.toDouble() ?? (price * 0.75),
-      dist52wHigh: (json['dist_52w_high'] as num?)?.toDouble() ?? -10.0,
-      dist52wLow: (json['dist_52w_low'] as num?)?.toDouble() ?? 25.0,
-      confluenceScore: (conf['confluence_score'] as num?)?.toDouble() ?? 82.0,
-      todayPe: (json['today_pe'] as num?)?.toDouble() ?? 25.0,
-      todayPb: (json['today_pb'] as num?)?.toDouble() ?? 3.0,
-      todayPeg: (json['today_peg'] as num?)?.toDouble() ?? 1.2,
-      pegGrowthRate: (json['peg_growth_rate'] as num?)?.toDouble() ?? 18.0,
-      bookValue: (json['book_value'] as num?)?.toDouble() ?? 100.0,
-      sharesOutstanding: (json['shares_outstanding'] as num?)?.toDouble() ?? 10.0,
-      mcapCr: (json['mcap_cr'] as num?)?.toDouble() ?? 5000.0,
-      stopLoss: (tb['stop_loss'] as num?)?.toDouble() ?? (price * 0.95),
-      target1: (tb['target_1'] as num?)?.toDouble() ?? (price * 1.05),
-      target2: (tb['target_2'] as num?)?.toDouble() ?? (price * 1.09),
-      target3: (tb['target_3'] as num?)?.toDouble() ?? (price * 1.14),
-      rrRatio: (tb['rr_ratio'] as num?)?.toDouble() ?? 2.2,
-      winRateScore: (tb['win_rate_score'] as num?)?.toDouble() ?? 85.0,
-      rsi: (osc['rsi'] as num?)?.toDouble() ?? 55.0,
+      high52w: _toDouble(json['high_52w'], price * 1.15),
+      low52w: _toDouble(json['low_52w'], price * 0.75),
+      dist52wHigh: _toDouble(json['dist_52w_high'], -10.0),
+      dist52wLow: _toDouble(json['dist_52w_low'], 25.0),
+      confluenceScore: _toDouble(conf['confluence_score'], 82.0),
+      todayPe: _toDouble(json['today_pe'], 25.0),
+      todayPb: _toDouble(json['today_pb'], 3.0),
+      todayPeg: _toDouble(json['today_peg'], 1.2),
+      pegGrowthRate: _toDouble(json['peg_growth_rate'], 18.0),
+      bookValue: _toDouble(json['book_value'], 100.0),
+      sharesOutstanding: _toDouble(json['shares_outstanding'], 10.0),
+      mcapCr: _toDouble(json['mcap_cr'], 5000.0),
+      stopLoss: _toDouble(tb['stop_loss'], price * 0.95),
+      target1: _toDouble(tb['target_1'], price * 1.05),
+      target2: _toDouble(tb['target_2'], price * 1.09),
+      target3: _toDouble(tb['target_3'], price * 1.14),
+      rrRatio: _toDouble(tb['rr_ratio'], 2.2),
+      winRateScore: _toDouble(tb['win_rate_score'], 85.0),
+      rsi: _toDouble(osc['rsi'], 55.0),
       macdSignal: osc['macd_signal']?.toString() ?? 'Bullish',
-      macdHist: (osc['macd_hist'] as num?)?.toDouble() ?? 1.2,
-      stochK: (osc['stoch_k'] as num?)?.toDouble() ?? 62.0,
-      stochD: (osc['stoch_d'] as num?)?.toDouble() ?? 58.0,
-      adx: (osc['adx'] as num?)?.toDouble() ?? 25.0,
+      macdHist: _toDouble(osc['macd_hist'], 1.2),
+      stochK: _toDouble(osc['stoch_k'], 62.0),
+      stochD: _toDouble(osc['stoch_d'], 58.0),
+      adx: _toDouble(osc['adx'], 25.0),
       adxStrength: osc['adx_trend']?.toString() ?? 'Strong Trend',
       maAlignment: ma['alignment']?.toString() ?? 'Bullish Alignment',
-      ema9: (ma['ema9'] as num?)?.toDouble() ?? price,
-      ema20: (ma['ema20'] as num?)?.toDouble() ?? price,
-      ema50: (ma['ema50'] as num?)?.toDouble() ?? price * 0.98,
-      sma200: (ma['sma200'] as num?)?.toDouble() ?? (price * 0.92),
-      distSma200: (ma['dist_sma200_pct'] as num?)?.toDouble() ?? 8.5,
+      ema9: _toDouble(ma['ema9'], price),
+      ema20: _toDouble(ma['ema20'], price),
+      ema50: _toDouble(ma['ema50'], price * 0.98),
+      sma200: _toDouble(ma['sma200'], price * 0.92),
+      distSma200: _toDouble(ma['dist_sma200_pct'], 8.5),
       isGoldenCross: ma['golden_cross'] == true || (ma['alignment']?.toString().contains('Bullish') ?? true),
-      atr14: (vol['atr14'] as num?)?.toDouble() ?? (price * 0.025),
-      atrPct: (vol['atr_pct'] as num?)?.toDouble() ?? 2.5,
-      bbUpper: (vol['bb_upper'] as num?)?.toDouble() ?? (price * 1.05),
-      bbMid: (vol['bb_mid'] as num?)?.toDouble() ?? price,
-      bbLower: (vol['bb_lower'] as num?)?.toDouble() ?? (price * 0.95),
-      bbBandwidth: (vol['bb_bandwidth'] as num?)?.toDouble() ?? 10.0,
-      pivot: (piv['pivot'] as num?)?.toDouble() ?? price,
-      r1: (piv['r1'] as num?)?.toDouble() ?? (price * 1.02),
-      r2: (piv['r2'] as num?)?.toDouble() ?? (price * 1.04),
-      r3: (piv['r3'] as num?)?.toDouble() ?? (price * 1.07),
-      s1: (piv['s1'] as num?)?.toDouble() ?? (price * 0.98),
-      s2: (piv['s2'] as num?)?.toDouble() ?? (price * 0.96),
-      s3: (piv['s3'] as num?)?.toDouble() ?? (price * 0.93),
-      fib23: (fib['fib_236'] as num?)?.toDouble() ?? (price * 1.02),
-      fib38: (fib['fib_382'] as num?)?.toDouble() ?? (price * 1.04),
-      fib50: (fib['fib_500'] as num?)?.toDouble() ?? (price * 1.05),
-      fib61: (fib['fib_618'] as num?)?.toDouble() ?? (price * 1.06),
-      fib161: (fib['fib_1618'] as num?)?.toDouble() ?? (price * 1.15),
-      masterScore: (json['master_score'] as num?)?.toDouble() ?? 80.0,
+      atr14: _toDouble(vol['atr14'], price * 0.025),
+      atrPct: _toDouble(vol['atr_pct'], 2.5),
+      bbUpper: _toDouble(vol['bb_upper'], price * 1.05),
+      bbMid: _toDouble(vol['bb_mid'], price),
+      bbLower: _toDouble(vol['bb_lower'], price * 0.95),
+      bbBandwidth: _toDouble(vol['bb_bandwidth'], 10.0),
+      pivot: _toDouble(piv['pivot'], price),
+      r1: _toDouble(piv['r1'], price * 1.02),
+      r2: _toDouble(piv['r2'], price * 1.04),
+      r3: _toDouble(piv['r3'], price * 1.07),
+      s1: _toDouble(piv['s1'], price * 0.98),
+      s2: _toDouble(piv['s2'], price * 0.96),
+      s3: _toDouble(piv['s3'], price * 0.93),
+      fib23: _toDouble(fib['fib_236'], price * 1.02),
+      fib38: _toDouble(fib['fib_382'], price * 1.04),
+      fib50: _toDouble(fib['fib_500'], price * 1.05),
+      fib61: _toDouble(fib['fib_618'], price * 1.06),
+      fib161: _toDouble(fib['fib_1618'], price * 1.15),
+      masterScore: _toDouble(json['master_score'], 80.0),
       masterCategory: json['master_category']?.toString() ?? 'Master Alpha',
-      masterRank: (json['master_rank'] as num?)?.toInt() ?? 1,
-      triFactorScore: (json['tri_factor_score'] as num?)?.toDouble() ?? 80.0,
+      masterRank: _toInt(json['master_rank'], 1),
+      triFactorScore: _toDouble(json['tri_factor_score'], 80.0),
       triFactorCategory: json['tri_factor_category']?.toString() ?? 'High Conviction',
-      forecastScore: (json['forecast_score'] as num?)?.toDouble() ?? 75.0,
-      moodScore: (json['mood_score'] as num?)?.toDouble() ?? 80.0,
+      forecastScore: _toDouble(json['forecast_score'], 75.0),
+      moodScore: _toDouble(json['mood_score'], 80.0),
       investorMood: json['investor_mood']?.toString() ?? 'Bullish Accumulation',
       consensus: json['consensus']?.toString() ?? 'Buy',
-      valDiscountPct: (json['val_discount_pct'] as num?)?.toDouble() ?? 0.0,
-      pe8qMed: (json['pe_8q_med'] as num?)?.toDouble() ?? 25.0,
-      pe8qAvg: (json['pe_8q_avg'] as num?)?.toDouble() ?? 25.0,
-      pe8qMin: (json['pe_8q_min'] as num?)?.toDouble() ?? 15.0,
-      pe8qMax: (json['pe_8q_max'] as num?)?.toDouble() ?? 35.0,
-      streakRev: (json['streak_rev'] as num?)?.toInt() ?? 3,
-      streakPat: (json['streak_pat'] as num?)?.toInt() ?? 3,
+      valDiscountPct: _toDouble(json['val_discount_pct'], 0.0),
+      pe8qMed: _toDouble(json['pe_8q_med'], 25.0),
+      pe8qAvg: _toDouble(json['pe_8q_avg'], 25.0),
+      pe8qMin: _toDouble(json['pe_8q_min'], 15.0),
+      pe8qMax: _toDouble(json['pe_8q_max'], 35.0),
+      streakRev: _toInt(json['streak_rev'], 3),
+      streakPat: _toInt(json['streak_pat'], 3),
       latestQuarter: json['latest_quarter']?.toString() ?? 'Dec 2024',
-      latestRev: (json['latest_rev'] as num?)?.toDouble() ?? 1000.0,
-      latestPat: (json['latest_pat'] as num?)?.toDouble() ?? 100.0,
-      latestOpm: (json['latest_opm'] as num?)?.toDouble() ?? 15.0,
-      latestQoqRev: (json['latest_qoq_rev'] as num?)?.toDouble(),
-      latestQoqPat: (json['latest_qoq_pat'] as num?)?.toDouble(),
-      latestYoyRev: (json['latest_yoy_rev'] as num?)?.toDouble(),
-      latestYoyPat: (json['latest_yoy_pat'] as num?)?.toDouble(),
-      weekChangePct: (json['week_change_pct'] as num?)?.toDouble() ?? 0.0,
-      monthChangePct: (json['month_change_pct'] as num?)?.toDouble() ?? 0.0,
-      rank: (json['rank'] as num?)?.toInt() ?? 1,
+      latestRev: _toDouble(json['latest_rev'], 1000.0),
+      latestPat: _toDouble(json['latest_pat'], 100.0),
+      latestOpm: _toDouble(json['latest_opm'], 15.0),
+      latestQoqRev: _toDoubleOrNull(json['latest_qoq_rev']),
+      latestQoqPat: _toDoubleOrNull(json['latest_qoq_pat']),
+      latestYoyRev: _toDoubleOrNull(json['latest_yoy_rev']),
+      latestYoyPat: _toDoubleOrNull(json['latest_yoy_pat']),
+      weekChangePct: _toDouble(json['week_change_pct'], 0.0),
+      monthChangePct: _toDouble(json['month_change_pct'], 0.0),
+      rank: _toInt(json['rank'], 1),
       subIndustry: json['sub_industry']?.toString() ?? '',
       macroSector: json['macro_sector']?.toString() ?? '',
-      fundaScore: (json['score'] as num?)?.toDouble() ?? 75.0,
+      fundaScore: _toDouble(json['score'], 75.0),
       candles: candleList,
       timeframes: tfList,
       quartersHistory: qhList,

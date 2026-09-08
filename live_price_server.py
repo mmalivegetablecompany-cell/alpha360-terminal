@@ -760,7 +760,7 @@ async def serve_flutter_web(full_path: str):
     if os.path.exists(target_file) and os.path.isfile(target_file):
         ext = os.path.splitext(target_file)[1].lower()
         ctype = MIME_MAP.get(ext, "application/octet-stream")
-        cache_header = "no-cache" if ext in [".html", ".json"] else "public, max-age=86400"
+        cache_header = "no-cache, no-store, must-revalidate" if ext in [".html", ".json", ".js", ".wasm"] else "public, max-age=3600"
         return FileResponse(
             target_file,
             media_type=ctype,

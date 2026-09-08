@@ -120,6 +120,28 @@ namespace Alpha360
 
         private static void LaunchDesktopWindow(string url)
         {
+            string userData = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "Alpha360Terminal");
+
+            // If an existing terminal window is open, restore and focus it
+            Process[] procs = Process.GetProcessesByName("msedge");
+            foreach (Process p in procs)
+            {
+                try
+                {
+                    if (p.MainWindowHandle != IntPtr.Zero && !string.IsNullOrEmpty(p.MainWindowTitle))
+                    {
+                        if (p.MainWindowTitle.IndexOf("Alpha360", StringComparison.OrdinalIgnoreCase) >= 0 ||
+                            p.MainWindowTitle.IndexOf("indian_stock_terminal", StringComparison.OrdinalIgnoreCase) >= 0)
+                        {
+                            ShowWindowAsync(p.MainWindowHandle, SW_RESTORE);
+                            SetForegroundWindow(p.MainWindowHandle);
+                            return;
+                        }
+                    }
+                }
+                catch { }
+            }
+
             // Edge in standalone app mode is the cleanest Windows native desktop experience
             string[] browserPaths = new string[]
             {
@@ -135,7 +157,7 @@ namespace Alpha360
                 {
                     ProcessStartInfo appWindowInfo = new ProcessStartInfo();
                     appWindowInfo.FileName = path;
-                    appWindowInfo.Arguments = "--app=\"" + url + "\" --window-size=1440,900 --user-data-dir=\"" + Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "Alpha360Terminal") + "\"";
+                    appWindowInfo.Arguments = "--app=\"" + url + "\" --window-size=1440,900 --user-data-dir=\"" + userData + "\"";
                     Process.Start(appWindowInfo);
                     return;
                 }
