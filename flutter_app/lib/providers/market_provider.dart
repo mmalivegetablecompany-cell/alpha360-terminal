@@ -98,7 +98,11 @@ class MarketProvider extends ChangeNotifier {
 
   Future<void> updateServerUrl(String url) async {
     await _service.setServerUrl(url);
-    await fetchLiveTick();
+    if (_allStocks.isEmpty) {
+      await init();
+    } else {
+      await fetchLiveTick();
+    }
   }
 
   int get activeSmartFiltersCount {
@@ -397,8 +401,14 @@ class MarketProvider extends ChangeNotifier {
     _activeMcapTier = 'ALL';
     _minScoreSlider = 0.0;
     _activePreset = 'ALL';
-    _applyFilters();
-    notifyListeners();
+    _activeBasket = 'ALL';
+    _searchQuery = '';
+    if (_allStocks.isEmpty) {
+      init();
+    } else {
+      _applyFilters();
+      notifyListeners();
+    }
   }
 
   // ==================== SEARCH & VIEW CONTROLS ====================

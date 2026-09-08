@@ -493,6 +493,27 @@ async def websocket_quotes(websocket: WebSocket):
         if websocket in ws_clients:
             ws_clients.remove(websocket)
 
+@app.get("/api/stocks")
+async def get_stocks():
+    """Returns all 424 stocks with complete technical & fundamental indicators."""
+    tech_path = "database/advanced_technicals_424.json" if os.path.exists("database/advanced_technicals_424.json") else "flutter_app/assets/advanced_technicals_424.json"
+    fund_path = "database/html_424_stocks.json" if os.path.exists("database/html_424_stocks.json") else "flutter_app/assets/html_424_stocks.json"
+    tech_data = []
+    fund_data = []
+    if os.path.exists(tech_path):
+        with open(tech_path, "r", encoding="utf-8") as f:
+            tech_data = json.load(f)
+    if os.path.exists(fund_path):
+        with open(fund_path, "r", encoding="utf-8") as f:
+            fund_data = json.load(f)
+
+    return {
+        "status": "ok",
+        "count": len(tech_data),
+        "technicals": tech_data,
+        "fundamentals": fund_data
+    }
+
 @app.get("/api/radar/database")
 async def get_radar_database():
     db_path = "database/radar_signals_database.json" if os.path.exists("database/radar_signals_database.json") else ("backend/radar_database.json" if os.path.exists("backend/radar_database.json") else "radar_signals_database.json")
@@ -713,14 +734,33 @@ async def serve_flutter_web(full_path: str):
     clean_rel = rel_path.split("?")[0]
     target_file = os.path.join("flutter_app", "build", "web", clean_rel)
 
-    # SPA Fallback: if not found, fallback to index.html
+    # If file not directly found, check asset mirrors and database
     if not os.path.exists(target_file) or os.path.isdir(target_file):
+        asset_name = os.path.basename(clean_rel)
+        candidates = [
+            os.path.join("flutter_app", "build", "web", "assets", "assets", asset_name),
+            os.path.join("flutter_app", "build", "web", "assets", asset_name),
+            os.path.join("flutter_app", "assets", asset_name),
+            os.path.join("database", asset_name),
+            os.path.join("dashboards", clean_rel),
+            os.path.join("dashboards", asset_name),
+        ]
+        for c in candidates:
+            if os.path.exists(c) and os.path.isfile(c):
+                target_file = c
+                break
+
+    # SPA Fallback: ONLY fallback to index.html for page routes, NEVER for assets
+    if not os.path.exists(target_file) or os.path.isdir(target_file):
+        ext = os.path.splitext(clean_rel)[1].lower()
+        if ext in ['.json', '.js', '.wasm', '.png', '.jpg', '.jpeg', '.svg', '.otf', '.ttf', '.woff', '.woff2', '.css']:
+            raise HTTPException(status_code=404, detail=f"Asset {clean_rel} not found")
         target_file = os.path.join("flutter_app", "build", "web", "index.html")
 
     if os.path.exists(target_file) and os.path.isfile(target_file):
         ext = os.path.splitext(target_file)[1].lower()
         ctype = MIME_MAP.get(ext, "application/octet-stream")
-        cache_header = "no-cache" if ext == ".html" else "public, max-age=86400"
+        cache_header = "no-cache" if ext in [".html", ".json"] else "public, max-age=86400"
         return FileResponse(
             target_file,
             media_type=ctype,

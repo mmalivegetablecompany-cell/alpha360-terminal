@@ -62,20 +62,71 @@ class MarketService {
   }
 
   // 1. Load Initial Bundled Stocks & Merge Technical + Fundamental
-  // Uses Isolate.run to prevent blocking the main UI thread during 7.3MB JSON parsing.
   Future<List<Stock>> loadInitialStocks() async {
+    // A. Try server API /api/stocks first
     try {
-      final techStr = await rootBundle.loadString('assets/advanced_technicals_424.json');
+      final resp = await http.get(Uri.parse('$_serverUrl/api/stocks')).timeout(const Duration(seconds: 4));
+      if (resp.statusCode == 200) {
+        final dynamic data = json.decode(resp.body);
+        if (data is Map) {
+          final dynamic rawTech = data['technicals'];
+          final dynamic rawFund = data['fundamentals'];
+          final List<dynamic> techList = rawTech is List ? rawTech : [];
+          final List<dynamic> fundList = rawFund is List ? rawFund : [];
+        if (techList.isNotEmpty) {
+          final fundMap = <String, Map<String, dynamic>>{};
+          for (var item in fundList) {
+            if (item is Map<String, dynamic>) {
+              final sym = item['symbol']?.toString() ?? '';
+              final name = item['name']?.toString() ?? '';
+              fundMap['${sym}_$name'] = item;
+              fundMap.putIfAbsent(sym, () => item);
+            }
+          }
+          return techList.map((item) {
+            final s = Stock.fromJson(item as Map<String, dynamic>);
+            final fund = fundMap['${s.symbol}_${s.name}'] ?? fundMap[s.symbol];
+            if (fund != null) {
+              s.mergeFundamentalData(fund);
+            }
+            return s;
+          }).toList();
+        }
+      }
+    }
+  } catch (_) {}
+
+    // B. Fallback to bundled asset files
+    try {
+      String techStr = '';
+      try {
+        techStr = await rootBundle.loadString('assets/advanced_technicals_424.json');
+      } catch (_) {
+        try {
+          techStr = await rootBundle.loadString('advanced_technicals_424.json');
+        } catch (_) {}
+      }
+
       String fundStr = '';
       try {
         fundStr = await rootBundle.loadString('assets/html_424_stocks.json');
-      } catch (_) {}
+      } catch (_) {
+        try {
+          fundStr = await rootBundle.loadString('html_424_stocks.json');
+        } catch (_) {}
+      }
 
-      // Execute decoding & model hydration in a background worker isolate
-      return await compute(_parseAndHydrateStocks, {'tech': techStr, 'fund': fundStr});
+      if (techStr.isNotEmpty && !techStr.trim().startsWith('<')) {
+        if (kIsWeb) {
+          return _parseAndHydrateStocks({'tech': techStr, 'fund': fundStr});
+        } else {
+          return await compute(_parseAndHydrateStocks, {'tech': techStr, 'fund': fundStr});
+        }
+      }
     } catch (e) {
-      return [];
+      debugPrint('Error loading initial stocks: $e');
     }
+    return [];
   }
 
   // 2. Load Radar Database (Active & Historical)
@@ -234,12 +285,38 @@ List<Stock> _parseAndHydrateStocks(Map<String, String> inputs) {
 
   if (techStr.isEmpty) return [];
 
-  final techList = json.decode(techStr) as List<dynamic>;
+  final decodedTech = json.decode(techStr);
+  final List<dynamic> techList;
+  if (decodedTech is List) {
+    techList = decodedTech;
+  } else if (decodedTech is Map && decodedTech['stocks'] is List) {
+    techList = decodedTech['stocks'] as List<dynamic>;
+  } else if (decodedTech is Map && decodedTech['technicals'] is List) {
+    techList = decodedTech['technicals'] as List<dynamic>;
+  } else if (decodedTech is Map) {
+    techList = decodedTech.values.whereType<Map<String, dynamic>>().toList();
+  } else {
+    return [];
+  }
+
   final stocks = techList.map((item) => Stock.fromJson(item as Map<String, dynamic>)).toList();
 
   if (fundStr.isNotEmpty) {
     try {
-      final fundList = json.decode(fundStr) as List<dynamic>;
+      final decodedFund = json.decode(fundStr);
+      final List<dynamic> fundList;
+      if (decodedFund is List) {
+        fundList = decodedFund;
+      } else if (decodedFund is Map && decodedFund['stocks'] is List) {
+        fundList = decodedFund['stocks'] as List<dynamic>;
+      } else if (decodedFund is Map && decodedFund['fundamentals'] is List) {
+        fundList = decodedFund['fundamentals'] as List<dynamic>;
+      } else if (decodedFund is Map) {
+        fundList = decodedFund.values.whereType<Map<String, dynamic>>().toList();
+      } else {
+        fundList = [];
+      }
+
       final fundMap = <String, Map<String, dynamic>>{};
       for (var item in fundList) {
         if (item is Map<String, dynamic>) {
