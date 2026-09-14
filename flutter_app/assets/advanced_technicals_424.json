@@ -16,9 +16,9 @@
     "vol_ratio": 1.93,
     "vol_status": "HIGH SURGE",
     "high_52w": 348.2,
-    "low_52w": 313.45,
+    "low_52w": 314.35,
     "dist_52w_high": -0.63,
-    "dist_52w_low": 10.38,
+    "dist_52w_low": 10.07,
     "tech_score": 93.0,
     "action": "STRONG BUY",
     "action_badge": "<span class=\"px-2 py-0.5 rounded text-xs font-bold uppercase tracking-wider bg-emerald-500/20 text-emerald-400 border border-emerald-500/30\">STRONG BUY</span>",
@@ -83,12 +83,12 @@
       "s3": 321.24
     },
     "fibonacci": {
-      "fib_236": 340.0,
-      "fib_382": 334.93,
-      "fib_500": 330.82,
-      "fib_618": 326.72,
-      "fib_786": 320.89,
-      "fib_1618": 369.68
+      "fib_236": 340.21,
+      "fib_382": 335.27,
+      "fib_500": 331.27,
+      "fib_618": 327.28,
+      "fib_786": 321.59,
+      "fib_1618": 369.12
     },
     "timeframes": {
       "15M": {
@@ -270,9 +270,9 @@
     "vol_ratio": 0.7,
     "vol_status": "NORMAL",
     "high_52w": 506.65,
-    "low_52w": 458.45,
+    "low_52w": 464.0,
     "dist_52w_high": -7.01,
-    "dist_52w_low": 2.77,
+    "dist_52w_low": 1.54,
     "tech_score": 75.0,
     "action": "BUY ON DIPS",
     "action_badge": "<span class=\"px-2 py-0.5 rounded text-xs font-bold uppercase tracking-wider bg-emerald-500/20 text-emerald-400 border border-emerald-500/30\">BUY ON DIPS</span>",
@@ -337,12 +337,12 @@
       "s3": 459.9
     },
     "fibonacci": {
-      "fib_236": 495.27,
-      "fib_382": 488.24,
-      "fib_500": 482.55,
-      "fib_618": 476.86,
-      "fib_786": 468.76,
-      "fib_1618": 536.44
+      "fib_236": 496.58,
+      "fib_382": 490.36,
+      "fib_500": 485.32,
+      "fib_618": 480.29,
+      "fib_786": 473.13,
+      "fib_1618": 533.01
     },
     "timeframes": {
       "15M": {
@@ -775,9 +775,9 @@
     "avg_vol_20d": 143674,
     "vol_ratio": 1.1,
     "vol_status": "NORMAL",
-    "high_52w": 387.6,
+    "high_52w": 361.9,
     "low_52w": 310.95,
-    "dist_52w_high": -16.86,
+    "dist_52w_high": -10.96,
     "dist_52w_low": 3.63,
     "tech_score": 74.0,
     "action": "BUY ON DIPS",
@@ -843,12 +843,12 @@
       "s3": 301.15
     },
     "fibonacci": {
-      "fib_236": 369.51,
-      "fib_382": 358.32,
-      "fib_500": 349.27,
-      "fib_618": 340.23,
-      "fib_786": 327.35,
-      "fib_1618": 434.97
+      "fib_236": 349.88,
+      "fib_382": 342.44,
+      "fib_500": 336.42,
+      "fib_618": 330.41,
+      "fib_786": 321.85,
+      "fib_1618": 393.39
     },
     "timeframes": {
       "15M": {
@@ -1533,9 +1533,9 @@
     "vol_ratio": 0.39,
     "vol_status": "NORMAL",
     "high_52w": 353.5,
-    "low_52w": 301.1,
+    "low_52w": 301.5,
     "dist_52w_high": -8.6,
-    "dist_52w_low": 7.31,
+    "dist_52w_low": 7.16,
     "tech_score": 74.0,
     "action": "BUY ON DIPS",
     "action_badge": "<span class=\"px-2 py-0.5 rounded text-xs font-bold uppercase tracking-wider bg-emerald-500/20 text-emerald-400 border border-emerald-500/30\">BUY ON DIPS</span>",
@@ -1600,12 +1600,12 @@
       "s3": 313.04
     },
     "fibonacci": {
-      "fib_236": 341.13,
-      "fib_382": 333.48,
-      "fib_500": 327.3,
-      "fib_618": 321.12,
-      "fib_786": 312.31,
-      "fib_1618": 385.88
+      "fib_236": 341.23,
+      "fib_382": 333.64,
+      "fib_500": 327.5,
+      "fib_618": 321.36,
+      "fib_786": 312.63,
+      "fib_1618": 385.64
     },
     "timeframes": {
       "15M": {
@@ -2290,9 +2290,9 @@
     "vol_ratio": 2.74,
     "vol_status": "HIGH SURGE",
     "high_52w": 1498.0,
-    "low_52w": 1045.21,
+    "low_52w": 1178.11,
     "dist_52w_high": -4.94,
-    "dist_52w_low": 36.24,
+    "dist_52w_low": 20.87,
     "tech_score": 99.0,
     "action": "STRONG BUY",
     "action_badge": "<span class=\"px-2 py-0.5 rounded text-xs font-bold uppercase tracking-wider bg-emerald-500/20 text-emerald-400 border border-emerald-500/30\">STRONG BUY</span>",
@@ -2357,12 +2357,12 @@
       "s3": 1185.5
     },
     "fibonacci": {
-      "fib_236": 1391.14,
-      "fib_382": 1325.03,
-      "fib_500": 1271.61,
-      "fib_618": 1218.18,
-      "fib_786": 1142.11,
-      "fib_1618": 1777.82
+      "fib_236": 1422.51,
+      "fib_382": 1375.8,
+      "fib_500": 1338.05,
+      "fib_618": 1300.31,
+      "fib_786": 1246.57,
+      "fib_1618": 1695.69
     },
     "timeframes": {
       "15M": {
@@ -2544,9 +2544,9 @@
     "vol_ratio": 0.31,
     "vol_status": "NORMAL",
     "high_52w": 703.5,
-    "low_52w": 581.3,
+    "low_52w": 597.75,
     "dist_52w_high": -3.09,
-    "dist_52w_low": 17.28,
+    "dist_52w_low": 14.05,
     "tech_score": 71.0,
     "action": "BUY ON DIPS",
     "action_badge": "<span class=\"px-2 py-0.5 rounded text-xs font-bold uppercase tracking-wider bg-emerald-500/20 text-emerald-400 border border-emerald-500/30\">BUY ON DIPS</span>",
@@ -2611,12 +2611,12 @@
       "s3": 659.76
     },
     "fibonacci": {
-      "fib_236": 674.66,
-      "fib_382": 656.82,
-      "fib_500": 642.4,
-      "fib_618": 627.98,
-      "fib_786": 607.45,
-      "fib_1618": 779.02
+      "fib_236": 678.54,
+      "fib_382": 663.1,
+      "fib_500": 650.62,
+      "fib_618": 638.15,
+      "fib_786": 620.38,
+      "fib_1618": 768.85
     },
     "timeframes": {
       "15M": {
@@ -3303,9 +3303,9 @@
     "vol_ratio": 0.73,
     "vol_status": "NORMAL",
     "high_52w": 3400.0,
-    "low_52w": 2735.9,
+    "low_52w": 2885.03,
     "dist_52w_high": -3.65,
-    "dist_52w_low": 19.74,
+    "dist_52w_low": 13.55,
     "tech_score": 79.0,
     "action": "BUY ON DIPS",
     "action_badge": "<span class=\"px-2 py-0.5 rounded text-xs font-bold uppercase tracking-wider bg-emerald-500/20 text-emerald-400 border border-emerald-500/30\">BUY ON DIPS</span>",
@@ -3370,12 +3370,12 @@
       "s3": 3077.34
     },
     "fibonacci": {
-      "fib_236": 3243.27,
-      "fib_382": 3146.31,
-      "fib_500": 3067.95,
-      "fib_618": 2989.59,
-      "fib_786": 2878.02,
-      "fib_1618": 3810.41
+      "fib_236": 3278.47,
+      "fib_382": 3203.28,
+      "fib_500": 3142.52,
+      "fib_618": 3081.75,
+      "fib_786": 2995.23,
+      "fib_1618": 3718.25
     },
     "timeframes": {
       "15M": {
@@ -3809,9 +3809,9 @@
     "avg_vol_20d": 112720,
     "vol_ratio": 0.81,
     "vol_status": "NORMAL",
-    "high_52w": 417.8,
+    "high_52w": 414.5,
     "low_52w": 380.25,
-    "dist_52w_high": -4.93,
+    "dist_52w_high": -4.17,
     "dist_52w_low": 4.46,
     "tech_score": 82.0,
     "action": "BUY ON DIPS",
@@ -3877,12 +3877,12 @@
       "s3": 385.94
     },
     "fibonacci": {
-      "fib_236": 408.94,
-      "fib_382": 403.46,
-      "fib_500": 399.02,
-      "fib_618": 394.59,
-      "fib_786": 388.29,
-      "fib_1618": 441.01
+      "fib_236": 406.42,
+      "fib_382": 401.42,
+      "fib_500": 397.38,
+      "fib_618": 393.33,
+      "fib_786": 387.58,
+      "fib_1618": 435.67
     },
     "timeframes": {
       "15M": {
@@ -4040,7 +4040,7 @@
       "win_rate_score": 98.5,
       "rr_ratio": 2.5,
       "reasons": [
-        "⛰️ Near 52W High (-4.93%)",
+        "⛰️ Near 52W High (-4.17%)",
         "📈 RSI Sweet Spot (57.0)",
         "🎯 High R:R (1:2.5)"
       ],
@@ -4063,13 +4063,13 @@
     "avg_vol_20d": 3105480,
     "vol_ratio": 1.53,
     "vol_status": "HIGH SURGE",
-    "high_52w": 1087.95,
+    "high_52w": 1061.8,
     "low_52w": 973.1,
-    "dist_52w_high": -9.78,
+    "dist_52w_high": -7.56,
     "dist_52w_low": 0.86,
-    "tech_score": 84.0,
-    "action": "BUY ON DIPS",
-    "action_badge": "<span class=\"px-2 py-0.5 rounded text-xs font-bold uppercase tracking-wider bg-emerald-500/20 text-emerald-400 border border-emerald-500/30\">BUY ON DIPS</span>",
+    "tech_score": 89.0,
+    "action": "STRONG BUY",
+    "action_badge": "<span class=\"px-2 py-0.5 rounded text-xs font-bold uppercase tracking-wider bg-emerald-500/20 text-emerald-400 border border-emerald-500/30\">STRONG BUY</span>",
     "setup_type": "Stage 2 Confluence Breakout",
     "primary_pattern": "Ascending Consolidation Breakout",
     "master_score": 84.0,
@@ -4097,7 +4097,7 @@
       "target_2": 1055.38,
       "target_3": 1099.7,
       "rr_ratio": 2.5,
-      "win_rate_score": 90.0,
+      "win_rate_score": 98.0,
       "risk_per_share": 29.549999999999955
     },
     "moving_averages": {
@@ -4131,12 +4131,12 @@
       "s3": 952.44
     },
     "fibonacci": {
-      "fib_236": 1060.85,
-      "fib_382": 1044.08,
-      "fib_500": 1030.53,
-      "fib_618": 1016.97,
-      "fib_786": 997.68,
-      "fib_1618": 1158.93
+      "fib_236": 1040.87,
+      "fib_382": 1027.92,
+      "fib_500": 1017.45,
+      "fib_618": 1006.98,
+      "fib_786": 992.08,
+      "fib_1618": 1116.62
     },
     "timeframes": {
       "15M": {
@@ -4161,7 +4161,7 @@
       }
     },
     "confluence": {
-      "score": 90.0,
+      "score": 98.0,
       "badge": "High Institutional Confluence"
     },
     "candles": [
@@ -4291,14 +4291,14 @@
       "is_perfect": true,
       "is_swing": true,
       "is_intraday": false,
-      "win_rate_score": 90.0,
+      "win_rate_score": 98.0,
       "rr_ratio": 2.5,
       "reasons": [
         "🌟 High Confluence Synergy",
         "🔥 Vol Surge (1.53x)",
-        "🎯 High R:R (1:2.5)"
+        "⛰️ Near 52W High (-7.56%)"
       ],
-      "alpha_rank": 117.8
+      "alpha_rank": 121.8
     }
   },
   {
@@ -5074,9 +5074,9 @@
     "vol_ratio": 0.73,
     "vol_status": "NORMAL",
     "high_52w": 1578.0,
-    "low_52w": 1382.9,
+    "low_52w": 1440.0,
     "dist_52w_high": -4.82,
-    "dist_52w_low": 8.61,
+    "dist_52w_low": 4.31,
     "tech_score": 81.0,
     "action": "BUY ON DIPS",
     "action_badge": "<span class=\"px-2 py-0.5 rounded text-xs font-bold uppercase tracking-wider bg-emerald-500/20 text-emerald-400 border border-emerald-500/30\">BUY ON DIPS</span>",
@@ -5141,12 +5141,12 @@
       "s3": 1421.64
     },
     "fibonacci": {
-      "fib_236": 1531.96,
-      "fib_382": 1503.47,
-      "fib_500": 1480.45,
-      "fib_618": 1457.43,
-      "fib_786": 1424.65,
-      "fib_1618": 1698.57
+      "fib_236": 1545.43,
+      "fib_382": 1525.28,
+      "fib_500": 1509.0,
+      "fib_618": 1492.72,
+      "fib_786": 1469.53,
+      "fib_1618": 1663.28
     },
     "timeframes": {
       "15M": {
@@ -6086,9 +6086,9 @@
     "avg_vol_20d": 68122,
     "vol_ratio": 1.58,
     "vol_status": "HIGH SURGE",
-    "high_52w": 3636.4,
+    "high_52w": 3570.5,
     "low_52w": 3303.3,
-    "dist_52w_high": -2.21,
+    "dist_52w_high": -0.4,
     "dist_52w_low": 7.65,
     "tech_score": 87.0,
     "action": "STRONG BUY",
@@ -6154,12 +6154,12 @@
       "s3": 3306.74
     },
     "fibonacci": {
-      "fib_236": 3557.79,
-      "fib_382": 3509.16,
-      "fib_500": 3469.85,
-      "fib_618": 3430.54,
-      "fib_786": 3374.58,
-      "fib_1618": 3842.26
+      "fib_236": 3507.44,
+      "fib_382": 3468.43,
+      "fib_500": 3436.9,
+      "fib_618": 3405.37,
+      "fib_786": 3360.48,
+      "fib_1618": 3735.63
     },
     "timeframes": {
       "15M": {
@@ -6319,7 +6319,7 @@
       "reasons": [
         "🌟 High Confluence Synergy",
         "🔥 Vol Surge (1.58x)",
-        "⛰️ Near 52W High (-2.21%)"
+        "⛰️ Near 52W High (-0.4%)"
       ],
       "alpha_rank": 120.1
     }
@@ -6341,9 +6341,9 @@
     "vol_ratio": 1.35,
     "vol_status": "NORMAL",
     "high_52w": 1677.5,
-    "low_52w": 1237.0,
+    "low_52w": 1309.1,
     "dist_52w_high": -6.24,
-    "dist_52w_low": 27.15,
+    "dist_52w_low": 20.15,
     "tech_score": 88.0,
     "action": "STRONG BUY",
     "action_badge": "<span class=\"px-2 py-0.5 rounded text-xs font-bold uppercase tracking-wider bg-emerald-500/20 text-emerald-400 border border-emerald-500/30\">STRONG BUY</span>",
@@ -6408,12 +6408,12 @@
       "s3": 1417.1
     },
     "fibonacci": {
-      "fib_236": 1573.54,
-      "fib_382": 1509.23,
-      "fib_500": 1457.25,
-      "fib_618": 1405.27,
-      "fib_786": 1331.27,
-      "fib_1618": 1949.73
+      "fib_236": 1590.56,
+      "fib_382": 1536.77,
+      "fib_500": 1493.3,
+      "fib_618": 1449.83,
+      "fib_786": 1387.94,
+      "fib_1618": 1905.17
     },
     "timeframes": {
       "15M": {
@@ -7353,9 +7353,9 @@
     "avg_vol_20d": 1026158,
     "vol_ratio": 0.88,
     "vol_status": "NORMAL",
-    "high_52w": 544.8,
+    "high_52w": 533.0,
     "low_52w": 447.85,
-    "dist_52w_high": -4.46,
+    "dist_52w_high": -2.35,
     "dist_52w_low": 16.22,
     "tech_score": 83.0,
     "action": "BUY ON DIPS",
@@ -7421,12 +7421,12 @@
       "s3": 494.89
     },
     "fibonacci": {
-      "fib_236": 521.92,
-      "fib_382": 507.77,
-      "fib_500": 496.32,
-      "fib_618": 484.88,
-      "fib_786": 468.6,
-      "fib_1618": 604.72
+      "fib_236": 512.9,
+      "fib_382": 500.47,
+      "fib_500": 490.43,
+      "fib_618": 480.38,
+      "fib_786": 466.07,
+      "fib_1618": 585.62
     },
     "timeframes": {
       "15M": {
@@ -7584,7 +7584,7 @@
       "win_rate_score": 98.5,
       "rr_ratio": 2.5,
       "reasons": [
-        "⛰️ Near 52W High (-4.46%)",
+        "⛰️ Near 52W High (-2.35%)",
         "📈 RSI Sweet Spot (54.5)",
         "🎯 High R:R (1:2.5)"
       ],
@@ -7608,9 +7608,9 @@
     "vol_ratio": 0.9,
     "vol_status": "NORMAL",
     "high_52w": 169.0,
-    "low_52w": 148.2,
+    "low_52w": 149.04,
     "dist_52w_high": -6.2,
-    "dist_52w_low": 6.97,
+    "dist_52w_low": 6.37,
     "tech_score": 77.0,
     "action": "BUY ON DIPS",
     "action_badge": "<span class=\"px-2 py-0.5 rounded text-xs font-bold uppercase tracking-wider bg-emerald-500/20 text-emerald-400 border border-emerald-500/30\">BUY ON DIPS</span>",
@@ -7675,12 +7675,12 @@
       "s3": 152.66
     },
     "fibonacci": {
-      "fib_236": 164.09,
-      "fib_382": 161.05,
-      "fib_500": 158.6,
-      "fib_618": 156.15,
-      "fib_786": 152.65,
-      "fib_1618": 181.85
+      "fib_236": 164.29,
+      "fib_382": 161.38,
+      "fib_500": 159.02,
+      "fib_618": 156.66,
+      "fib_786": 153.31,
+      "fib_1618": 181.34
     },
     "timeframes": {
       "15M": {
@@ -8113,9 +8113,9 @@
     "avg_vol_20d": 4218831,
     "vol_ratio": 0.27,
     "vol_status": "NORMAL",
-    "high_52w": 1672.0,
+    "high_52w": 1637.0,
     "low_52w": 1348.0,
-    "dist_52w_high": -17.88,
+    "dist_52w_high": -16.13,
     "dist_52w_low": 1.85,
     "tech_score": 66.0,
     "action": "HOLD",
@@ -8181,12 +8181,12 @@
       "s3": 1346.34
     },
     "fibonacci": {
-      "fib_236": 1595.54,
-      "fib_382": 1548.23,
-      "fib_500": 1510.0,
-      "fib_618": 1471.77,
-      "fib_786": 1417.34,
-      "fib_1618": 1872.23
+      "fib_236": 1568.8,
+      "fib_382": 1526.6,
+      "fib_500": 1492.5,
+      "fib_618": 1458.4,
+      "fib_786": 1409.85,
+      "fib_1618": 1815.6
     },
     "timeframes": {
       "15M": {
@@ -8366,9 +8366,9 @@
     "vol_ratio": 2.02,
     "vol_status": "HIGH SURGE",
     "high_52w": 812.8,
-    "low_52w": 610.5,
+    "low_52w": 717.2,
     "dist_52w_high": -0.97,
-    "dist_52w_low": 31.84,
+    "dist_52w_low": 12.23,
     "tech_score": 94.0,
     "action": "STRONG BUY",
     "action_badge": "<span class=\"px-2 py-0.5 rounded text-xs font-bold uppercase tracking-wider bg-emerald-500/20 text-emerald-400 border border-emerald-500/30\">STRONG BUY</span>",
@@ -8433,12 +8433,12 @@
       "s3": 691.29
     },
     "fibonacci": {
-      "fib_236": 765.06,
-      "fib_382": 735.52,
-      "fib_500": 711.65,
-      "fib_618": 687.78,
-      "fib_786": 653.79,
-      "fib_1618": 937.82
+      "fib_236": 790.24,
+      "fib_382": 776.28,
+      "fib_500": 765.0,
+      "fib_618": 753.72,
+      "fib_786": 737.66,
+      "fib_1618": 871.88
     },
     "timeframes": {
       "15M": {
@@ -9377,9 +9377,9 @@
     "avg_vol_20d": 1698624,
     "vol_ratio": 0.77,
     "vol_status": "NORMAL",
-    "high_52w": 3514.6,
+    "high_52w": 3456.4,
     "low_52w": 3069.1,
-    "dist_52w_high": -11.6,
+    "dist_52w_high": -10.11,
     "dist_52w_low": 1.23,
     "tech_score": 71.0,
     "action": "BUY ON DIPS",
@@ -9445,12 +9445,12 @@
       "s3": 3020.9
     },
     "fibonacci": {
-      "fib_236": 3409.46,
-      "fib_382": 3344.42,
-      "fib_500": 3291.85,
-      "fib_618": 3239.28,
-      "fib_786": 3164.44,
-      "fib_1618": 3789.92
+      "fib_236": 3365.0,
+      "fib_382": 3308.45,
+      "fib_500": 3262.75,
+      "fib_618": 3217.05,
+      "fib_786": 3151.98,
+      "fib_1618": 3695.75
     },
     "timeframes": {
       "15M": {
@@ -9630,9 +9630,9 @@
     "vol_ratio": 1.01,
     "vol_status": "NORMAL",
     "high_52w": 22625.0,
-    "low_52w": 18420.0,
+    "low_52w": 19190.0,
     "dist_52w_high": -1.48,
-    "dist_52w_low": 21.01,
+    "dist_52w_low": 16.15,
     "tech_score": 78.0,
     "action": "BUY ON DIPS",
     "action_badge": "<span class=\"px-2 py-0.5 rounded text-xs font-bold uppercase tracking-wider bg-emerald-500/20 text-emerald-400 border border-emerald-500/30\">BUY ON DIPS</span>",
@@ -9697,12 +9697,12 @@
       "s3": 21743.34
     },
     "fibonacci": {
-      "fib_236": 21632.62,
-      "fib_382": 21018.69,
-      "fib_500": 20522.5,
-      "fib_618": 20026.31,
-      "fib_786": 19319.87,
-      "fib_1618": 25223.69
+      "fib_236": 21814.34,
+      "fib_382": 21312.83,
+      "fib_500": 20907.5,
+      "fib_618": 20502.17,
+      "fib_786": 19925.09,
+      "fib_1618": 24747.83
     },
     "timeframes": {
       "15M": {
@@ -9882,9 +9882,9 @@
     "avg_vol_20d": 410100,
     "vol_ratio": 1.34,
     "vol_status": "NORMAL",
-    "high_52w": 478.8,
+    "high_52w": 476.52,
     "low_52w": 407.0,
-    "dist_52w_high": -14.3,
+    "dist_52w_high": -13.89,
     "dist_52w_low": 0.82,
     "tech_score": 82.0,
     "action": "BUY ON DIPS",
@@ -9950,12 +9950,12 @@
       "s3": 393.3
     },
     "fibonacci": {
-      "fib_236": 461.86,
-      "fib_382": 451.37,
-      "fib_500": 442.9,
-      "fib_618": 434.43,
-      "fib_786": 422.37,
-      "fib_1618": 523.17
+      "fib_236": 460.11,
+      "fib_382": 449.96,
+      "fib_500": 441.76,
+      "fib_618": 433.56,
+      "fib_786": 421.88,
+      "fib_1618": 519.48
     },
     "timeframes": {
       "15M": {
@@ -10136,14 +10136,14 @@
     "avg_vol_20d": 315462,
     "vol_ratio": 1.27,
     "vol_status": "NORMAL",
-    "high_52w": 2065.0,
+    "high_52w": 1947.0,
     "low_52w": 1766.1,
-    "dist_52w_high": -12.85,
+    "dist_52w_high": -7.57,
     "dist_52w_low": 1.9,
-    "tech_score": 76.0,
+    "tech_score": 80.0,
     "action": "BUY ON DIPS",
     "action_badge": "<span class=\"px-2 py-0.5 rounded text-xs font-bold uppercase tracking-wider bg-emerald-500/20 text-emerald-400 border border-emerald-500/30\">BUY ON DIPS</span>",
-    "setup_type": "Swing Pullback",
+    "setup_type": "Stage 2 Confluence Breakout",
     "primary_pattern": "Ascending Consolidation Breakout",
     "master_score": 80.5,
     "master_category": "💎 High-Conviction Compounder (Score 80–87.9)",
@@ -10170,7 +10170,7 @@
       "target_2": 1968.72,
       "target_3": 2070.2,
       "rr_ratio": 2.5,
-      "win_rate_score": 80.0,
+      "win_rate_score": 88.0,
       "risk_per_share": 67.64999999999986
     },
     "moving_averages": {
@@ -10204,12 +10204,12 @@
       "s3": 1730.9
     },
     "fibonacci": {
-      "fib_236": 1994.46,
-      "fib_382": 1950.82,
-      "fib_500": 1915.55,
-      "fib_618": 1880.28,
-      "fib_786": 1830.06,
-      "fib_1618": 2249.72
+      "fib_236": 1904.31,
+      "fib_382": 1877.9,
+      "fib_500": 1856.55,
+      "fib_618": 1835.2,
+      "fib_786": 1804.81,
+      "fib_1618": 2058.8
     },
     "timeframes": {
       "15M": {
@@ -10234,7 +10234,7 @@
       }
     },
     "confluence": {
-      "score": 80.0,
+      "score": 88.0,
       "badge": "High Institutional Confluence"
     },
     "candles": [
@@ -10361,15 +10361,17 @@
     ],
     "radar": {
       "is_candidate": true,
-      "is_perfect": false,
+      "is_perfect": true,
       "is_swing": true,
       "is_intraday": false,
-      "win_rate_score": 80.0,
+      "win_rate_score": 88.0,
       "rr_ratio": 2.5,
       "reasons": [
+        "🌟 High Confluence Synergy",
+        "⛰️ Near 52W High (-7.57%)",
         "🎯 High R:R (1:2.5)"
       ],
-      "alpha_rank": 109.7
+      "alpha_rank": 113.5
     }
   },
   {
@@ -10389,9 +10391,9 @@
     "vol_ratio": 1.0,
     "vol_status": "NORMAL",
     "high_52w": 428.15,
-    "low_52w": 393.2,
+    "low_52w": 400.25,
     "dist_52w_high": -5.62,
-    "dist_52w_low": 2.77,
+    "dist_52w_low": 0.96,
     "tech_score": 75.0,
     "action": "BUY ON DIPS",
     "action_badge": "<span class=\"px-2 py-0.5 rounded text-xs font-bold uppercase tracking-wider bg-emerald-500/20 text-emerald-400 border border-emerald-500/30\">BUY ON DIPS</span>",
@@ -10456,12 +10458,12 @@
       "s3": 395.61
     },
     "fibonacci": {
-      "fib_236": 419.9,
-      "fib_382": 414.8,
-      "fib_500": 410.67,
-      "fib_618": 406.55,
-      "fib_786": 400.68,
-      "fib_1618": 449.75
+      "fib_236": 421.57,
+      "fib_382": 417.49,
+      "fib_500": 414.2,
+      "fib_618": 410.91,
+      "fib_786": 406.22,
+      "fib_1618": 445.39
     },
     "timeframes": {
       "15M": {
@@ -10641,9 +10643,9 @@
     "avg_vol_20d": 5344922,
     "vol_ratio": 1.23,
     "vol_status": "NORMAL",
-    "high_52w": 421.13,
+    "high_52w": 405.0,
     "low_52w": 352.35,
-    "dist_52w_high": -14.28,
+    "dist_52w_high": -10.86,
     "dist_52w_low": 2.45,
     "tech_score": 75.0,
     "action": "BUY ON DIPS",
@@ -10709,12 +10711,12 @@
       "s3": 341.25
     },
     "fibonacci": {
-      "fib_236": 404.9,
-      "fib_382": 394.86,
-      "fib_500": 386.74,
-      "fib_618": 378.62,
-      "fib_786": 367.07,
-      "fib_1618": 463.64
+      "fib_236": 392.57,
+      "fib_382": 384.89,
+      "fib_500": 378.68,
+      "fib_618": 372.46,
+      "fib_786": 363.62,
+      "fib_1618": 437.54
     },
     "timeframes": {
       "15M": {
@@ -11399,9 +11401,9 @@
     "avg_vol_20d": 4774466,
     "vol_ratio": 0.91,
     "vol_status": "NORMAL",
-    "high_52w": 3628.0,
+    "high_52w": 3502.0,
     "low_52w": 3131.5,
-    "dist_52w_high": -6.73,
+    "dist_52w_high": -3.37,
     "dist_52w_low": 8.06,
     "tech_score": 83.0,
     "action": "BUY ON DIPS",
@@ -11467,12 +11469,12 @@
       "s3": 3052.14
     },
     "fibonacci": {
-      "fib_236": 3510.83,
-      "fib_382": 3438.34,
-      "fib_500": 3379.75,
-      "fib_618": 3321.16,
-      "fib_786": 3237.75,
-      "fib_1618": 3934.84
+      "fib_236": 3414.56,
+      "fib_382": 3360.47,
+      "fib_500": 3316.75,
+      "fib_618": 3273.03,
+      "fib_786": 3210.79,
+      "fib_1618": 3730.97
     },
     "timeframes": {
       "15M": {
@@ -11630,7 +11632,7 @@
       "win_rate_score": 98.5,
       "rr_ratio": 2.5,
       "reasons": [
-        "⛰️ Near 52W High (-6.73%)",
+        "⛰️ Near 52W High (-3.37%)",
         "🎯 High R:R (1:2.5)"
       ],
       "alpha_rank": 114.3
@@ -13426,9 +13428,9 @@
     "vol_ratio": 0.44,
     "vol_status": "NORMAL",
     "high_52w": 83.28,
-    "low_52w": 72.09,
+    "low_52w": 72.2,
     "dist_52w_high": -6.02,
-    "dist_52w_low": 8.57,
+    "dist_52w_low": 8.41,
     "tech_score": 76.0,
     "action": "BUY ON DIPS",
     "action_badge": "<span class=\"px-2 py-0.5 rounded text-xs font-bold uppercase tracking-wider bg-emerald-500/20 text-emerald-400 border border-emerald-500/30\">BUY ON DIPS</span>",
@@ -13493,12 +13495,12 @@
       "s3": 74.33
     },
     "fibonacci": {
-      "fib_236": 80.64,
-      "fib_382": 79.01,
-      "fib_500": 77.69,
-      "fib_618": 76.36,
-      "fib_786": 74.48,
-      "fib_1618": 90.2
+      "fib_236": 80.67,
+      "fib_382": 79.05,
+      "fib_500": 77.74,
+      "fib_618": 76.43,
+      "fib_786": 74.57,
+      "fib_1618": 90.13
     },
     "timeframes": {
       "15M": {
@@ -13679,9 +13681,9 @@
     "avg_vol_20d": 961405,
     "vol_ratio": 0.7,
     "vol_status": "NORMAL",
-    "high_52w": 404.63,
+    "high_52w": 377.75,
     "low_52w": 328.1,
-    "dist_52w_high": -14.39,
+    "dist_52w_high": -8.3,
     "dist_52w_low": 5.58,
     "tech_score": 67.0,
     "action": "HOLD",
@@ -13747,12 +13749,12 @@
       "s3": 331.49
     },
     "fibonacci": {
-      "fib_236": 386.57,
-      "fib_382": 375.4,
-      "fib_500": 366.37,
-      "fib_618": 357.33,
-      "fib_786": 344.48,
-      "fib_1618": 451.93
+      "fib_236": 366.03,
+      "fib_382": 358.78,
+      "fib_500": 352.93,
+      "fib_618": 347.07,
+      "fib_786": 338.73,
+      "fib_1618": 408.43
     },
     "timeframes": {
       "15M": {
@@ -14185,9 +14187,9 @@
     "vol_ratio": 0.64,
     "vol_status": "NORMAL",
     "high_52w": 256.7,
-    "low_52w": 209.25,
+    "low_52w": 217.65,
     "dist_52w_high": -8.96,
-    "dist_52w_low": 11.68,
+    "dist_52w_low": 7.37,
     "tech_score": 77.0,
     "action": "BUY ON DIPS",
     "action_badge": "<span class=\"px-2 py-0.5 rounded text-xs font-bold uppercase tracking-wider bg-emerald-500/20 text-emerald-400 border border-emerald-500/30\">BUY ON DIPS</span>",
@@ -14252,12 +14254,12 @@
       "s3": 209.81
     },
     "fibonacci": {
-      "fib_236": 245.5,
-      "fib_382": 238.57,
-      "fib_500": 232.97,
-      "fib_618": 227.38,
-      "fib_786": 219.4,
-      "fib_1618": 286.02
+      "fib_236": 247.48,
+      "fib_382": 241.78,
+      "fib_500": 237.18,
+      "fib_618": 232.57,
+      "fib_786": 226.01,
+      "fib_1618": 280.83
     },
     "timeframes": {
       "15M": {
@@ -14438,9 +14440,9 @@
     "vol_ratio": 0.5,
     "vol_status": "NORMAL",
     "high_52w": 189.4,
-    "low_52w": 143.4,
+    "low_52w": 143.85,
     "dist_52w_high": -7.95,
-    "dist_52w_low": 21.58,
+    "dist_52w_low": 21.2,
     "tech_score": 77.0,
     "action": "BUY ON DIPS",
     "action_badge": "<span class=\"px-2 py-0.5 rounded text-xs font-bold uppercase tracking-wider bg-emerald-500/20 text-emerald-400 border border-emerald-500/30\">BUY ON DIPS</span>",
@@ -14505,12 +14507,12 @@
       "s3": 163.83
     },
     "fibonacci": {
-      "fib_236": 178.54,
-      "fib_382": 171.83,
-      "fib_500": 166.4,
-      "fib_618": 160.97,
-      "fib_786": 153.24,
-      "fib_1618": 217.83
+      "fib_236": 178.65,
+      "fib_382": 172.0,
+      "fib_500": 166.62,
+      "fib_618": 161.25,
+      "fib_786": 153.6,
+      "fib_1618": 217.55
     },
     "timeframes": {
       "15M": {
@@ -15451,9 +15453,9 @@
     "vol_ratio": 2.63,
     "vol_status": "HIGH SURGE",
     "high_52w": 2319.0,
-    "low_52w": 1861.9,
+    "low_52w": 1876.4,
     "dist_52w_high": -1.77,
-    "dist_52w_low": 22.34,
+    "dist_52w_low": 21.4,
     "tech_score": 97.0,
     "action": "STRONG BUY",
     "action_badge": "<span class=\"px-2 py-0.5 rounded text-xs font-bold uppercase tracking-wider bg-emerald-500/20 text-emerald-400 border border-emerald-500/30\">STRONG BUY</span>",
@@ -15518,12 +15520,12 @@
       "s3": 2034.26
     },
     "fibonacci": {
-      "fib_236": 2211.12,
-      "fib_382": 2144.39,
-      "fib_500": 2090.45,
-      "fib_618": 2036.51,
-      "fib_786": 1959.72,
-      "fib_1618": 2601.49
+      "fib_236": 2214.55,
+      "fib_382": 2149.93,
+      "fib_500": 2097.7,
+      "fib_618": 2045.47,
+      "fib_786": 1971.12,
+      "fib_1618": 2592.53
     },
     "timeframes": {
       "15M": {
@@ -15958,9 +15960,9 @@
     "avg_vol_20d": 270943,
     "vol_ratio": 1.16,
     "vol_status": "NORMAL",
-    "high_52w": 768.2,
+    "high_52w": 750.75,
     "low_52w": 651.4,
-    "dist_52w_high": -14.29,
+    "dist_52w_high": -12.3,
     "dist_52w_low": 1.07,
     "tech_score": 72.0,
     "action": "BUY ON DIPS",
@@ -16026,12 +16028,12 @@
       "s3": 635.54
     },
     "fibonacci": {
-      "fib_236": 740.64,
-      "fib_382": 723.58,
-      "fib_500": 709.8,
-      "fib_618": 696.02,
-      "fib_786": 676.4,
-      "fib_1618": 840.38
+      "fib_236": 727.3,
+      "fib_382": 712.8,
+      "fib_500": 701.08,
+      "fib_618": 689.35,
+      "fib_786": 672.66,
+      "fib_1618": 812.15
     },
     "timeframes": {
       "15M": {
@@ -16716,9 +16718,9 @@
     "vol_ratio": 0.43,
     "vol_status": "NORMAL",
     "high_52w": 5813.0,
-    "low_52w": 4753.0,
+    "low_52w": 4881.5,
     "dist_52w_high": -13.52,
-    "dist_52w_low": 5.76,
+    "dist_52w_low": 2.98,
     "tech_score": 74.0,
     "action": "BUY ON DIPS",
     "action_badge": "<span class=\"px-2 py-0.5 rounded text-xs font-bold uppercase tracking-wider bg-emerald-500/20 text-emerald-400 border border-emerald-500/30\">BUY ON DIPS</span>",
@@ -16783,12 +16785,12 @@
       "s3": 4804.66
     },
     "fibonacci": {
-      "fib_236": 5562.84,
-      "fib_382": 5408.08,
-      "fib_500": 5283.0,
-      "fib_618": 5157.92,
-      "fib_786": 4979.84,
-      "fib_1618": 6468.08
+      "fib_236": 5593.17,
+      "fib_382": 5457.17,
+      "fib_500": 5347.25,
+      "fib_618": 5237.33,
+      "fib_786": 5080.84,
+      "fib_1618": 6388.67
     },
     "timeframes": {
       "15M": {
@@ -17983,9 +17985,9 @@
     "vol_ratio": 0.53,
     "vol_status": "NORMAL",
     "high_52w": 1875.0,
-    "low_52w": 1618.0,
+    "low_52w": 1721.1,
     "dist_52w_high": -4.14,
-    "dist_52w_low": 11.08,
+    "dist_52w_low": 4.43,
     "tech_score": 77.0,
     "action": "BUY ON DIPS",
     "action_badge": "<span class=\"px-2 py-0.5 rounded text-xs font-bold uppercase tracking-wider bg-emerald-500/20 text-emerald-400 border border-emerald-500/30\">BUY ON DIPS</span>",
@@ -18050,12 +18052,12 @@
       "s3": 1709.3
     },
     "fibonacci": {
-      "fib_236": 1814.35,
-      "fib_382": 1776.83,
-      "fib_500": 1746.5,
-      "fib_618": 1716.17,
-      "fib_786": 1673.0,
-      "fib_1618": 2033.83
+      "fib_236": 1838.68,
+      "fib_382": 1816.21,
+      "fib_500": 1798.05,
+      "fib_618": 1779.89,
+      "fib_786": 1754.03,
+      "fib_1618": 1970.11
     },
     "timeframes": {
       "15M": {
@@ -18491,9 +18493,9 @@
     "vol_ratio": 0.21,
     "vol_status": "NORMAL",
     "high_52w": 490.7,
-    "low_52w": 414.4,
+    "low_52w": 415.0,
     "dist_52w_high": -10.72,
-    "dist_52w_low": 5.72,
+    "dist_52w_low": 5.57,
     "tech_score": 72.0,
     "action": "BUY ON DIPS",
     "action_badge": "<span class=\"px-2 py-0.5 rounded text-xs font-bold uppercase tracking-wider bg-emerald-500/20 text-emerald-400 border border-emerald-500/30\">BUY ON DIPS</span>",
@@ -18558,12 +18560,12 @@
       "s3": 423.94
     },
     "fibonacci": {
-      "fib_236": 472.69,
-      "fib_382": 461.55,
-      "fib_500": 452.55,
-      "fib_618": 443.55,
-      "fib_786": 430.73,
-      "fib_1618": 537.85
+      "fib_236": 472.83,
+      "fib_382": 461.78,
+      "fib_500": 452.85,
+      "fib_618": 443.92,
+      "fib_786": 431.2,
+      "fib_1618": 537.48
     },
     "timeframes": {
       "15M": {
@@ -18996,9 +18998,9 @@
     "avg_vol_20d": 3783687,
     "vol_ratio": 0.35,
     "vol_status": "NORMAL",
-    "high_52w": 268.2,
+    "high_52w": 261.0,
     "low_52w": 225.0,
-    "dist_52w_high": -14.99,
+    "dist_52w_high": -12.64,
     "dist_52w_low": 1.33,
     "tech_score": 64.0,
     "action": "HOLD",
@@ -19064,12 +19066,12 @@
       "s3": 221.34
     },
     "fibonacci": {
-      "fib_236": 258.0,
-      "fib_382": 251.7,
-      "fib_500": 246.6,
-      "fib_618": 241.5,
-      "fib_786": 234.24,
-      "fib_1618": 294.9
+      "fib_236": 252.5,
+      "fib_382": 247.25,
+      "fib_500": 243.0,
+      "fib_618": 238.75,
+      "fib_786": 232.7,
+      "fib_1618": 283.25
     },
     "timeframes": {
       "15M": {
@@ -19248,9 +19250,9 @@
     "avg_vol_20d": 1756818,
     "vol_ratio": 1.03,
     "vol_status": "NORMAL",
-    "high_52w": 288.99,
+    "high_52w": 284.07,
     "low_52w": 237.55,
-    "dist_52w_high": -16.4,
+    "dist_52w_high": -14.95,
     "dist_52w_low": 1.7,
     "tech_score": 70.0,
     "action": "BUY ON DIPS",
@@ -19316,12 +19318,12 @@
       "s3": 229.38
     },
     "fibonacci": {
-      "fib_236": 276.85,
-      "fib_382": 269.34,
-      "fib_500": 263.27,
-      "fib_618": 257.2,
-      "fib_786": 248.56,
-      "fib_1618": 320.78
+      "fib_236": 273.09,
+      "fib_382": 266.3,
+      "fib_500": 260.81,
+      "fib_618": 255.32,
+      "fib_786": 247.51,
+      "fib_1618": 312.82
     },
     "timeframes": {
       "15M": {
@@ -20513,9 +20515,9 @@
     "vol_ratio": 0.93,
     "vol_status": "NORMAL",
     "high_52w": 24225.0,
-    "low_52w": 22281.0,
+    "low_52w": 22550.0,
     "dist_52w_high": -2.85,
-    "dist_52w_low": 5.63,
+    "dist_52w_low": 4.37,
     "tech_score": 81.0,
     "action": "BUY ON DIPS",
     "action_badge": "<span class=\"px-2 py-0.5 rounded text-xs font-bold uppercase tracking-wider bg-emerald-500/20 text-emerald-400 border border-emerald-500/30\">BUY ON DIPS</span>",
@@ -20580,12 +20582,12 @@
       "s3": 22538.34
     },
     "fibonacci": {
-      "fib_236": 23766.22,
-      "fib_382": 23482.39,
-      "fib_500": 23253.0,
-      "fib_618": 23023.61,
-      "fib_786": 22697.02,
-      "fib_1618": 25426.39
+      "fib_236": 23829.7,
+      "fib_382": 23585.15,
+      "fib_500": 23387.5,
+      "fib_618": 23189.85,
+      "fib_786": 22908.45,
+      "fib_1618": 25260.15
     },
     "timeframes": {
       "15M": {
@@ -21779,9 +21781,9 @@
     "avg_vol_20d": 3539331,
     "vol_ratio": 0.9,
     "vol_status": "NORMAL",
-    "high_52w": 1149.0,
+    "high_52w": 1142.0,
     "low_52w": 1013.0,
-    "dist_52w_high": -10.48,
+    "dist_52w_high": -9.93,
     "dist_52w_low": 1.54,
     "tech_score": 72.0,
     "action": "BUY ON DIPS",
@@ -21847,12 +21849,12 @@
       "s3": 995.06
     },
     "fibonacci": {
-      "fib_236": 1116.9,
-      "fib_382": 1097.05,
-      "fib_500": 1081.0,
-      "fib_618": 1064.95,
-      "fib_786": 1042.1,
-      "fib_1618": 1233.05
+      "fib_236": 1111.56,
+      "fib_382": 1092.72,
+      "fib_500": 1077.5,
+      "fib_618": 1062.28,
+      "fib_786": 1040.61,
+      "fib_1618": 1221.72
     },
     "timeframes": {
       "15M": {
@@ -22793,9 +22795,9 @@
     "vol_ratio": 1.16,
     "vol_status": "NORMAL",
     "high_52w": 9615.0,
-    "low_52w": 8285.5,
+    "low_52w": 8457.5,
     "dist_52w_high": -3.05,
-    "dist_52w_low": 12.51,
+    "dist_52w_low": 10.22,
     "tech_score": 84.0,
     "action": "BUY ON DIPS",
     "action_badge": "<span class=\"px-2 py-0.5 rounded text-xs font-bold uppercase tracking-wider bg-emerald-500/20 text-emerald-400 border border-emerald-500/30\">BUY ON DIPS</span>",
@@ -22860,12 +22862,12 @@
       "s3": 9178.84
     },
     "fibonacci": {
-      "fib_236": 9301.24,
-      "fib_382": 9107.13,
-      "fib_500": 8950.25,
-      "fib_618": 8793.37,
-      "fib_786": 8570.01,
-      "fib_1618": 10436.63
+      "fib_236": 9341.83,
+      "fib_382": 9172.83,
+      "fib_500": 9036.25,
+      "fib_618": 8899.67,
+      "fib_786": 8705.2,
+      "fib_1618": 10330.33
     },
     "timeframes": {
       "15M": {
@@ -23046,9 +23048,9 @@
     "vol_ratio": 0.75,
     "vol_status": "NORMAL",
     "high_52w": 1750.0,
-    "low_52w": 1589.0,
+    "low_52w": 1600.0,
     "dist_52w_high": -4.03,
-    "dist_52w_low": 5.7,
+    "dist_52w_low": 4.97,
     "tech_score": 82.0,
     "action": "BUY ON DIPS",
     "action_badge": "<span class=\"px-2 py-0.5 rounded text-xs font-bold uppercase tracking-wider bg-emerald-500/20 text-emerald-400 border border-emerald-500/30\">BUY ON DIPS</span>",
@@ -23113,12 +23115,12 @@
       "s3": 1590.66
     },
     "fibonacci": {
-      "fib_236": 1712.0,
-      "fib_382": 1688.5,
-      "fib_500": 1669.5,
-      "fib_618": 1650.5,
-      "fib_786": 1623.45,
-      "fib_1618": 1849.5
+      "fib_236": 1714.6,
+      "fib_382": 1692.7,
+      "fib_500": 1675.0,
+      "fib_618": 1657.3,
+      "fib_786": 1632.1,
+      "fib_1618": 1842.7
     },
     "timeframes": {
       "15M": {
@@ -23300,9 +23302,9 @@
     "vol_ratio": 0.55,
     "vol_status": "NORMAL",
     "high_52w": 333.0,
-    "low_52w": 306.25,
+    "low_52w": 315.5,
     "dist_52w_high": -3.0,
-    "dist_52w_low": 5.47,
+    "dist_52w_low": 2.38,
     "tech_score": 80.0,
     "action": "BUY ON DIPS",
     "action_badge": "<span class=\"px-2 py-0.5 rounded text-xs font-bold uppercase tracking-wider bg-emerald-500/20 text-emerald-400 border border-emerald-500/30\">BUY ON DIPS</span>",
@@ -23367,12 +23369,12 @@
       "s3": 308.94
     },
     "fibonacci": {
-      "fib_236": 326.69,
-      "fib_382": 322.78,
-      "fib_500": 319.62,
-      "fib_618": 316.47,
-      "fib_786": 311.97,
-      "fib_1618": 349.53
+      "fib_236": 328.87,
+      "fib_382": 326.31,
+      "fib_500": 324.25,
+      "fib_618": 322.19,
+      "fib_786": 319.25,
+      "fib_1618": 343.81
     },
     "timeframes": {
       "15M": {
@@ -24565,9 +24567,9 @@
     "avg_vol_20d": 309620,
     "vol_ratio": 0.55,
     "vol_status": "NORMAL",
-    "high_52w": 657.4,
+    "high_52w": 622.7,
     "low_52w": 553.2,
-    "dist_52w_high": -13.58,
+    "dist_52w_high": -8.77,
     "dist_52w_low": 2.69,
     "tech_score": 68.0,
     "action": "HOLD",
@@ -24633,12 +24635,12 @@
       "s3": 540.4
     },
     "fibonacci": {
-      "fib_236": 632.81,
-      "fib_382": 617.6,
-      "fib_500": 605.3,
-      "fib_618": 593.0,
-      "fib_786": 575.5,
-      "fib_1618": 721.8
+      "fib_236": 606.3,
+      "fib_382": 596.15,
+      "fib_500": 587.95,
+      "fib_618": 579.75,
+      "fib_786": 568.07,
+      "fib_1618": 665.65
     },
     "timeframes": {
       "15M": {
@@ -24817,11 +24819,11 @@
     "avg_vol_20d": 280889,
     "vol_ratio": 0.28,
     "vol_status": "NORMAL",
-    "high_52w": 733.6,
+    "high_52w": 727.0,
     "low_52w": 646.6,
-    "dist_52w_high": -8.64,
+    "dist_52w_high": -7.81,
     "dist_52w_low": 3.66,
-    "tech_score": 63.0,
+    "tech_score": 68.0,
     "action": "HOLD",
     "action_badge": "<span class=\"px-2 py-0.5 rounded text-xs font-bold uppercase tracking-wider bg-emerald-500/20 text-emerald-400 border border-emerald-500/30\">HOLD</span>",
     "setup_type": "Swing Pullback",
@@ -24851,7 +24853,7 @@
       "target_2": 737.38,
       "target_3": 777.65,
       "rr_ratio": 2.5,
-      "win_rate_score": 75.0,
+      "win_rate_score": 83.0,
       "risk_per_share": 26.850000000000023
     },
     "moving_averages": {
@@ -24885,12 +24887,12 @@
       "s3": 641.81
     },
     "fibonacci": {
-      "fib_236": 713.07,
-      "fib_382": 700.37,
-      "fib_500": 690.1,
-      "fib_618": 679.83,
-      "fib_786": 665.22,
-      "fib_1618": 787.37
+      "fib_236": 708.03,
+      "fib_382": 696.29,
+      "fib_500": 686.8,
+      "fib_618": 677.31,
+      "fib_786": 663.81,
+      "fib_1618": 776.69
     },
     "timeframes": {
       "15M": {
@@ -24906,7 +24908,7 @@
       "1D": {
         "trend": "Uptrend",
         "rsi": 45.8,
-        "verdict": "Buy"
+        "verdict": "Strong Buy"
       },
       "1W": {
         "trend": "Stage 2 Expansion",
@@ -24915,7 +24917,7 @@
       }
     },
     "confluence": {
-      "score": 75.0,
+      "score": 83.0,
       "badge": "High Institutional Confluence"
     },
     "candles": [
@@ -25045,12 +25047,13 @@
       "is_perfect": false,
       "is_swing": true,
       "is_intraday": false,
-      "win_rate_score": 75.0,
+      "win_rate_score": 83.0,
       "rr_ratio": 2.5,
       "reasons": [
+        "⛰️ Near 52W High (-7.81%)",
         "🎯 High R:R (1:2.5)"
       ],
-      "alpha_rank": 94.8
+      "alpha_rank": 98.8
     }
   },
   {
@@ -25323,9 +25326,9 @@
     "vol_ratio": 1.05,
     "vol_status": "NORMAL",
     "high_52w": 870.7,
-    "low_52w": 794.26,
+    "low_52w": 811.18,
     "dist_52w_high": -3.29,
-    "dist_52w_low": 6.02,
+    "dist_52w_low": 3.81,
     "tech_score": 82.0,
     "action": "BUY ON DIPS",
     "action_badge": "<span class=\"px-2 py-0.5 rounded text-xs font-bold uppercase tracking-wider bg-emerald-500/20 text-emerald-400 border border-emerald-500/30\">BUY ON DIPS</span>",
@@ -25390,12 +25393,12 @@
       "s3": 801.6
     },
     "fibonacci": {
-      "fib_236": 852.66,
-      "fib_382": 841.5,
-      "fib_500": 832.48,
-      "fib_618": 823.46,
-      "fib_786": 810.62,
-      "fib_1618": 917.94
+      "fib_236": 856.65,
+      "fib_382": 847.96,
+      "fib_500": 840.94,
+      "fib_618": 833.92,
+      "fib_786": 823.92,
+      "fib_1618": 907.48
     },
     "timeframes": {
       "15M": {
@@ -26844,9 +26847,9 @@
     "avg_vol_20d": 83583,
     "vol_ratio": 0.73,
     "vol_status": "NORMAL",
-    "high_52w": 1115.56,
+    "high_52w": 1111.08,
     "low_52w": 959.2,
-    "dist_52w_high": -9.17,
+    "dist_52w_high": -8.8,
     "dist_52w_low": 5.64,
     "tech_score": 67.0,
     "action": "HOLD",
@@ -26912,12 +26915,12 @@
       "s3": 972.34
     },
     "fibonacci": {
-      "fib_236": 1078.66,
-      "fib_382": 1055.83,
-      "fib_500": 1037.38,
-      "fib_618": 1018.93,
-      "fib_786": 992.66,
-      "fib_1618": 1212.19
+      "fib_236": 1075.24,
+      "fib_382": 1053.06,
+      "fib_500": 1035.14,
+      "fib_618": 1017.22,
+      "fib_786": 991.7,
+      "fib_1618": 1204.94
     },
     "timeframes": {
       "15M": {
@@ -27097,9 +27100,9 @@
     "vol_ratio": 0.69,
     "vol_status": "NORMAL",
     "high_52w": 584.15,
-    "low_52w": 416.0,
+    "low_52w": 448.95,
     "dist_52w_high": -3.46,
-    "dist_52w_low": 35.56,
+    "dist_52w_low": 25.62,
     "tech_score": 81.0,
     "action": "BUY ON DIPS",
     "action_badge": "<span class=\"px-2 py-0.5 rounded text-xs font-bold uppercase tracking-wider bg-emerald-500/20 text-emerald-400 border border-emerald-500/30\">BUY ON DIPS</span>",
@@ -27164,12 +27167,12 @@
       "s3": 525.39
     },
     "fibonacci": {
-      "fib_236": 544.47,
-      "fib_382": 519.92,
-      "fib_500": 500.07,
-      "fib_618": 480.23,
-      "fib_786": 451.98,
-      "fib_1618": 688.07
+      "fib_236": 552.24,
+      "fib_382": 532.5,
+      "fib_500": 516.55,
+      "fib_618": 500.6,
+      "fib_786": 477.88,
+      "fib_1618": 667.7
     },
     "timeframes": {
       "15M": {
@@ -27856,9 +27859,9 @@
     "vol_ratio": 0.64,
     "vol_status": "NORMAL",
     "high_52w": 155.95,
-    "low_52w": 132.76,
+    "low_52w": 133.75,
     "dist_52w_high": -11.53,
-    "dist_52w_low": 3.92,
+    "dist_52w_low": 3.16,
     "tech_score": 77.0,
     "action": "BUY ON DIPS",
     "action_badge": "<span class=\"px-2 py-0.5 rounded text-xs font-bold uppercase tracking-wider bg-emerald-500/20 text-emerald-400 border border-emerald-500/30\">BUY ON DIPS</span>",
@@ -27923,12 +27926,12 @@
       "s3": 130.37
     },
     "fibonacci": {
-      "fib_236": 150.48,
-      "fib_382": 147.09,
-      "fib_500": 144.35,
-      "fib_618": 141.62,
-      "fib_786": 137.72,
-      "fib_1618": 170.28
+      "fib_236": 150.71,
+      "fib_382": 147.47,
+      "fib_500": 144.85,
+      "fib_618": 142.23,
+      "fib_786": 138.5,
+      "fib_1618": 169.67
     },
     "timeframes": {
       "15M": {
@@ -28868,9 +28871,9 @@
     "vol_ratio": 0.64,
     "vol_status": "NORMAL",
     "high_52w": 2470.0,
-    "low_52w": 1897.2,
+    "low_52w": 2016.4,
     "dist_52w_high": -12.19,
-    "dist_52w_low": 14.33,
+    "dist_52w_low": 7.57,
     "tech_score": 77.0,
     "action": "BUY ON DIPS",
     "action_badge": "<span class=\"px-2 py-0.5 rounded text-xs font-bold uppercase tracking-wider bg-emerald-500/20 text-emerald-400 border border-emerald-500/30\">BUY ON DIPS</span>",
@@ -28935,12 +28938,12 @@
       "s3": 2036.26
     },
     "fibonacci": {
-      "fib_236": 2334.82,
-      "fib_382": 2251.19,
-      "fib_500": 2183.6,
-      "fib_618": 2116.01,
-      "fib_786": 2019.78,
-      "fib_1618": 2823.99
+      "fib_236": 2362.95,
+      "fib_382": 2296.72,
+      "fib_500": 2243.2,
+      "fib_618": 2189.68,
+      "fib_786": 2113.47,
+      "fib_1618": 2750.32
     },
     "timeframes": {
       "15M": {
@@ -30388,9 +30391,9 @@
     "vol_ratio": 0.4,
     "vol_status": "NORMAL",
     "high_52w": 1958.0,
-    "low_52w": 1575.0,
+    "low_52w": 1660.0,
     "dist_52w_high": -9.2,
-    "dist_52w_low": 12.88,
+    "dist_52w_low": 7.1,
     "tech_score": 71.0,
     "action": "BUY ON DIPS",
     "action_badge": "<span class=\"px-2 py-0.5 rounded text-xs font-bold uppercase tracking-wider bg-emerald-500/20 text-emerald-400 border border-emerald-500/30\">BUY ON DIPS</span>",
@@ -30455,12 +30458,12 @@
       "s3": 1719.54
     },
     "fibonacci": {
-      "fib_236": 1867.61,
-      "fib_382": 1811.69,
-      "fib_500": 1766.5,
-      "fib_618": 1721.31,
-      "fib_786": 1656.96,
-      "fib_1618": 2194.69
+      "fib_236": 1887.67,
+      "fib_382": 1844.16,
+      "fib_500": 1809.0,
+      "fib_618": 1773.84,
+      "fib_786": 1723.77,
+      "fib_1618": 2142.16
     },
     "timeframes": {
       "15M": {
@@ -31144,9 +31147,9 @@
     "avg_vol_20d": 292351,
     "vol_ratio": 0.44,
     "vol_status": "NORMAL",
-    "high_52w": 222.8,
+    "high_52w": 221.0,
     "low_52w": 190.25,
-    "dist_52w_high": -11.81,
+    "dist_52w_high": -11.1,
     "dist_52w_low": 3.27,
     "tech_score": 67.0,
     "action": "HOLD",
@@ -31212,12 +31215,12 @@
       "s3": 185.41
     },
     "fibonacci": {
-      "fib_236": 215.12,
-      "fib_382": 210.37,
-      "fib_500": 206.53,
-      "fib_618": 202.68,
-      "fib_786": 197.22,
-      "fib_1618": 242.92
+      "fib_236": 213.74,
+      "fib_382": 209.25,
+      "fib_500": 205.62,
+      "fib_618": 202.0,
+      "fib_786": 196.83,
+      "fib_1618": 240.0
     },
     "timeframes": {
       "15M": {
@@ -31648,9 +31651,9 @@
     "avg_vol_20d": 1842151,
     "vol_ratio": 1.09,
     "vol_status": "NORMAL",
-    "high_52w": 1660.3,
+    "high_52w": 1652.0,
     "low_52w": 1498.0,
-    "dist_52w_high": -7.19,
+    "dist_52w_high": -6.72,
     "dist_52w_low": 2.87,
     "tech_score": 79.0,
     "action": "BUY ON DIPS",
@@ -31716,12 +31719,12 @@
       "s3": 1481.94
     },
     "fibonacci": {
-      "fib_236": 1622.0,
-      "fib_382": 1598.3,
-      "fib_500": 1579.15,
-      "fib_618": 1560.0,
-      "fib_786": 1532.73,
-      "fib_1618": 1760.6
+      "fib_236": 1615.66,
+      "fib_382": 1593.17,
+      "fib_500": 1575.0,
+      "fib_618": 1556.83,
+      "fib_786": 1530.96,
+      "fib_1618": 1747.17
     },
     "timeframes": {
       "15M": {
@@ -31879,7 +31882,7 @@
       "win_rate_score": 88.0,
       "rr_ratio": 2.5,
       "reasons": [
-        "⛰️ Near 52W High (-7.19%)",
+        "⛰️ Near 52W High (-6.72%)",
         "🎯 High R:R (1:2.5)"
       ],
       "alpha_rank": 111.5
@@ -32155,9 +32158,9 @@
     "vol_ratio": 1.59,
     "vol_status": "HIGH SURGE",
     "high_52w": 223.1,
-    "low_52w": 190.01,
+    "low_52w": 190.1,
     "dist_52w_high": -2.7,
-    "dist_52w_low": 14.25,
+    "dist_52w_low": 14.19,
     "tech_score": 90.0,
     "action": "STRONG BUY",
     "action_badge": "<span class=\"px-2 py-0.5 rounded text-xs font-bold uppercase tracking-wider bg-emerald-500/20 text-emerald-400 border border-emerald-500/30\">STRONG BUY</span>",
@@ -32222,12 +32225,12 @@
       "s3": 204.76
     },
     "fibonacci": {
-      "fib_236": 215.29,
-      "fib_382": 210.46,
-      "fib_500": 206.56,
-      "fib_618": 202.65,
-      "fib_786": 197.09,
-      "fib_1618": 243.55
+      "fib_236": 215.31,
+      "fib_382": 210.49,
+      "fib_500": 206.6,
+      "fib_618": 202.71,
+      "fib_786": 197.16,
+      "fib_1618": 243.49
     },
     "timeframes": {
       "15M": {
@@ -32663,9 +32666,9 @@
     "vol_ratio": 0.38,
     "vol_status": "NORMAL",
     "high_52w": 2784.8,
-    "low_52w": 1816.5,
+    "low_52w": 1846.0,
     "dist_52w_high": -3.89,
-    "dist_52w_low": 47.35,
+    "dist_52w_low": 44.99,
     "tech_score": 69.0,
     "action": "HOLD",
     "action_badge": "<span class=\"px-2 py-0.5 rounded text-xs font-bold uppercase tracking-wider bg-emerald-500/20 text-emerald-400 border border-emerald-500/30\">HOLD</span>",
@@ -32730,12 +32733,12 @@
       "s3": 2532.84
     },
     "fibonacci": {
-      "fib_236": 2556.28,
-      "fib_382": 2414.91,
-      "fib_500": 2300.65,
-      "fib_618": 2186.39,
-      "fib_786": 2023.72,
-      "fib_1618": 3383.21
+      "fib_236": 2563.24,
+      "fib_382": 2426.18,
+      "fib_500": 2315.4,
+      "fib_618": 2204.62,
+      "fib_786": 2046.9,
+      "fib_1618": 3364.98
     },
     "timeframes": {
       "15M": {
@@ -33673,11 +33676,11 @@
     "avg_vol_20d": 67863,
     "vol_ratio": 0.04,
     "vol_status": "NORMAL",
-    "high_52w": 151.86,
+    "high_52w": 144.6,
     "low_52w": 131.0,
-    "dist_52w_high": -9.76,
+    "dist_52w_high": -5.23,
     "dist_52w_low": 4.61,
-    "tech_score": 60.0,
+    "tech_score": 65.0,
     "action": "HOLD",
     "action_badge": "<span class=\"px-2 py-0.5 rounded text-xs font-bold uppercase tracking-wider bg-emerald-500/20 text-emerald-400 border border-emerald-500/30\">HOLD</span>",
     "setup_type": "Swing Pullback",
@@ -33707,7 +33710,7 @@
       "target_2": 152.36,
       "target_3": 161.56,
       "rr_ratio": 2.5,
-      "win_rate_score": 75.0,
+      "win_rate_score": 83.0,
       "risk_per_share": 6.1299999999999955
     },
     "moving_averages": {
@@ -33741,12 +33744,12 @@
       "s3": 130.85
     },
     "fibonacci": {
-      "fib_236": 146.94,
-      "fib_382": 143.89,
-      "fib_500": 141.43,
-      "fib_618": 138.97,
-      "fib_786": 135.46,
-      "fib_1618": 164.75
+      "fib_236": 141.39,
+      "fib_382": 139.4,
+      "fib_500": 137.8,
+      "fib_618": 136.2,
+      "fib_786": 133.91,
+      "fib_1618": 153.0
     },
     "timeframes": {
       "15M": {
@@ -33762,7 +33765,7 @@
       "1D": {
         "trend": "Uptrend",
         "rsi": 50.0,
-        "verdict": "Buy"
+        "verdict": "Strong Buy"
       },
       "1W": {
         "trend": "Stage 2 Expansion",
@@ -33771,7 +33774,7 @@
       }
     },
     "confluence": {
-      "score": 75.0,
+      "score": 83.0,
       "badge": "High Institutional Confluence"
     },
     "candles": [
@@ -33901,12 +33904,13 @@
       "is_perfect": false,
       "is_swing": true,
       "is_intraday": false,
-      "win_rate_score": 75.0,
+      "win_rate_score": 83.0,
       "rr_ratio": 2.5,
       "reasons": [
+        "⛰️ Near 52W High (-5.23%)",
         "🎯 High R:R (1:2.5)"
       ],
-      "alpha_rank": 91.7
+      "alpha_rank": 95.7
     }
   },
   {
@@ -33926,9 +33930,9 @@
     "vol_ratio": 1.31,
     "vol_status": "NORMAL",
     "high_52w": 87.5,
-    "low_52w": 77.3,
+    "low_52w": 79.6,
     "dist_52w_high": -3.77,
-    "dist_52w_low": 8.93,
+    "dist_52w_low": 5.78,
     "tech_score": 87.0,
     "action": "STRONG BUY",
     "action_badge": "<span class=\"px-2 py-0.5 rounded text-xs font-bold uppercase tracking-wider bg-emerald-500/20 text-emerald-400 border border-emerald-500/30\">STRONG BUY</span>",
@@ -33993,12 +33997,12 @@
       "s3": 81.35
     },
     "fibonacci": {
-      "fib_236": 85.09,
-      "fib_382": 83.6,
-      "fib_500": 82.4,
-      "fib_618": 81.2,
-      "fib_786": 79.48,
-      "fib_1618": 93.8
+      "fib_236": 85.64,
+      "fib_382": 84.48,
+      "fib_500": 83.55,
+      "fib_618": 82.62,
+      "fib_786": 81.29,
+      "fib_1618": 92.38
     },
     "timeframes": {
       "15M": {
@@ -34432,9 +34436,9 @@
     "avg_vol_20d": 94457,
     "vol_ratio": 1.17,
     "vol_status": "NORMAL",
-    "high_52w": 585.0,
+    "high_52w": 553.85,
     "low_52w": 473.95,
-    "dist_52w_high": -16.59,
+    "dist_52w_high": -11.9,
     "dist_52w_low": 2.95,
     "tech_score": 72.0,
     "action": "BUY ON DIPS",
@@ -34500,12 +34504,12 @@
       "s3": 455.29
     },
     "fibonacci": {
-      "fib_236": 558.79,
-      "fib_382": 542.58,
-      "fib_500": 529.48,
-      "fib_618": 516.37,
-      "fib_786": 497.71,
-      "fib_1618": 653.63
+      "fib_236": 534.99,
+      "fib_382": 523.33,
+      "fib_500": 513.9,
+      "fib_618": 504.47,
+      "fib_786": 491.05,
+      "fib_1618": 603.23
     },
     "timeframes": {
       "15M": {
@@ -34685,9 +34689,9 @@
     "vol_ratio": 0.46,
     "vol_status": "NORMAL",
     "high_52w": 4785.8,
-    "low_52w": 4341.0,
+    "low_52w": 4354.0,
     "dist_52w_high": -8.66,
-    "dist_52w_low": 0.7,
+    "dist_52w_low": 0.4,
     "tech_score": 75.0,
     "action": "BUY ON DIPS",
     "action_badge": "<span class=\"px-2 py-0.5 rounded text-xs font-bold uppercase tracking-wider bg-emerald-500/20 text-emerald-400 border border-emerald-500/30\">BUY ON DIPS</span>",
@@ -34752,12 +34756,12 @@
       "s3": 4221.66
     },
     "fibonacci": {
-      "fib_236": 4680.83,
-      "fib_382": 4615.89,
-      "fib_500": 4563.4,
-      "fib_618": 4510.91,
-      "fib_786": 4436.19,
-      "fib_1618": 5060.69
+      "fib_236": 4683.9,
+      "fib_382": 4620.85,
+      "fib_500": 4569.9,
+      "fib_618": 4518.95,
+      "fib_786": 4446.41,
+      "fib_1618": 5052.65
     },
     "timeframes": {
       "15M": {
@@ -34937,9 +34941,9 @@
     "vol_ratio": 0.49,
     "vol_status": "NORMAL",
     "high_52w": 2205.0,
-    "low_52w": 1865.1,
+    "low_52w": 1869.1,
     "dist_52w_high": -8.24,
-    "dist_52w_low": 8.49,
+    "dist_52w_low": 8.26,
     "tech_score": 65.0,
     "action": "HOLD",
     "action_badge": "<span class=\"px-2 py-0.5 rounded text-xs font-bold uppercase tracking-wider bg-emerald-500/20 text-emerald-400 border border-emerald-500/30\">HOLD</span>",
@@ -35004,12 +35008,12 @@
       "s3": 1927.26
     },
     "fibonacci": {
-      "fib_236": 2124.78,
-      "fib_382": 2075.16,
-      "fib_500": 2035.05,
-      "fib_618": 1994.94,
-      "fib_786": 1937.84,
-      "fib_1618": 2415.06
+      "fib_236": 2125.73,
+      "fib_382": 2076.69,
+      "fib_500": 2037.05,
+      "fib_618": 1997.41,
+      "fib_786": 1940.98,
+      "fib_1618": 2412.59
     },
     "timeframes": {
       "15M": {
@@ -35442,9 +35446,9 @@
     "vol_ratio": 0.91,
     "vol_status": "NORMAL",
     "high_52w": 2272.25,
-    "low_52w": 1981.77,
+    "low_52w": 2029.18,
     "dist_52w_high": -5.23,
-    "dist_52w_low": 8.67,
+    "dist_52w_low": 6.13,
     "tech_score": 81.0,
     "action": "BUY ON DIPS",
     "action_badge": "<span class=\"px-2 py-0.5 rounded text-xs font-bold uppercase tracking-wider bg-emerald-500/20 text-emerald-400 border border-emerald-500/30\">BUY ON DIPS</span>",
@@ -35509,12 +35513,12 @@
       "s3": 2050.4
     },
     "fibonacci": {
-      "fib_236": 2203.7,
-      "fib_382": 2161.29,
-      "fib_500": 2127.01,
-      "fib_618": 2092.73,
-      "fib_786": 2043.93,
-      "fib_1618": 2451.77
+      "fib_236": 2214.89,
+      "fib_382": 2179.4,
+      "fib_500": 2150.72,
+      "fib_618": 2122.03,
+      "fib_786": 2081.2,
+      "fib_1618": 2422.47
     },
     "timeframes": {
       "15M": {
@@ -35949,9 +35953,9 @@
     "vol_ratio": 0.96,
     "vol_status": "NORMAL",
     "high_52w": 442.65,
-    "low_52w": 401.65,
+    "low_52w": 408.15,
     "dist_52w_high": -2.63,
-    "dist_52w_low": 7.31,
+    "dist_52w_low": 5.6,
     "tech_score": 74.0,
     "action": "BUY ON DIPS",
     "action_badge": "<span class=\"px-2 py-0.5 rounded text-xs font-bold uppercase tracking-wider bg-emerald-500/20 text-emerald-400 border border-emerald-500/30\">BUY ON DIPS</span>",
@@ -36016,12 +36020,12 @@
       "s3": 407.0
     },
     "fibonacci": {
-      "fib_236": 432.97,
-      "fib_382": 426.99,
-      "fib_500": 422.15,
-      "fib_618": 417.31,
-      "fib_786": 410.42,
-      "fib_1618": 467.99
+      "fib_236": 434.51,
+      "fib_382": 429.47,
+      "fib_500": 425.4,
+      "fib_618": 421.33,
+      "fib_786": 415.53,
+      "fib_1618": 463.97
     },
     "timeframes": {
       "15M": {
@@ -36201,9 +36205,9 @@
     "avg_vol_20d": 36519,
     "vol_ratio": 0.71,
     "vol_status": "NORMAL",
-    "high_52w": 39.54,
+    "high_52w": 39.49,
     "low_52w": 37.98,
-    "dist_52w_high": -2.81,
+    "dist_52w_high": -2.68,
     "dist_52w_low": 1.18,
     "tech_score": 72.0,
     "action": "BUY ON DIPS",
@@ -36269,12 +36273,12 @@
       "s3": 37.34
     },
     "fibonacci": {
-      "fib_236": 39.17,
-      "fib_382": 38.94,
-      "fib_500": 38.76,
-      "fib_618": 38.58,
-      "fib_786": 38.31,
-      "fib_1618": 40.5
+      "fib_236": 39.13,
+      "fib_382": 38.91,
+      "fib_500": 38.73,
+      "fib_618": 38.56,
+      "fib_786": 38.3,
+      "fib_1618": 40.42
     },
     "timeframes": {
       "15M": {
@@ -36432,7 +36436,7 @@
       "win_rate_score": 83.0,
       "rr_ratio": 2.5,
       "reasons": [
-        "⛰️ Near 52W High (-2.81%)",
+        "⛰️ Near 52W High (-2.68%)",
         "🎯 High R:R (1:2.5)"
       ],
       "alpha_rank": 104.1
@@ -36454,9 +36458,9 @@
     "avg_vol_20d": 7195058,
     "vol_ratio": 1.35,
     "vol_status": "NORMAL",
-    "high_52w": 448.5,
+    "high_52w": 447.9,
     "low_52w": 396.2,
-    "dist_52w_high": -7.13,
+    "dist_52w_high": -7.01,
     "dist_52w_low": 5.12,
     "tech_score": 84.0,
     "action": "BUY ON DIPS",
@@ -36522,12 +36526,12 @@
       "s3": 393.14
     },
     "fibonacci": {
-      "fib_236": 436.16,
-      "fib_382": 428.52,
-      "fib_500": 422.35,
-      "fib_618": 416.18,
-      "fib_786": 407.39,
-      "fib_1618": 480.82
+      "fib_236": 435.7,
+      "fib_382": 428.15,
+      "fib_500": 422.05,
+      "fib_618": 415.95,
+      "fib_786": 407.26,
+      "fib_1618": 479.85
     },
     "timeframes": {
       "15M": {
@@ -36687,7 +36691,7 @@
       "reasons": [
         "🌟 High Confluence Synergy",
         "🔥 Vol Surge (1.35x)",
-        "⛰️ Near 52W High (-7.13%)"
+        "⛰️ Near 52W High (-7.01%)"
       ],
       "alpha_rank": 117.0
     }
@@ -37215,9 +37219,9 @@
     "vol_ratio": 5.75,
     "vol_status": "HIGH SURGE",
     "high_52w": 641.9,
-    "low_52w": 557.7,
+    "low_52w": 558.15,
     "dist_52w_high": -2.14,
-    "dist_52w_low": 12.63,
+    "dist_52w_low": 12.54,
     "tech_score": 99.0,
     "action": "STRONG BUY",
     "action_badge": "<span class=\"px-2 py-0.5 rounded text-xs font-bold uppercase tracking-wider bg-emerald-500/20 text-emerald-400 border border-emerald-500/30\">STRONG BUY</span>",
@@ -37282,12 +37286,12 @@
       "s3": 531.24
     },
     "fibonacci": {
-      "fib_236": 622.03,
-      "fib_382": 609.74,
-      "fib_500": 599.8,
-      "fib_618": 589.86,
-      "fib_786": 575.72,
-      "fib_1618": 693.94
+      "fib_236": 622.13,
+      "fib_382": 609.91,
+      "fib_500": 600.02,
+      "fib_618": 590.14,
+      "fib_786": 576.07,
+      "fib_1618": 693.66
     },
     "timeframes": {
       "15M": {
@@ -37722,9 +37726,9 @@
     "vol_ratio": 0.78,
     "vol_status": "NORMAL",
     "high_52w": 1197.34,
-    "low_52w": 935.8,
+    "low_52w": 1025.96,
     "dist_52w_high": -2.46,
-    "dist_52w_low": 24.8,
+    "dist_52w_low": 13.83,
     "tech_score": 73.0,
     "action": "BUY ON DIPS",
     "action_badge": "<span class=\"px-2 py-0.5 rounded text-xs font-bold uppercase tracking-wider bg-emerald-500/20 text-emerald-400 border border-emerald-500/30\">BUY ON DIPS</span>",
@@ -37789,12 +37793,12 @@
       "s3": 1088.94
     },
     "fibonacci": {
-      "fib_236": 1135.62,
-      "fib_382": 1097.43,
-      "fib_500": 1066.57,
-      "fib_618": 1035.71,
-      "fib_786": 991.77,
-      "fib_1618": 1358.97
+      "fib_236": 1156.89,
+      "fib_382": 1131.87,
+      "fib_500": 1111.65,
+      "fib_618": 1091.43,
+      "fib_786": 1062.64,
+      "fib_1618": 1303.25
     },
     "timeframes": {
       "15M": {
@@ -38735,9 +38739,9 @@
     "vol_ratio": 0.37,
     "vol_status": "NORMAL",
     "high_52w": 111.15,
-    "low_52w": 90.8,
+    "low_52w": 94.64,
     "dist_52w_high": -11.79,
-    "dist_52w_low": 7.98,
+    "dist_52w_low": 3.6,
     "tech_score": 74.0,
     "action": "BUY ON DIPS",
     "action_badge": "<span class=\"px-2 py-0.5 rounded text-xs font-bold uppercase tracking-wider bg-emerald-500/20 text-emerald-400 border border-emerald-500/30\">BUY ON DIPS</span>",
@@ -38802,12 +38806,12 @@
       "s3": 92.05
     },
     "fibonacci": {
-      "fib_236": 106.35,
-      "fib_382": 103.38,
-      "fib_500": 100.97,
-      "fib_618": 98.57,
-      "fib_786": 95.15,
-      "fib_1618": 123.73
+      "fib_236": 107.25,
+      "fib_382": 104.84,
+      "fib_500": 102.9,
+      "fib_618": 100.95,
+      "fib_786": 98.17,
+      "fib_1618": 121.35
     },
     "timeframes": {
       "15M": {
@@ -39241,9 +39245,9 @@
     "avg_vol_20d": 43186,
     "vol_ratio": 1.49,
     "vol_status": "NORMAL",
-    "high_52w": 1385.0,
+    "high_52w": 1370.8,
     "low_52w": 1289.5,
-    "dist_52w_high": -6.55,
+    "dist_52w_high": -5.58,
     "dist_52w_low": 0.37,
     "tech_score": 86.0,
     "action": "STRONG BUY",
@@ -39309,12 +39313,12 @@
       "s3": 1258.7
     },
     "fibonacci": {
-      "fib_236": 1362.46,
-      "fib_382": 1348.52,
-      "fib_500": 1337.25,
-      "fib_618": 1325.98,
-      "fib_786": 1309.94,
-      "fib_1618": 1444.02
+      "fib_236": 1351.61,
+      "fib_382": 1339.74,
+      "fib_500": 1330.15,
+      "fib_618": 1320.56,
+      "fib_786": 1306.9,
+      "fib_1618": 1421.04
     },
     "timeframes": {
       "15M": {
@@ -39474,7 +39478,7 @@
       "reasons": [
         "🌟 High Confluence Synergy",
         "🔥 Vol Surge (1.49x)",
-        "⛰️ Near 52W High (-6.55%)"
+        "⛰️ Near 52W High (-5.58%)"
       ],
       "alpha_rank": 119.0
     }
@@ -39748,9 +39752,9 @@
     "avg_vol_20d": 561219,
     "vol_ratio": 1.16,
     "vol_status": "NORMAL",
-    "high_52w": 2755.5,
+    "high_52w": 2751.0,
     "low_52w": 2442.8,
-    "dist_52w_high": -10.27,
+    "dist_52w_high": -10.12,
     "dist_52w_low": 1.22,
     "tech_score": 75.0,
     "action": "BUY ON DIPS",
@@ -39816,12 +39820,12 @@
       "s3": 2423.0
     },
     "fibonacci": {
-      "fib_236": 2681.7,
-      "fib_382": 2636.05,
-      "fib_500": 2599.15,
-      "fib_618": 2562.25,
-      "fib_786": 2509.72,
-      "fib_1618": 2948.75
+      "fib_236": 2678.26,
+      "fib_382": 2633.27,
+      "fib_500": 2596.9,
+      "fib_618": 2560.53,
+      "fib_786": 2508.75,
+      "fib_1618": 2941.47
     },
     "timeframes": {
       "15M": {
@@ -40000,9 +40004,9 @@
     "avg_vol_20d": 1308129,
     "vol_ratio": 1.29,
     "vol_status": "NORMAL",
-    "high_52w": 169.8,
+    "high_52w": 168.27,
     "low_52w": 152.61,
-    "dist_52w_high": -9.49,
+    "dist_52w_high": -8.66,
     "dist_52w_low": 0.71,
     "tech_score": 73.0,
     "action": "BUY ON DIPS",
@@ -40068,12 +40072,12 @@
       "s3": 150.81
     },
     "fibonacci": {
-      "fib_236": 165.74,
-      "fib_382": 163.23,
-      "fib_500": 161.21,
-      "fib_618": 159.18,
-      "fib_786": 156.29,
-      "fib_1618": 180.42
+      "fib_236": 164.57,
+      "fib_382": 162.29,
+      "fib_500": 160.44,
+      "fib_618": 158.59,
+      "fib_786": 155.96,
+      "fib_1618": 177.95
     },
     "timeframes": {
       "15M": {
@@ -40759,9 +40763,9 @@
     "vol_ratio": 1.08,
     "vol_status": "NORMAL",
     "high_52w": 139.35,
-    "low_52w": 116.12,
+    "low_52w": 118.73,
     "dist_52w_high": -4.97,
-    "dist_52w_low": 14.05,
+    "dist_52w_low": 11.54,
     "tech_score": 83.0,
     "action": "BUY ON DIPS",
     "action_badge": "<span class=\"px-2 py-0.5 rounded text-xs font-bold uppercase tracking-wider bg-emerald-500/20 text-emerald-400 border border-emerald-500/30\">BUY ON DIPS</span>",
@@ -40826,12 +40830,12 @@
       "s3": 125.48
     },
     "fibonacci": {
-      "fib_236": 133.87,
-      "fib_382": 130.48,
-      "fib_500": 127.73,
-      "fib_618": 124.99,
-      "fib_786": 121.09,
-      "fib_1618": 153.71
+      "fib_236": 134.48,
+      "fib_382": 131.47,
+      "fib_500": 129.04,
+      "fib_618": 126.61,
+      "fib_786": 123.14,
+      "fib_1618": 152.09
     },
     "timeframes": {
       "15M": {
@@ -41770,11 +41774,11 @@
     "avg_vol_20d": 7252112,
     "vol_ratio": 1.07,
     "vol_status": "NORMAL",
-    "high_52w": 1086.8,
+    "high_52w": 1082.0,
     "low_52w": 992.4,
-    "dist_52w_high": -8.38,
+    "dist_52w_high": -7.98,
     "dist_52w_low": 0.33,
-    "tech_score": 74.0,
+    "tech_score": 78.0,
     "action": "BUY ON DIPS",
     "action_badge": "<span class=\"px-2 py-0.5 rounded text-xs font-bold uppercase tracking-wider bg-emerald-500/20 text-emerald-400 border border-emerald-500/30\">BUY ON DIPS</span>",
     "setup_type": "Swing Pullback",
@@ -41804,7 +41808,7 @@
       "target_2": 1062.9,
       "target_3": 1103.22,
       "rr_ratio": 2.5,
-      "win_rate_score": 80.0,
+      "win_rate_score": 88.0,
       "risk_per_share": 26.879999999999995
     },
     "moving_averages": {
@@ -41838,12 +41842,12 @@
       "s3": 982.94
     },
     "fibonacci": {
-      "fib_236": 1064.52,
-      "fib_382": 1050.74,
-      "fib_500": 1039.6,
-      "fib_618": 1028.46,
-      "fib_786": 1012.6,
-      "fib_1618": 1145.14
+      "fib_236": 1060.85,
+      "fib_382": 1047.77,
+      "fib_500": 1037.2,
+      "fib_618": 1026.63,
+      "fib_786": 1011.57,
+      "fib_1618": 1137.37
     },
     "timeframes": {
       "15M": {
@@ -41868,7 +41872,7 @@
       }
     },
     "confluence": {
-      "score": 80.0,
+      "score": 88.0,
       "badge": "High Institutional Confluence"
     },
     "candles": [
@@ -41998,12 +42002,13 @@
       "is_perfect": false,
       "is_swing": true,
       "is_intraday": false,
-      "win_rate_score": 80.0,
+      "win_rate_score": 88.0,
       "rr_ratio": 2.5,
       "reasons": [
+        "⛰️ Near 52W High (-7.98%)",
         "🎯 High R:R (1:2.5)"
       ],
-      "alpha_rank": 107.2
+      "alpha_rank": 111.0
     }
   },
   {
@@ -42023,9 +42028,9 @@
     "vol_ratio": 0.55,
     "vol_status": "NORMAL",
     "high_52w": 1028.5,
-    "low_52w": 808.5,
+    "low_52w": 815.3,
     "dist_52w_high": -1.0,
-    "dist_52w_low": 25.94,
+    "dist_52w_low": 24.89,
     "tech_score": 73.0,
     "action": "BUY ON DIPS",
     "action_badge": "<span class=\"px-2 py-0.5 rounded text-xs font-bold uppercase tracking-wider bg-emerald-500/20 text-emerald-400 border border-emerald-500/30\">BUY ON DIPS</span>",
@@ -42090,12 +42095,12 @@
       "s3": 944.05
     },
     "fibonacci": {
-      "fib_236": 976.58,
-      "fib_382": 944.46,
-      "fib_500": 918.5,
-      "fib_618": 892.54,
-      "fib_786": 855.58,
-      "fib_1618": 1164.46
+      "fib_236": 978.18,
+      "fib_382": 947.06,
+      "fib_500": 921.9,
+      "fib_618": 896.74,
+      "fib_786": 860.92,
+      "fib_1618": 1160.26
     },
     "timeframes": {
       "15M": {
@@ -42275,9 +42280,9 @@
     "avg_vol_20d": 8032818,
     "vol_ratio": 0.87,
     "vol_status": "NORMAL",
-    "high_52w": 251.4,
+    "high_52w": 250.79,
     "low_52w": 234.05,
-    "dist_52w_high": -5.28,
+    "dist_52w_high": -5.05,
     "dist_52w_low": 1.74,
     "tech_score": 76.0,
     "action": "BUY ON DIPS",
@@ -42343,12 +42348,12 @@
       "s3": 231.74
     },
     "fibonacci": {
-      "fib_236": 247.31,
-      "fib_382": 244.77,
-      "fib_500": 242.73,
-      "fib_618": 240.68,
-      "fib_786": 237.76,
-      "fib_1618": 262.12
+      "fib_236": 246.84,
+      "fib_382": 244.4,
+      "fib_500": 242.42,
+      "fib_618": 240.44,
+      "fib_786": 237.63,
+      "fib_1618": 261.14
     },
     "timeframes": {
       "15M": {
@@ -42506,7 +42511,7 @@
       "win_rate_score": 88.0,
       "rr_ratio": 2.5,
       "reasons": [
-        "⛰️ Near 52W High (-5.28%)",
+        "⛰️ Near 52W High (-5.05%)",
         "🎯 High R:R (1:2.5)"
       ],
       "alpha_rank": 108.5
@@ -43033,10 +43038,10 @@
     "avg_vol_20d": 171557,
     "vol_ratio": 0.76,
     "vol_status": "NORMAL",
-    "high_52w": 4958.9,
-    "low_52w": 4401.8,
-    "dist_52w_high": -3.74,
-    "dist_52w_low": 8.44,
+    "high_52w": 4898.0,
+    "low_52w": 4461.1,
+    "dist_52w_high": -2.55,
+    "dist_52w_low": 7.0,
     "tech_score": 72.0,
     "action": "BUY ON DIPS",
     "action_badge": "<span class=\"px-2 py-0.5 rounded text-xs font-bold uppercase tracking-wider bg-emerald-500/20 text-emerald-400 border border-emerald-500/30\">BUY ON DIPS</span>",
@@ -43101,12 +43106,12 @@
       "s3": 4638.8
     },
     "fibonacci": {
-      "fib_236": 4827.42,
-      "fib_382": 4746.09,
-      "fib_500": 4680.35,
-      "fib_618": 4614.61,
-      "fib_786": 4521.02,
-      "fib_1618": 5303.19
+      "fib_236": 4794.89,
+      "fib_382": 4731.1,
+      "fib_500": 4679.55,
+      "fib_618": 4628.0,
+      "fib_786": 4554.6,
+      "fib_1618": 5168.0
     },
     "timeframes": {
       "15M": {
@@ -43264,7 +43269,7 @@
       "win_rate_score": 83.0,
       "rr_ratio": 2.5,
       "reasons": [
-        "⛰️ Near 52W High (-3.74%)",
+        "⛰️ Near 52W High (-2.55%)",
         "🎯 High R:R (1:2.5)"
       ],
       "alpha_rank": 104.6
@@ -43541,9 +43546,9 @@
     "vol_ratio": 1.06,
     "vol_status": "NORMAL",
     "high_52w": 3488.0,
-    "low_52w": 3081.2,
+    "low_52w": 3111.0,
     "dist_52w_high": -2.99,
-    "dist_52w_low": 9.82,
+    "dist_52w_low": 8.77,
     "tech_score": 75.0,
     "action": "BUY ON DIPS",
     "action_badge": "<span class=\"px-2 py-0.5 rounded text-xs font-bold uppercase tracking-wider bg-emerald-500/20 text-emerald-400 border border-emerald-500/30\">BUY ON DIPS</span>",
@@ -43608,12 +43613,12 @@
       "s3": 3188.46
     },
     "fibonacci": {
-      "fib_236": 3392.0,
-      "fib_382": 3332.6,
-      "fib_500": 3284.6,
-      "fib_618": 3236.6,
-      "fib_786": 3168.26,
-      "fib_1618": 3739.4
+      "fib_236": 3399.03,
+      "fib_382": 3343.99,
+      "fib_500": 3299.5,
+      "fib_618": 3255.01,
+      "fib_786": 3191.68,
+      "fib_1618": 3720.99
     },
     "timeframes": {
       "15M": {
@@ -44045,9 +44050,9 @@
     "avg_vol_20d": 333017,
     "vol_ratio": 0.59,
     "vol_status": "NORMAL",
-    "high_52w": 510.45,
+    "high_52w": 503.1,
     "low_52w": 452.0,
-    "dist_52w_high": -10.51,
+    "dist_52w_high": -9.2,
     "dist_52w_low": 1.06,
     "tech_score": 69.0,
     "action": "HOLD",
@@ -44113,12 +44118,12 @@
       "s3": 443.54
     },
     "fibonacci": {
-      "fib_236": 496.66,
-      "fib_382": 488.12,
-      "fib_500": 481.23,
-      "fib_618": 474.33,
-      "fib_786": 464.51,
-      "fib_1618": 546.57
+      "fib_236": 491.04,
+      "fib_382": 483.58,
+      "fib_500": 477.55,
+      "fib_618": 471.52,
+      "fib_786": 462.94,
+      "fib_1618": 534.68
     },
     "timeframes": {
       "15M": {
@@ -44550,9 +44555,9 @@
     "avg_vol_20d": 151055,
     "vol_ratio": 0.6,
     "vol_status": "NORMAL",
-    "high_52w": 815.0,
+    "high_52w": 803.7,
     "low_52w": 757.0,
-    "dist_52w_high": -6.07,
+    "dist_52w_high": -4.75,
     "dist_52w_low": 1.13,
     "tech_score": 71.0,
     "action": "BUY ON DIPS",
@@ -44618,12 +44623,12 @@
       "s3": 740.24
     },
     "fibonacci": {
-      "fib_236": 801.31,
-      "fib_382": 792.84,
-      "fib_500": 786.0,
-      "fib_618": 779.16,
-      "fib_786": 769.41,
-      "fib_1618": 850.84
+      "fib_236": 792.68,
+      "fib_382": 785.86,
+      "fib_500": 780.35,
+      "fib_618": 774.84,
+      "fib_786": 766.99,
+      "fib_1618": 832.56
     },
     "timeframes": {
       "15M": {
@@ -44781,7 +44786,7 @@
       "win_rate_score": 83.0,
       "rr_ratio": 2.5,
       "reasons": [
-        "⛰️ Near 52W High (-6.07%)",
+        "⛰️ Near 52W High (-4.75%)",
         "🎯 High R:R (1:2.5)"
       ],
       "alpha_rank": 102.8
@@ -45056,9 +45061,9 @@
     "vol_ratio": 1.15,
     "vol_status": "NORMAL",
     "high_52w": 980.1,
-    "low_52w": 768.62,
+    "low_52w": 801.85,
     "dist_52w_high": -1.93,
-    "dist_52w_low": 25.05,
+    "dist_52w_low": 19.87,
     "tech_score": 79.0,
     "action": "BUY ON DIPS",
     "action_badge": "<span class=\"px-2 py-0.5 rounded text-xs font-bold uppercase tracking-wider bg-emerald-500/20 text-emerald-400 border border-emerald-500/30\">BUY ON DIPS</span>",
@@ -45123,12 +45128,12 @@
       "s3": 857.44
     },
     "fibonacci": {
-      "fib_236": 930.19,
-      "fib_382": 899.31,
-      "fib_500": 874.36,
-      "fib_618": 849.41,
-      "fib_786": 813.88,
-      "fib_1618": 1110.79
+      "fib_236": 938.03,
+      "fib_382": 912.01,
+      "fib_500": 890.98,
+      "fib_618": 869.94,
+      "fib_786": 840.0,
+      "fib_1618": 1090.26
     },
     "timeframes": {
       "15M": {
@@ -45309,9 +45314,9 @@
     "vol_ratio": 1.24,
     "vol_status": "NORMAL",
     "high_52w": 1943.7,
-    "low_52w": 1272.7,
+    "low_52w": 1389.6,
     "dist_52w_high": -5.07,
-    "dist_52w_low": 44.98,
+    "dist_52w_low": 32.79,
     "tech_score": 86.0,
     "action": "STRONG BUY",
     "action_badge": "<span class=\"px-2 py-0.5 rounded text-xs font-bold uppercase tracking-wider bg-emerald-500/20 text-emerald-400 border border-emerald-500/30\">STRONG BUY</span>",
@@ -45376,12 +45381,12 @@
       "s3": 1634.5
     },
     "fibonacci": {
-      "fib_236": 1785.34,
-      "fib_382": 1687.38,
-      "fib_500": 1608.2,
-      "fib_618": 1529.02,
-      "fib_786": 1416.29,
-      "fib_1618": 2358.38
+      "fib_236": 1812.93,
+      "fib_382": 1732.03,
+      "fib_500": 1666.65,
+      "fib_618": 1601.27,
+      "fib_786": 1508.18,
+      "fib_1618": 2286.13
     },
     "timeframes": {
       "15M": {
@@ -45562,11 +45567,11 @@
     "avg_vol_20d": 93412,
     "vol_ratio": 0.96,
     "vol_status": "NORMAL",
-    "high_52w": 913.2,
+    "high_52w": 901.15,
     "low_52w": 821.5,
-    "dist_52w_high": -8.9,
+    "dist_52w_high": -7.68,
     "dist_52w_low": 1.27,
-    "tech_score": 70.0,
+    "tech_score": 74.0,
     "action": "BUY ON DIPS",
     "action_badge": "<span class=\"px-2 py-0.5 rounded text-xs font-bold uppercase tracking-wider bg-emerald-500/20 text-emerald-400 border border-emerald-500/30\">BUY ON DIPS</span>",
     "setup_type": "Swing Pullback",
@@ -45596,7 +45601,7 @@
       "target_2": 889.88,
       "target_3": 924.63,
       "rr_ratio": 2.5,
-      "win_rate_score": 75.0,
+      "win_rate_score": 83.0,
       "risk_per_share": 23.170000000000073
     },
     "moving_averages": {
@@ -45630,12 +45635,12 @@
       "s3": 807.86
     },
     "fibonacci": {
-      "fib_236": 891.56,
-      "fib_382": 878.17,
-      "fib_500": 867.35,
-      "fib_618": 856.53,
-      "fib_786": 841.12,
-      "fib_1618": 969.87
+      "fib_236": 882.35,
+      "fib_382": 870.72,
+      "fib_500": 861.33,
+      "fib_618": 851.93,
+      "fib_786": 838.55,
+      "fib_1618": 950.37
     },
     "timeframes": {
       "15M": {
@@ -45651,7 +45656,7 @@
       "1D": {
         "trend": "Uptrend",
         "rsi": 31.4,
-        "verdict": "Buy"
+        "verdict": "Strong Buy"
       },
       "1W": {
         "trend": "Stage 2 Expansion",
@@ -45660,7 +45665,7 @@
       }
     },
     "confluence": {
-      "score": 75.0,
+      "score": 83.0,
       "badge": "High Institutional Confluence"
     },
     "candles": [
@@ -45790,12 +45795,13 @@
       "is_perfect": false,
       "is_swing": true,
       "is_intraday": false,
-      "win_rate_score": 75.0,
+      "win_rate_score": 83.0,
       "rr_ratio": 2.5,
       "reasons": [
+        "⛰️ Near 52W High (-7.68%)",
         "🎯 High R:R (1:2.5)"
       ],
-      "alpha_rank": 103.3
+      "alpha_rank": 107.1
     }
   },
   {
@@ -46322,9 +46328,9 @@
     "vol_ratio": 0.8,
     "vol_status": "NORMAL",
     "high_52w": 416.35,
-    "low_52w": 398.76,
+    "low_52w": 399.25,
     "dist_52w_high": -2.88,
-    "dist_52w_low": 1.4,
+    "dist_52w_low": 1.28,
     "tech_score": 73.0,
     "action": "BUY ON DIPS",
     "action_badge": "<span class=\"px-2 py-0.5 rounded text-xs font-bold uppercase tracking-wider bg-emerald-500/20 text-emerald-400 border border-emerald-500/30\">BUY ON DIPS</span>",
@@ -46389,12 +46395,12 @@
       "s3": 394.45
     },
     "fibonacci": {
-      "fib_236": 412.2,
-      "fib_382": 409.63,
-      "fib_500": 407.56,
-      "fib_618": 405.48,
-      "fib_786": 402.52,
-      "fib_1618": 427.22
+      "fib_236": 412.31,
+      "fib_382": 409.82,
+      "fib_500": 407.8,
+      "fib_618": 405.78,
+      "fib_786": 402.91,
+      "fib_1618": 426.92
     },
     "timeframes": {
       "15M": {
@@ -46575,9 +46581,9 @@
     "vol_ratio": 0.88,
     "vol_status": "NORMAL",
     "high_52w": 2986.6,
-    "low_52w": 2450.4,
+    "low_52w": 2652.1,
     "dist_52w_high": -4.6,
-    "dist_52w_low": 16.27,
+    "dist_52w_low": 7.43,
     "tech_score": 83.0,
     "action": "BUY ON DIPS",
     "action_badge": "<span class=\"px-2 py-0.5 rounded text-xs font-bold uppercase tracking-wider bg-emerald-500/20 text-emerald-400 border border-emerald-500/30\">BUY ON DIPS</span>",
@@ -46642,12 +46648,12 @@
       "s3": 2543.74
     },
     "fibonacci": {
-      "fib_236": 2860.06,
-      "fib_382": 2781.77,
-      "fib_500": 2718.5,
-      "fib_618": 2655.23,
-      "fib_786": 2565.15,
-      "fib_1618": 3317.97
+      "fib_236": 2907.66,
+      "fib_382": 2858.82,
+      "fib_500": 2819.35,
+      "fib_618": 2779.88,
+      "fib_786": 2723.68,
+      "fib_1618": 3193.32
     },
     "timeframes": {
       "15M": {
@@ -47334,9 +47340,9 @@
     "vol_ratio": 0.64,
     "vol_status": "NORMAL",
     "high_52w": 5000.0,
-    "low_52w": 4372.0,
+    "low_52w": 4420.9,
     "dist_52w_high": -3.42,
-    "dist_52w_low": 10.46,
+    "dist_52w_low": 9.24,
     "tech_score": 74.0,
     "action": "BUY ON DIPS",
     "action_badge": "<span class=\"px-2 py-0.5 rounded text-xs font-bold uppercase tracking-wider bg-emerald-500/20 text-emerald-400 border border-emerald-500/30\">BUY ON DIPS</span>",
@@ -47401,12 +47407,12 @@
       "s3": 4514.64
     },
     "fibonacci": {
-      "fib_236": 4851.79,
-      "fib_382": 4760.1,
-      "fib_500": 4686.0,
-      "fib_618": 4611.9,
-      "fib_786": 4506.39,
-      "fib_1618": 5388.1
+      "fib_236": 4863.33,
+      "fib_382": 4778.78,
+      "fib_500": 4710.45,
+      "fib_618": 4642.12,
+      "fib_786": 4544.83,
+      "fib_1618": 5357.88
     },
     "timeframes": {
       "15M": {
@@ -47586,13 +47592,13 @@
     "avg_vol_20d": 12730865,
     "vol_ratio": 0.56,
     "vol_status": "NORMAL",
-    "high_52w": 106.9,
+    "high_52w": 103.47,
     "low_52w": 92.6,
-    "dist_52w_high": -8.34,
+    "dist_52w_high": -5.31,
     "dist_52w_low": 5.81,
-    "tech_score": 66.0,
-    "action": "HOLD",
-    "action_badge": "<span class=\"px-2 py-0.5 rounded text-xs font-bold uppercase tracking-wider bg-emerald-500/20 text-emerald-400 border border-emerald-500/30\">HOLD</span>",
+    "tech_score": 70.0,
+    "action": "BUY ON DIPS",
+    "action_badge": "<span class=\"px-2 py-0.5 rounded text-xs font-bold uppercase tracking-wider bg-emerald-500/20 text-emerald-400 border border-emerald-500/30\">BUY ON DIPS</span>",
     "setup_type": "Swing Pullback",
     "primary_pattern": "Ascending Consolidation Breakout",
     "master_score": 68.6,
@@ -47620,7 +47626,7 @@
       "target_2": 108.1,
       "target_3": 114.18,
       "rr_ratio": 2.5,
-      "win_rate_score": 75.0,
+      "win_rate_score": 83.0,
       "risk_per_share": 4.049999999999997
     },
     "moving_averages": {
@@ -47654,12 +47660,12 @@
       "s3": 93.48
     },
     "fibonacci": {
-      "fib_236": 103.53,
-      "fib_382": 101.44,
-      "fib_500": 99.75,
-      "fib_618": 98.06,
-      "fib_786": 95.66,
-      "fib_1618": 115.74
+      "fib_236": 100.9,
+      "fib_382": 99.32,
+      "fib_500": 98.03,
+      "fib_618": 96.75,
+      "fib_786": 94.93,
+      "fib_1618": 110.19
     },
     "timeframes": {
       "15M": {
@@ -47675,7 +47681,7 @@
       "1D": {
         "trend": "Uptrend",
         "rsi": 36.8,
-        "verdict": "Buy"
+        "verdict": "Strong Buy"
       },
       "1W": {
         "trend": "Stage 2 Expansion",
@@ -47684,7 +47690,7 @@
       }
     },
     "confluence": {
-      "score": 75.0,
+      "score": 83.0,
       "badge": "High Institutional Confluence"
     },
     "candles": [
@@ -47814,12 +47820,13 @@
       "is_perfect": false,
       "is_swing": true,
       "is_intraday": false,
-      "win_rate_score": 75.0,
+      "win_rate_score": 83.0,
       "rr_ratio": 2.5,
       "reasons": [
+        "⛰️ Near 52W High (-5.31%)",
         "🎯 High R:R (1:2.5)"
       ],
-      "alpha_rank": 98.3
+      "alpha_rank": 102.1
     }
   },
   {
@@ -48597,9 +48604,9 @@
     "avg_vol_20d": 138164,
     "vol_ratio": 1.22,
     "vol_status": "NORMAL",
-    "high_52w": 18401.11,
+    "high_52w": 18069.27,
     "low_52w": 16142.96,
-    "dist_52w_high": -4.9,
+    "dist_52w_high": -3.15,
     "dist_52w_low": 8.41,
     "tech_score": 84.0,
     "action": "BUY ON DIPS",
@@ -48665,12 +48672,12 @@
       "s3": 16066.0
     },
     "fibonacci": {
-      "fib_236": 17868.19,
-      "fib_382": 17538.5,
-      "fib_500": 17272.03,
-      "fib_618": 17005.57,
-      "fib_786": 16626.2,
-      "fib_1618": 19796.65
+      "fib_236": 17614.66,
+      "fib_382": 17333.42,
+      "fib_500": 17106.11,
+      "fib_618": 16878.81,
+      "fib_786": 16555.19,
+      "fib_1618": 19259.73
     },
     "timeframes": {
       "15M": {
@@ -48828,7 +48835,7 @@
       "win_rate_score": 95.0,
       "rr_ratio": 2.5,
       "reasons": [
-        "⛰️ Near 52W High (-4.9%)",
+        "⛰️ Near 52W High (-3.15%)",
         "📈 RSI Sweet Spot (59.3)",
         "🎯 High R:R (1:2.5)"
       ],
@@ -48851,9 +48858,9 @@
     "avg_vol_20d": 10985969,
     "vol_ratio": 2.01,
     "vol_status": "HIGH SURGE",
-    "high_52w": 263.4,
+    "high_52w": 255.6,
     "low_52w": 226.44,
-    "dist_52w_high": -12.72,
+    "dist_52w_high": -10.05,
     "dist_52w_low": 1.53,
     "tech_score": 86.0,
     "action": "STRONG BUY",
@@ -48919,12 +48926,12 @@
       "s3": 222.18
     },
     "fibonacci": {
-      "fib_236": 254.68,
-      "fib_382": 249.28,
-      "fib_500": 244.92,
-      "fib_618": 240.56,
-      "fib_786": 234.35,
-      "fib_1618": 286.24
+      "fib_236": 248.72,
+      "fib_382": 244.46,
+      "fib_500": 241.02,
+      "fib_618": 237.58,
+      "fib_786": 232.68,
+      "fib_1618": 273.62
     },
     "timeframes": {
       "15M": {
@@ -49357,9 +49364,9 @@
     "vol_ratio": 0.43,
     "vol_status": "NORMAL",
     "high_52w": 282.0,
-    "low_52w": 233.1,
+    "low_52w": 238.81,
     "dist_52w_high": -5.9,
-    "dist_52w_low": 13.84,
+    "dist_52w_low": 11.11,
     "tech_score": 72.0,
     "action": "BUY ON DIPS",
     "action_badge": "<span class=\"px-2 py-0.5 rounded text-xs font-bold uppercase tracking-wider bg-emerald-500/20 text-emerald-400 border border-emerald-500/30\">BUY ON DIPS</span>",
@@ -49424,12 +49431,12 @@
       "s3": 242.59
     },
     "fibonacci": {
-      "fib_236": 270.46,
-      "fib_382": 263.32,
-      "fib_500": 257.55,
-      "fib_618": 251.78,
-      "fib_786": 243.56,
-      "fib_1618": 312.22
+      "fib_236": 271.81,
+      "fib_382": 265.5,
+      "fib_500": 260.4,
+      "fib_618": 255.31,
+      "fib_786": 248.05,
+      "fib_1618": 308.69
     },
     "timeframes": {
       "15M": {
@@ -49610,9 +49617,9 @@
     "vol_ratio": 0.64,
     "vol_status": "NORMAL",
     "high_52w": 731.0,
-    "low_52w": 422.0,
+    "low_52w": 475.3,
     "dist_52w_high": -11.22,
-    "dist_52w_low": 53.79,
+    "dist_52w_low": 36.55,
     "tech_score": 66.0,
     "action": "HOLD",
     "action_badge": "<span class=\"px-2 py-0.5 rounded text-xs font-bold uppercase tracking-wider bg-emerald-500/20 text-emerald-400 border border-emerald-500/30\">HOLD</span>",
@@ -49677,12 +49684,12 @@
       "s3": 586.4
     },
     "fibonacci": {
-      "fib_236": 658.08,
-      "fib_382": 612.96,
-      "fib_500": 576.5,
-      "fib_618": 540.04,
-      "fib_786": 488.13,
-      "fib_1618": 921.96
+      "fib_236": 670.65,
+      "fib_382": 633.32,
+      "fib_500": 603.15,
+      "fib_618": 572.98,
+      "fib_786": 530.02,
+      "fib_1618": 889.02
     },
     "timeframes": {
       "15M": {
@@ -49862,9 +49869,9 @@
     "vol_ratio": 0.9,
     "vol_status": "NORMAL",
     "high_52w": 915.95,
-    "low_52w": 790.5,
+    "low_52w": 794.05,
     "dist_52w_high": -2.02,
-    "dist_52w_low": 13.53,
+    "dist_52w_low": 13.02,
     "tech_score": 81.0,
     "action": "BUY ON DIPS",
     "action_badge": "<span class=\"px-2 py-0.5 rounded text-xs font-bold uppercase tracking-wider bg-emerald-500/20 text-emerald-400 border border-emerald-500/30\">BUY ON DIPS</span>",
@@ -49929,12 +49936,12 @@
       "s3": 824.89
     },
     "fibonacci": {
-      "fib_236": 886.34,
-      "fib_382": 868.03,
-      "fib_500": 853.23,
-      "fib_618": 838.42,
-      "fib_786": 817.35,
-      "fib_1618": 993.48
+      "fib_236": 887.18,
+      "fib_382": 869.38,
+      "fib_500": 855.0,
+      "fib_618": 840.62,
+      "fib_786": 820.14,
+      "fib_1618": 991.28
     },
     "timeframes": {
       "15M": {
@@ -50115,9 +50122,9 @@
     "vol_ratio": 1.79,
     "vol_status": "HIGH SURGE",
     "high_52w": 2483.9,
-    "low_52w": 2015.23,
+    "low_52w": 2086.4,
     "dist_52w_high": -4.46,
-    "dist_52w_low": 17.75,
+    "dist_52w_low": 13.74,
     "tech_score": 92.0,
     "action": "STRONG BUY",
     "action_badge": "<span class=\"px-2 py-0.5 rounded text-xs font-bold uppercase tracking-wider bg-emerald-500/20 text-emerald-400 border border-emerald-500/30\">STRONG BUY</span>",
@@ -50182,12 +50189,12 @@
       "s3": 2158.0
     },
     "fibonacci": {
-      "fib_236": 2373.29,
-      "fib_382": 2304.87,
-      "fib_500": 2249.57,
-      "fib_618": 2194.26,
-      "fib_786": 2115.53,
-      "fib_1618": 2773.54
+      "fib_236": 2390.09,
+      "fib_382": 2332.06,
+      "fib_500": 2285.15,
+      "fib_618": 2238.24,
+      "fib_786": 2171.47,
+      "fib_1618": 2729.56
     },
     "timeframes": {
       "15M": {
@@ -51128,9 +51135,9 @@
     "avg_vol_20d": 5602387,
     "vol_ratio": 0.65,
     "vol_status": "NORMAL",
-    "high_52w": 31.66,
+    "high_52w": 31.57,
     "low_52w": 29.89,
-    "dist_52w_high": -2.91,
+    "dist_52w_high": -2.63,
     "dist_52w_low": 2.84,
     "tech_score": 74.0,
     "action": "BUY ON DIPS",
@@ -51196,12 +51203,12 @@
       "s3": 30.15
     },
     "fibonacci": {
-      "fib_236": 31.24,
-      "fib_382": 30.98,
-      "fib_500": 30.77,
-      "fib_618": 30.57,
-      "fib_786": 30.27,
-      "fib_1618": 32.75
+      "fib_236": 31.17,
+      "fib_382": 30.93,
+      "fib_500": 30.73,
+      "fib_618": 30.53,
+      "fib_786": 30.25,
+      "fib_1618": 32.61
     },
     "timeframes": {
       "15M": {
@@ -51359,7 +51366,7 @@
       "win_rate_score": 88.0,
       "rr_ratio": 2.5,
       "reasons": [
-        "⛰️ Near 52W High (-2.91%)",
+        "⛰️ Near 52W High (-2.63%)",
         "🎯 High R:R (1:2.5)"
       ],
       "alpha_rank": 105.8
@@ -51382,9 +51389,9 @@
     "vol_ratio": 0.71,
     "vol_status": "NORMAL",
     "high_52w": 3254.0,
-    "low_52w": 2690.9,
+    "low_52w": 2726.6,
     "dist_52w_high": -5.1,
-    "dist_52w_low": 14.75,
+    "dist_52w_low": 13.25,
     "tech_score": 79.0,
     "action": "BUY ON DIPS",
     "action_badge": "<span class=\"px-2 py-0.5 rounded text-xs font-bold uppercase tracking-wider bg-emerald-500/20 text-emerald-400 border border-emerald-500/30\">BUY ON DIPS</span>",
@@ -51449,12 +51456,12 @@
       "s3": 2888.5
     },
     "fibonacci": {
-      "fib_236": 3121.11,
-      "fib_382": 3038.9,
-      "fib_500": 2972.45,
-      "fib_618": 2906.0,
-      "fib_786": 2811.4,
-      "fib_1618": 3602.0
+      "fib_236": 3129.53,
+      "fib_382": 3052.53,
+      "fib_500": 2990.3,
+      "fib_618": 2928.07,
+      "fib_786": 2839.46,
+      "fib_1618": 3579.93
     },
     "timeframes": {
       "15M": {
@@ -51634,9 +51641,9 @@
     "avg_vol_20d": 2188729,
     "vol_ratio": 1.35,
     "vol_status": "NORMAL",
-    "high_52w": 355.0,
+    "high_52w": 348.0,
     "low_52w": 326.4,
-    "dist_52w_high": -3.34,
+    "dist_52w_high": -1.39,
     "dist_52w_low": 5.13,
     "tech_score": 84.0,
     "action": "BUY ON DIPS",
@@ -51702,12 +51709,12 @@
       "s3": 329.55
     },
     "fibonacci": {
-      "fib_236": 348.25,
-      "fib_382": 344.07,
-      "fib_500": 340.7,
-      "fib_618": 337.33,
-      "fib_786": 332.52,
-      "fib_1618": 372.67
+      "fib_236": 342.9,
+      "fib_382": 339.75,
+      "fib_500": 337.2,
+      "fib_618": 334.65,
+      "fib_786": 331.02,
+      "fib_1618": 361.35
     },
     "timeframes": {
       "15M": {
@@ -51867,7 +51874,7 @@
       "reasons": [
         "🌟 High Confluence Synergy",
         "🔥 Vol Surge (1.35x)",
-        "⛰️ Near 52W High (-3.34%)"
+        "⛰️ Near 52W High (-1.39%)"
       ],
       "alpha_rank": 117.0
     }
@@ -51888,9 +51895,9 @@
     "avg_vol_20d": 89430,
     "vol_ratio": 0.6,
     "vol_status": "NORMAL",
-    "high_52w": 36581.26,
+    "high_52w": 36221.35,
     "low_52w": 30550.0,
-    "dist_52w_high": -14.07,
+    "dist_52w_high": -13.21,
     "dist_52w_low": 2.9,
     "tech_score": 69.0,
     "action": "HOLD",
@@ -51956,12 +51963,12 @@
       "s3": 30103.34
     },
     "fibonacci": {
-      "fib_236": 35157.88,
-      "fib_382": 34277.32,
-      "fib_500": 33565.63,
-      "fib_618": 32853.94,
-      "fib_786": 31840.69,
-      "fib_1618": 40308.58
+      "fib_236": 34882.91,
+      "fib_382": 34054.89,
+      "fib_500": 33385.68,
+      "fib_618": 32716.46,
+      "fib_786": 31763.67,
+      "fib_1618": 39726.24
     },
     "timeframes": {
       "15M": {
@@ -52900,9 +52907,9 @@
     "vol_ratio": 0.49,
     "vol_status": "NORMAL",
     "high_52w": 1060.2,
-    "low_52w": 873.3,
+    "low_52w": 890.0,
     "dist_52w_high": -3.18,
-    "dist_52w_low": 17.54,
+    "dist_52w_low": 15.34,
     "tech_score": 73.0,
     "action": "BUY ON DIPS",
     "action_badge": "<span class=\"px-2 py-0.5 rounded text-xs font-bold uppercase tracking-wider bg-emerald-500/20 text-emerald-400 border border-emerald-500/30\">BUY ON DIPS</span>",
@@ -52967,12 +52974,12 @@
       "s3": 956.74
     },
     "fibonacci": {
-      "fib_236": 1016.09,
-      "fib_382": 988.8,
-      "fib_500": 966.75,
-      "fib_618": 944.7,
-      "fib_786": 913.3,
-      "fib_1618": 1175.7
+      "fib_236": 1020.03,
+      "fib_382": 995.18,
+      "fib_500": 975.1,
+      "fib_618": 955.02,
+      "fib_786": 926.42,
+      "fib_1618": 1165.38
     },
     "timeframes": {
       "15M": {
@@ -53152,13 +53159,13 @@
     "avg_vol_20d": 248331,
     "vol_ratio": 0.9,
     "vol_status": "NORMAL",
-    "high_52w": 12061.0,
+    "high_52w": 11820.0,
     "low_52w": 10790.0,
-    "dist_52w_high": -8.8,
+    "dist_52w_high": -6.94,
     "dist_52w_low": 1.95,
-    "tech_score": 69.0,
-    "action": "HOLD",
-    "action_badge": "<span class=\"px-2 py-0.5 rounded text-xs font-bold uppercase tracking-wider bg-emerald-500/20 text-emerald-400 border border-emerald-500/30\">HOLD</span>",
+    "tech_score": 74.0,
+    "action": "BUY ON DIPS",
+    "action_badge": "<span class=\"px-2 py-0.5 rounded text-xs font-bold uppercase tracking-wider bg-emerald-500/20 text-emerald-400 border border-emerald-500/30\">BUY ON DIPS</span>",
     "setup_type": "Swing Pullback",
     "primary_pattern": "Ascending Consolidation Breakout",
     "master_score": 66.8,
@@ -53186,7 +53193,7 @@
       "target_2": 12012.5,
       "target_3": 12620.0,
       "rr_ratio": 2.5,
-      "win_rate_score": 75.0,
+      "win_rate_score": 83.0,
       "risk_per_share": 405.0
     },
     "moving_averages": {
@@ -53220,12 +53227,12 @@
       "s3": 10570.0
     },
     "fibonacci": {
-      "fib_236": 11761.04,
-      "fib_382": 11575.48,
-      "fib_500": 11425.5,
-      "fib_618": 11275.52,
-      "fib_786": 11061.99,
-      "fib_1618": 12846.48
+      "fib_236": 11576.92,
+      "fib_382": 11426.54,
+      "fib_500": 11305.0,
+      "fib_618": 11183.46,
+      "fib_786": 11010.42,
+      "fib_1618": 12456.54
     },
     "timeframes": {
       "15M": {
@@ -53241,7 +53248,7 @@
       "1D": {
         "trend": "Uptrend",
         "rsi": 37.9,
-        "verdict": "Buy"
+        "verdict": "Strong Buy"
       },
       "1W": {
         "trend": "Stage 2 Expansion",
@@ -53250,7 +53257,7 @@
       }
     },
     "confluence": {
-      "score": 75.0,
+      "score": 83.0,
       "badge": "High Institutional Confluence"
     },
     "candles": [
@@ -53380,12 +53387,13 @@
       "is_perfect": false,
       "is_swing": true,
       "is_intraday": false,
-      "win_rate_score": 75.0,
+      "win_rate_score": 83.0,
       "rr_ratio": 2.5,
       "reasons": [
+        "⛰️ Near 52W High (-6.94%)",
         "🎯 High R:R (1:2.5)"
       ],
-      "alpha_rank": 102.5
+      "alpha_rank": 106.5
     }
   },
   {
@@ -53658,9 +53666,9 @@
     "vol_ratio": 1.29,
     "vol_status": "NORMAL",
     "high_52w": 256.0,
-    "low_52w": 227.37,
+    "low_52w": 232.9,
     "dist_52w_high": -4.51,
-    "dist_52w_low": 7.51,
+    "dist_52w_low": 4.96,
     "tech_score": 78.0,
     "action": "BUY ON DIPS",
     "action_badge": "<span class=\"px-2 py-0.5 rounded text-xs font-bold uppercase tracking-wider bg-emerald-500/20 text-emerald-400 border border-emerald-500/30\">BUY ON DIPS</span>",
@@ -53725,12 +53733,12 @@
       "s3": 235.42
     },
     "fibonacci": {
-      "fib_236": 249.24,
-      "fib_382": 245.06,
-      "fib_500": 241.69,
-      "fib_618": 238.31,
-      "fib_786": 233.5,
-      "fib_1618": 273.69
+      "fib_236": 250.55,
+      "fib_382": 247.18,
+      "fib_500": 244.45,
+      "fib_618": 241.72,
+      "fib_786": 237.84,
+      "fib_1618": 270.28
     },
     "timeframes": {
       "15M": {
@@ -53910,9 +53918,9 @@
     "avg_vol_20d": 3322985,
     "vol_ratio": 2.0,
     "vol_status": "HIGH SURGE",
-    "high_52w": 127.19,
+    "high_52w": 125.5,
     "low_52w": 113.0,
-    "dist_52w_high": -10.46,
+    "dist_52w_high": -9.26,
     "dist_52w_low": 0.78,
     "tech_score": 86.0,
     "action": "STRONG BUY",
@@ -53978,12 +53986,12 @@
       "s3": 109.7
     },
     "fibonacci": {
-      "fib_236": 123.84,
-      "fib_382": 121.77,
-      "fib_500": 120.09,
-      "fib_618": 118.42,
-      "fib_786": 116.04,
-      "fib_1618": 135.96
+      "fib_236": 122.55,
+      "fib_382": 120.72,
+      "fib_500": 119.25,
+      "fib_618": 117.78,
+      "fib_786": 115.67,
+      "fib_1618": 133.22
     },
     "timeframes": {
       "15M": {
@@ -54417,9 +54425,9 @@
     "avg_vol_20d": 724979,
     "vol_ratio": 1.35,
     "vol_status": "NORMAL",
-    "high_52w": 509.95,
+    "high_52w": 501.7,
     "low_52w": 421.0,
-    "dist_52w_high": -16.61,
+    "dist_52w_high": -15.24,
     "dist_52w_low": 1.01,
     "tech_score": 82.0,
     "action": "BUY ON DIPS",
@@ -54485,12 +54493,12 @@
       "s3": 408.1
     },
     "fibonacci": {
-      "fib_236": 488.96,
-      "fib_382": 475.97,
-      "fib_500": 465.48,
-      "fib_618": 454.98,
-      "fib_786": 440.04,
-      "fib_1618": 564.92
+      "fib_236": 482.65,
+      "fib_382": 470.87,
+      "fib_500": 461.35,
+      "fib_618": 451.83,
+      "fib_786": 438.27,
+      "fib_1618": 551.57
     },
     "timeframes": {
       "15M": {
@@ -54926,9 +54934,9 @@
     "vol_ratio": 0.62,
     "vol_status": "NORMAL",
     "high_52w": 1241.7,
-    "low_52w": 1032.55,
+    "low_52w": 1032.75,
     "dist_52w_high": -2.21,
-    "dist_52w_low": 17.6,
+    "dist_52w_low": 17.58,
     "tech_score": 80.0,
     "action": "BUY ON DIPS",
     "action_badge": "<span class=\"px-2 py-0.5 rounded text-xs font-bold uppercase tracking-wider bg-emerald-500/20 text-emerald-400 border border-emerald-500/30\">BUY ON DIPS</span>",
@@ -54993,12 +55001,12 @@
       "s3": 1143.54
     },
     "fibonacci": {
-      "fib_236": 1192.34,
-      "fib_382": 1161.8,
-      "fib_500": 1137.12,
-      "fib_618": 1112.45,
-      "fib_786": 1077.31,
-      "fib_1618": 1370.95
+      "fib_236": 1192.39,
+      "fib_382": 1161.88,
+      "fib_500": 1137.22,
+      "fib_618": 1112.57,
+      "fib_786": 1077.47,
+      "fib_1618": 1370.83
     },
     "timeframes": {
       "15M": {
@@ -55179,11 +55187,11 @@
     "avg_vol_20d": 578849,
     "vol_ratio": 1.0,
     "vol_status": "NORMAL",
-    "high_52w": 714.8,
+    "high_52w": 679.4,
     "low_52w": 616.1,
-    "dist_52w_high": -8.94,
+    "dist_52w_high": -4.19,
     "dist_52w_low": 5.65,
-    "tech_score": 73.0,
+    "tech_score": 78.0,
     "action": "BUY ON DIPS",
     "action_badge": "<span class=\"px-2 py-0.5 rounded text-xs font-bold uppercase tracking-wider bg-emerald-500/20 text-emerald-400 border border-emerald-500/30\">BUY ON DIPS</span>",
     "setup_type": "Swing Pullback",
@@ -55213,7 +55221,7 @@
       "target_2": 698.9,
       "target_3": 727.7,
       "rr_ratio": 2.5,
-      "win_rate_score": 80.0,
+      "win_rate_score": 88.0,
       "risk_per_share": 19.199999999999932
     },
     "moving_averages": {
@@ -55247,12 +55255,12 @@
       "s3": 630.76
     },
     "fibonacci": {
-      "fib_236": 691.51,
-      "fib_382": 677.1,
-      "fib_500": 665.45,
-      "fib_618": 653.8,
-      "fib_786": 637.22,
-      "fib_1618": 775.8
+      "fib_236": 664.46,
+      "fib_382": 655.22,
+      "fib_500": 647.75,
+      "fib_618": 640.28,
+      "fib_786": 629.65,
+      "fib_1618": 718.52
     },
     "timeframes": {
       "15M": {
@@ -55277,7 +55285,7 @@
       }
     },
     "confluence": {
-      "score": 80.0,
+      "score": 88.0,
       "badge": "High Institutional Confluence"
     },
     "candles": [
@@ -55407,12 +55415,13 @@
       "is_perfect": false,
       "is_swing": true,
       "is_intraday": false,
-      "win_rate_score": 80.0,
+      "win_rate_score": 88.0,
       "rr_ratio": 2.5,
       "reasons": [
+        "⛰️ Near 52W High (-4.19%)",
         "🎯 High R:R (1:2.5)"
       ],
-      "alpha_rank": 106.2
+      "alpha_rank": 110.3
     }
   },
   {
@@ -55683,9 +55692,9 @@
     "avg_vol_20d": 358321,
     "vol_ratio": 1.44,
     "vol_status": "NORMAL",
-    "high_52w": 14175.0,
+    "high_52w": 13943.0,
     "low_52w": 12381.0,
-    "dist_52w_high": -12.52,
+    "dist_52w_high": -11.07,
     "dist_52w_low": 0.15,
     "tech_score": 83.0,
     "action": "BUY ON DIPS",
@@ -55751,12 +55760,12 @@
       "s3": 12180.34
     },
     "fibonacci": {
-      "fib_236": 13751.62,
-      "fib_382": 13489.69,
-      "fib_500": 13278.0,
-      "fib_618": 13066.31,
-      "fib_786": 12764.92,
-      "fib_1618": 15283.69
+      "fib_236": 13574.37,
+      "fib_382": 13346.32,
+      "fib_500": 13162.0,
+      "fib_618": 12977.68,
+      "fib_786": 12715.27,
+      "fib_1618": 14908.32
     },
     "timeframes": {
       "15M": {
@@ -55937,9 +55946,9 @@
     "avg_vol_20d": 400987,
     "vol_ratio": 0.83,
     "vol_status": "NORMAL",
-    "high_52w": 585.2,
+    "high_52w": 582.8,
     "low_52w": 487.8,
-    "dist_52w_high": -15.3,
+    "dist_52w_high": -14.95,
     "dist_52w_low": 1.61,
     "tech_score": 68.0,
     "action": "HOLD",
@@ -56005,12 +56014,12 @@
       "s3": 484.56
     },
     "fibonacci": {
-      "fib_236": 562.21,
-      "fib_382": 547.99,
-      "fib_500": 536.5,
-      "fib_618": 525.01,
-      "fib_786": 508.64,
-      "fib_1618": 645.39
+      "fib_236": 560.38,
+      "fib_382": 546.51,
+      "fib_500": 535.3,
+      "fib_618": 524.09,
+      "fib_786": 508.13,
+      "fib_1618": 641.51
     },
     "timeframes": {
       "15M": {
@@ -56189,9 +56198,9 @@
     "avg_vol_20d": 397589,
     "vol_ratio": 0.88,
     "vol_status": "NORMAL",
-    "high_52w": 4850.0,
+    "high_52w": 4801.2,
     "low_52w": 4275.0,
-    "dist_52w_high": -11.86,
+    "dist_52w_high": -10.96,
     "dist_52w_low": 0.0,
     "tech_score": 72.0,
     "action": "BUY ON DIPS",
@@ -56257,12 +56266,12 @@
       "s3": 4152.6
     },
     "fibonacci": {
-      "fib_236": 4714.3,
-      "fib_382": 4630.35,
-      "fib_500": 4562.5,
-      "fib_618": 4494.65,
-      "fib_786": 4398.05,
-      "fib_1618": 5205.35
+      "fib_236": 4677.02,
+      "fib_382": 4600.19,
+      "fib_500": 4538.1,
+      "fib_618": 4476.01,
+      "fib_786": 4387.61,
+      "fib_1618": 5126.39
     },
     "timeframes": {
       "15M": {
@@ -56695,9 +56704,9 @@
     "avg_vol_20d": 273166,
     "vol_ratio": 0.71,
     "vol_status": "NORMAL",
-    "high_52w": 5689.5,
+    "high_52w": 5630.0,
     "low_52w": 4945.0,
-    "dist_52w_high": -12.79,
+    "dist_52w_high": -11.87,
     "dist_52w_low": 0.34,
     "tech_score": 67.0,
     "action": "HOLD",
@@ -56763,12 +56772,12 @@
       "s3": 4866.34
     },
     "fibonacci": {
-      "fib_236": 5513.8,
-      "fib_382": 5405.1,
-      "fib_500": 5317.25,
-      "fib_618": 5229.4,
-      "fib_786": 5104.32,
-      "fib_1618": 6149.6
+      "fib_236": 5468.34,
+      "fib_382": 5368.33,
+      "fib_500": 5287.5,
+      "fib_618": 5206.67,
+      "fib_786": 5091.59,
+      "fib_1618": 6053.33
     },
     "timeframes": {
       "15M": {
@@ -56948,9 +56957,9 @@
     "vol_ratio": 0.48,
     "vol_status": "NORMAL",
     "high_52w": 2498.0,
-    "low_52w": 1342.0,
+    "low_52w": 1355.0,
     "dist_52w_high": -10.72,
-    "dist_52w_low": 66.18,
+    "dist_52w_low": 64.58,
     "tech_score": 65.0,
     "action": "HOLD",
     "action_badge": "<span class=\"px-2 py-0.5 rounded text-xs font-bold uppercase tracking-wider bg-emerald-500/20 text-emerald-400 border border-emerald-500/30\">HOLD</span>",
@@ -57015,12 +57024,12 @@
       "s3": 2085.54
     },
     "fibonacci": {
-      "fib_236": 2225.18,
-      "fib_382": 2056.41,
-      "fib_500": 1920.0,
-      "fib_618": 1783.59,
-      "fib_786": 1589.38,
-      "fib_1618": 3212.41
+      "fib_236": 2228.25,
+      "fib_382": 2061.37,
+      "fib_500": 1926.5,
+      "fib_618": 1791.63,
+      "fib_786": 1599.6,
+      "fib_1618": 3204.37
     },
     "timeframes": {
       "15M": {
@@ -57200,9 +57209,9 @@
     "vol_ratio": 0.66,
     "vol_status": "NORMAL",
     "high_52w": 4170.0,
-    "low_52w": 3600.0,
+    "low_52w": 3733.7,
     "dist_52w_high": -0.96,
-    "dist_52w_low": 14.72,
+    "dist_52w_low": 10.61,
     "tech_score": 81.0,
     "action": "BUY ON DIPS",
     "action_badge": "<span class=\"px-2 py-0.5 rounded text-xs font-bold uppercase tracking-wider bg-emerald-500/20 text-emerald-400 border border-emerald-500/30\">BUY ON DIPS</span>",
@@ -57267,12 +57276,12 @@
       "s3": 3971.26
     },
     "fibonacci": {
-      "fib_236": 4035.48,
-      "fib_382": 3952.26,
-      "fib_500": 3885.0,
-      "fib_618": 3817.74,
-      "fib_786": 3721.98,
-      "fib_1618": 4522.26
+      "fib_236": 4067.03,
+      "fib_382": 4003.33,
+      "fib_500": 3951.85,
+      "fib_618": 3900.37,
+      "fib_786": 3827.07,
+      "fib_1618": 4439.63
     },
     "timeframes": {
       "15M": {
@@ -58214,9 +58223,9 @@
     "vol_ratio": 0.45,
     "vol_status": "NORMAL",
     "high_52w": 725.9,
-    "low_52w": 470.6,
+    "low_52w": 496.1,
     "dist_52w_high": -0.68,
-    "dist_52w_low": 53.2,
+    "dist_52w_low": 45.32,
     "tech_score": 69.0,
     "action": "HOLD",
     "action_badge": "<span class=\"px-2 py-0.5 rounded text-xs font-bold uppercase tracking-wider bg-emerald-500/20 text-emerald-400 border border-emerald-500/30\">HOLD</span>",
@@ -58281,12 +58290,12 @@
       "s3": 641.96
     },
     "fibonacci": {
-      "fib_236": 665.65,
-      "fib_382": 628.38,
-      "fib_500": 598.25,
-      "fib_618": 568.12,
-      "fib_786": 525.23,
-      "fib_1618": 883.68
+      "fib_236": 671.67,
+      "fib_382": 638.12,
+      "fib_500": 611.0,
+      "fib_618": 583.88,
+      "fib_786": 545.28,
+      "fib_1618": 867.92
     },
     "timeframes": {
       "15M": {
@@ -58466,9 +58475,9 @@
     "avg_vol_20d": 2452099,
     "vol_ratio": 1.07,
     "vol_status": "NORMAL",
-    "high_52w": 2456.6,
+    "high_52w": 2399.3,
     "low_52w": 2185.5,
-    "dist_52w_high": -10.41,
+    "dist_52w_high": -8.27,
     "dist_52w_low": 0.7,
     "tech_score": 74.0,
     "action": "BUY ON DIPS",
@@ -58534,12 +58543,12 @@
       "s3": 2132.9
     },
     "fibonacci": {
-      "fib_236": 2392.62,
-      "fib_382": 2353.04,
-      "fib_500": 2321.05,
-      "fib_618": 2289.06,
-      "fib_786": 2243.52,
-      "fib_1618": 2624.14
+      "fib_236": 2348.84,
+      "fib_382": 2317.63,
+      "fib_500": 2292.4,
+      "fib_618": 2267.17,
+      "fib_786": 2231.25,
+      "fib_1618": 2531.43
     },
     "timeframes": {
       "15M": {
@@ -58718,9 +58727,9 @@
     "avg_vol_20d": 1042369,
     "vol_ratio": 1.25,
     "vol_status": "NORMAL",
-    "high_52w": 379.0,
+    "high_52w": 374.0,
     "low_52w": 316.0,
-    "dist_52w_high": -2.63,
+    "dist_52w_high": -1.32,
     "dist_52w_low": 16.79,
     "tech_score": 87.0,
     "action": "STRONG BUY",
@@ -58786,12 +58795,12 @@
       "s3": 322.3
     },
     "fibonacci": {
-      "fib_236": 364.13,
-      "fib_382": 354.93,
-      "fib_500": 347.5,
-      "fib_618": 340.07,
-      "fib_786": 329.48,
-      "fib_1618": 417.93
+      "fib_236": 360.31,
+      "fib_382": 351.84,
+      "fib_500": 345.0,
+      "fib_618": 338.16,
+      "fib_786": 328.41,
+      "fib_1618": 409.84
     },
     "timeframes": {
       "15M": {
@@ -58950,7 +58959,7 @@
       "rr_ratio": 2.5,
       "reasons": [
         "🌟 High Confluence Synergy",
-        "⛰️ Near 52W High (-2.63%)",
+        "⛰️ Near 52W High (-1.32%)",
         "🎯 High R:R (1:2.5)"
       ],
       "alpha_rank": 118.7
@@ -59224,9 +59233,9 @@
     "avg_vol_20d": 141890,
     "vol_ratio": 0.44,
     "vol_status": "NORMAL",
-    "high_52w": 220.5,
+    "high_52w": 205.0,
     "low_52w": 177.94,
-    "dist_52w_high": -19.09,
+    "dist_52w_high": -12.98,
     "dist_52w_low": 0.26,
     "tech_score": 64.0,
     "action": "HOLD",
@@ -59292,12 +59301,12 @@
       "s3": 173.28
     },
     "fibonacci": {
-      "fib_236": 210.46,
-      "fib_382": 204.24,
-      "fib_500": 199.22,
-      "fib_618": 194.2,
-      "fib_786": 187.05,
-      "fib_1618": 246.8
+      "fib_236": 198.61,
+      "fib_382": 194.66,
+      "fib_500": 191.47,
+      "fib_618": 188.28,
+      "fib_786": 183.73,
+      "fib_1618": 221.72
     },
     "timeframes": {
       "15M": {
@@ -59476,9 +59485,9 @@
     "avg_vol_20d": 619821,
     "vol_ratio": 1.09,
     "vol_status": "NORMAL",
-    "high_52w": 3029.8,
+    "high_52w": 3020.6,
     "low_52w": 2757.5,
-    "dist_52w_high": -7.51,
+    "dist_52w_high": -7.22,
     "dist_52w_low": 1.63,
     "tech_score": 76.0,
     "action": "BUY ON DIPS",
@@ -59544,12 +59553,12 @@
       "s3": 2709.44
     },
     "fibonacci": {
-      "fib_236": 2965.54,
-      "fib_382": 2925.78,
-      "fib_500": 2893.65,
-      "fib_618": 2861.52,
-      "fib_786": 2815.77,
-      "fib_1618": 3198.08
+      "fib_236": 2958.51,
+      "fib_382": 2920.1,
+      "fib_500": 2889.05,
+      "fib_618": 2858.0,
+      "fib_786": 2813.8,
+      "fib_1618": 3183.2
     },
     "timeframes": {
       "15M": {
@@ -59707,7 +59716,7 @@
       "win_rate_score": 83.0,
       "rr_ratio": 2.5,
       "reasons": [
-        "⛰️ Near 52W High (-7.51%)",
+        "⛰️ Near 52W High (-7.22%)",
         "🎯 High R:R (1:2.5)"
       ],
       "alpha_rank": 109.0
@@ -59729,9 +59738,9 @@
     "avg_vol_20d": 1130100,
     "vol_ratio": 0.77,
     "vol_status": "NORMAL",
-    "high_52w": 1597.49,
+    "high_52w": 1597.0,
     "low_52w": 1402.5,
-    "dist_52w_high": -11.65,
+    "dist_52w_high": -11.62,
     "dist_52w_low": 0.63,
     "tech_score": 68.0,
     "action": "HOLD",
@@ -59797,12 +59806,12 @@
       "s3": 1337.1
     },
     "fibonacci": {
-      "fib_236": 1551.47,
-      "fib_382": 1523.0,
-      "fib_500": 1499.99,
-      "fib_618": 1476.99,
-      "fib_786": 1444.23,
-      "fib_1618": 1717.99
+      "fib_236": 1551.1,
+      "fib_382": 1522.7,
+      "fib_500": 1499.75,
+      "fib_618": 1476.8,
+      "fib_786": 1444.12,
+      "fib_1618": 1717.2
     },
     "timeframes": {
       "15M": {
@@ -60487,9 +60496,9 @@
     "avg_vol_20d": 383472,
     "vol_ratio": 1.61,
     "vol_status": "HIGH SURGE",
-    "high_52w": 294.9,
+    "high_52w": 273.0,
     "low_52w": 213.82,
-    "dist_52w_high": -27.12,
+    "dist_52w_high": -21.28,
     "dist_52w_low": 0.51,
     "tech_score": 85.0,
     "action": "STRONG BUY",
@@ -60555,12 +60564,12 @@
       "s3": 199.64
     },
     "fibonacci": {
-      "fib_236": 275.77,
-      "fib_382": 263.93,
-      "fib_500": 254.36,
-      "fib_618": 244.79,
-      "fib_786": 231.17,
-      "fib_1618": 345.01
+      "fib_236": 259.03,
+      "fib_382": 250.39,
+      "fib_500": 243.41,
+      "fib_618": 236.43,
+      "fib_786": 226.48,
+      "fib_1618": 309.57
     },
     "timeframes": {
       "15M": {
@@ -60994,11 +61003,11 @@
     "avg_vol_20d": 740430,
     "vol_ratio": 0.84,
     "vol_status": "NORMAL",
-    "high_52w": 2288.2,
+    "high_52w": 2266.0,
     "low_52w": 2058.0,
-    "dist_52w_high": -8.44,
+    "dist_52w_high": -7.55,
     "dist_52w_low": 1.8,
-    "tech_score": 71.0,
+    "tech_score": 76.0,
     "action": "BUY ON DIPS",
     "action_badge": "<span class=\"px-2 py-0.5 rounded text-xs font-bold uppercase tracking-wider bg-emerald-500/20 text-emerald-400 border border-emerald-500/30\">BUY ON DIPS</span>",
     "setup_type": "Swing Pullback",
@@ -61028,7 +61037,7 @@
       "target_2": 2284.38,
       "target_3": 2398.0,
       "rr_ratio": 2.5,
-      "win_rate_score": 80.0,
+      "win_rate_score": 88.0,
       "risk_per_share": 75.75
     },
     "moving_averages": {
@@ -61062,12 +61071,12 @@
       "s3": 2015.34
     },
     "fibonacci": {
-      "fib_236": 2233.87,
-      "fib_382": 2200.26,
-      "fib_500": 2173.1,
-      "fib_618": 2145.94,
-      "fib_786": 2107.26,
-      "fib_1618": 2430.46
+      "fib_236": 2216.91,
+      "fib_382": 2186.54,
+      "fib_500": 2162.0,
+      "fib_618": 2137.46,
+      "fib_786": 2102.51,
+      "fib_1618": 2394.54
     },
     "timeframes": {
       "15M": {
@@ -61092,7 +61101,7 @@
       }
     },
     "confluence": {
-      "score": 80.0,
+      "score": 88.0,
       "badge": "High Institutional Confluence"
     },
     "candles": [
@@ -61222,12 +61231,13 @@
       "is_perfect": false,
       "is_swing": true,
       "is_intraday": false,
-      "win_rate_score": 80.0,
+      "win_rate_score": 88.0,
       "rr_ratio": 2.5,
       "reasons": [
+        "⛰️ Near 52W High (-7.55%)",
         "🎯 High R:R (1:2.5)"
       ],
-      "alpha_rank": 104.2
+      "alpha_rank": 108.2
     }
   },
   {
@@ -61247,9 +61257,9 @@
     "vol_ratio": 0.47,
     "vol_status": "NORMAL",
     "high_52w": 2062.0,
-    "low_52w": 1732.04,
+    "low_52w": 1772.92,
     "dist_52w_high": -7.88,
-    "dist_52w_low": 9.67,
+    "dist_52w_low": 7.15,
     "tech_score": 79.0,
     "action": "BUY ON DIPS",
     "action_badge": "<span class=\"px-2 py-0.5 rounded text-xs font-bold uppercase tracking-wider bg-emerald-500/20 text-emerald-400 border border-emerald-500/30\">BUY ON DIPS</span>",
@@ -61314,12 +61324,12 @@
       "s3": 1817.4
     },
     "fibonacci": {
-      "fib_236": 1984.13,
-      "fib_382": 1935.96,
-      "fib_500": 1897.02,
-      "fib_618": 1858.08,
-      "fib_786": 1802.65,
-      "fib_1618": 2265.92
+      "fib_236": 1993.78,
+      "fib_382": 1951.57,
+      "fib_500": 1917.46,
+      "fib_618": 1883.35,
+      "fib_786": 1834.78,
+      "fib_1618": 2240.65
     },
     "timeframes": {
       "15M": {
@@ -61500,9 +61510,9 @@
     "vol_ratio": 0.41,
     "vol_status": "NORMAL",
     "high_52w": 815.0,
-    "low_52w": 675.75,
+    "low_52w": 690.5,
     "dist_52w_high": -11.98,
-    "dist_52w_low": 6.16,
+    "dist_52w_low": 3.89,
     "tech_score": 67.0,
     "action": "HOLD",
     "action_badge": "<span class=\"px-2 py-0.5 rounded text-xs font-bold uppercase tracking-wider bg-emerald-500/20 text-emerald-400 border border-emerald-500/30\">HOLD</span>",
@@ -61567,12 +61577,12 @@
       "s3": 690.9
     },
     "fibonacci": {
-      "fib_236": 782.14,
-      "fib_382": 761.81,
-      "fib_500": 745.38,
-      "fib_618": 728.94,
-      "fib_786": 705.55,
-      "fib_1618": 901.06
+      "fib_236": 785.62,
+      "fib_382": 767.44,
+      "fib_500": 752.75,
+      "fib_618": 738.06,
+      "fib_786": 717.14,
+      "fib_1618": 891.94
     },
     "timeframes": {
       "15M": {
@@ -63395,9 +63405,9 @@
     "vol_ratio": 0.42,
     "vol_status": "NORMAL",
     "high_52w": 159.95,
-    "low_52w": 113.65,
+    "low_52w": 123.35,
     "dist_52w_high": -14.82,
-    "dist_52w_low": 19.89,
+    "dist_52w_low": 10.46,
     "tech_score": 74.0,
     "action": "BUY ON DIPS",
     "action_badge": "<span class=\"px-2 py-0.5 rounded text-xs font-bold uppercase tracking-wider bg-emerald-500/20 text-emerald-400 border border-emerald-500/30\">BUY ON DIPS</span>",
@@ -63462,12 +63472,12 @@
       "s3": 124.54
     },
     "fibonacci": {
-      "fib_236": 149.02,
-      "fib_382": 142.26,
-      "fib_500": 136.8,
-      "fib_618": 131.34,
-      "fib_786": 123.56,
-      "fib_1618": 188.56
+      "fib_236": 151.31,
+      "fib_382": 145.97,
+      "fib_500": 141.65,
+      "fib_618": 137.33,
+      "fib_786": 131.18,
+      "fib_1618": 182.57
     },
     "timeframes": {
       "15M": {
@@ -64335,9 +64345,9 @@
     "vol_ratio": 0.33,
     "vol_status": "NORMAL",
     "high_52w": 604.7,
-    "low_52w": 493.55,
+    "low_52w": 523.2,
     "dist_52w_high": -8.54,
-    "dist_52w_low": 12.06,
+    "dist_52w_low": 5.71,
     "tech_score": 66.0,
     "action": "HOLD",
     "action_badge": "<span class=\"px-2 py-0.5 rounded text-xs font-bold uppercase tracking-wider bg-emerald-500/20 text-emerald-400 border border-emerald-500/30\">HOLD</span>",
@@ -64402,12 +64412,12 @@
       "s3": 529.36
     },
     "fibonacci": {
-      "fib_236": 578.47,
-      "fib_382": 562.24,
-      "fib_500": 549.12,
-      "fib_618": 536.01,
-      "fib_786": 517.34,
-      "fib_1618": 673.39
+      "fib_236": 585.47,
+      "fib_382": 573.57,
+      "fib_500": 563.95,
+      "fib_618": 554.33,
+      "fib_786": 540.64,
+      "fib_1618": 655.07
     },
     "timeframes": {
       "15M": {
@@ -64807,9 +64817,9 @@
     "avg_vol_20d": 5908901,
     "vol_ratio": 0.69,
     "vol_status": "NORMAL",
-    "high_52w": 73.19,
+    "high_52w": 64.86,
     "low_52w": 50.48,
-    "dist_52w_high": -30.44,
+    "dist_52w_high": -21.51,
     "dist_52w_low": 0.85,
     "tech_score": 70.0,
     "action": "BUY ON DIPS",
@@ -64875,12 +64885,12 @@
       "s3": 48.08
     },
     "fibonacci": {
-      "fib_236": 67.83,
-      "fib_382": 64.51,
-      "fib_500": 61.83,
-      "fib_618": 59.16,
-      "fib_786": 55.34,
-      "fib_1618": 87.22
+      "fib_236": 61.47,
+      "fib_382": 59.37,
+      "fib_500": 57.67,
+      "fib_618": 55.97,
+      "fib_786": 53.56,
+      "fib_1618": 73.75
     },
     "timeframes": {
       "15M": {
@@ -66620,9 +66630,9 @@
     "avg_vol_20d": 788025,
     "vol_ratio": 0.54,
     "vol_status": "NORMAL",
-    "high_52w": 218.0,
+    "high_52w": 215.4,
     "low_52w": 180.8,
-    "dist_52w_high": -15.93,
+    "dist_52w_high": -14.92,
     "dist_52w_low": 1.37,
     "tech_score": 68.0,
     "action": "HOLD",
@@ -66688,12 +66698,12 @@
       "s3": 177.05
     },
     "fibonacci": {
-      "fib_236": 209.22,
-      "fib_382": 203.79,
-      "fib_500": 199.4,
-      "fib_618": 195.01,
-      "fib_786": 188.76,
-      "fib_1618": 240.99
+      "fib_236": 207.23,
+      "fib_382": 202.18,
+      "fib_500": 198.1,
+      "fib_618": 194.02,
+      "fib_786": 188.2,
+      "fib_1618": 236.78
     },
     "timeframes": {
       "15M": {
@@ -66872,9 +66882,9 @@
     "avg_vol_20d": 143593,
     "vol_ratio": 0.51,
     "vol_status": "NORMAL",
-    "high_52w": 450.0,
+    "high_52w": 449.0,
     "low_52w": 384.7,
-    "dist_52w_high": -12.01,
+    "dist_52w_high": -11.82,
     "dist_52w_low": 2.92,
     "tech_score": 65.0,
     "action": "HOLD",
@@ -66940,12 +66950,12 @@
       "s3": 376.29
     },
     "fibonacci": {
-      "fib_236": 434.59,
-      "fib_382": 425.06,
-      "fib_500": 417.35,
-      "fib_618": 409.64,
-      "fib_786": 398.67,
-      "fib_1618": 490.36
+      "fib_236": 433.83,
+      "fib_382": 424.44,
+      "fib_500": 416.85,
+      "fib_618": 409.26,
+      "fib_786": 398.46,
+      "fib_1618": 488.74
     },
     "timeframes": {
       "15M": {
@@ -67378,9 +67388,9 @@
     "avg_vol_20d": 2089814,
     "vol_ratio": 1.09,
     "vol_status": "NORMAL",
-    "high_52w": 1379.8,
+    "high_52w": 1374.9,
     "low_52w": 1195.7,
-    "dist_52w_high": -12.59,
+    "dist_52w_high": -12.28,
     "dist_52w_low": 0.87,
     "tech_score": 74.0,
     "action": "BUY ON DIPS",
@@ -67446,12 +67456,12 @@
       "s3": 1165.7
     },
     "fibonacci": {
-      "fib_236": 1336.35,
-      "fib_382": 1309.47,
-      "fib_500": 1287.75,
-      "fib_618": 1266.03,
-      "fib_786": 1235.1,
-      "fib_1618": 1493.57
+      "fib_236": 1332.61,
+      "fib_382": 1306.45,
+      "fib_500": 1285.3,
+      "fib_618": 1264.15,
+      "fib_786": 1234.05,
+      "fib_1618": 1485.65
     },
     "timeframes": {
       "15M": {
@@ -67630,13 +67640,13 @@
     "avg_vol_20d": 70382,
     "vol_ratio": 0.93,
     "vol_status": "NORMAL",
-    "high_52w": 19392.83,
+    "high_52w": 18686.84,
     "low_52w": 17101.35,
-    "dist_52w_high": -8.7,
+    "dist_52w_high": -5.25,
     "dist_52w_low": 3.53,
-    "tech_score": 69.0,
-    "action": "HOLD",
-    "action_badge": "<span class=\"px-2 py-0.5 rounded text-xs font-bold uppercase tracking-wider bg-emerald-500/20 text-emerald-400 border border-emerald-500/30\">HOLD</span>",
+    "tech_score": 74.0,
+    "action": "BUY ON DIPS",
+    "action_badge": "<span class=\"px-2 py-0.5 rounded text-xs font-bold uppercase tracking-wider bg-emerald-500/20 text-emerald-400 border border-emerald-500/30\">BUY ON DIPS</span>",
     "setup_type": "Swing Pullback",
     "primary_pattern": "Ascending Consolidation Breakout",
     "master_score": 63.8,
@@ -67664,7 +67674,7 @@
       "target_2": 19272.5,
       "target_3": 20213.0,
       "rr_ratio": 2.5,
-      "win_rate_score": 75.0,
+      "win_rate_score": 83.0,
       "risk_per_share": 627.0
     },
     "moving_averages": {
@@ -67698,12 +67708,12 @@
       "s3": 17122.66
     },
     "fibonacci": {
-      "fib_236": 18852.04,
-      "fib_382": 18517.48,
-      "fib_500": 18247.09,
-      "fib_618": 17976.7,
-      "fib_786": 17591.73,
-      "fib_1618": 20808.96
+      "fib_236": 18312.66,
+      "fib_382": 18081.18,
+      "fib_500": 17894.1,
+      "fib_618": 17707.01,
+      "fib_786": 17440.64,
+      "fib_1618": 19666.67
     },
     "timeframes": {
       "15M": {
@@ -67719,7 +67729,7 @@
       "1D": {
         "trend": "Uptrend",
         "rsi": 48.1,
-        "verdict": "Buy"
+        "verdict": "Strong Buy"
       },
       "1W": {
         "trend": "Stage 2 Expansion",
@@ -67728,7 +67738,7 @@
       }
     },
     "confluence": {
-      "score": 75.0,
+      "score": 83.0,
       "badge": "High Institutional Confluence"
     },
     "candles": [
@@ -67858,12 +67868,13 @@
       "is_perfect": false,
       "is_swing": true,
       "is_intraday": false,
-      "win_rate_score": 75.0,
+      "win_rate_score": 83.0,
       "rr_ratio": 2.5,
       "reasons": [
+        "⛰️ Near 52W High (-5.25%)",
         "🎯 High R:R (1:2.5)"
       ],
-      "alpha_rank": 102.8
+      "alpha_rank": 106.8
     }
   },
   {
@@ -68135,9 +68146,9 @@
     "avg_vol_20d": 5948349,
     "vol_ratio": 1.35,
     "vol_status": "NORMAL",
-    "high_52w": 96.24,
+    "high_52w": 94.62,
     "low_52w": 78.5,
-    "dist_52w_high": -14.01,
+    "dist_52w_high": -12.53,
     "dist_52w_low": 5.43,
     "tech_score": 80.0,
     "action": "BUY ON DIPS",
@@ -68203,12 +68214,12 @@
       "s3": 74.68
     },
     "fibonacci": {
-      "fib_236": 92.05,
-      "fib_382": 89.46,
-      "fib_500": 87.37,
-      "fib_618": 85.28,
-      "fib_786": 82.3,
-      "fib_1618": 107.2
+      "fib_236": 90.82,
+      "fib_382": 88.46,
+      "fib_500": 86.56,
+      "fib_618": 84.66,
+      "fib_786": 81.95,
+      "fib_1618": 104.58
     },
     "timeframes": {
       "15M": {
@@ -68388,9 +68399,9 @@
     "avg_vol_20d": 535409,
     "vol_ratio": 0.47,
     "vol_status": "NORMAL",
-    "high_52w": 5937.0,
+    "high_52w": 5849.0,
     "low_52w": 5167.0,
-    "dist_52w_high": -12.05,
+    "dist_52w_high": -10.73,
     "dist_52w_low": 1.05,
     "tech_score": 68.0,
     "action": "HOLD",
@@ -68456,12 +68467,12 @@
       "s3": 5133.66
     },
     "fibonacci": {
-      "fib_236": 5755.28,
-      "fib_382": 5642.86,
-      "fib_500": 5552.0,
-      "fib_618": 5461.14,
-      "fib_786": 5331.78,
-      "fib_1618": 6412.86
+      "fib_236": 5688.05,
+      "fib_382": 5588.48,
+      "fib_500": 5508.0,
+      "fib_618": 5427.52,
+      "fib_786": 5312.95,
+      "fib_1618": 6270.48
     },
     "timeframes": {
       "15M": {
@@ -68893,9 +68904,9 @@
     "avg_vol_20d": 396950,
     "vol_ratio": 0.78,
     "vol_status": "NORMAL",
-    "high_52w": 1416.6,
+    "high_52w": 1369.6,
     "low_52w": 1185.5,
-    "dist_52w_high": -14.62,
+    "dist_52w_high": -11.69,
     "dist_52w_low": 2.02,
     "tech_score": 68.0,
     "action": "HOLD",
@@ -68961,12 +68972,12 @@
       "s3": 1151.5
     },
     "fibonacci": {
-      "fib_236": 1362.06,
-      "fib_382": 1328.32,
-      "fib_500": 1301.05,
-      "fib_618": 1273.78,
-      "fib_786": 1234.96,
-      "fib_1618": 1559.42
+      "fib_236": 1326.15,
+      "fib_382": 1299.27,
+      "fib_500": 1277.55,
+      "fib_618": 1255.83,
+      "fib_786": 1224.9,
+      "fib_1618": 1483.37
     },
     "timeframes": {
       "15M": {
@@ -69145,13 +69156,13 @@
     "avg_vol_20d": 1643392,
     "vol_ratio": 0.64,
     "vol_status": "NORMAL",
-    "high_52w": 486.75,
+    "high_52w": 471.95,
     "low_52w": 434.85,
-    "dist_52w_high": -9.81,
+    "dist_52w_high": -6.98,
     "dist_52w_low": 0.95,
-    "tech_score": 69.0,
-    "action": "HOLD",
-    "action_badge": "<span class=\"px-2 py-0.5 rounded text-xs font-bold uppercase tracking-wider bg-emerald-500/20 text-emerald-400 border border-emerald-500/30\">HOLD</span>",
+    "tech_score": 74.0,
+    "action": "BUY ON DIPS",
+    "action_badge": "<span class=\"px-2 py-0.5 rounded text-xs font-bold uppercase tracking-wider bg-emerald-500/20 text-emerald-400 border border-emerald-500/30\">BUY ON DIPS</span>",
     "setup_type": "Swing Pullback",
     "primary_pattern": "Ascending Consolidation Breakout",
     "master_score": 63.3,
@@ -69179,7 +69190,7 @@
       "target_2": 486.05,
       "target_3": 514.28,
       "rr_ratio": 2.5,
-      "win_rate_score": 80.0,
+      "win_rate_score": 88.0,
       "risk_per_share": 18.819999999999993
     },
     "moving_averages": {
@@ -69213,12 +69224,12 @@
       "s3": 420.89
     },
     "fibonacci": {
-      "fib_236": 474.5,
-      "fib_382": 466.92,
-      "fib_500": 460.8,
-      "fib_618": 454.68,
-      "fib_786": 445.96,
-      "fib_1618": 518.82
+      "fib_236": 463.19,
+      "fib_382": 457.78,
+      "fib_500": 453.4,
+      "fib_618": 449.02,
+      "fib_786": 442.79,
+      "fib_1618": 494.88
     },
     "timeframes": {
       "15M": {
@@ -69243,7 +69254,7 @@
       }
     },
     "confluence": {
-      "score": 80.0,
+      "score": 88.0,
       "badge": "High Institutional Confluence"
     },
     "candles": [
@@ -69373,12 +69384,13 @@
       "is_perfect": false,
       "is_swing": true,
       "is_intraday": false,
-      "win_rate_score": 80.0,
+      "win_rate_score": 88.0,
       "rr_ratio": 2.5,
       "reasons": [
+        "⛰️ Near 52W High (-6.98%)",
         "🎯 High R:R (1:2.5)"
       ],
-      "alpha_rank": 101.7
+      "alpha_rank": 105.7
     }
   },
   {
@@ -69651,11 +69663,11 @@
     "avg_vol_20d": 1990814,
     "vol_ratio": 0.29,
     "vol_status": "NORMAL",
-    "high_52w": 583.4,
+    "high_52w": 561.75,
     "low_52w": 511.4,
-    "dist_52w_high": -9.76,
+    "dist_52w_high": -6.28,
     "dist_52w_low": 2.94,
-    "tech_score": 63.0,
+    "tech_score": 68.0,
     "action": "HOLD",
     "action_badge": "<span class=\"px-2 py-0.5 rounded text-xs font-bold uppercase tracking-wider bg-emerald-500/20 text-emerald-400 border border-emerald-500/30\">HOLD</span>",
     "setup_type": "Swing Pullback",
@@ -69685,7 +69697,7 @@
       "target_2": 562.0,
       "target_3": 583.33,
       "rr_ratio": 2.5,
-      "win_rate_score": 75.0,
+      "win_rate_score": 83.0,
       "risk_per_share": 14.220000000000027
     },
     "moving_averages": {
@@ -69719,12 +69731,12 @@
       "s3": 519.55
     },
     "fibonacci": {
-      "fib_236": 566.41,
-      "fib_382": 555.9,
-      "fib_500": 547.4,
-      "fib_618": 538.9,
-      "fib_786": 526.81,
-      "fib_1618": 627.9
+      "fib_236": 549.87,
+      "fib_382": 542.52,
+      "fib_500": 536.58,
+      "fib_618": 530.63,
+      "fib_786": 522.17,
+      "fib_1618": 592.87
     },
     "timeframes": {
       "15M": {
@@ -69740,7 +69752,7 @@
       "1D": {
         "trend": "Uptrend",
         "rsi": 45.1,
-        "verdict": "Buy"
+        "verdict": "Strong Buy"
       },
       "1W": {
         "trend": "Stage 2 Expansion",
@@ -69749,7 +69761,7 @@
       }
     },
     "confluence": {
-      "score": 75.0,
+      "score": 83.0,
       "badge": "High Institutional Confluence"
     },
     "candles": [
@@ -69879,12 +69891,13 @@
       "is_perfect": false,
       "is_swing": true,
       "is_intraday": false,
-      "win_rate_score": 75.0,
+      "win_rate_score": 83.0,
       "rr_ratio": 2.5,
       "reasons": [
+        "⛰️ Near 52W High (-6.28%)",
         "🎯 High R:R (1:2.5)"
       ],
-      "alpha_rank": 94.9
+      "alpha_rank": 99.0
     }
   },
   {
@@ -69904,9 +69917,9 @@
     "vol_ratio": 0.43,
     "vol_status": "NORMAL",
     "high_52w": 1583.91,
-    "low_52w": 1259.73,
+    "low_52w": 1338.68,
     "dist_52w_high": -9.36,
-    "dist_52w_low": 13.96,
+    "dist_52w_low": 7.24,
     "tech_score": 72.0,
     "action": "BUY ON DIPS",
     "action_badge": "<span class=\"px-2 py-0.5 rounded text-xs font-bold uppercase tracking-wider bg-emerald-500/20 text-emerald-400 border border-emerald-500/30\">BUY ON DIPS</span>",
@@ -69971,12 +69984,12 @@
       "s3": 1368.26
     },
     "fibonacci": {
-      "fib_236": 1507.4,
-      "fib_382": 1460.07,
-      "fib_500": 1421.82,
-      "fib_618": 1383.57,
-      "fib_786": 1329.1,
-      "fib_1618": 1784.25
+      "fib_236": 1526.04,
+      "fib_382": 1490.23,
+      "fib_500": 1461.3,
+      "fib_618": 1432.36,
+      "fib_786": 1391.16,
+      "fib_1618": 1735.46
     },
     "timeframes": {
       "15M": {
@@ -70156,9 +70169,9 @@
     "avg_vol_20d": 5057502,
     "vol_ratio": 0.89,
     "vol_status": "NORMAL",
-    "high_52w": 345.65,
+    "high_52w": 344.5,
     "low_52w": 310.4,
-    "dist_52w_high": -9.53,
+    "dist_52w_high": -9.23,
     "dist_52w_low": 0.74,
     "tech_score": 69.0,
     "action": "HOLD",
@@ -70224,12 +70237,12 @@
       "s3": 307.15
     },
     "fibonacci": {
-      "fib_236": 337.33,
-      "fib_382": 332.18,
-      "fib_500": 328.02,
-      "fib_618": 323.87,
-      "fib_786": 317.94,
-      "fib_1618": 367.43
+      "fib_236": 336.45,
+      "fib_382": 331.47,
+      "fib_500": 327.45,
+      "fib_618": 323.43,
+      "fib_786": 317.7,
+      "fib_1618": 365.57
     },
     "timeframes": {
       "15M": {
@@ -70661,9 +70674,9 @@
     "avg_vol_20d": 8124444,
     "vol_ratio": 0.76,
     "vol_status": "NORMAL",
-    "high_52w": 1193.5,
+    "high_52w": 1174.1,
     "low_52w": 1026.5,
-    "dist_52w_high": -13.05,
+    "dist_52w_high": -11.62,
     "dist_52w_low": 1.09,
     "tech_score": 71.0,
     "action": "BUY ON DIPS",
@@ -70729,12 +70742,12 @@
       "s3": 1011.56
     },
     "fibonacci": {
-      "fib_236": 1154.09,
-      "fib_382": 1129.71,
-      "fib_500": 1110.0,
-      "fib_618": 1090.29,
-      "fib_786": 1062.24,
-      "fib_1618": 1296.71
+      "fib_236": 1139.27,
+      "fib_382": 1117.72,
+      "fib_500": 1100.3,
+      "fib_618": 1082.88,
+      "fib_786": 1058.09,
+      "fib_1618": 1265.32
     },
     "timeframes": {
       "15M": {
@@ -70913,9 +70926,9 @@
     "avg_vol_20d": 13306845,
     "vol_ratio": 1.43,
     "vol_status": "NORMAL",
-    "high_52w": 182.7,
+    "high_52w": 181.84,
     "low_52w": 160.0,
-    "dist_52w_high": -10.37,
+    "dist_52w_high": -9.95,
     "dist_52w_low": 2.34,
     "tech_score": 80.0,
     "action": "BUY ON DIPS",
@@ -70981,12 +70994,12 @@
       "s3": 155.78
     },
     "fibonacci": {
-      "fib_236": 177.34,
-      "fib_382": 174.03,
-      "fib_500": 171.35,
-      "fib_618": 168.67,
-      "fib_786": 164.86,
-      "fib_1618": 196.73
+      "fib_236": 176.69,
+      "fib_382": 173.5,
+      "fib_500": 170.92,
+      "fib_618": 168.34,
+      "fib_786": 164.67,
+      "fib_1618": 195.34
     },
     "timeframes": {
       "15M": {
@@ -71167,9 +71180,9 @@
     "vol_ratio": 1.51,
     "vol_status": "HIGH SURGE",
     "high_52w": 1717.0,
-    "low_52w": 1572.2,
+    "low_52w": 1582.5,
     "dist_52w_high": -2.46,
-    "dist_52w_low": 6.52,
+    "dist_52w_low": 5.83,
     "tech_score": 89.0,
     "action": "STRONG BUY",
     "action_badge": "<span class=\"px-2 py-0.5 rounded text-xs font-bold uppercase tracking-wider bg-emerald-500/20 text-emerald-400 border border-emerald-500/30\">STRONG BUY</span>",
@@ -71234,12 +71247,12 @@
       "s3": 1527.96
     },
     "fibonacci": {
-      "fib_236": 1682.83,
-      "fib_382": 1661.69,
-      "fib_500": 1644.6,
-      "fib_618": 1627.51,
-      "fib_786": 1603.19,
-      "fib_1618": 1806.49
+      "fib_236": 1685.26,
+      "fib_382": 1665.62,
+      "fib_500": 1649.75,
+      "fib_618": 1633.88,
+      "fib_786": 1611.28,
+      "fib_1618": 1800.12
     },
     "timeframes": {
       "15M": {
@@ -72180,9 +72193,9 @@
     "avg_vol_20d": 44965,
     "vol_ratio": 0.41,
     "vol_status": "NORMAL",
-    "high_52w": 4867.6,
+    "high_52w": 4612.56,
     "low_52w": 4055.6,
-    "dist_52w_high": -15.84,
+    "dist_52w_high": -11.19,
     "dist_52w_low": 1.01,
     "tech_score": 64.0,
     "action": "HOLD",
@@ -72248,12 +72261,12 @@
       "s3": 3989.2
     },
     "fibonacci": {
-      "fib_236": 4675.97,
-      "fib_382": 4557.42,
-      "fib_500": 4461.6,
-      "fib_618": 4365.78,
-      "fib_786": 4229.37,
-      "fib_1618": 5369.42
+      "fib_236": 4481.12,
+      "fib_382": 4399.8,
+      "fib_500": 4334.08,
+      "fib_618": 4268.36,
+      "fib_786": 4174.79,
+      "fib_1618": 4956.76
     },
     "timeframes": {
       "15M": {
@@ -72432,11 +72445,11 @@
     "avg_vol_20d": 846242,
     "vol_ratio": 0.36,
     "vol_status": "NORMAL",
-    "high_52w": 1866.0,
+    "high_52w": 1820.9,
     "low_52w": 1671.0,
-    "dist_52w_high": -9.72,
+    "dist_52w_high": -7.48,
     "dist_52w_low": 0.82,
-    "tech_score": 64.0,
+    "tech_score": 68.0,
     "action": "HOLD",
     "action_badge": "<span class=\"px-2 py-0.5 rounded text-xs font-bold uppercase tracking-wider bg-emerald-500/20 text-emerald-400 border border-emerald-500/30\">HOLD</span>",
     "setup_type": "Swing Pullback",
@@ -72466,7 +72479,7 @@
       "target_2": 1798.4,
       "target_3": 1866.62,
       "rr_ratio": 2.5,
-      "win_rate_score": 75.0,
+      "win_rate_score": 83.0,
       "risk_per_share": 45.48000000000002
     },
     "moving_averages": {
@@ -72500,12 +72513,12 @@
       "s3": 1644.54
     },
     "fibonacci": {
-      "fib_236": 1819.98,
-      "fib_382": 1791.51,
-      "fib_500": 1768.5,
-      "fib_618": 1745.49,
-      "fib_786": 1712.73,
-      "fib_1618": 1986.51
+      "fib_236": 1785.52,
+      "fib_382": 1763.64,
+      "fib_500": 1745.95,
+      "fib_618": 1728.26,
+      "fib_786": 1703.08,
+      "fib_1618": 1913.54
     },
     "timeframes": {
       "15M": {
@@ -72521,7 +72534,7 @@
       "1D": {
         "trend": "Uptrend",
         "rsi": 42.4,
-        "verdict": "Buy"
+        "verdict": "Strong Buy"
       },
       "1W": {
         "trend": "Stage 2 Expansion",
@@ -72530,7 +72543,7 @@
       }
     },
     "confluence": {
-      "score": 75.0,
+      "score": 83.0,
       "badge": "High Institutional Confluence"
     },
     "candles": [
@@ -72660,12 +72673,13 @@
       "is_perfect": false,
       "is_swing": true,
       "is_intraday": false,
-      "win_rate_score": 75.0,
+      "win_rate_score": 83.0,
       "rr_ratio": 2.5,
       "reasons": [
+        "⛰️ Near 52W High (-7.48%)",
         "🎯 High R:R (1:2.5)"
       ],
-      "alpha_rank": 95.8
+      "alpha_rank": 99.6
     }
   },
   {
@@ -72936,9 +72950,9 @@
     "avg_vol_20d": 1152933,
     "vol_ratio": 1.01,
     "vol_status": "NORMAL",
-    "high_52w": 184.3,
+    "high_52w": 175.45,
     "low_52w": 155.76,
-    "dist_52w_high": -13.93,
+    "dist_52w_high": -9.59,
     "dist_52w_low": 1.84,
     "tech_score": 73.0,
     "action": "BUY ON DIPS",
@@ -73004,12 +73018,12 @@
       "s3": 152.85
     },
     "fibonacci": {
-      "fib_236": 177.56,
-      "fib_382": 173.4,
-      "fib_500": 170.03,
-      "fib_618": 166.66,
-      "fib_786": 161.87,
-      "fib_1618": 201.94
+      "fib_236": 170.8,
+      "fib_382": 167.93,
+      "fib_500": 165.6,
+      "fib_618": 163.28,
+      "fib_786": 159.97,
+      "fib_1618": 187.62
     },
     "timeframes": {
       "15M": {
@@ -73695,9 +73709,9 @@
     "avg_vol_20d": 28918013,
     "vol_ratio": 1.09,
     "vol_status": "NORMAL",
-    "high_52w": 190.56,
+    "high_52w": 190.26,
     "low_52w": 180.0,
-    "dist_52w_high": -3.97,
+    "dist_52w_high": -3.82,
     "dist_52w_low": 1.67,
     "tech_score": 76.0,
     "action": "BUY ON DIPS",
@@ -73763,12 +73777,12 @@
       "s3": 177.67
     },
     "fibonacci": {
-      "fib_236": 188.07,
-      "fib_382": 186.53,
-      "fib_500": 185.28,
-      "fib_618": 184.03,
-      "fib_786": 182.26,
-      "fib_1618": 197.09
+      "fib_236": 187.84,
+      "fib_382": 186.34,
+      "fib_500": 185.13,
+      "fib_618": 183.92,
+      "fib_786": 182.2,
+      "fib_1618": 196.6
     },
     "timeframes": {
       "15M": {
@@ -73926,7 +73940,7 @@
       "win_rate_score": 83.0,
       "rr_ratio": 2.5,
       "reasons": [
-        "⛰️ Near 52W High (-3.97%)",
+        "⛰️ Near 52W High (-3.82%)",
         "🎯 High R:R (1:2.5)"
       ],
       "alpha_rank": 109.0
@@ -73949,9 +73963,9 @@
     "vol_ratio": 0.75,
     "vol_status": "NORMAL",
     "high_52w": 449.67,
-    "low_52w": 340.75,
+    "low_52w": 361.98,
     "dist_52w_high": -6.79,
-    "dist_52w_low": 23.01,
+    "dist_52w_low": 15.79,
     "tech_score": 72.0,
     "action": "BUY ON DIPS",
     "action_badge": "<span class=\"px-2 py-0.5 rounded text-xs font-bold uppercase tracking-wider bg-emerald-500/20 text-emerald-400 border border-emerald-500/30\">BUY ON DIPS</span>",
@@ -74016,12 +74030,12 @@
       "s3": 361.9
     },
     "fibonacci": {
-      "fib_236": 423.96,
-      "fib_382": 408.06,
-      "fib_500": 395.21,
-      "fib_618": 382.36,
-      "fib_786": 364.06,
-      "fib_1618": 516.98
+      "fib_236": 428.98,
+      "fib_382": 416.17,
+      "fib_500": 405.83,
+      "fib_618": 395.48,
+      "fib_786": 380.75,
+      "fib_1618": 503.86
     },
     "timeframes": {
       "15M": {
@@ -74201,9 +74215,9 @@
     "avg_vol_20d": 1047932,
     "vol_ratio": 0.51,
     "vol_status": "NORMAL",
-    "high_52w": 276.28,
+    "high_52w": 265.01,
     "low_52w": 223.5,
-    "dist_52w_high": -18.79,
+    "dist_52w_high": -15.33,
     "dist_52w_low": 0.39,
     "tech_score": 68.0,
     "action": "HOLD",
@@ -74269,12 +74283,12 @@
       "s3": 220.16
     },
     "fibonacci": {
-      "fib_236": 263.82,
-      "fib_382": 256.12,
-      "fib_500": 249.89,
-      "fib_618": 243.66,
-      "fib_786": 234.79,
-      "fib_1618": 308.9
+      "fib_236": 255.21,
+      "fib_382": 249.15,
+      "fib_500": 244.25,
+      "fib_618": 239.36,
+      "fib_786": 232.38,
+      "fib_1618": 290.66
     },
     "timeframes": {
       "15M": {
@@ -74959,9 +74973,9 @@
     "avg_vol_20d": 1660850,
     "vol_ratio": 0.71,
     "vol_status": "NORMAL",
-    "high_52w": 198.21,
+    "high_52w": 192.57,
     "low_52w": 171.6,
-    "dist_52w_high": -12.84,
+    "dist_52w_high": -10.29,
     "dist_52w_low": 0.68,
     "tech_score": 67.0,
     "action": "HOLD",
@@ -75027,12 +75041,12 @@
       "s3": 169.7
     },
     "fibonacci": {
-      "fib_236": 191.93,
-      "fib_382": 188.04,
-      "fib_500": 184.91,
-      "fib_618": 181.77,
-      "fib_786": 177.29,
-      "fib_1618": 214.65
+      "fib_236": 187.62,
+      "fib_382": 184.56,
+      "fib_500": 182.08,
+      "fib_618": 179.61,
+      "fib_786": 176.09,
+      "fib_1618": 205.53
     },
     "timeframes": {
       "15M": {
@@ -75464,9 +75478,9 @@
     "avg_vol_20d": 1074741,
     "vol_ratio": 0.79,
     "vol_status": "NORMAL",
-    "high_52w": 627.0,
+    "high_52w": 615.9,
     "low_52w": 527.5,
-    "dist_52w_high": -13.08,
+    "dist_52w_high": -11.51,
     "dist_52w_low": 3.32,
     "tech_score": 71.0,
     "action": "BUY ON DIPS",
@@ -75532,12 +75546,12 @@
       "s3": 515.84
     },
     "fibonacci": {
-      "fib_236": 603.52,
-      "fib_382": 588.99,
-      "fib_500": 577.25,
-      "fib_618": 565.51,
-      "fib_786": 548.79,
-      "fib_1618": 688.49
+      "fib_236": 595.04,
+      "fib_382": 582.13,
+      "fib_500": 571.7,
+      "fib_618": 561.27,
+      "fib_786": 546.42,
+      "fib_1618": 670.53
     },
     "timeframes": {
       "15M": {
@@ -75969,9 +75983,9 @@
     "vol_ratio": 0.63,
     "vol_status": "NORMAL",
     "high_52w": 1160.0,
-    "low_52w": 1037.1,
+    "low_52w": 1056.3,
     "dist_52w_high": -5.97,
-    "dist_52w_low": 5.18,
+    "dist_52w_low": 3.27,
     "tech_score": 74.0,
     "action": "BUY ON DIPS",
     "action_badge": "<span class=\"px-2 py-0.5 rounded text-xs font-bold uppercase tracking-wider bg-emerald-500/20 text-emerald-400 border border-emerald-500/30\">BUY ON DIPS</span>",
@@ -76036,12 +76050,12 @@
       "s3": 1036.3
     },
     "fibonacci": {
-      "fib_236": 1131.0,
-      "fib_382": 1113.05,
-      "fib_500": 1098.55,
-      "fib_618": 1084.05,
-      "fib_786": 1063.4,
-      "fib_1618": 1235.95
+      "fib_236": 1135.53,
+      "fib_382": 1120.39,
+      "fib_500": 1108.15,
+      "fib_618": 1095.91,
+      "fib_786": 1078.49,
+      "fib_1618": 1224.09
     },
     "timeframes": {
       "15M": {
@@ -76981,14 +76995,14 @@
     "avg_vol_20d": 79993,
     "vol_ratio": 1.49,
     "vol_status": "NORMAL",
-    "high_52w": 297.85,
+    "high_52w": 280.2,
     "low_52w": 260.0,
-    "dist_52w_high": -8.16,
+    "dist_52w_high": -2.37,
     "dist_52w_low": 5.21,
-    "tech_score": 81.0,
-    "action": "BUY ON DIPS",
-    "action_badge": "<span class=\"px-2 py-0.5 rounded text-xs font-bold uppercase tracking-wider bg-emerald-500/20 text-emerald-400 border border-emerald-500/30\">BUY ON DIPS</span>",
-    "setup_type": "Swing Pullback",
+    "tech_score": 86.0,
+    "action": "STRONG BUY",
+    "action_badge": "<span class=\"px-2 py-0.5 rounded text-xs font-bold uppercase tracking-wider bg-emerald-500/20 text-emerald-400 border border-emerald-500/30\">STRONG BUY</span>",
+    "setup_type": "Stage 2 Confluence Breakout",
     "primary_pattern": "Ascending Consolidation Breakout",
     "master_score": 61.1,
     "master_category": "🚀 High ET Forecast Upside",
@@ -77015,7 +77029,7 @@
       "target_2": 315.92,
       "target_3": 341.35,
       "rr_ratio": 2.5,
-      "win_rate_score": 85.0,
+      "win_rate_score": 93.0,
       "risk_per_share": 16.94999999999999
     },
     "moving_averages": {
@@ -77049,12 +77063,12 @@
       "s3": 255.84
     },
     "fibonacci": {
-      "fib_236": 288.92,
-      "fib_382": 283.39,
-      "fib_500": 278.93,
-      "fib_618": 274.46,
-      "fib_786": 268.1,
-      "fib_1618": 321.24
+      "fib_236": 275.43,
+      "fib_382": 272.48,
+      "fib_500": 270.1,
+      "fib_618": 267.72,
+      "fib_786": 264.32,
+      "fib_1618": 292.68
     },
     "timeframes": {
       "15M": {
@@ -77079,7 +77093,7 @@
       }
     },
     "confluence": {
-      "score": 85.0,
+      "score": 93.0,
       "badge": "High Institutional Confluence"
     },
     "candles": [
@@ -77206,16 +77220,17 @@
     ],
     "radar": {
       "is_candidate": true,
-      "is_perfect": false,
+      "is_perfect": true,
       "is_swing": true,
       "is_intraday": false,
-      "win_rate_score": 85.0,
+      "win_rate_score": 93.0,
       "rr_ratio": 2.5,
       "reasons": [
+        "🌟 High Confluence Synergy",
         "🔥 Vol Surge (1.49x)",
-        "🎯 High R:R (1:2.5)"
+        "⛰️ Near 52W High (-2.37%)"
       ],
-      "alpha_rank": 114.9
+      "alpha_rank": 119.0
     }
   },
   {
@@ -77234,9 +77249,9 @@
     "avg_vol_20d": 693340,
     "vol_ratio": 3.87,
     "vol_status": "HIGH SURGE",
-    "high_52w": 2108.0,
+    "high_52w": 2095.0,
     "low_52w": 1719.0,
-    "dist_52w_high": -17.08,
+    "dist_52w_high": -16.56,
     "dist_52w_low": 1.69,
     "tech_score": 99.0,
     "action": "STRONG BUY",
@@ -77302,12 +77317,12 @@
       "s3": 1557.0
     },
     "fibonacci": {
-      "fib_236": 2016.2,
-      "fib_382": 1959.4,
-      "fib_500": 1913.5,
-      "fib_618": 1867.6,
-      "fib_786": 1802.25,
-      "fib_1618": 2348.4
+      "fib_236": 2006.26,
+      "fib_382": 1951.37,
+      "fib_500": 1907.0,
+      "fib_618": 1862.63,
+      "fib_786": 1799.46,
+      "fib_1618": 2327.37
     },
     "timeframes": {
       "15M": {
@@ -77740,9 +77755,9 @@
     "avg_vol_20d": 33659,
     "vol_ratio": 1.63,
     "vol_status": "HIGH SURGE",
-    "high_52w": 5438.5,
+    "high_52w": 5399.0,
     "low_52w": 4813.0,
-    "dist_52w_high": -10.94,
+    "dist_52w_high": -10.29,
     "dist_52w_low": 0.63,
     "tech_score": 85.0,
     "action": "STRONG BUY",
@@ -77808,12 +77823,12 @@
       "s3": 4704.66
     },
     "fibonacci": {
-      "fib_236": 5290.88,
-      "fib_382": 5199.56,
-      "fib_500": 5125.75,
-      "fib_618": 5051.94,
-      "fib_786": 4946.86,
-      "fib_1618": 5825.06
+      "fib_236": 5260.7,
+      "fib_382": 5175.15,
+      "fib_500": 5106.0,
+      "fib_618": 5036.85,
+      "fib_786": 4938.4,
+      "fib_1618": 5761.15
     },
     "timeframes": {
       "15M": {
@@ -78247,9 +78262,9 @@
     "avg_vol_20d": 707106,
     "vol_ratio": 0.85,
     "vol_status": "NORMAL",
-    "high_52w": 523.25,
+    "high_52w": 507.25,
     "low_52w": 462.15,
-    "dist_52w_high": -11.53,
+    "dist_52w_high": -8.74,
     "dist_52w_low": 0.16,
     "tech_score": 68.0,
     "action": "HOLD",
@@ -78315,12 +78330,12 @@
       "s3": 455.99
     },
     "fibonacci": {
-      "fib_236": 508.83,
-      "fib_382": 499.91,
-      "fib_500": 492.7,
-      "fib_618": 485.49,
-      "fib_786": 475.23,
-      "fib_1618": 561.01
+      "fib_236": 496.61,
+      "fib_382": 490.02,
+      "fib_500": 484.7,
+      "fib_618": 479.38,
+      "fib_786": 471.8,
+      "fib_1618": 535.12
     },
     "timeframes": {
       "15M": {
@@ -78500,9 +78515,9 @@
     "vol_ratio": 1.23,
     "vol_status": "NORMAL",
     "high_52w": 15.79,
-    "low_52w": 12.79,
+    "low_52w": 13.49,
     "dist_52w_high": -5.19,
-    "dist_52w_low": 17.04,
+    "dist_52w_low": 10.97,
     "tech_score": 86.0,
     "action": "STRONG BUY",
     "action_badge": "<span class=\"px-2 py-0.5 rounded text-xs font-bold uppercase tracking-wider bg-emerald-500/20 text-emerald-400 border border-emerald-500/30\">STRONG BUY</span>",
@@ -78567,12 +78582,12 @@
       "s3": 14.44
     },
     "fibonacci": {
-      "fib_236": 15.08,
-      "fib_382": 14.64,
-      "fib_500": 14.29,
-      "fib_618": 13.94,
-      "fib_786": 13.43,
-      "fib_1618": 17.64
+      "fib_236": 15.25,
+      "fib_382": 14.91,
+      "fib_500": 14.64,
+      "fib_618": 14.37,
+      "fib_786": 13.98,
+      "fib_1618": 17.21
     },
     "timeframes": {
       "15M": {
@@ -78752,9 +78767,9 @@
     "avg_vol_20d": 1243181,
     "vol_ratio": 0.89,
     "vol_status": "NORMAL",
-    "high_52w": 2092.0,
+    "high_52w": 2090.9,
     "low_52w": 1926.2,
-    "dist_52w_high": -7.89,
+    "dist_52w_high": -7.84,
     "dist_52w_low": 0.04,
     "tech_score": 74.0,
     "action": "BUY ON DIPS",
@@ -78820,12 +78835,12 @@
       "s3": 1899.54
     },
     "fibonacci": {
-      "fib_236": 2052.87,
-      "fib_382": 2028.66,
-      "fib_500": 2009.1,
-      "fib_618": 1989.54,
-      "fib_786": 1961.68,
-      "fib_1618": 2194.46
+      "fib_236": 2052.03,
+      "fib_382": 2027.98,
+      "fib_500": 2008.55,
+      "fib_618": 1989.12,
+      "fib_786": 1961.45,
+      "fib_1618": 2192.68
     },
     "timeframes": {
       "15M": {
@@ -78983,7 +78998,7 @@
       "win_rate_score": 83.0,
       "rr_ratio": 2.5,
       "reasons": [
-        "⛰️ Near 52W High (-7.89%)",
+        "⛰️ Near 52W High (-7.84%)",
         "🎯 High R:R (1:2.5)"
       ],
       "alpha_rank": 106.5
@@ -79258,9 +79273,9 @@
     "avg_vol_20d": 1568844,
     "vol_ratio": 0.49,
     "vol_status": "NORMAL",
-    "high_52w": 1028.42,
+    "high_52w": 948.0,
     "low_52w": 855.15,
-    "dist_52w_high": -15.89,
+    "dist_52w_high": -8.76,
     "dist_52w_low": 1.15,
     "tech_score": 65.0,
     "action": "HOLD",
@@ -79326,12 +79341,12 @@
       "s3": 844.86
     },
     "fibonacci": {
-      "fib_236": 987.53,
-      "fib_382": 962.23,
-      "fib_500": 941.79,
-      "fib_618": 921.34,
-      "fib_786": 892.23,
-      "fib_1618": 1135.5
+      "fib_236": 926.09,
+      "fib_382": 912.53,
+      "fib_500": 901.58,
+      "fib_618": 890.62,
+      "fib_786": 875.02,
+      "fib_1618": 1005.38
     },
     "timeframes": {
       "15M": {
@@ -79511,9 +79526,9 @@
     "vol_ratio": 0.9,
     "vol_status": "NORMAL",
     "high_52w": 182.5,
-    "low_52w": 149.0,
+    "low_52w": 150.06,
     "dist_52w_high": -3.81,
-    "dist_52w_low": 17.81,
+    "dist_52w_low": 16.98,
     "tech_score": 81.0,
     "action": "BUY ON DIPS",
     "action_badge": "<span class=\"px-2 py-0.5 rounded text-xs font-bold uppercase tracking-wider bg-emerald-500/20 text-emerald-400 border border-emerald-500/30\">BUY ON DIPS</span>",
@@ -79578,12 +79593,12 @@
       "s3": 164.31
     },
     "fibonacci": {
-      "fib_236": 174.59,
-      "fib_382": 169.7,
-      "fib_500": 165.75,
-      "fib_618": 161.8,
-      "fib_786": 156.17,
-      "fib_1618": 203.2
+      "fib_236": 174.84,
+      "fib_382": 170.11,
+      "fib_500": 166.28,
+      "fib_618": 162.45,
+      "fib_786": 157.0,
+      "fib_1618": 202.55
     },
     "timeframes": {
       "15M": {
@@ -80019,9 +80034,9 @@
     "vol_ratio": 3.62,
     "vol_status": "HIGH SURGE",
     "high_52w": 12300.0,
-    "low_52w": 10397.59,
+    "low_52w": 10607.39,
     "dist_52w_high": -1.65,
-    "dist_52w_low": 16.34,
+    "dist_52w_low": 14.04,
     "tech_score": 99.0,
     "action": "STRONG BUY",
     "action_badge": "<span class=\"px-2 py-0.5 rounded text-xs font-bold uppercase tracking-wider bg-emerald-500/20 text-emerald-400 border border-emerald-500/30\">STRONG BUY</span>",
@@ -80086,12 +80101,12 @@
       "s3": 10414.66
     },
     "fibonacci": {
-      "fib_236": 11851.03,
-      "fib_382": 11573.28,
-      "fib_500": 11348.8,
-      "fib_618": 11124.31,
-      "fib_786": 10804.71,
-      "fib_1618": 13475.69
+      "fib_236": 11900.54,
+      "fib_382": 11653.42,
+      "fib_500": 11453.69,
+      "fib_618": 11253.97,
+      "fib_786": 10969.61,
+      "fib_1618": 13346.03
     },
     "timeframes": {
       "15M": {
@@ -80527,9 +80542,9 @@
     "vol_ratio": 0.53,
     "vol_status": "NORMAL",
     "high_52w": 313.51,
-    "low_52w": 236.96,
+    "low_52w": 250.89,
     "dist_52w_high": -18.54,
-    "dist_52w_low": 7.78,
+    "dist_52w_low": 1.8,
     "tech_score": 65.0,
     "action": "HOLD",
     "action_badge": "<span class=\"px-2 py-0.5 rounded text-xs font-bold uppercase tracking-wider bg-emerald-500/20 text-emerald-400 border border-emerald-500/30\">HOLD</span>",
@@ -80594,12 +80609,12 @@
       "s3": 241.6
     },
     "fibonacci": {
-      "fib_236": 295.44,
-      "fib_382": 284.27,
-      "fib_500": 275.24,
-      "fib_618": 266.2,
-      "fib_786": 253.34,
-      "fib_1618": 360.82
+      "fib_236": 298.73,
+      "fib_382": 289.59,
+      "fib_500": 282.2,
+      "fib_618": 274.81,
+      "fib_786": 264.29,
+      "fib_1618": 352.21
     },
     "timeframes": {
       "15M": {
@@ -81030,9 +81045,9 @@
     "avg_vol_20d": 170505,
     "vol_ratio": 0.66,
     "vol_status": "NORMAL",
-    "high_52w": 3837.6,
+    "high_52w": 3809.5,
     "low_52w": 3370.0,
-    "dist_52w_high": -11.85,
+    "dist_52w_high": -11.2,
     "dist_52w_low": 0.39,
     "tech_score": 70.0,
     "action": "BUY ON DIPS",
@@ -81098,12 +81113,12 @@
       "s3": 3330.16
     },
     "fibonacci": {
-      "fib_236": 3727.25,
-      "fib_382": 3658.98,
-      "fib_500": 3603.8,
-      "fib_618": 3548.62,
-      "fib_786": 3470.07,
-      "fib_1618": 4126.58
+      "fib_236": 3705.78,
+      "fib_382": 3641.61,
+      "fib_500": 3589.75,
+      "fib_618": 3537.89,
+      "fib_786": 3464.05,
+      "fib_1618": 4081.11
     },
     "timeframes": {
       "15M": {
@@ -81282,11 +81297,11 @@
     "avg_vol_20d": 35780,
     "vol_ratio": 1.16,
     "vol_status": "NORMAL",
-    "high_52w": 166.23,
+    "high_52w": 148.89,
     "low_52w": 130.53,
-    "dist_52w_high": -14.76,
+    "dist_52w_high": -4.83,
     "dist_52w_low": 8.56,
-    "tech_score": 72.0,
+    "tech_score": 76.0,
     "action": "BUY ON DIPS",
     "action_badge": "<span class=\"px-2 py-0.5 rounded text-xs font-bold uppercase tracking-wider bg-emerald-500/20 text-emerald-400 border border-emerald-500/30\">BUY ON DIPS</span>",
     "setup_type": "Swing Pullback",
@@ -81316,7 +81331,7 @@
       "target_2": 177.37,
       "target_3": 198.78,
       "rr_ratio": 2.5,
-      "win_rate_score": 75.0,
+      "win_rate_score": 83.0,
       "risk_per_share": 14.269999999999982
     },
     "moving_averages": {
@@ -81350,12 +81365,12 @@
       "s3": 127.61
     },
     "fibonacci": {
-      "fib_236": 157.8,
-      "fib_382": 152.59,
-      "fib_500": 148.38,
-      "fib_618": 144.17,
-      "fib_786": 138.17,
-      "fib_1618": 188.29
+      "fib_236": 144.56,
+      "fib_382": 141.88,
+      "fib_500": 139.71,
+      "fib_618": 137.54,
+      "fib_786": 134.46,
+      "fib_1618": 160.24
     },
     "timeframes": {
       "15M": {
@@ -81371,7 +81386,7 @@
       "1D": {
         "trend": "Uptrend",
         "rsi": 49.6,
-        "verdict": "Buy"
+        "verdict": "Strong Buy"
       },
       "1W": {
         "trend": "Stage 2 Expansion",
@@ -81380,7 +81395,7 @@
       }
     },
     "confluence": {
-      "score": 75.0,
+      "score": 83.0,
       "badge": "High Institutional Confluence"
     },
     "candles": [
@@ -81510,12 +81525,13 @@
       "is_perfect": false,
       "is_swing": true,
       "is_intraday": false,
-      "win_rate_score": 75.0,
+      "win_rate_score": 83.0,
       "rr_ratio": 2.5,
       "reasons": [
+        "⛰️ Near 52W High (-4.83%)",
         "🎯 High R:R (1:2.5)"
       ],
-      "alpha_rank": 105.8
+      "alpha_rank": 109.6
     }
   },
   {
@@ -81534,9 +81550,9 @@
     "avg_vol_20d": 24933,
     "vol_ratio": 0.65,
     "vol_status": "NORMAL",
-    "high_52w": 26135.0,
+    "high_52w": 25300.0,
     "low_52w": 22370.0,
-    "dist_52w_high": -13.64,
+    "dist_52w_high": -10.79,
     "dist_52w_low": 0.89,
     "tech_score": 70.0,
     "action": "BUY ON DIPS",
@@ -81602,12 +81618,12 @@
       "s3": 22090.0
     },
     "fibonacci": {
-      "fib_236": 25246.46,
-      "fib_382": 24696.77,
-      "fib_500": 24252.5,
-      "fib_618": 23808.23,
-      "fib_786": 23175.71,
-      "fib_1618": 28461.77
+      "fib_236": 24608.52,
+      "fib_382": 24180.74,
+      "fib_500": 23835.0,
+      "fib_618": 23489.26,
+      "fib_786": 22997.02,
+      "fib_1618": 27110.74
     },
     "timeframes": {
       "15M": {
@@ -82040,9 +82056,9 @@
     "avg_vol_20d": 22459,
     "vol_ratio": 0.8,
     "vol_status": "NORMAL",
-    "high_52w": 2807.9,
+    "high_52w": 2600.0,
     "low_52w": 2013.8,
-    "dist_52w_high": -24.55,
+    "dist_52w_high": -18.52,
     "dist_52w_low": 5.2,
     "tech_score": 71.0,
     "action": "BUY ON DIPS",
@@ -82108,12 +82124,12 @@
       "s3": 1904.94
     },
     "fibonacci": {
-      "fib_236": 2620.49,
-      "fib_382": 2504.55,
-      "fib_500": 2410.85,
-      "fib_618": 2317.15,
-      "fib_786": 2183.74,
-      "fib_1618": 3298.65
+      "fib_236": 2461.66,
+      "fib_382": 2376.07,
+      "fib_500": 2306.9,
+      "fib_618": 2237.73,
+      "fib_786": 2139.25,
+      "fib_1618": 2962.27
     },
     "timeframes": {
       "15M": {
@@ -82292,9 +82308,9 @@
     "avg_vol_20d": 67575,
     "vol_ratio": 0.63,
     "vol_status": "NORMAL",
-    "high_52w": 1439.9,
+    "high_52w": 1379.9,
     "low_52w": 1174.95,
-    "dist_52w_high": -14.77,
+    "dist_52w_high": -11.06,
     "dist_52w_low": 4.45,
     "tech_score": 69.0,
     "action": "HOLD",
@@ -82360,12 +82376,12 @@
       "s3": 1161.04
     },
     "fibonacci": {
-      "fib_236": 1377.37,
-      "fib_382": 1338.69,
-      "fib_500": 1307.43,
-      "fib_618": 1276.16,
-      "fib_786": 1231.65,
-      "fib_1618": 1603.64
+      "fib_236": 1331.53,
+      "fib_382": 1301.61,
+      "fib_500": 1277.43,
+      "fib_618": 1253.24,
+      "fib_786": 1218.81,
+      "fib_1618": 1506.56
     },
     "timeframes": {
       "15M": {
@@ -82545,9 +82561,9 @@
     "vol_ratio": 0.59,
     "vol_status": "NORMAL",
     "high_52w": 10.29,
-    "low_52w": 8.32,
+    "low_52w": 8.36,
     "dist_52w_high": -14.19,
-    "dist_52w_low": 6.13,
+    "dist_52w_low": 5.62,
     "tech_score": 73.0,
     "action": "BUY ON DIPS",
     "action_badge": "<span class=\"px-2 py-0.5 rounded text-xs font-bold uppercase tracking-wider bg-emerald-500/20 text-emerald-400 border border-emerald-500/30\">BUY ON DIPS</span>",
@@ -82613,11 +82629,11 @@
     },
     "fibonacci": {
       "fib_236": 9.83,
-      "fib_382": 9.54,
-      "fib_500": 9.3,
-      "fib_618": 9.07,
-      "fib_786": 8.74,
-      "fib_1618": 11.51
+      "fib_382": 9.55,
+      "fib_500": 9.32,
+      "fib_618": 9.1,
+      "fib_786": 8.77,
+      "fib_1618": 11.48
     },
     "timeframes": {
       "15M": {
@@ -82796,9 +82812,9 @@
     "avg_vol_20d": 6392220,
     "vol_ratio": 0.26,
     "vol_status": "NORMAL",
-    "high_52w": 207.5,
+    "high_52w": 203.95,
     "low_52w": 154.36,
-    "dist_52w_high": -9.88,
+    "dist_52w_high": -8.31,
     "dist_52w_low": 21.15,
     "tech_score": 63.0,
     "action": "HOLD",
@@ -82864,12 +82880,12 @@
       "s3": 174.72
     },
     "fibonacci": {
-      "fib_236": 194.96,
-      "fib_382": 187.2,
-      "fib_500": 180.93,
-      "fib_618": 174.66,
-      "fib_786": 165.73,
-      "fib_1618": 240.34
+      "fib_236": 192.25,
+      "fib_382": 185.01,
+      "fib_500": 179.16,
+      "fib_618": 173.3,
+      "fib_786": 164.97,
+      "fib_1618": 234.6
     },
     "timeframes": {
       "15M": {
@@ -83302,9 +83318,9 @@
     "avg_vol_20d": 1328025,
     "vol_ratio": 0.78,
     "vol_status": "NORMAL",
-    "high_52w": 1205.0,
+    "high_52w": 1198.9,
     "low_52w": 1092.6,
-    "dist_52w_high": -7.13,
+    "dist_52w_high": -6.66,
     "dist_52w_low": 2.43,
     "tech_score": 82.0,
     "action": "BUY ON DIPS",
@@ -83370,12 +83386,12 @@
       "s3": 1073.06
     },
     "fibonacci": {
-      "fib_236": 1178.47,
-      "fib_382": 1162.06,
-      "fib_500": 1148.8,
-      "fib_618": 1135.54,
-      "fib_786": 1116.65,
-      "fib_1618": 1274.46
+      "fib_236": 1173.81,
+      "fib_382": 1158.29,
+      "fib_500": 1145.75,
+      "fib_618": 1133.21,
+      "fib_786": 1115.35,
+      "fib_1618": 1264.59
     },
     "timeframes": {
       "15M": {
@@ -83533,7 +83549,7 @@
       "win_rate_score": 98.5,
       "rr_ratio": 2.5,
       "reasons": [
-        "⛰️ Near 52W High (-7.13%)",
+        "⛰️ Near 52W High (-6.66%)",
         "🎯 High R:R (1:2.5)"
       ],
       "alpha_rank": 112.8
@@ -84313,9 +84329,9 @@
     "avg_vol_20d": 50762,
     "vol_ratio": 0.74,
     "vol_status": "NORMAL",
-    "high_52w": 3824.8,
+    "high_52w": 3715.8,
     "low_52w": 3247.0,
-    "dist_52w_high": -14.28,
+    "dist_52w_high": -11.77,
     "dist_52w_low": 0.97,
     "tech_score": 70.0,
     "action": "BUY ON DIPS",
@@ -84381,12 +84397,12 @@
       "s3": 3204.54
     },
     "fibonacci": {
-      "fib_236": 3688.44,
-      "fib_382": 3604.08,
-      "fib_500": 3535.9,
-      "fib_618": 3467.72,
-      "fib_786": 3370.65,
-      "fib_1618": 4181.88
+      "fib_236": 3605.16,
+      "fib_382": 3536.72,
+      "fib_500": 3481.4,
+      "fib_618": 3426.08,
+      "fib_786": 3347.32,
+      "fib_1618": 4005.52
     },
     "timeframes": {
       "15M": {
@@ -84819,9 +84835,9 @@
     "avg_vol_20d": 363390,
     "vol_ratio": 0.91,
     "vol_status": "NORMAL",
-    "high_52w": 660.0,
+    "high_52w": 617.45,
     "low_52w": 528.3,
-    "dist_52w_high": -17.74,
+    "dist_52w_high": -12.07,
     "dist_52w_low": 2.76,
     "tech_score": 69.0,
     "action": "HOLD",
@@ -84887,12 +84903,12 @@
       "s3": 510.44
     },
     "fibonacci": {
-      "fib_236": 628.92,
-      "fib_382": 609.69,
-      "fib_500": 594.15,
-      "fib_618": 578.61,
-      "fib_786": 556.48,
-      "fib_1618": 741.39
+      "fib_236": 596.41,
+      "fib_382": 583.39,
+      "fib_500": 572.88,
+      "fib_618": 562.36,
+      "fib_786": 547.38,
+      "fib_1618": 672.54
     },
     "timeframes": {
       "15M": {
@@ -85071,11 +85087,11 @@
     "avg_vol_20d": 2920456,
     "vol_ratio": 1.26,
     "vol_status": "NORMAL",
-    "high_52w": 430.5,
+    "high_52w": 421.6,
     "low_52w": 384.65,
-    "dist_52w_high": -9.26,
+    "dist_52w_high": -7.34,
     "dist_52w_low": 1.56,
-    "tech_score": 73.0,
+    "tech_score": 77.0,
     "action": "BUY ON DIPS",
     "action_badge": "<span class=\"px-2 py-0.5 rounded text-xs font-bold uppercase tracking-wider bg-emerald-500/20 text-emerald-400 border border-emerald-500/30\">BUY ON DIPS</span>",
     "setup_type": "Swing Pullback",
@@ -85105,7 +85121,7 @@
       "target_2": 436.4,
       "target_3": 463.85,
       "rr_ratio": 2.5,
-      "win_rate_score": 75.0,
+      "win_rate_score": 83.0,
       "risk_per_share": 18.299999999999955
     },
     "moving_averages": {
@@ -85139,12 +85155,12 @@
       "s3": 372.39
     },
     "fibonacci": {
-      "fib_236": 419.68,
-      "fib_382": 412.99,
-      "fib_500": 407.57,
-      "fib_618": 402.16,
-      "fib_786": 394.46,
-      "fib_1618": 458.84
+      "fib_236": 412.88,
+      "fib_382": 407.49,
+      "fib_500": 403.12,
+      "fib_618": 398.76,
+      "fib_786": 392.56,
+      "fib_1618": 444.44
     },
     "timeframes": {
       "15M": {
@@ -85160,7 +85176,7 @@
       "1D": {
         "trend": "Uptrend",
         "rsi": 29.2,
-        "verdict": "Buy"
+        "verdict": "Strong Buy"
       },
       "1W": {
         "trend": "Stage 2 Expansion",
@@ -85169,7 +85185,7 @@
       }
     },
     "confluence": {
-      "score": 75.0,
+      "score": 83.0,
       "badge": "High Institutional Confluence"
     },
     "candles": [
@@ -85299,12 +85315,13 @@
       "is_perfect": false,
       "is_swing": true,
       "is_intraday": false,
-      "win_rate_score": 75.0,
+      "win_rate_score": 83.0,
       "rr_ratio": 2.5,
       "reasons": [
+        "⛰️ Near 52W High (-7.34%)",
         "🎯 High R:R (1:2.5)"
       ],
-      "alpha_rank": 107.1
+      "alpha_rank": 110.9
     }
   },
   {
@@ -85324,9 +85341,9 @@
     "vol_ratio": 0.29,
     "vol_status": "NORMAL",
     "high_52w": 186.75,
-    "low_52w": 155.81,
+    "low_52w": 158.92,
     "dist_52w_high": -10.65,
-    "dist_52w_low": 7.09,
+    "dist_52w_low": 5.0,
     "tech_score": 66.0,
     "action": "HOLD",
     "action_badge": "<span class=\"px-2 py-0.5 rounded text-xs font-bold uppercase tracking-wider bg-emerald-500/20 text-emerald-400 border border-emerald-500/30\">HOLD</span>",
@@ -85391,12 +85408,12 @@
       "s3": 162.71
     },
     "fibonacci": {
-      "fib_236": 179.45,
-      "fib_382": 174.93,
-      "fib_500": 171.28,
-      "fib_618": 167.63,
-      "fib_786": 162.43,
-      "fib_1618": 205.87
+      "fib_236": 180.18,
+      "fib_382": 176.12,
+      "fib_500": 172.83,
+      "fib_618": 169.55,
+      "fib_786": 164.88,
+      "fib_1618": 203.95
     },
     "timeframes": {
       "15M": {
@@ -86838,13 +86855,13 @@
     "avg_vol_20d": 14052712,
     "vol_ratio": 0.79,
     "vol_status": "NORMAL",
-    "high_52w": 282.6,
+    "high_52w": 278.35,
     "low_52w": 255.5,
-    "dist_52w_high": -8.05,
+    "dist_52w_high": -6.65,
     "dist_52w_low": 1.7,
-    "tech_score": 68.0,
-    "action": "HOLD",
-    "action_badge": "<span class=\"px-2 py-0.5 rounded text-xs font-bold uppercase tracking-wider bg-emerald-500/20 text-emerald-400 border border-emerald-500/30\">HOLD</span>",
+    "tech_score": 73.0,
+    "action": "BUY ON DIPS",
+    "action_badge": "<span class=\"px-2 py-0.5 rounded text-xs font-bold uppercase tracking-wider bg-emerald-500/20 text-emerald-400 border border-emerald-500/30\">BUY ON DIPS</span>",
     "setup_type": "Swing Pullback",
     "primary_pattern": "Ascending Consolidation Breakout",
     "master_score": 55.9,
@@ -86872,7 +86889,7 @@
       "target_2": 277.4,
       "target_3": 287.93,
       "rr_ratio": 2.5,
-      "win_rate_score": 75.0,
+      "win_rate_score": 83.0,
       "risk_per_share": 7.02000000000001
     },
     "moving_averages": {
@@ -86906,12 +86923,12 @@
       "s3": 253.86
     },
     "fibonacci": {
-      "fib_236": 276.2,
-      "fib_382": 272.25,
-      "fib_500": 269.05,
-      "fib_618": 265.85,
-      "fib_786": 261.3,
-      "fib_1618": 299.35
+      "fib_236": 272.96,
+      "fib_382": 269.62,
+      "fib_500": 266.93,
+      "fib_618": 264.23,
+      "fib_786": 260.39,
+      "fib_1618": 292.47
     },
     "timeframes": {
       "15M": {
@@ -86927,7 +86944,7 @@
       "1D": {
         "trend": "Uptrend",
         "rsi": 39.3,
-        "verdict": "Buy"
+        "verdict": "Strong Buy"
       },
       "1W": {
         "trend": "Stage 2 Expansion",
@@ -86936,7 +86953,7 @@
       }
     },
     "confluence": {
-      "score": 75.0,
+      "score": 83.0,
       "badge": "High Institutional Confluence"
     },
     "candles": [
@@ -87066,12 +87083,13 @@
       "is_perfect": false,
       "is_swing": true,
       "is_intraday": false,
-      "win_rate_score": 75.0,
+      "win_rate_score": 83.0,
       "rr_ratio": 2.5,
       "reasons": [
+        "⛰️ Near 52W High (-6.65%)",
         "🎯 High R:R (1:2.5)"
       ],
-      "alpha_rank": 101.2
+      "alpha_rank": 105.2
     }
   },
   {
@@ -87090,9 +87108,9 @@
     "avg_vol_20d": 766590,
     "vol_ratio": 1.0,
     "vol_status": "NORMAL",
-    "high_52w": 207.74,
+    "high_52w": 204.89,
     "low_52w": 178.51,
-    "dist_52w_high": -13.25,
+    "dist_52w_high": -12.04,
     "dist_52w_low": 0.96,
     "tech_score": 70.0,
     "action": "BUY ON DIPS",
@@ -87158,12 +87176,12 @@
       "s3": 174.85
     },
     "fibonacci": {
-      "fib_236": 200.84,
-      "fib_382": 196.57,
-      "fib_500": 193.12,
-      "fib_618": 189.68,
-      "fib_786": 184.77,
-      "fib_1618": 225.8
+      "fib_236": 198.66,
+      "fib_382": 194.81,
+      "fib_500": 191.7,
+      "fib_618": 188.59,
+      "fib_786": 184.16,
+      "fib_1618": 221.19
     },
     "timeframes": {
       "15M": {
@@ -87342,9 +87360,9 @@
     "avg_vol_20d": 23363,
     "vol_ratio": 0.5,
     "vol_status": "NORMAL",
-    "high_52w": 7189.5,
+    "high_52w": 6870.5,
     "low_52w": 6160.0,
-    "dist_52w_high": -13.38,
+    "dist_52w_high": -9.36,
     "dist_52w_low": 1.1,
     "tech_score": 65.0,
     "action": "HOLD",
@@ -87410,12 +87428,12 @@
       "s3": 6085.0
     },
     "fibonacci": {
-      "fib_236": 6946.54,
-      "fib_382": 6796.23,
-      "fib_500": 6674.75,
-      "fib_618": 6553.27,
-      "fib_786": 6380.31,
-      "fib_1618": 7825.73
+      "fib_236": 6702.82,
+      "fib_382": 6599.09,
+      "fib_500": 6515.25,
+      "fib_618": 6431.41,
+      "fib_786": 6312.05,
+      "fib_1618": 7309.59
     },
     "timeframes": {
       "15M": {
@@ -88355,9 +88373,9 @@
     "vol_ratio": 0.3,
     "vol_status": "NORMAL",
     "high_52w": 183.97,
-    "low_52w": 137.39,
+    "low_52w": 139.83,
     "dist_52w_high": -9.28,
-    "dist_52w_low": 21.47,
+    "dist_52w_low": 19.35,
     "tech_score": 66.0,
     "action": "HOLD",
     "action_badge": "<span class=\"px-2 py-0.5 rounded text-xs font-bold uppercase tracking-wider bg-emerald-500/20 text-emerald-400 border border-emerald-500/30\">HOLD</span>",
@@ -88422,12 +88440,12 @@
       "s3": 156.02
     },
     "fibonacci": {
-      "fib_236": 172.98,
-      "fib_382": 166.18,
-      "fib_500": 160.68,
-      "fib_618": 155.18,
-      "fib_786": 147.36,
-      "fib_1618": 212.76
+      "fib_236": 173.55,
+      "fib_382": 167.11,
+      "fib_500": 161.9,
+      "fib_618": 156.69,
+      "fib_786": 149.28,
+      "fib_1618": 211.25
     },
     "timeframes": {
       "15M": {
@@ -88606,11 +88624,11 @@
     "avg_vol_20d": 418987,
     "vol_ratio": 0.64,
     "vol_status": "NORMAL",
-    "high_52w": 932.6,
+    "high_52w": 892.0,
     "low_52w": 806.4,
-    "dist_52w_high": -11.33,
+    "dist_52w_high": -7.29,
     "dist_52w_low": 2.55,
-    "tech_score": 77.0,
+    "tech_score": 80.0,
     "action": "BUY ON DIPS",
     "action_badge": "<span class=\"px-2 py-0.5 rounded text-xs font-bold uppercase tracking-wider bg-emerald-500/20 text-emerald-400 border border-emerald-500/30\">BUY ON DIPS</span>",
     "setup_type": "Swing Pullback",
@@ -88640,7 +88658,7 @@
       "target_2": 898.2,
       "target_3": 940.95,
       "rr_ratio": 2.5,
-      "win_rate_score": 92.0,
+      "win_rate_score": 98.5,
       "risk_per_share": 28.5
     },
     "moving_averages": {
@@ -88674,12 +88692,12 @@
       "s3": 797.3
     },
     "fibonacci": {
-      "fib_236": 902.82,
-      "fib_382": 884.39,
-      "fib_500": 869.5,
-      "fib_618": 854.61,
-      "fib_786": 833.41,
-      "fib_1618": 1010.59
+      "fib_236": 871.8,
+      "fib_382": 859.3,
+      "fib_500": 849.2,
+      "fib_618": 839.1,
+      "fib_786": 824.72,
+      "fib_1618": 944.9
     },
     "timeframes": {
       "15M": {
@@ -88704,7 +88722,7 @@
       }
     },
     "confluence": {
-      "score": 92.0,
+      "score": 98.5,
       "badge": "High Institutional Confluence"
     },
     "candles": [
@@ -88834,13 +88852,14 @@
       "is_perfect": false,
       "is_swing": true,
       "is_intraday": false,
-      "win_rate_score": 92.0,
+      "win_rate_score": 98.5,
       "rr_ratio": 2.5,
       "reasons": [
+        "⛰️ Near 52W High (-7.29%)",
         "📈 RSI Sweet Spot (64.2)",
         "🎯 High R:R (1:2.5)"
       ],
-      "alpha_rank": 107.8
+      "alpha_rank": 110.9
     }
   },
   {
@@ -89366,13 +89385,13 @@
     "avg_vol_20d": 1962584,
     "vol_ratio": 0.67,
     "vol_status": "NORMAL",
-    "high_52w": 434.25,
+    "high_52w": 422.8,
     "low_52w": 387.65,
-    "dist_52w_high": -9.76,
+    "dist_52w_high": -7.32,
     "dist_52w_low": 1.08,
-    "tech_score": 67.0,
-    "action": "HOLD",
-    "action_badge": "<span class=\"px-2 py-0.5 rounded text-xs font-bold uppercase tracking-wider bg-emerald-500/20 text-emerald-400 border border-emerald-500/30\">HOLD</span>",
+    "tech_score": 72.0,
+    "action": "BUY ON DIPS",
+    "action_badge": "<span class=\"px-2 py-0.5 rounded text-xs font-bold uppercase tracking-wider bg-emerald-500/20 text-emerald-400 border border-emerald-500/30\">BUY ON DIPS</span>",
     "setup_type": "Swing Pullback",
     "primary_pattern": "Ascending Consolidation Breakout",
     "master_score": 54.1,
@@ -89400,7 +89419,7 @@
       "target_2": 418.28,
       "target_3": 434.13,
       "rr_ratio": 2.5,
-      "win_rate_score": 75.0,
+      "win_rate_score": 83.0,
       "risk_per_share": 10.57000000000005
     },
     "moving_averages": {
@@ -89434,12 +89453,12 @@
       "s3": 382.59
     },
     "fibonacci": {
-      "fib_236": 423.25,
-      "fib_382": 416.45,
-      "fib_500": 410.95,
-      "fib_618": 405.45,
-      "fib_786": 397.62,
-      "fib_1618": 463.05
+      "fib_236": 414.5,
+      "fib_382": 409.37,
+      "fib_500": 405.23,
+      "fib_618": 401.08,
+      "fib_786": 395.17,
+      "fib_1618": 444.52
     },
     "timeframes": {
       "15M": {
@@ -89455,7 +89474,7 @@
       "1D": {
         "trend": "Uptrend",
         "rsi": 35.8,
-        "verdict": "Buy"
+        "verdict": "Strong Buy"
       },
       "1W": {
         "trend": "Stage 2 Expansion",
@@ -89464,7 +89483,7 @@
       }
     },
     "confluence": {
-      "score": 75.0,
+      "score": 83.0,
       "badge": "High Institutional Confluence"
     },
     "candles": [
@@ -89594,12 +89613,13 @@
       "is_perfect": false,
       "is_swing": true,
       "is_intraday": false,
-      "win_rate_score": 75.0,
+      "win_rate_score": 83.0,
       "rr_ratio": 2.5,
       "reasons": [
+        "⛰️ Near 52W High (-7.32%)",
         "🎯 High R:R (1:2.5)"
       ],
-      "alpha_rank": 99.7
+      "alpha_rank": 103.8
     }
   },
   {
@@ -90124,9 +90144,9 @@
     "avg_vol_20d": 967657,
     "vol_ratio": 0.57,
     "vol_status": "NORMAL",
-    "high_52w": 57.41,
+    "high_52w": 55.88,
     "low_52w": 52.4,
-    "dist_52w_high": -7.07,
+    "dist_52w_high": -4.53,
     "dist_52w_low": 1.81,
     "tech_score": 70.0,
     "action": "BUY ON DIPS",
@@ -90192,12 +90212,12 @@
       "s3": 52.34
     },
     "fibonacci": {
-      "fib_236": 56.23,
-      "fib_382": 55.5,
-      "fib_500": 54.91,
-      "fib_618": 54.31,
-      "fib_786": 53.47,
-      "fib_1618": 60.51
+      "fib_236": 55.06,
+      "fib_382": 54.55,
+      "fib_500": 54.14,
+      "fib_618": 53.73,
+      "fib_786": 53.14,
+      "fib_1618": 58.03
     },
     "timeframes": {
       "15M": {
@@ -90355,7 +90375,7 @@
       "win_rate_score": 83.0,
       "rr_ratio": 2.5,
       "reasons": [
-        "⛰️ Near 52W High (-7.07%)",
+        "⛰️ Near 52W High (-4.53%)",
         "🎯 High R:R (1:2.5)"
       ],
       "alpha_rank": 102.2
@@ -90629,11 +90649,11 @@
     "avg_vol_20d": 581466,
     "vol_ratio": 1.02,
     "vol_status": "NORMAL",
-    "high_52w": 108.49,
+    "high_52w": 99.95,
     "low_52w": 88.0,
-    "dist_52w_high": -14.3,
+    "dist_52w_high": -6.97,
     "dist_52w_low": 5.66,
-    "tech_score": 70.0,
+    "tech_score": 75.0,
     "action": "BUY ON DIPS",
     "action_badge": "<span class=\"px-2 py-0.5 rounded text-xs font-bold uppercase tracking-wider bg-emerald-500/20 text-emerald-400 border border-emerald-500/30\">BUY ON DIPS</span>",
     "setup_type": "Swing Pullback",
@@ -90663,7 +90683,7 @@
       "target_2": 105.51,
       "target_3": 113.02,
       "rr_ratio": 2.5,
-      "win_rate_score": 75.0,
+      "win_rate_score": 83.0,
       "risk_per_share": 5.010000000000005
     },
     "moving_averages": {
@@ -90697,12 +90717,12 @@
       "s3": 87.73
     },
     "fibonacci": {
-      "fib_236": 103.65,
-      "fib_382": 100.66,
-      "fib_500": 98.25,
-      "fib_618": 95.83,
-      "fib_786": 92.38,
-      "fib_1618": 121.15
+      "fib_236": 97.13,
+      "fib_382": 95.39,
+      "fib_500": 93.97,
+      "fib_618": 92.56,
+      "fib_786": 90.56,
+      "fib_1618": 107.34
     },
     "timeframes": {
       "15M": {
@@ -90718,7 +90738,7 @@
       "1D": {
         "trend": "Uptrend",
         "rsi": 35.8,
-        "verdict": "Buy"
+        "verdict": "Strong Buy"
       },
       "1W": {
         "trend": "Stage 2 Expansion",
@@ -90727,7 +90747,7 @@
       }
     },
     "confluence": {
-      "score": 75.0,
+      "score": 83.0,
       "badge": "High Institutional Confluence"
     },
     "candles": [
@@ -90857,12 +90877,13 @@
       "is_perfect": false,
       "is_swing": true,
       "is_intraday": false,
-      "win_rate_score": 75.0,
+      "win_rate_score": 83.0,
       "rr_ratio": 2.5,
       "reasons": [
+        "⛰️ Near 52W High (-6.97%)",
         "🎯 High R:R (1:2.5)"
       ],
-      "alpha_rank": 104.0
+      "alpha_rank": 108.0
     }
   },
   {
@@ -91135,9 +91156,9 @@
     "vol_ratio": 0.45,
     "vol_status": "NORMAL",
     "high_52w": 2890.0,
-    "low_52w": 2223.0,
+    "low_52w": 2278.6,
     "dist_52w_high": -2.72,
-    "dist_52w_low": 26.47,
+    "dist_52w_low": 23.38,
     "tech_score": 76.0,
     "action": "BUY ON DIPS",
     "action_badge": "<span class=\"px-2 py-0.5 rounded text-xs font-bold uppercase tracking-wider bg-emerald-500/20 text-emerald-400 border border-emerald-500/30\">BUY ON DIPS</span>",
@@ -91202,12 +91223,12 @@
       "s3": 2590.1
     },
     "fibonacci": {
-      "fib_236": 2732.59,
-      "fib_382": 2635.21,
-      "fib_500": 2556.5,
-      "fib_618": 2477.79,
-      "fib_786": 2365.74,
-      "fib_1618": 3302.21
+      "fib_236": 2745.71,
+      "fib_382": 2656.45,
+      "fib_500": 2584.3,
+      "fib_618": 2512.15,
+      "fib_786": 2409.44,
+      "fib_1618": 3267.85
     },
     "timeframes": {
       "15M": {
@@ -91641,9 +91662,9 @@
     "avg_vol_20d": 1048822,
     "vol_ratio": 0.58,
     "vol_status": "NORMAL",
-    "high_52w": 467.9,
+    "high_52w": 446.25,
     "low_52w": 389.15,
-    "dist_52w_high": -13.14,
+    "dist_52w_high": -8.93,
     "dist_52w_low": 4.43,
     "tech_score": 66.0,
     "action": "HOLD",
@@ -91709,12 +91730,12 @@
       "s3": 396.44
     },
     "fibonacci": {
-      "fib_236": 449.31,
-      "fib_382": 437.82,
-      "fib_500": 428.52,
-      "fib_618": 419.23,
-      "fib_786": 406.0,
-      "fib_1618": 516.57
+      "fib_236": 432.77,
+      "fib_382": 424.44,
+      "fib_500": 417.7,
+      "fib_618": 410.96,
+      "fib_786": 401.37,
+      "fib_1618": 481.54
     },
     "timeframes": {
       "15M": {
@@ -92146,9 +92167,9 @@
     "vol_ratio": 0.55,
     "vol_status": "NORMAL",
     "high_52w": 343.5,
-    "low_52w": 270.05,
+    "low_52w": 281.0,
     "dist_52w_high": -15.65,
-    "dist_52w_low": 7.29,
+    "dist_52w_low": 3.11,
     "tech_score": 76.0,
     "action": "BUY ON DIPS",
     "action_badge": "<span class=\"px-2 py-0.5 rounded text-xs font-bold uppercase tracking-wider bg-emerald-500/20 text-emerald-400 border border-emerald-500/30\">BUY ON DIPS</span>",
@@ -92213,12 +92234,12 @@
       "s3": 269.44
     },
     "fibonacci": {
-      "fib_236": 326.17,
-      "fib_382": 315.44,
-      "fib_500": 306.77,
-      "fib_618": 298.11,
-      "fib_786": 285.77,
-      "fib_1618": 388.89
+      "fib_236": 328.75,
+      "fib_382": 319.62,
+      "fib_500": 312.25,
+      "fib_618": 304.88,
+      "fib_786": 294.38,
+      "fib_1618": 382.12
     },
     "timeframes": {
       "15M": {
@@ -92399,9 +92420,9 @@
     "vol_ratio": 0.94,
     "vol_status": "NORMAL",
     "high_52w": 107.5,
-    "low_52w": 72.71,
+    "low_52w": 75.75,
     "dist_52w_high": -23.45,
-    "dist_52w_low": 13.18,
+    "dist_52w_low": 8.63,
     "tech_score": 72.0,
     "action": "BUY ON DIPS",
     "action_badge": "<span class=\"px-2 py-0.5 rounded text-xs font-bold uppercase tracking-wider bg-emerald-500/20 text-emerald-400 border border-emerald-500/30\">BUY ON DIPS</span>",
@@ -92466,12 +92487,12 @@
       "s3": 76.6
     },
     "fibonacci": {
-      "fib_236": 99.29,
-      "fib_382": 94.21,
-      "fib_500": 90.1,
-      "fib_618": 86.0,
-      "fib_786": 80.16,
-      "fib_1618": 129.0
+      "fib_236": 100.01,
+      "fib_382": 95.37,
+      "fib_500": 91.62,
+      "fib_618": 87.88,
+      "fib_786": 82.54,
+      "fib_1618": 127.12
     },
     "timeframes": {
       "15M": {
@@ -92902,9 +92923,9 @@
     "avg_vol_20d": 7687937,
     "vol_ratio": 1.0,
     "vol_status": "NORMAL",
-    "high_52w": 351.55,
+    "high_52w": 337.75,
     "low_52w": 296.5,
-    "dist_52w_high": -14.35,
+    "dist_52w_high": -10.85,
     "dist_52w_low": 1.55,
     "tech_score": 70.0,
     "action": "BUY ON DIPS",
@@ -92970,12 +92991,12 @@
       "s3": 289.04
     },
     "fibonacci": {
-      "fib_236": 338.56,
-      "fib_382": 330.52,
-      "fib_500": 324.02,
-      "fib_618": 317.53,
-      "fib_786": 308.28,
-      "fib_1618": 385.57
+      "fib_236": 328.01,
+      "fib_382": 321.99,
+      "fib_500": 317.12,
+      "fib_618": 312.26,
+      "fib_786": 305.33,
+      "fib_1618": 363.24
     },
     "timeframes": {
       "15M": {
@@ -94671,9 +94692,9 @@
     "vol_ratio": 0.37,
     "vol_status": "NORMAL",
     "high_52w": 304.8,
-    "low_52w": 142.67,
+    "low_52w": 148.5,
     "dist_52w_high": -10.98,
-    "dist_52w_low": 90.19,
+    "dist_52w_low": 82.72,
     "tech_score": 64.0,
     "action": "HOLD",
     "action_badge": "<span class=\"px-2 py-0.5 rounded text-xs font-bold uppercase tracking-wider bg-emerald-500/20 text-emerald-400 border border-emerald-500/30\">HOLD</span>",
@@ -94738,12 +94759,12 @@
       "s3": 245.7
     },
     "fibonacci": {
-      "fib_236": 266.54,
-      "fib_382": 242.87,
-      "fib_500": 223.74,
-      "fib_618": 204.6,
-      "fib_786": 177.37,
-      "fib_1618": 405.0
+      "fib_236": 267.91,
+      "fib_382": 245.09,
+      "fib_500": 226.65,
+      "fib_618": 208.21,
+      "fib_786": 181.95,
+      "fib_1618": 401.39
     },
     "timeframes": {
       "15M": {
@@ -94922,13 +94943,13 @@
     "avg_vol_20d": 972063,
     "vol_ratio": 0.29,
     "vol_status": "NORMAL",
-    "high_52w": 2144.4,
+    "high_52w": 2104.9,
     "low_52w": 1908.6,
-    "dist_52w_high": -9.3,
+    "dist_52w_high": -7.6,
     "dist_52w_low": 1.9,
-    "tech_score": 66.0,
-    "action": "HOLD",
-    "action_badge": "<span class=\"px-2 py-0.5 rounded text-xs font-bold uppercase tracking-wider bg-emerald-500/20 text-emerald-400 border border-emerald-500/30\">HOLD</span>",
+    "tech_score": 71.0,
+    "action": "BUY ON DIPS",
+    "action_badge": "<span class=\"px-2 py-0.5 rounded text-xs font-bold uppercase tracking-wider bg-emerald-500/20 text-emerald-400 border border-emerald-500/30\">BUY ON DIPS</span>",
     "setup_type": "Swing Pullback",
     "primary_pattern": "Ascending Consolidation Breakout",
     "master_score": 50.6,
@@ -94956,7 +94977,7 @@
       "target_2": 2092.28,
       "target_3": 2180.7,
       "rr_ratio": 2.5,
-      "win_rate_score": 80.0,
+      "win_rate_score": 88.0,
       "risk_per_share": 58.950000000000045
     },
     "moving_averages": {
@@ -94990,12 +95011,12 @@
       "s3": 1880.4
     },
     "fibonacci": {
-      "fib_236": 2088.75,
-      "fib_382": 2054.32,
-      "fib_500": 2026.5,
-      "fib_618": 1998.68,
-      "fib_786": 1959.06,
-      "fib_1618": 2290.12
+      "fib_236": 2058.57,
+      "fib_382": 2029.91,
+      "fib_500": 2006.75,
+      "fib_618": 1983.59,
+      "fib_786": 1950.61,
+      "fib_1618": 2226.21
     },
     "timeframes": {
       "15M": {
@@ -95020,7 +95041,7 @@
       }
     },
     "confluence": {
-      "score": 80.0,
+      "score": 88.0,
       "badge": "High Institutional Confluence"
     },
     "candles": [
@@ -95150,12 +95171,13 @@
       "is_perfect": false,
       "is_swing": true,
       "is_intraday": false,
-      "win_rate_score": 80.0,
+      "win_rate_score": 88.0,
       "rr_ratio": 2.5,
       "reasons": [
+        "⛰️ Near 52W High (-7.6%)",
         "🎯 High R:R (1:2.5)"
       ],
-      "alpha_rank": 97.4
+      "alpha_rank": 101.5
     }
   },
   {
@@ -95427,9 +95449,9 @@
     "vol_ratio": 1.14,
     "vol_status": "NORMAL",
     "high_52w": 103.6,
-    "low_52w": 99.21,
+    "low_52w": 99.45,
     "dist_52w_high": -1.55,
-    "dist_52w_low": 2.8,
+    "dist_52w_low": 2.55,
     "tech_score": 76.0,
     "action": "BUY ON DIPS",
     "action_badge": "<span class=\"px-2 py-0.5 rounded text-xs font-bold uppercase tracking-wider bg-emerald-500/20 text-emerald-400 border border-emerald-500/30\">BUY ON DIPS</span>",
@@ -95494,12 +95516,12 @@
       "s3": 101.0
     },
     "fibonacci": {
-      "fib_236": 102.56,
-      "fib_382": 101.92,
-      "fib_500": 101.41,
-      "fib_618": 100.89,
-      "fib_786": 100.15,
-      "fib_1618": 106.31
+      "fib_236": 102.62,
+      "fib_382": 102.01,
+      "fib_500": 101.53,
+      "fib_618": 101.04,
+      "fib_786": 100.34,
+      "fib_1618": 106.16
     },
     "timeframes": {
       "15M": {
@@ -96437,9 +96459,9 @@
     "avg_vol_20d": 5930112,
     "vol_ratio": 1.74,
     "vol_status": "HIGH SURGE",
-    "high_52w": 12.89,
+    "high_52w": 12.05,
     "low_52w": 8.43,
-    "dist_52w_high": -33.67,
+    "dist_52w_high": -29.05,
     "dist_52w_low": 1.42,
     "tech_score": 83.0,
     "action": "BUY ON DIPS",
@@ -96505,12 +96527,12 @@
       "s3": 7.99
     },
     "fibonacci": {
-      "fib_236": 11.84,
-      "fib_382": 11.19,
-      "fib_500": 10.66,
-      "fib_618": 10.13,
-      "fib_786": 9.38,
-      "fib_1618": 15.65
+      "fib_236": 11.2,
+      "fib_382": 10.67,
+      "fib_500": 10.24,
+      "fib_618": 9.81,
+      "fib_786": 9.2,
+      "fib_1618": 14.29
     },
     "timeframes": {
       "15M": {
@@ -98456,9 +98478,9 @@
     "avg_vol_20d": 20527682,
     "vol_ratio": 0.71,
     "vol_status": "NORMAL",
-    "high_52w": 24.04,
+    "high_52w": 23.8,
     "low_52w": 21.41,
-    "dist_52w_high": -10.23,
+    "dist_52w_high": -9.33,
     "dist_52w_low": 0.79,
     "tech_score": 67.0,
     "action": "HOLD",
@@ -98524,12 +98546,12 @@
       "s3": 21.05
     },
     "fibonacci": {
-      "fib_236": 23.42,
-      "fib_382": 23.04,
-      "fib_500": 22.73,
-      "fib_618": 22.41,
-      "fib_786": 21.97,
-      "fib_1618": 25.67
+      "fib_236": 23.24,
+      "fib_382": 22.89,
+      "fib_500": 22.61,
+      "fib_618": 22.32,
+      "fib_786": 21.92,
+      "fib_1618": 25.28
     },
     "timeframes": {
       "15M": {
@@ -98708,9 +98730,9 @@
     "avg_vol_20d": 1059753,
     "vol_ratio": 0.63,
     "vol_status": "NORMAL",
-    "high_52w": 617.15,
+    "high_52w": 601.0,
     "low_52w": 552.75,
-    "dist_52w_high": -6.77,
+    "dist_52w_high": -4.27,
     "dist_52w_low": 4.09,
     "tech_score": 74.0,
     "action": "BUY ON DIPS",
@@ -98776,12 +98798,12 @@
       "s3": 561.6
     },
     "fibonacci": {
-      "fib_236": 601.95,
-      "fib_382": 592.55,
-      "fib_500": 584.95,
-      "fib_618": 577.35,
-      "fib_786": 566.53,
-      "fib_1618": 656.95
+      "fib_236": 589.61,
+      "fib_382": 582.57,
+      "fib_500": 576.88,
+      "fib_618": 571.18,
+      "fib_786": 563.08,
+      "fib_1618": 630.82
     },
     "timeframes": {
       "15M": {
@@ -98939,7 +98961,7 @@
       "win_rate_score": 88.0,
       "rr_ratio": 2.5,
       "reasons": [
-        "⛰️ Near 52W High (-6.77%)",
+        "⛰️ Near 52W High (-4.27%)",
         "🎯 High R:R (1:2.5)"
       ],
       "alpha_rank": 105.6
@@ -98962,9 +98984,9 @@
     "vol_ratio": 0.75,
     "vol_status": "NORMAL",
     "high_52w": 668.8,
-    "low_52w": 504.1,
+    "low_52w": 505.95,
     "dist_52w_high": -17.03,
-    "dist_52w_low": 10.08,
+    "dist_52w_low": 9.67,
     "tech_score": 75.0,
     "action": "BUY ON DIPS",
     "action_badge": "<span class=\"px-2 py-0.5 rounded text-xs font-bold uppercase tracking-wider bg-emerald-500/20 text-emerald-400 border border-emerald-500/30\">BUY ON DIPS</span>",
@@ -99029,12 +99051,12 @@
       "s3": 527.46
     },
     "fibonacci": {
-      "fib_236": 629.93,
-      "fib_382": 605.88,
-      "fib_500": 586.45,
-      "fib_618": 567.02,
-      "fib_786": 539.35,
-      "fib_1618": 770.58
+      "fib_236": 630.37,
+      "fib_382": 606.59,
+      "fib_500": 587.38,
+      "fib_618": 568.16,
+      "fib_786": 540.8,
+      "fib_1618": 769.44
     },
     "timeframes": {
       "15M": {
@@ -99466,11 +99488,11 @@
     "avg_vol_20d": 117151,
     "vol_ratio": 0.95,
     "vol_status": "NORMAL",
-    "high_52w": 1362.0,
+    "high_52w": 1338.1,
     "low_52w": 1230.6,
-    "dist_52w_high": -8.48,
+    "dist_52w_high": -6.85,
     "dist_52w_low": 1.29,
-    "tech_score": 70.0,
+    "tech_score": 74.0,
     "action": "BUY ON DIPS",
     "action_badge": "<span class=\"px-2 py-0.5 rounded text-xs font-bold uppercase tracking-wider bg-emerald-500/20 text-emerald-400 border border-emerald-500/30\">BUY ON DIPS</span>",
     "setup_type": "Swing Pullback",
@@ -99500,7 +99522,7 @@
       "target_2": 1330.65,
       "target_3": 1381.14,
       "rr_ratio": 2.5,
-      "win_rate_score": 75.0,
+      "win_rate_score": 83.0,
       "risk_per_share": 33.66000000000008
     },
     "moving_averages": {
@@ -99534,12 +99556,12 @@
       "s3": 1213.06
     },
     "fibonacci": {
-      "fib_236": 1330.99,
-      "fib_382": 1311.81,
-      "fib_500": 1296.3,
-      "fib_618": 1280.79,
-      "fib_786": 1258.72,
-      "fib_1618": 1443.21
+      "fib_236": 1312.73,
+      "fib_382": 1297.03,
+      "fib_500": 1284.35,
+      "fib_618": 1271.66,
+      "fib_786": 1253.61,
+      "fib_1618": 1404.53
     },
     "timeframes": {
       "15M": {
@@ -99555,7 +99577,7 @@
       "1D": {
         "trend": "Uptrend",
         "rsi": 36.1,
-        "verdict": "Buy"
+        "verdict": "Strong Buy"
       },
       "1W": {
         "trend": "Stage 2 Expansion",
@@ -99564,7 +99586,7 @@
       }
     },
     "confluence": {
-      "score": 75.0,
+      "score": 83.0,
       "badge": "High Institutional Confluence"
     },
     "candles": [
@@ -99694,12 +99716,13 @@
       "is_perfect": false,
       "is_swing": true,
       "is_intraday": false,
-      "win_rate_score": 75.0,
+      "win_rate_score": 83.0,
       "rr_ratio": 2.5,
       "reasons": [
+        "⛰️ Near 52W High (-6.85%)",
         "🎯 High R:R (1:2.5)"
       ],
-      "alpha_rank": 103.2
+      "alpha_rank": 107.0
     }
   },
   {
@@ -99718,9 +99741,9 @@
     "avg_vol_20d": 887085,
     "vol_ratio": 1.57,
     "vol_status": "HIGH SURGE",
-    "high_52w": 64.03,
+    "high_52w": 62.44,
     "low_52w": 53.1,
-    "dist_52w_high": -15.43,
+    "dist_52w_high": -13.28,
     "dist_52w_low": 1.98,
     "tech_score": 82.0,
     "action": "BUY ON DIPS",
@@ -99786,12 +99809,12 @@
       "s3": 50.74
     },
     "fibonacci": {
-      "fib_236": 61.45,
-      "fib_382": 59.85,
-      "fib_500": 58.56,
-      "fib_618": 57.28,
-      "fib_786": 55.44,
-      "fib_1618": 70.78
+      "fib_236": 60.24,
+      "fib_382": 58.87,
+      "fib_500": 57.77,
+      "fib_618": 56.67,
+      "fib_786": 55.1,
+      "fib_1618": 68.21
     },
     "timeframes": {
       "15M": {
@@ -100478,9 +100501,9 @@
     "avg_vol_20d": 8533328,
     "vol_ratio": 0.99,
     "vol_status": "NORMAL",
-    "high_52w": 187.48,
+    "high_52w": 185.84,
     "low_52w": 165.16,
-    "dist_52w_high": -10.71,
+    "dist_52w_high": -9.92,
     "dist_52w_low": 1.36,
     "tech_score": 73.0,
     "action": "BUY ON DIPS",
@@ -100546,12 +100569,12 @@
       "s3": 163.2
     },
     "fibonacci": {
-      "fib_236": 182.21,
-      "fib_382": 178.95,
-      "fib_500": 176.32,
-      "fib_618": 173.69,
-      "fib_786": 169.94,
-      "fib_1618": 201.27
+      "fib_236": 180.96,
+      "fib_382": 177.94,
+      "fib_500": 175.5,
+      "fib_618": 173.06,
+      "fib_786": 169.59,
+      "fib_1618": 198.62
     },
     "timeframes": {
       "15M": {
@@ -100730,9 +100753,9 @@
     "avg_vol_20d": 248409,
     "vol_ratio": 4.53,
     "vol_status": "HIGH SURGE",
-    "high_52w": 2783.5,
+    "high_52w": 2545.0,
     "low_52w": 2191.0,
-    "dist_52w_high": -18.84,
+    "dist_52w_high": -11.24,
     "dist_52w_low": 3.1,
     "tech_score": 99.0,
     "action": "STRONG BUY",
@@ -100798,12 +100821,12 @@
       "s3": 2004.34
     },
     "fibonacci": {
-      "fib_236": 2643.67,
-      "fib_382": 2557.16,
-      "fib_500": 2487.25,
-      "fib_618": 2417.34,
-      "fib_786": 2317.8,
-      "fib_1618": 3149.66
+      "fib_236": 2461.46,
+      "fib_382": 2409.77,
+      "fib_500": 2368.0,
+      "fib_618": 2326.23,
+      "fib_786": 2266.76,
+      "fib_1618": 2763.77
     },
     "timeframes": {
       "15M": {
@@ -100984,9 +101007,9 @@
     "vol_ratio": 0.66,
     "vol_status": "NORMAL",
     "high_52w": 7.57,
-    "low_52w": 5.83,
+    "low_52w": 5.94,
     "dist_52w_high": -18.1,
-    "dist_52w_low": 6.35,
+    "dist_52w_low": 4.38,
     "tech_score": 67.0,
     "action": "HOLD",
     "action_badge": "<span class=\"px-2 py-0.5 rounded text-xs font-bold uppercase tracking-wider bg-emerald-500/20 text-emerald-400 border border-emerald-500/30\">HOLD</span>",
@@ -101051,12 +101074,12 @@
       "s3": 5.64
     },
     "fibonacci": {
-      "fib_236": 7.16,
-      "fib_382": 6.91,
-      "fib_500": 6.7,
-      "fib_618": 6.49,
-      "fib_786": 6.2,
-      "fib_1618": 8.65
+      "fib_236": 7.19,
+      "fib_382": 6.95,
+      "fib_500": 6.76,
+      "fib_618": 6.56,
+      "fib_786": 6.29,
+      "fib_1618": 8.58
     },
     "timeframes": {
       "15M": {
@@ -101488,9 +101511,9 @@
     "avg_vol_20d": 7308070,
     "vol_ratio": 1.1,
     "vol_status": "NORMAL",
-    "high_52w": 88.6,
+    "high_52w": 88.5,
     "low_52w": 80.1,
-    "dist_52w_high": -8.48,
+    "dist_52w_high": -8.37,
     "dist_52w_low": 1.24,
     "tech_score": 71.0,
     "action": "BUY ON DIPS",
@@ -101556,12 +101579,12 @@
       "s3": 79.44
     },
     "fibonacci": {
-      "fib_236": 86.59,
-      "fib_382": 85.35,
-      "fib_500": 84.35,
-      "fib_618": 83.35,
-      "fib_786": 81.92,
-      "fib_1618": 93.85
+      "fib_236": 86.52,
+      "fib_382": 85.29,
+      "fib_500": 84.3,
+      "fib_618": 83.31,
+      "fib_786": 81.9,
+      "fib_1618": 93.69
     },
     "timeframes": {
       "15M": {
@@ -101740,9 +101763,9 @@
     "avg_vol_20d": 298657,
     "vol_ratio": 0.1,
     "vol_status": "NORMAL",
-    "high_52w": 575.75,
+    "high_52w": 562.45,
     "low_52w": 470.0,
-    "dist_52w_high": -15.94,
+    "dist_52w_high": -13.95,
     "dist_52w_low": 2.98,
     "tech_score": 61.0,
     "action": "HOLD",
@@ -101808,12 +101831,12 @@
       "s3": 463.59
     },
     "fibonacci": {
-      "fib_236": 550.79,
-      "fib_382": 535.35,
-      "fib_500": 522.88,
-      "fib_618": 510.4,
-      "fib_786": 492.63,
-      "fib_1618": 641.1
+      "fib_236": 540.63,
+      "fib_382": 527.13,
+      "fib_500": 516.23,
+      "fib_618": 505.32,
+      "fib_786": 489.78,
+      "fib_1618": 619.58
     },
     "timeframes": {
       "15M": {
@@ -101992,9 +102015,9 @@
     "avg_vol_20d": 3929795,
     "vol_ratio": 0.97,
     "vol_status": "NORMAL",
-    "high_52w": 232.94,
+    "high_52w": 231.38,
     "low_52w": 202.04,
-    "dist_52w_high": -12.04,
+    "dist_52w_high": -11.44,
     "dist_52w_low": 1.42,
     "tech_score": 70.0,
     "action": "BUY ON DIPS",
@@ -102060,12 +102083,12 @@
       "s3": 200.02
     },
     "fibonacci": {
-      "fib_236": 225.65,
-      "fib_382": 221.14,
-      "fib_500": 217.49,
-      "fib_618": 213.84,
-      "fib_786": 208.65,
-      "fib_1618": 252.04
+      "fib_236": 224.46,
+      "fib_382": 220.17,
+      "fib_500": 216.71,
+      "fib_618": 213.25,
+      "fib_786": 208.32,
+      "fib_1618": 249.51
     },
     "timeframes": {
       "15M": {
@@ -102749,9 +102772,9 @@
     "avg_vol_20d": 1305197,
     "vol_ratio": 1.19,
     "vol_status": "NORMAL",
-    "high_52w": 130.32,
+    "high_52w": 128.0,
     "low_52w": 112.55,
-    "dist_52w_high": -13.09,
+    "dist_52w_high": -11.52,
     "dist_52w_low": 0.63,
     "tech_score": 72.0,
     "action": "BUY ON DIPS",
@@ -102817,12 +102840,12 @@
       "s3": 109.89
     },
     "fibonacci": {
-      "fib_236": 126.13,
-      "fib_382": 123.53,
-      "fib_500": 121.44,
-      "fib_618": 119.34,
-      "fib_786": 116.35,
-      "fib_1618": 141.3
+      "fib_236": 124.35,
+      "fib_382": 122.1,
+      "fib_500": 120.28,
+      "fib_618": 118.45,
+      "fib_786": 115.86,
+      "fib_1618": 137.55
     },
     "timeframes": {
       "15M": {
@@ -103253,9 +103276,9 @@
     "avg_vol_20d": 253832,
     "vol_ratio": 0.98,
     "vol_status": "NORMAL",
-    "high_52w": 144.7,
+    "high_52w": 138.0,
     "low_52w": 115.35,
-    "dist_52w_high": -13.23,
+    "dist_52w_high": -9.02,
     "dist_52w_low": 8.84,
     "tech_score": 70.0,
     "action": "BUY ON DIPS",
@@ -103321,12 +103344,12 @@
       "s3": 114.46
     },
     "fibonacci": {
-      "fib_236": 137.77,
-      "fib_382": 133.49,
-      "fib_500": 130.02,
-      "fib_618": 126.56,
-      "fib_786": 121.63,
-      "fib_1618": 162.84
+      "fib_236": 132.65,
+      "fib_382": 129.35,
+      "fib_500": 126.67,
+      "fib_618": 124.0,
+      "fib_786": 120.2,
+      "fib_1618": 152.0
     },
     "timeframes": {
       "15M": {
@@ -103505,9 +103528,9 @@
     "avg_vol_20d": 33400,
     "vol_ratio": 1.26,
     "vol_status": "NORMAL",
-    "high_52w": 46.8,
+    "high_52w": 43.5,
     "low_52w": 33.01,
-    "dist_52w_high": -25.77,
+    "dist_52w_high": -20.14,
     "dist_52w_low": 5.24,
     "tech_score": 73.0,
     "action": "BUY ON DIPS",
@@ -103573,12 +103596,12 @@
       "s3": 30.39
     },
     "fibonacci": {
-      "fib_236": 43.55,
-      "fib_382": 41.53,
-      "fib_500": 39.91,
-      "fib_618": 38.28,
-      "fib_786": 35.96,
-      "fib_1618": 55.32
+      "fib_236": 41.02,
+      "fib_382": 39.49,
+      "fib_500": 38.25,
+      "fib_618": 37.02,
+      "fib_786": 35.25,
+      "fib_1618": 49.98
     },
     "timeframes": {
       "15M": {
@@ -103757,9 +103780,9 @@
     "avg_vol_20d": 1384808,
     "vol_ratio": 0.62,
     "vol_status": "NORMAL",
-    "high_52w": 628.84,
+    "high_52w": 625.4,
     "low_52w": 545.6,
-    "dist_52w_high": -11.94,
+    "dist_52w_high": -11.46,
     "dist_52w_low": 1.49,
     "tech_score": 66.0,
     "action": "HOLD",
@@ -103825,12 +103848,12 @@
       "s3": 537.24
     },
     "fibonacci": {
-      "fib_236": 609.2,
-      "fib_382": 597.04,
-      "fib_500": 587.22,
-      "fib_618": 577.4,
-      "fib_786": 563.41,
-      "fib_1618": 680.28
+      "fib_236": 606.57,
+      "fib_382": 594.92,
+      "fib_500": 585.5,
+      "fib_618": 576.08,
+      "fib_786": 562.68,
+      "fib_1618": 674.72
     },
     "timeframes": {
       "15M": {
@@ -104261,9 +104284,9 @@
     "avg_vol_20d": 23759,
     "vol_ratio": 1.43,
     "vol_status": "NORMAL",
-    "high_52w": 1912.59,
+    "high_52w": 1877.9,
     "low_52w": 1650.0,
-    "dist_52w_high": -12.98,
+    "dist_52w_high": -11.37,
     "dist_52w_low": 0.87,
     "tech_score": 80.0,
     "action": "BUY ON DIPS",
@@ -104329,12 +104352,12 @@
       "s3": 1582.2
     },
     "fibonacci": {
-      "fib_236": 1850.62,
-      "fib_382": 1812.28,
-      "fib_500": 1781.3,
-      "fib_618": 1750.31,
-      "fib_786": 1706.19,
-      "fib_1618": 2074.87
+      "fib_236": 1824.12,
+      "fib_382": 1790.84,
+      "fib_500": 1763.95,
+      "fib_618": 1737.06,
+      "fib_786": 1698.77,
+      "fib_1618": 2018.74
     },
     "timeframes": {
       "15M": {
@@ -104514,9 +104537,9 @@
     "avg_vol_20d": 1176593,
     "vol_ratio": 2.04,
     "vol_status": "HIGH SURGE",
-    "high_52w": 1208.1,
+    "high_52w": 1205.9,
     "low_52w": 1130.0,
-    "dist_52w_high": -3.53,
+    "dist_52w_high": -3.35,
     "dist_52w_low": 3.14,
     "tech_score": 91.0,
     "action": "STRONG BUY",
@@ -104582,12 +104605,12 @@
       "s3": 1084.34
     },
     "fibonacci": {
-      "fib_236": 1189.67,
-      "fib_382": 1178.27,
-      "fib_500": 1169.05,
-      "fib_618": 1159.83,
-      "fib_786": 1146.71,
-      "fib_1618": 1256.37
+      "fib_236": 1187.99,
+      "fib_382": 1176.91,
+      "fib_500": 1167.95,
+      "fib_618": 1158.99,
+      "fib_786": 1146.24,
+      "fib_1618": 1252.81
     },
     "timeframes": {
       "15M": {
@@ -104747,7 +104770,7 @@
       "reasons": [
         "🌟 High Confluence Synergy",
         "🔥 Vol Surge (2.04x)",
-        "⛰️ Near 52W High (-3.53%)"
+        "⛰️ Near 52W High (-3.35%)"
       ],
       "alpha_rank": 125.7
     }
@@ -106033,11 +106056,11 @@
     "avg_vol_20d": 85817,
     "vol_ratio": 1.05,
     "vol_status": "NORMAL",
-    "high_52w": 78.98,
+    "high_52w": 77.0,
     "low_52w": 69.9,
-    "dist_52w_high": -8.81,
+    "dist_52w_high": -6.47,
     "dist_52w_low": 3.03,
-    "tech_score": 70.0,
+    "tech_score": 75.0,
     "action": "BUY ON DIPS",
     "action_badge": "<span class=\"px-2 py-0.5 rounded text-xs font-bold uppercase tracking-wider bg-emerald-500/20 text-emerald-400 border border-emerald-500/30\">BUY ON DIPS</span>",
     "setup_type": "Swing Pullback",
@@ -106067,7 +106090,7 @@
       "target_2": 81.44,
       "target_3": 87.1,
       "rr_ratio": 2.5,
-      "win_rate_score": 75.0,
+      "win_rate_score": 83.0,
       "risk_per_share": 3.769999999999996
     },
     "moving_averages": {
@@ -106101,12 +106124,12 @@
       "s3": 68.04
     },
     "fibonacci": {
-      "fib_236": 76.84,
-      "fib_382": 75.51,
-      "fib_500": 74.44,
-      "fib_618": 73.37,
-      "fib_786": 71.84,
-      "fib_1618": 84.59
+      "fib_236": 75.32,
+      "fib_382": 74.29,
+      "fib_500": 73.45,
+      "fib_618": 72.61,
+      "fib_786": 71.42,
+      "fib_1618": 81.39
     },
     "timeframes": {
       "15M": {
@@ -106122,7 +106145,7 @@
       "1D": {
         "trend": "Uptrend",
         "rsi": 44.7,
-        "verdict": "Buy"
+        "verdict": "Strong Buy"
       },
       "1W": {
         "trend": "Stage 2 Expansion",
@@ -106131,7 +106154,7 @@
       }
     },
     "confluence": {
-      "score": 75.0,
+      "score": 83.0,
       "badge": "High Institutional Confluence"
     },
     "candles": [
@@ -106261,12 +106284,13 @@
       "is_perfect": false,
       "is_swing": true,
       "is_intraday": false,
-      "win_rate_score": 75.0,
+      "win_rate_score": 83.0,
       "rr_ratio": 2.5,
       "reasons": [
+        "⛰️ Near 52W High (-6.47%)",
         "🎯 High R:R (1:2.5)"
       ],
-      "alpha_rank": 104.2
+      "alpha_rank": 108.3
     }
   },
   {
@@ -106285,9 +106309,9 @@
     "avg_vol_20d": 20297,
     "vol_ratio": 0.74,
     "vol_status": "NORMAL",
-    "high_52w": 194.99,
+    "high_52w": 181.89,
     "low_52w": 155.01,
-    "dist_52w_high": -18.01,
+    "dist_52w_high": -12.1,
     "dist_52w_low": 3.14,
     "tech_score": 67.0,
     "action": "HOLD",
@@ -106353,12 +106377,12 @@
       "s3": 148.56
     },
     "fibonacci": {
-      "fib_236": 185.55,
-      "fib_382": 179.72,
-      "fib_500": 175.0,
-      "fib_618": 170.28,
-      "fib_786": 163.57,
-      "fib_1618": 219.7
+      "fib_236": 175.55,
+      "fib_382": 171.62,
+      "fib_500": 168.45,
+      "fib_618": 165.28,
+      "fib_786": 160.76,
+      "fib_1618": 198.5
     },
     "timeframes": {
       "15M": {
@@ -106537,9 +106561,9 @@
     "avg_vol_20d": 3960941,
     "vol_ratio": 0.18,
     "vol_status": "NORMAL",
-    "high_52w": 15.6,
+    "high_52w": 15.0,
     "low_52w": 10.72,
-    "dist_52w_high": -30.96,
+    "dist_52w_high": -28.2,
     "dist_52w_low": 0.47,
     "tech_score": 62.0,
     "action": "HOLD",
@@ -106605,12 +106629,12 @@
       "s3": 10.32
     },
     "fibonacci": {
-      "fib_236": 14.45,
-      "fib_382": 13.74,
-      "fib_500": 13.16,
-      "fib_618": 12.58,
-      "fib_786": 11.76,
-      "fib_1618": 18.62
+      "fib_236": 13.99,
+      "fib_382": 13.37,
+      "fib_500": 12.86,
+      "fib_618": 12.35,
+      "fib_786": 11.64,
+      "fib_1618": 17.65
     },
     "timeframes": {
       "15M": {
