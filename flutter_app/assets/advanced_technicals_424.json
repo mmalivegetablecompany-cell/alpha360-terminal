@@ -22797,25 +22797,25 @@
     "name": "Divi's Laboratories Limited",
     "sector": "Pharmaceuticals & Healthcare",
     "mcap_tier": "Large Cap",
-    "cmp": 9323.0,
-    "prev_close": 9158.0,
-    "day_change": 165.0,
-    "day_change_pct": 1.8,
-    "chg_5m_pct": 0.27,
-    "day_high": 9371.0,
-    "day_low": 9135.5,
-    "volume": 494167,
-    "avg_vol_20d": 482808,
-    "vol_ratio": 1.02,
+    "cmp": 9375.0,
+    "prev_close": 9323.0,
+    "day_change": 52.0,
+    "day_change_pct": 0.56,
+    "chg_5m_pct": 0.08,
+    "day_high": 9445.0,
+    "day_low": 9328.5,
+    "volume": 691534,
+    "avg_vol_20d": 508350,
+    "vol_ratio": 1.36,
     "vol_status": "NORMAL",
     "high_52w": 9615.0,
     "low_52w": 8457.5,
-    "dist_52w_high": -3.04,
-    "dist_52w_low": 10.23,
-    "tech_score": 75.0,
+    "dist_52w_high": -2.5,
+    "dist_52w_low": 10.85,
+    "tech_score": 84.0,
     "action": "BUY ON DIPS",
     "action_badge": "<span class=\"px-2 py-0.5 rounded text-xs font-bold uppercase tracking-wider bg-emerald-500/20 text-emerald-400 border border-emerald-500/30\">BUY ON DIPS</span>",
-    "setup_type": "Swing Pullback",
+    "setup_type": "Stage 2 Confluence Breakout",
     "primary_pattern": "Ascending Consolidation Breakout",
     "master_score": 76.8,
     "master_category": "⚖️ Resilient Watchlist Compounder",
@@ -22831,49 +22831,49 @@
     "streak_rev": 2,
     "latest_yoy_pat": 65.5,
     "latest_yoy_rev": 27.8,
-    "today_pe": 84.62,
-    "today_pb": 3.54,
+    "today_pe": 85.09,
+    "today_pb": 3.56,
     "today_peg": 1.33,
-    "mcap_cr": 247496.3,
+    "mcap_cr": 248876.8,
     "trade_blueprint": {
-      "entry_cmp": 9323.0,
-      "stop_loss": 8969.75,
-      "target_1": 9852.88,
-      "target_2": 10206.12,
-      "target_3": 10736.0,
+      "entry_cmp": 9375.0,
+      "stop_loss": 9121.88,
+      "target_1": 9754.68,
+      "target_2": 10007.8,
+      "target_3": 10387.48,
       "rr_ratio": 2.5,
-      "win_rate_score": 83.0,
-      "risk_per_share": 353.25
+      "win_rate_score": 93.0,
+      "risk_per_share": 253.1200000000008
     },
     "moving_averages": {
-      "ema9": 9276.39,
-      "ema20": 9183.16,
-      "ema50": 8950.08,
-      "ema100": 8717.01,
-      "sma200": 8390.7,
+      "ema9": 9328.12,
+      "ema20": 9234.38,
+      "ema50": 9000.0,
+      "ema100": 8765.62,
+      "sma200": 8437.5,
       "alignment": "Perfect Bullish Stack (9 > 20 > 50 > 200)"
     },
     "oscillators": {
-      "rsi": 69.3,
+      "rsi": 68.5,
       "macd_signal": "Bullish Crossover",
       "adx": 28.5,
       "stochastic": 65.0
     },
     "volatility": {
-      "atr": 235.5,
-      "bb_upper": 9654.16,
-      "bb_mid": 9183.16,
-      "bb_lower": 8712.16,
-      "bb_bandwidth": 10.26
+      "atr": 168.75,
+      "bb_upper": 9571.88,
+      "bb_mid": 9234.38,
+      "bb_lower": 8896.88,
+      "bb_bandwidth": 7.31
     },
     "pivots": {
-      "pivot": 9276.5,
-      "r1": 9417.5,
-      "r2": 9512.0,
-      "r3": 9653.0,
-      "s1": 9182.0,
-      "s2": 9041.0,
-      "s3": 8946.5
+      "pivot": 9382.83,
+      "r1": 9437.16,
+      "r2": 9499.33,
+      "r3": 9553.66,
+      "s1": 9320.66,
+      "s2": 9266.33,
+      "s3": 9204.16
     },
     "fibonacci": {
       "fib_236": 9341.83,
@@ -22886,38 +22886,30 @@
     "timeframes": {
       "15M": {
         "trend": "Bullish",
-        "rsi": 69.3,
+        "rsi": 68.5,
         "verdict": "Bullish Breakout"
       },
       "1H": {
         "trend": "Strong Bullish",
-        "rsi": 67.8,
+        "rsi": 67.0,
         "verdict": "Bullish"
       },
       "1D": {
         "trend": "Uptrend",
-        "rsi": 69.3,
+        "rsi": 68.5,
         "verdict": "Strong Buy"
       },
       "1W": {
         "trend": "Stage 2 Expansion",
-        "rsi": 71.3,
+        "rsi": 70.5,
         "verdict": "Multi-Month Bull"
       }
     },
     "confluence": {
-      "score": 83.0,
+      "score": 93.0,
       "badge": "High Institutional Confluence"
     },
     "candles": [
-      {
-        "date": "2026-08-28",
-        "open": 9099.5,
-        "high": 9270.0,
-        "low": 9080.5,
-        "close": 9239.0,
-        "volume": 773225
-      },
       {
         "date": "2026-08-31",
         "open": 9239.0,
@@ -23029,20 +23021,29 @@
         "low": 9135.5,
         "close": 9323.0,
         "volume": 494167
+      },
+      {
+        "date": "2026-09-18",
+        "open": 9346.5,
+        "high": 9445.0,
+        "low": 9328.5,
+        "close": 9375.0,
+        "volume": 691534
       }
     ],
     "radar": {
       "is_candidate": true,
-      "is_perfect": false,
+      "is_perfect": true,
       "is_swing": true,
-      "is_intraday": false,
-      "win_rate_score": 83.0,
+      "is_intraday": true,
+      "win_rate_score": 93.0,
       "rr_ratio": 2.5,
       "reasons": [
-        "⛰️ Near 52W High (-3.04%)",
-        "🎯 High R:R (1:2.5)"
+        "🌟 High Confluence Synergy",
+        "🔥 Vol Surge (1.36x)",
+        "⛰️ Near 52W High (-2.5%)"
       ],
-      "alpha_rank": 108.0
+      "alpha_rank": 117.2
     }
   },
   {
@@ -26600,22 +26601,22 @@
     "name": "SRF Limited",
     "sector": "Automobiles & Auto Components",
     "mcap_tier": "Mid Cap",
-    "cmp": 2536.0,
-    "prev_close": 2480.1,
-    "day_change": 55.9,
-    "day_change_pct": 2.25,
-    "chg_5m_pct": 0.34,
-    "day_high": 2554.0,
-    "day_low": 2501.0,
-    "volume": 796952,
-    "avg_vol_20d": 233140,
-    "vol_ratio": 3.42,
+    "cmp": 2512.0,
+    "prev_close": 2536.0,
+    "day_change": -24.0,
+    "day_change_pct": -0.95,
+    "chg_5m_pct": -0.14,
+    "day_high": 2569.9,
+    "day_low": 2512.0,
+    "volume": 401209,
+    "avg_vol_20d": 244481,
+    "vol_ratio": 1.64,
     "vol_status": "HIGH SURGE",
     "high_52w": 2648.0,
     "low_52w": 2444.5,
-    "dist_52w_high": -4.23,
-    "dist_52w_low": 3.74,
-    "tech_score": 99.0,
+    "dist_52w_high": -5.14,
+    "dist_52w_low": 2.76,
+    "tech_score": 90.0,
     "action": "STRONG BUY",
     "action_badge": "<span class=\"px-2 py-0.5 rounded text-xs font-bold uppercase tracking-wider bg-emerald-500/20 text-emerald-400 border border-emerald-500/30\">STRONG BUY</span>",
     "setup_type": "Stage 2 Confluence Breakout",
@@ -26634,49 +26635,49 @@
     "streak_rev": 3,
     "latest_yoy_pat": 75.69,
     "latest_yoy_rev": 31.79,
-    "today_pe": 34.77,
-    "today_pb": 4.09,
+    "today_pe": 34.44,
+    "today_pb": 4.06,
     "today_peg": 0.46,
-    "mcap_cr": 75168.6,
+    "mcap_cr": 74457.2,
     "trade_blueprint": {
-      "entry_cmp": 2536.0,
-      "stop_loss": 2456.5,
-      "target_1": 2655.25,
-      "target_2": 2734.75,
-      "target_3": 2854.0,
+      "entry_cmp": 2512.0,
+      "stop_loss": 2425.15,
+      "target_1": 2642.27,
+      "target_2": 2729.12,
+      "target_3": 2859.4,
       "rr_ratio": 2.5,
       "win_rate_score": 98.0,
-      "risk_per_share": 79.5
+      "risk_per_share": 86.84999999999991
     },
     "moving_averages": {
-      "ema9": 2523.32,
-      "ema20": 2497.96,
-      "ema50": 2434.56,
-      "ema100": 2371.16,
-      "sma200": 2282.4,
+      "ema9": 2499.44,
+      "ema20": 2474.32,
+      "ema50": 2411.52,
+      "ema100": 2348.72,
+      "sma200": 2260.8,
       "alignment": "Perfect Bullish Stack (9 > 20 > 50 > 200)"
     },
     "oscillators": {
-      "rsi": 40.2,
+      "rsi": 38.3,
       "macd_signal": "Bullish Crossover",
       "adx": 28.5,
       "stochastic": 65.0
     },
     "volatility": {
-      "atr": 53.0,
-      "bb_upper": 2603.96,
-      "bb_mid": 2497.96,
-      "bb_lower": 2391.96,
-      "bb_bandwidth": 8.49
+      "atr": 57.9,
+      "bb_upper": 2590.12,
+      "bb_mid": 2474.32,
+      "bb_lower": 2358.52,
+      "bb_bandwidth": 9.36
     },
     "pivots": {
-      "pivot": 2530.33,
-      "r1": 2559.66,
-      "r2": 2583.33,
-      "r3": 2612.66,
-      "s1": 2506.66,
-      "s2": 2477.33,
-      "s3": 2453.66
+      "pivot": 2531.3,
+      "r1": 2550.6,
+      "r2": 2589.2,
+      "r3": 2608.5,
+      "s1": 2492.7,
+      "s2": 2473.4,
+      "s3": 2434.8
     },
     "fibonacci": {
       "fib_236": 2599.97,
@@ -26688,23 +26689,23 @@
     },
     "timeframes": {
       "15M": {
-        "trend": "Bullish",
-        "rsi": 40.2,
-        "verdict": "Bullish Breakout"
+        "trend": "Consolidating",
+        "rsi": 38.3,
+        "verdict": "Neutral"
       },
       "1H": {
         "trend": "Strong Bullish",
-        "rsi": 38.7,
+        "rsi": 36.8,
         "verdict": "Bullish"
       },
       "1D": {
         "trend": "Uptrend",
-        "rsi": 40.2,
+        "rsi": 38.3,
         "verdict": "Strong Buy"
       },
       "1W": {
         "trend": "Stage 2 Expansion",
-        "rsi": 42.2,
+        "rsi": 40.3,
         "verdict": "Multi-Month Bull"
       }
     },
@@ -26713,14 +26714,6 @@
       "badge": "High Institutional Confluence"
     },
     "candles": [
-      {
-        "date": "2026-08-28",
-        "open": 2605.0,
-        "high": 2615.0,
-        "low": 2582.0,
-        "close": 2589.9,
-        "volume": 150532
-      },
       {
         "date": "2026-08-31",
         "open": 2587.1,
@@ -26832,6 +26825,14 @@
         "low": 2501.0,
         "close": 2536.0,
         "volume": 796952
+      },
+      {
+        "date": "2026-09-18",
+        "open": 2536.6,
+        "high": 2569.9,
+        "low": 2512.0,
+        "close": 2512.0,
+        "volume": 401209
       }
     ],
     "radar": {
@@ -26843,10 +26844,10 @@
       "rr_ratio": 2.5,
       "reasons": [
         "🌟 High Confluence Synergy",
-        "🔥 Vol Surge (3.42x)",
-        "⛰️ Near 52W High (-4.23%)"
+        "🔥 Vol Surge (1.64x)",
+        "⛰️ Near 52W High (-5.14%)"
       ],
-      "alpha_rank": 143.2
+      "alpha_rank": 123.2
     }
   },
   {
@@ -43571,24 +43572,24 @@
     "sector": "Chemicals, Petrochemicals & Specialty Chem",
     "mcap_tier": "Small Cap",
     "cmp": 3440.3,
-    "prev_close": 3315.1,
-    "day_change": 125.2,
-    "day_change_pct": 3.78,
-    "chg_5m_pct": 0.57,
-    "day_high": 3462.0,
-    "day_low": 3302.5,
+    "prev_close": 3440.3,
+    "day_change": 0.0,
+    "day_change_pct": 0.0,
+    "chg_5m_pct": 0.0,
+    "day_high": 3440.3,
+    "day_low": 3440.3,
     "volume": 521496,
-    "avg_vol_20d": 289725,
-    "vol_ratio": 1.8,
-    "vol_status": "HIGH SURGE",
-    "high_52w": 3485.39,
-    "low_52w": 3117.67,
-    "dist_52w_high": -1.29,
-    "dist_52w_low": 10.35,
-    "tech_score": 89.0,
-    "action": "STRONG BUY",
-    "action_badge": "<span class=\"px-2 py-0.5 rounded text-xs font-bold uppercase tracking-wider bg-emerald-500/20 text-emerald-400 border border-emerald-500/30\">STRONG BUY</span>",
-    "setup_type": "Stage 2 Confluence Breakout",
+    "avg_vol_20d": 521496,
+    "vol_ratio": 1.0,
+    "vol_status": "NORMAL",
+    "high_52w": 3956.345,
+    "low_52w": 2580.2250000000004,
+    "dist_52w_high": -13.04,
+    "dist_52w_low": 33.33,
+    "tech_score": 70.0,
+    "action": "BUY ON DIPS",
+    "action_badge": "<span class=\"px-2 py-0.5 rounded text-xs font-bold uppercase tracking-wider bg-emerald-500/20 text-emerald-400 border border-emerald-500/30\">BUY ON DIPS</span>",
+    "setup_type": "Swing Pullback",
     "primary_pattern": "Ascending Consolidation Breakout",
     "master_score": 69.6,
     "master_category": "⚖️ Resilient Watchlist Compounder",
@@ -43610,13 +43611,13 @@
     "mcap_cr": 28166.2,
     "trade_blueprint": {
       "entry_cmp": 3440.3,
-      "stop_loss": 3201.05,
-      "target_1": 3799.18,
-      "target_2": 4038.43,
-      "target_3": 4397.3,
+      "stop_loss": 3347.41,
+      "target_1": 3579.64,
+      "target_2": 3672.53,
+      "target_3": 3811.86,
       "rr_ratio": 2.5,
-      "win_rate_score": 93.0,
-      "risk_per_share": 239.25
+      "win_rate_score": 75.0,
+      "risk_per_share": 92.89000000000033
     },
     "moving_averages": {
       "ema9": 3423.1,
@@ -43627,196 +43628,73 @@
       "alignment": "Perfect Bullish Stack (9 > 20 > 50 > 200)"
     },
     "oscillators": {
-      "rsi": 48.7,
+      "rsi": 46.4,
       "macd_signal": "Bullish Crossover",
       "adx": 28.5,
       "stochastic": 65.0
     },
     "volatility": {
-      "atr": 159.5,
-      "bb_upper": 3707.7,
+      "atr": 61.93,
+      "bb_upper": 3512.56,
       "bb_mid": 3388.7,
-      "bb_lower": 3069.7,
-      "bb_bandwidth": 18.83
+      "bb_lower": 3264.84,
+      "bb_bandwidth": 7.31
     },
     "pivots": {
-      "pivot": 3401.6,
-      "r1": 3500.7,
-      "r2": 3561.1,
-      "r3": 3660.2,
-      "s1": 3341.2,
-      "s2": 3242.1,
-      "s3": 3181.7
+      "pivot": 3440.3,
+      "r1": 3440.3,
+      "r2": 3440.3,
+      "r3": 3440.3,
+      "s1": 3440.3,
+      "s2": 3440.3,
+      "s3": 3440.3
     },
     "fibonacci": {
-      "fib_236": 3398.61,
-      "fib_382": 3344.92,
-      "fib_500": 3301.53,
-      "fib_618": 3258.14,
-      "fib_786": 3196.36,
-      "fib_1618": 3712.64
+      "fib_236": 3631.58,
+      "fib_382": 3430.67,
+      "fib_500": 3268.28,
+      "fib_618": 3105.9,
+      "fib_786": 2874.71,
+      "fib_1618": 4806.79
     },
     "timeframes": {
       "15M": {
-        "trend": "Bullish",
-        "rsi": 48.7,
-        "verdict": "Bullish Breakout"
+        "trend": "Consolidating",
+        "rsi": 46.4,
+        "verdict": "Neutral"
       },
       "1H": {
         "trend": "Strong Bullish",
-        "rsi": 47.2,
+        "rsi": 44.9,
         "verdict": "Bullish"
       },
       "1D": {
         "trend": "Uptrend",
-        "rsi": 48.7,
-        "verdict": "Strong Buy"
+        "rsi": 46.4,
+        "verdict": "Buy"
       },
       "1W": {
         "trend": "Stage 2 Expansion",
-        "rsi": 50.7,
+        "rsi": 48.4,
         "verdict": "Multi-Month Bull"
       }
     },
     "confluence": {
-      "score": 93.0,
+      "score": 75.0,
       "badge": "High Institutional Confluence"
     },
-    "candles": [
-      {
-        "date": "2026-08-31",
-        "open": 3279.15,
-        "high": 3319.42,
-        "low": 3123.56,
-        "close": 3158.24,
-        "volume": 490517
-      },
-      {
-        "date": "2026-09-01",
-        "open": 3161.04,
-        "high": 3236.38,
-        "low": 3147.65,
-        "close": 3171.93,
-        "volume": 333584
-      },
-      {
-        "date": "2026-09-02",
-        "open": 3158.74,
-        "high": 3193.21,
-        "low": 3117.67,
-        "close": 3132.56,
-        "volume": 190272
-      },
-      {
-        "date": "2026-09-03",
-        "open": 3147.35,
-        "high": 3209.2,
-        "low": 3147.35,
-        "close": 3198.61,
-        "volume": 211905
-      },
-      {
-        "date": "2026-09-04",
-        "open": 3208.7,
-        "high": 3226.39,
-        "low": 3153.94,
-        "close": 3166.13,
-        "volume": 149850
-      },
-      {
-        "date": "2026-09-07",
-        "open": 3166.13,
-        "high": 3210.3,
-        "low": 3157.64,
-        "close": 3179.22,
-        "volume": 141224
-      },
-      {
-        "date": "2026-09-08",
-        "open": 3179.22,
-        "high": 3233.08,
-        "low": 3159.14,
-        "close": 3179.72,
-        "volume": 174805
-      },
-      {
-        "date": "2026-09-09",
-        "open": 3179.72,
-        "high": 3267.56,
-        "low": 3179.12,
-        "close": 3239.38,
-        "volume": 282128
-      },
-      {
-        "date": "2026-09-10",
-        "open": 3239.38,
-        "high": 3461.41,
-        "low": 3217.59,
-        "close": 3448.82,
-        "volume": 1000453
-      },
-      {
-        "date": "2026-09-11",
-        "open": 3485.39,
-        "high": 3485.39,
-        "low": 3347.5,
-        "close": 3381.17,
-        "volume": 325242
-      },
-      {
-        "date": "2026-09-14",
-        "open": 3381.17,
-        "high": 3381.17,
-        "low": 3381.17,
-        "close": 3381.17,
-        "volume": 0
-      },
-      {
-        "date": "2026-09-15",
-        "open": 3381.47,
-        "high": 3445.02,
-        "low": 3229.78,
-        "close": 3263.76,
-        "volume": 264234
-      },
-      {
-        "date": "2026-09-16",
-        "open": 3272.55,
-        "high": 3356.49,
-        "low": 3186.42,
-        "close": 3342.2,
-        "volume": 243061
-      },
-      {
-        "date": "2026-09-17",
-        "open": 3343.0,
-        "high": 3366.0,
-        "low": 3282.0,
-        "close": 3315.1,
-        "volume": 182520
-      },
-      {
-        "date": "2026-09-18",
-        "open": 3334.0,
-        "high": 3462.0,
-        "low": 3302.5,
-        "close": 3440.3,
-        "volume": 521496
-      }
-    ],
+    "candles": [],
     "radar": {
       "is_candidate": true,
-      "is_perfect": true,
+      "is_perfect": false,
       "is_swing": true,
       "is_intraday": false,
-      "win_rate_score": 93.0,
+      "win_rate_score": 75.0,
       "rr_ratio": 2.5,
       "reasons": [
-        "🌟 High Confluence Synergy",
-        "🔥 Vol Surge (1.8x)",
-        "⛰️ Near 52W High (-1.29%)"
+        "🎯 High R:R (1:2.5)"
       ],
-      "alpha_rank": 122.8
+      "alpha_rank": 103.8
     }
   },
   {
@@ -61034,25 +60912,25 @@
     "name": "Lupin Limited",
     "sector": "Pharmaceuticals & Healthcare",
     "mcap_tier": "Mid Cap",
-    "cmp": 2098.1,
-    "prev_close": 2045.0,
-    "day_change": 53.1,
-    "day_change_pct": 2.6,
-    "chg_5m_pct": 0.39,
-    "day_high": 2098.1,
-    "day_low": 2046.3,
-    "volume": 525909,
-    "avg_vol_20d": 699304,
-    "vol_ratio": 0.75,
-    "vol_status": "NORMAL",
+    "cmp": 2083.0,
+    "prev_close": 2098.1,
+    "day_change": -15.1,
+    "day_change_pct": -0.72,
+    "chg_5m_pct": -0.11,
+    "day_high": 2114.7,
+    "day_low": 2075.0,
+    "volume": 1194290,
+    "avg_vol_20d": 720504,
+    "vol_ratio": 1.66,
+    "vol_status": "HIGH SURGE",
     "high_52w": 2255.0,
     "low_52w": 2033.5,
-    "dist_52w_high": -6.96,
-    "dist_52w_low": 3.18,
-    "tech_score": 75.0,
-    "action": "BUY ON DIPS",
-    "action_badge": "<span class=\"px-2 py-0.5 rounded text-xs font-bold uppercase tracking-wider bg-emerald-500/20 text-emerald-400 border border-emerald-500/30\">BUY ON DIPS</span>",
-    "setup_type": "Swing Pullback",
+    "dist_52w_high": -7.63,
+    "dist_52w_low": 2.43,
+    "tech_score": 90.0,
+    "action": "STRONG BUY",
+    "action_badge": "<span class=\"px-2 py-0.5 rounded text-xs font-bold uppercase tracking-wider bg-emerald-500/20 text-emerald-400 border border-emerald-500/30\">STRONG BUY</span>",
+    "setup_type": "Stage 2 Confluence Breakout",
     "primary_pattern": "Ascending Consolidation Breakout",
     "master_score": 64.3,
     "master_category": "🎯 High-Growth Dip Buy at Support",
@@ -61068,49 +60946,49 @@
     "streak_rev": 5,
     "latest_yoy_pat": 16.05,
     "latest_yoy_rev": 32.05,
-    "today_pe": 17.34,
-    "today_pb": 2.76,
+    "today_pe": 17.22,
+    "today_pb": 2.74,
     "today_peg": 1.08,
-    "mcap_cr": 95939.0,
+    "mcap_cr": 95248.5,
     "trade_blueprint": {
-      "entry_cmp": 2098.1,
-      "stop_loss": 2020.4,
-      "target_1": 2214.65,
-      "target_2": 2292.35,
-      "target_3": 2408.9,
+      "entry_cmp": 2083.0,
+      "stop_loss": 2023.45,
+      "target_1": 2172.32,
+      "target_2": 2231.88,
+      "target_3": 2321.2,
       "rr_ratio": 2.5,
-      "win_rate_score": 88.0,
-      "risk_per_share": 77.69999999999982
+      "win_rate_score": 98.0,
+      "risk_per_share": 59.549999999999955
     },
     "moving_averages": {
-      "ema9": 2087.61,
-      "ema20": 2066.63,
-      "ema50": 2014.18,
-      "ema100": 1961.72,
-      "sma200": 1888.29,
+      "ema9": 2072.59,
+      "ema20": 2051.76,
+      "ema50": 1999.68,
+      "ema100": 1947.61,
+      "sma200": 1874.7,
       "alignment": "Perfect Bullish Stack (9 > 20 > 50 > 200)"
     },
     "oscillators": {
-      "rsi": 27.3,
+      "rsi": 25.3,
       "macd_signal": "Bullish Crossover",
       "adx": 28.5,
       "stochastic": 65.0
     },
     "volatility": {
-      "atr": 51.8,
-      "bb_upper": 2170.23,
-      "bb_mid": 2066.63,
-      "bb_lower": 1963.03,
-      "bb_bandwidth": 10.03
+      "atr": 39.7,
+      "bb_upper": 2131.16,
+      "bb_mid": 2051.76,
+      "bb_lower": 1972.36,
+      "bb_bandwidth": 7.74
     },
     "pivots": {
-      "pivot": 2080.83,
-      "r1": 2115.36,
-      "r2": 2132.63,
-      "r3": 2167.16,
-      "s1": 2063.56,
-      "s2": 2029.03,
-      "s3": 2011.76
+      "pivot": 2090.9,
+      "r1": 2106.8,
+      "r2": 2130.6,
+      "r3": 2146.5,
+      "s1": 2067.1,
+      "s2": 2051.2,
+      "s3": 2027.4
     },
     "fibonacci": {
       "fib_236": 2202.73,
@@ -61122,39 +61000,31 @@
     },
     "timeframes": {
       "15M": {
-        "trend": "Bullish",
-        "rsi": 27.3,
-        "verdict": "Bullish Breakout"
+        "trend": "Consolidating",
+        "rsi": 25.3,
+        "verdict": "Neutral"
       },
       "1H": {
         "trend": "Strong Bullish",
-        "rsi": 25.8,
+        "rsi": 23.8,
         "verdict": "Bullish"
       },
       "1D": {
         "trend": "Uptrend",
-        "rsi": 27.3,
+        "rsi": 25.3,
         "verdict": "Strong Buy"
       },
       "1W": {
         "trend": "Stage 2 Expansion",
-        "rsi": 29.3,
+        "rsi": 27.3,
         "verdict": "Multi-Month Bull"
       }
     },
     "confluence": {
-      "score": 88.0,
+      "score": 98.0,
       "badge": "High Institutional Confluence"
     },
     "candles": [
-      {
-        "date": "2026-08-28",
-        "open": 2164.9,
-        "high": 2179.8,
-        "low": 2153.0,
-        "close": 2171.5,
-        "volume": 348121
-      },
       {
         "date": "2026-08-31",
         "open": 2171.5,
@@ -61266,20 +61136,29 @@
         "low": 2046.3,
         "close": 2098.1,
         "volume": 525909
+      },
+      {
+        "date": "2026-09-18",
+        "open": 2088.1,
+        "high": 2114.7,
+        "low": 2075.0,
+        "close": 2083.0,
+        "volume": 1194290
       }
     ],
     "radar": {
       "is_candidate": true,
-      "is_perfect": false,
+      "is_perfect": true,
       "is_swing": true,
       "is_intraday": false,
-      "win_rate_score": 88.0,
+      "win_rate_score": 98.0,
       "rr_ratio": 2.5,
       "reasons": [
-        "⛰️ Near 52W High (-6.96%)",
-        "🎯 High R:R (1:2.5)"
+        "🌟 High Confluence Synergy",
+        "🔥 Vol Surge (1.66x)",
+        "⛰️ Near 52W High (-7.63%)"
       ],
-      "alpha_rank": 107.0
+      "alpha_rank": 123.4
     }
   },
   {
@@ -87732,24 +87611,24 @@
     "name": "Linde India Limited",
     "sector": "Diversified Industrial Manufacturing",
     "mcap_tier": "Mid Cap",
-    "cmp": 6089.5,
-    "prev_close": 6080.0,
-    "day_change": 9.5,
-    "day_change_pct": 0.16,
-    "chg_5m_pct": 0.02,
-    "day_high": 6150.5,
-    "day_low": 6024.5,
-    "volume": 12044,
-    "avg_vol_20d": 20987,
-    "vol_ratio": 0.57,
+    "cmp": 6241.5,
+    "prev_close": 6089.5,
+    "day_change": 152.0,
+    "day_change_pct": 2.5,
+    "chg_5m_pct": 0.38,
+    "day_high": 6250.0,
+    "day_low": 6116.0,
+    "volume": 20753,
+    "avg_vol_20d": 21593,
+    "vol_ratio": 0.96,
     "vol_status": "NORMAL",
     "high_52w": 6870.5,
     "low_52w": 6024.5,
-    "dist_52w_high": -11.37,
-    "dist_52w_low": 1.08,
-    "tech_score": 66.0,
-    "action": "HOLD",
-    "action_badge": "<span class=\"px-2 py-0.5 rounded text-xs font-bold uppercase tracking-wider bg-emerald-500/20 text-emerald-400 border border-emerald-500/30\">HOLD</span>",
+    "dist_52w_high": -9.16,
+    "dist_52w_low": 3.6,
+    "tech_score": 70.0,
+    "action": "BUY ON DIPS",
+    "action_badge": "<span class=\"px-2 py-0.5 rounded text-xs font-bold uppercase tracking-wider bg-emerald-500/20 text-emerald-400 border border-emerald-500/30\">BUY ON DIPS</span>",
     "setup_type": "Swing Pullback",
     "primary_pattern": "Ascending Consolidation Breakout",
     "master_score": 55.0,
@@ -87766,49 +87645,49 @@
     "streak_rev": 1,
     "latest_yoy_pat": -1.87,
     "latest_yoy_rev": 21.54,
-    "today_pe": 95.06,
-    "today_pb": 3.92,
+    "today_pe": 97.43,
+    "today_pb": 4.01,
     "today_peg": 0.68,
-    "mcap_cr": 51933.9,
+    "mcap_cr": 53230.2,
     "trade_blueprint": {
-      "entry_cmp": 6089.5,
-      "stop_loss": 5900.5,
-      "target_1": 6373.0,
-      "target_2": 6562.0,
-      "target_3": 6845.5,
+      "entry_cmp": 6241.5,
+      "stop_loss": 6040.5,
+      "target_1": 6543.0,
+      "target_2": 6744.0,
+      "target_3": 7045.5,
       "rr_ratio": 2.5,
       "win_rate_score": 75.0,
-      "risk_per_share": 189.0
+      "risk_per_share": 201.0
     },
     "moving_averages": {
-      "ema9": 6059.05,
-      "ema20": 5998.16,
-      "ema50": 5845.92,
-      "ema100": 5693.68,
-      "sma200": 5480.55,
+      "ema9": 6210.29,
+      "ema20": 6147.88,
+      "ema50": 5991.84,
+      "ema100": 5835.8,
+      "sma200": 5617.35,
       "alignment": "Perfect Bullish Stack (9 > 20 > 50 > 200)"
     },
     "oscillators": {
-      "rsi": 30.4,
+      "rsi": 31.8,
       "macd_signal": "Bullish Crossover",
       "adx": 28.5,
       "stochastic": 65.0
     },
     "volatility": {
-      "atr": 126.0,
-      "bb_upper": 6250.16,
-      "bb_mid": 5998.16,
-      "bb_lower": 5746.16,
-      "bb_bandwidth": 8.4
+      "atr": 134.0,
+      "bb_upper": 6415.88,
+      "bb_mid": 6147.88,
+      "bb_lower": 5879.88,
+      "bb_bandwidth": 8.72
     },
     "pivots": {
-      "pivot": 6088.17,
-      "r1": 6151.84,
-      "r2": 6214.17,
-      "r3": 6277.84,
-      "s1": 6025.84,
-      "s2": 5962.17,
-      "s3": 5899.84
+      "pivot": 6202.5,
+      "r1": 6289.0,
+      "r2": 6336.5,
+      "r3": 6423.0,
+      "s1": 6155.0,
+      "s2": 6068.5,
+      "s3": 6021.0
     },
     "fibonacci": {
       "fib_236": 6670.84,
@@ -87821,22 +87700,22 @@
     "timeframes": {
       "15M": {
         "trend": "Bullish",
-        "rsi": 30.4,
+        "rsi": 31.8,
         "verdict": "Bullish Breakout"
       },
       "1H": {
         "trend": "Strong Bullish",
-        "rsi": 28.9,
+        "rsi": 30.3,
         "verdict": "Bullish"
       },
       "1D": {
         "trend": "Uptrend",
-        "rsi": 30.4,
+        "rsi": 31.8,
         "verdict": "Buy"
       },
       "1W": {
         "trend": "Stage 2 Expansion",
-        "rsi": 32.4,
+        "rsi": 33.8,
         "verdict": "Multi-Month Bull"
       }
     },
@@ -87845,14 +87724,6 @@
       "badge": "High Institutional Confluence"
     },
     "candles": [
-      {
-        "date": "2026-08-27",
-        "open": 6595.0,
-        "high": 6677.5,
-        "low": 6536.0,
-        "close": 6549.0,
-        "volume": 16850
-      },
       {
         "date": "2026-08-28",
         "open": 6549.0,
@@ -87964,6 +87835,14 @@
         "low": 6024.5,
         "close": 6089.5,
         "volume": 12044
+      },
+      {
+        "date": "2026-09-18",
+        "open": 6139.0,
+        "high": 6250.0,
+        "low": 6116.0,
+        "close": 6241.5,
+        "volume": 20753
       }
     ],
     "radar": {
@@ -87976,7 +87855,7 @@
       "reasons": [
         "🎯 High R:R (1:2.5)"
       ],
-      "alpha_rank": 98.5
+      "alpha_rank": 103.3
     }
   },
   {
@@ -91525,22 +91404,22 @@
     "name": "Ratnamani Metals & Tubes Limited",
     "sector": "Metals, Mining & Steel",
     "mcap_tier": "Small Cap",
-    "cmp": 2695.0,
-    "prev_close": 2691.4,
-    "day_change": 3.6,
-    "day_change_pct": 0.13,
-    "chg_5m_pct": 0.02,
-    "day_high": 2730.5,
-    "day_low": 2615.6,
-    "volume": 33844,
-    "avg_vol_20d": 160646,
-    "vol_ratio": 0.21,
+    "cmp": 2859.1,
+    "prev_close": 2695.0,
+    "day_change": 164.1,
+    "day_change_pct": 6.09,
+    "chg_5m_pct": 0.91,
+    "day_high": 2897.4,
+    "day_low": 2701.6,
+    "volume": 64084,
+    "avg_vol_20d": 163083,
+    "vol_ratio": 0.39,
     "vol_status": "NORMAL",
-    "high_52w": 2890.0,
+    "high_52w": 2897.4,
     "low_52w": 2278.6,
-    "dist_52w_high": -6.75,
-    "dist_52w_low": 18.27,
-    "tech_score": 74.0,
+    "dist_52w_high": -1.32,
+    "dist_52w_low": 25.48,
+    "tech_score": 76.0,
     "action": "BUY ON DIPS",
     "action_badge": "<span class=\"px-2 py-0.5 rounded text-xs font-bold uppercase tracking-wider bg-emerald-500/20 text-emerald-400 border border-emerald-500/30\">BUY ON DIPS</span>",
     "setup_type": "Swing Pullback",
@@ -91559,77 +91438,77 @@
     "streak_rev": 0,
     "latest_yoy_pat": -15.75,
     "latest_yoy_rev": -15.62,
-    "today_pe": 43.64,
-    "today_pb": 2.33,
+    "today_pe": 46.3,
+    "today_pb": 2.48,
     "today_peg": null,
-    "mcap_cr": 18889.8,
+    "mcap_cr": 20040.0,
     "trade_blueprint": {
-      "entry_cmp": 2695.0,
-      "stop_loss": 2522.65,
-      "target_1": 2953.52,
-      "target_2": 3125.88,
-      "target_3": 3384.4,
+      "entry_cmp": 2859.1,
+      "stop_loss": 2565.4,
+      "target_1": 3299.65,
+      "target_2": 3593.35,
+      "target_3": 4033.9,
       "rr_ratio": 2.5,
       "win_rate_score": 95.0,
-      "risk_per_share": 172.3499999999999
+      "risk_per_share": 293.6999999999998
     },
     "moving_averages": {
-      "ema9": 2681.53,
-      "ema20": 2654.57,
-      "ema50": 2587.2,
-      "ema100": 2519.83,
-      "sma200": 2425.5,
+      "ema9": 2844.8,
+      "ema20": 2816.21,
+      "ema50": 2744.74,
+      "ema100": 2673.26,
+      "sma200": 2573.19,
       "alignment": "Perfect Bullish Stack (9 > 20 > 50 > 200)"
     },
     "oscillators": {
-      "rsi": 63.0,
+      "rsi": 66.6,
       "macd_signal": "Bullish Crossover",
       "adx": 28.5,
       "stochastic": 65.0
     },
     "volatility": {
-      "atr": 114.9,
-      "bb_upper": 2884.37,
-      "bb_mid": 2654.57,
-      "bb_lower": 2424.77,
-      "bb_bandwidth": 17.31
+      "atr": 195.8,
+      "bb_upper": 3207.81,
+      "bb_mid": 2816.21,
+      "bb_lower": 2424.61,
+      "bb_bandwidth": 27.81
     },
     "pivots": {
-      "pivot": 2680.37,
-      "r1": 2745.14,
-      "r2": 2795.27,
-      "r3": 2860.04,
-      "s1": 2630.24,
-      "s2": 2565.47,
-      "s3": 2515.34
+      "pivot": 2819.37,
+      "r1": 2937.14,
+      "r2": 3015.17,
+      "r3": 3132.94,
+      "s1": 2741.34,
+      "s2": 2623.57,
+      "s3": 2545.54
     },
     "fibonacci": {
-      "fib_236": 2745.71,
-      "fib_382": 2656.45,
-      "fib_500": 2584.3,
-      "fib_618": 2512.15,
-      "fib_786": 2409.44,
-      "fib_1618": 3267.85
+      "fib_236": 2751.36,
+      "fib_382": 2661.02,
+      "fib_500": 2588.0,
+      "fib_618": 2514.98,
+      "fib_786": 2411.02,
+      "fib_1618": 3279.82
     },
     "timeframes": {
       "15M": {
         "trend": "Bullish",
-        "rsi": 63.0,
+        "rsi": 66.6,
         "verdict": "Bullish Breakout"
       },
       "1H": {
         "trend": "Strong Bullish",
-        "rsi": 61.5,
+        "rsi": 65.1,
         "verdict": "Bullish"
       },
       "1D": {
         "trend": "Uptrend",
-        "rsi": 63.0,
+        "rsi": 66.6,
         "verdict": "Strong Buy"
       },
       "1W": {
         "trend": "Stage 2 Expansion",
-        "rsi": 65.0,
+        "rsi": 68.6,
         "verdict": "Multi-Month Bull"
       }
     },
@@ -91638,14 +91517,6 @@
       "badge": "High Institutional Confluence"
     },
     "candles": [
-      {
-        "date": "2026-08-26",
-        "open": 2661.1,
-        "high": 2690.3,
-        "low": 2582.4,
-        "close": 2641.6,
-        "volume": 174190
-      },
       {
         "date": "2026-08-27",
         "open": 2641.1,
@@ -91757,6 +91628,14 @@
         "low": 2615.6,
         "close": 2695.0,
         "volume": 33844
+      },
+      {
+        "date": "2026-09-18",
+        "open": 2702.6,
+        "high": 2897.4,
+        "low": 2701.6,
+        "close": 2859.1,
+        "volume": 64084
       }
     ],
     "radar": {
@@ -91767,11 +91646,10 @@
       "win_rate_score": 95.0,
       "rr_ratio": 2.5,
       "reasons": [
-        "⛰️ Near 52W High (-6.75%)",
-        "📈 RSI Sweet Spot (63.0)",
+        "⛰️ Near 52W High (-1.32%)",
         "🎯 High R:R (1:2.5)"
       ],
-      "alpha_rank": 103.8
+      "alpha_rank": 106.2
     }
   },
   {
