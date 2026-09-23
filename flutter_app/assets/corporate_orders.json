@@ -1,142 +1,142 @@
 [
   {
-    "symbol": "MEGASTAR",
+    "symbol": "REGAAL",
     "category": "CORPORATE FILING",
     "headline": "Shareholders meeting",
-    "date_time": "23-Sep-2026 19:11:34",
+    "date_time": "23-Sep-2026 20:38:52",
     "attachment": ""
   },
   {
-    "symbol": "RAMCOSYS",
+    "symbol": "LODHA",
     "category": "CORPORATE FILING",
-    "headline": "ESOP/ESOS/ESPS",
-    "date_time": "23-Sep-2026 19:11:24",
+    "headline": "Allotment of Securities",
+    "date_time": "23-Sep-2026 20:38:37",
     "attachment": ""
   },
   {
-    "symbol": "POLYMED",
-    "category": "CORPORATE FILING",
-    "headline": "General Updates",
-    "date_time": "23-Sep-2026 19:10:51",
-    "attachment": ""
-  },
-  {
-    "symbol": "GEECEE",
-    "category": "CORPORATE FILING",
-    "headline": "Shareholders meeting",
-    "date_time": "23-Sep-2026 19:10:39",
-    "attachment": ""
-  },
-  {
-    "symbol": "NOCIL",
+    "symbol": "USHAMART",
     "category": "CORPORATE FILING",
     "headline": "General Updates",
-    "date_time": "23-Sep-2026 19:10:25",
+    "date_time": "23-Sep-2026 20:30:48",
     "attachment": ""
   },
   {
-    "symbol": "BOROSCI",
+    "symbol": "MOLDTECH",
     "category": "CORPORATE FILING",
     "headline": "Resignation",
-    "date_time": "23-Sep-2026 19:10:00",
+    "date_time": "23-Sep-2026 20:30:18",
     "attachment": ""
   },
   {
-    "symbol": "PSB",
+    "symbol": "APEX",
     "category": "CORPORATE FILING",
-    "headline": "Change in Director(s)",
-    "date_time": "23-Sep-2026 19:07:53",
+    "headline": "Updates",
+    "date_time": "23-Sep-2026 20:30:08",
     "attachment": ""
   },
   {
-    "symbol": "SALONA",
-    "category": "CORPORATE FILING",
-    "headline": "Shareholders meeting",
-    "date_time": "23-Sep-2026 19:07:42",
-    "attachment": ""
-  },
-  {
-    "symbol": "ASHIMASYN",
-    "category": "CORPORATE FILING",
-    "headline": "Disclosure under SEBI Takeover Regulations",
-    "date_time": "23-Sep-2026 19:07:20",
-    "attachment": ""
-  },
-  {
-    "symbol": "KECL",
-    "category": "BOARD MEETING",
-    "headline": "Outcome of Board Meeting",
-    "date_time": "23-Sep-2026 19:05:59",
-    "attachment": ""
-  },
-  {
-    "symbol": "BOROSCI",
-    "category": "CORPORATE FILING",
-    "headline": "Resignation of Director/KMP/SMP",
-    "date_time": "23-Sep-2026 19:05:07",
-    "attachment": ""
-  },
-  {
-    "symbol": "AGI",
-    "category": "CORPORATE FILING",
-    "headline": "General Updates",
-    "date_time": "23-Sep-2026 19:05:02",
-    "attachment": ""
-  },
-  {
-    "symbol": "KSHITIJPOL",
+    "symbol": "MOLDTECH",
     "category": "CORPORATE FILING",
     "headline": "Change in Company Secretary/Compliance Officer",
-    "date_time": "23-Sep-2026 19:04:21",
-    "attachment": ""
-  },
-  {
-    "symbol": "SBICARD",
-    "category": "CORPORATE FILING",
-    "headline": "Analysts/Institutional Investor Meet/Con. Call Updates",
-    "date_time": "23-Sep-2026 19:03:32",
+    "date_time": "23-Sep-2026 20:27:16",
     "attachment": ""
   },
   {
     "symbol": "SUYOG",
     "category": "CORPORATE FILING",
-    "headline": "Trading Window",
-    "date_time": "23-Sep-2026 19:03:19",
+    "headline": "Shareholders meeting",
+    "date_time": "23-Sep-2026 20:26:57",
     "attachment": ""
   },
   {
-    "symbol": "SRF",
+    "symbol": "DELPHIFX",
     "category": "CORPORATE FILING",
-    "headline": "Resignation",
-    "date_time": "23-Sep-2026 19:02:37",
+    "headline": "Updates",
+    "date_time": "23-Sep-2026 20:23:03",
     "attachment": ""
   },
   {
-    "symbol": "KSHITIJPOL",
+    "symbol": "USHAMART",
+    "category": "CORPORATE FILING",
+    "headline": "Analysts/Institutional Investor Meet/Con. Call Updates",
+    "date_time": "23-Sep-2026 20:21:18",
+    "attachment": ""
+  },
+  {
+    "symbol": "MOLDTECH",
+    "category": "CORPORATE FILING",
+    "headline": "Resignation of Director/KMP/SMP",
+    "date_time": "23-Sep-2026 20:19:37",
+    "attachment": ""
+  },
+  {
+    "symbol": "INOXGREEN",
+    "category": "CORPORATE FILING",
+    "headline": "Credit Rating- Others",
+    "date_time": "23-Sep-2026 20:19:10",
+    "attachment": ""
+  },
+  {
+    "symbol": "WAAREEINDO",
+    "category": "CORPORATE FILING",
+    "headline": "Amalgamation/Merger",
+    "date_time": "23-Sep-2026 20:16:12",
+    "attachment": ""
+  },
+  {
+    "symbol": "INDIANCARD",
+    "category": "CORPORATE FILING",
+    "headline": "Trading Window",
+    "date_time": "23-Sep-2026 20:15:55",
+    "attachment": ""
+  },
+  {
+    "symbol": "WAAREEENER",
+    "category": "CORPORATE FILING",
+    "headline": "Amalgamation/Merger",
+    "date_time": "23-Sep-2026 20:15:15",
+    "attachment": ""
+  },
+  {
+    "symbol": "HGM",
+    "category": "CORPORATE FILING",
+    "headline": "Disclosure of material issue",
+    "date_time": "23-Sep-2026 20:13:03",
+    "attachment": ""
+  },
+  {
+    "symbol": "WAAREEINDO",
     "category": "BOARD MEETING",
     "headline": "Outcome of Board Meeting",
-    "date_time": "23-Sep-2026 19:01:51",
+    "date_time": "23-Sep-2026 20:10:55",
     "attachment": ""
   },
   {
-    "symbol": "KAMOPAINTS",
-    "category": "CORPORATE FILING",
-    "headline": "General Updates",
-    "date_time": "23-Sep-2026 19:01:49",
+    "symbol": "WAAREEENER",
+    "category": "BOARD MEETING",
+    "headline": "Outcome of Board Meeting",
+    "date_time": "23-Sep-2026 20:10:35",
     "attachment": ""
   },
   {
-    "symbol": "AJMERA",
+    "symbol": "ORCHPHARMA",
     "category": "CORPORATE FILING",
-    "headline": "Shareholders meeting",
-    "date_time": "23-Sep-2026 19:00:40",
+    "headline": "Updates",
+    "date_time": "23-Sep-2026 20:01:17",
     "attachment": ""
   },
   {
-    "symbol": "ITDC",
+    "symbol": "CHALET",
     "category": "CORPORATE FILING",
-    "headline": "Shareholders meeting",
-    "date_time": "23-Sep-2026 19:00:26",
+    "headline": "Analysts/Institutional Investor Meet/Con. Call Updates",
+    "date_time": "23-Sep-2026 20:01:10",
+    "attachment": ""
+  },
+  {
+    "symbol": "HEXAGON",
+    "category": "CORPORATE FILING",
+    "headline": "Updates",
+    "date_time": "23-Sep-2026 20:00:43",
     "attachment": ""
   }
 ]
