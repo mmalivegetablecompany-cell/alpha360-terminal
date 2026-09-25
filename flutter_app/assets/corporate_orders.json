@@ -1,142 +1,142 @@
 [
   {
-    "symbol": "NAGREEKCAP",
+    "symbol": "PERSISTENT",
+    "category": "CORPORATE FILING",
+    "headline": "Analysts/Institutional Investor Meet/Con. Call Updates",
+    "date_time": "25-Sep-2026 19:37:08",
+    "attachment": ""
+  },
+  {
+    "symbol": "SOUTHBANK",
     "category": "CORPORATE FILING",
     "headline": "Trading Window",
-    "date_time": "25-Sep-2026 13:56:58",
+    "date_time": "25-Sep-2026 19:36:34",
     "attachment": ""
   },
   {
-    "symbol": "ADANIPOWER",
+    "symbol": "IFCI",
     "category": "CORPORATE FILING",
-    "headline": "General Updates",
-    "date_time": "25-Sep-2026 13:55:20",
+    "headline": "Retirement",
+    "date_time": "25-Sep-2026 19:33:08",
     "attachment": ""
   },
   {
-    "symbol": "MAHASTEEL",
+    "symbol": "PRSMJOHNSN",
+    "category": "CORPORATE FILING",
+    "headline": "Trading Window",
+    "date_time": "25-Sep-2026 19:33:03",
+    "attachment": ""
+  },
+  {
+    "symbol": "SVLL",
     "category": "CORPORATE FILING",
     "headline": "Shareholders meeting",
-    "date_time": "25-Sep-2026 13:53:18",
+    "date_time": "25-Sep-2026 19:32:14",
     "attachment": ""
   },
   {
-    "symbol": "FORTIS",
+    "symbol": "LANDMARK",
     "category": "CORPORATE FILING",
-    "headline": "General Updates",
-    "date_time": "25-Sep-2026 13:51:50",
+    "headline": "Change in Director(s)",
+    "date_time": "25-Sep-2026 19:29:38",
     "attachment": ""
   },
   {
-    "symbol": "NCC",
-    "category": "CORPORATE FILING",
-    "headline": "Copy of Newspaper Publication",
-    "date_time": "25-Sep-2026 13:51:00",
-    "attachment": ""
-  },
-  {
-    "symbol": "GRINFRA",
-    "category": "CORPORATE FILING",
-    "headline": "Pendency of Litigation(s)/dispute(s) or the outcome impacting the Company",
-    "date_time": "25-Sep-2026 13:50:33",
-    "attachment": ""
-  },
-  {
-    "symbol": "MASTERTR",
-    "category": "CORPORATE FILING",
-    "headline": "Trading Window",
-    "date_time": "25-Sep-2026 13:45:44",
-    "attachment": ""
-  },
-  {
-    "symbol": "AFCONS",
-    "category": "CORPORATE FILING",
-    "headline": "Trading Window",
-    "date_time": "25-Sep-2026 13:45:23",
-    "attachment": ""
-  },
-  {
-    "symbol": "QMSMEDI",
-    "category": "CORPORATE FILING",
-    "headline": "Trading Window",
-    "date_time": "25-Sep-2026 13:44:31",
-    "attachment": ""
-  },
-  {
-    "symbol": "CIEINDIA",
-    "category": "CORPORATE FILING",
-    "headline": "Amalgamation/Merger",
-    "date_time": "25-Sep-2026 13:44:30",
-    "attachment": ""
-  },
-  {
-    "symbol": "PYRAMID",
+    "symbol": "BANDHANBNK",
     "category": "CORPORATE FILING",
     "headline": "Credit Rating",
-    "date_time": "25-Sep-2026 13:42:48",
+    "date_time": "25-Sep-2026 19:29:08",
     "attachment": ""
   },
   {
-    "symbol": "MANKIND",
+    "symbol": "ERIS",
+    "category": "CORPORATE FILING",
+    "headline": "Shareholders meeting",
+    "date_time": "25-Sep-2026 19:28:52",
+    "attachment": ""
+  },
+  {
+    "symbol": "REPL",
     "category": "CORPORATE FILING",
     "headline": "Trading Window",
-    "date_time": "25-Sep-2026 13:42:43",
+    "date_time": "25-Sep-2026 19:28:27",
     "attachment": ""
   },
   {
-    "symbol": "CUB",
+    "symbol": "SOUTHBANK",
     "category": "CORPORATE FILING",
-    "headline": "General Updates",
-    "date_time": "25-Sep-2026 13:41:35",
+    "headline": "ESOP/ESOS/ESPS",
+    "date_time": "25-Sep-2026 19:27:23",
     "attachment": ""
   },
   {
-    "symbol": "INTELLECT",
+    "symbol": "PLATIND",
+    "category": "CORPORATE FILING",
+    "headline": "Shareholders meeting",
+    "date_time": "25-Sep-2026 19:26:38",
+    "attachment": ""
+  },
+  {
+    "symbol": "CREDITACC",
+    "category": "CORPORATE FILING",
+    "headline": "Analysts/Institutional Investor Meet/Con. Call Updates",
+    "date_time": "25-Sep-2026 19:26:19",
+    "attachment": ""
+  },
+  {
+    "symbol": "ONESOURCE",
+    "category": "CORPORATE FILING",
+    "headline": "Updates",
+    "date_time": "25-Sep-2026 19:26:01",
+    "attachment": ""
+  },
+  {
+    "symbol": "PWL",
+    "category": "CORPORATE FILING",
+    "headline": "Shareholders meeting",
+    "date_time": "25-Sep-2026 19:25:48",
+    "attachment": ""
+  },
+  {
+    "symbol": "IFCI",
+    "category": "CORPORATE FILING",
+    "headline": "Shareholders meeting",
+    "date_time": "25-Sep-2026 19:24:16",
+    "attachment": ""
+  },
+  {
+    "symbol": "TVSSRICHAK",
+    "category": "CORPORATE FILING",
+    "headline": "Shareholders meeting",
+    "date_time": "25-Sep-2026 19:23:56",
+    "attachment": ""
+  },
+  {
+    "symbol": "AGI",
+    "category": "CORPORATE FILING",
+    "headline": "Analysts/Institutional Investor Meet/Con. Call Updates",
+    "date_time": "25-Sep-2026 19:23:24",
+    "attachment": ""
+  },
+  {
+    "symbol": "EMKAY",
+    "category": "CORPORATE FILING",
+    "headline": "Granting/withdrawal/surrender/cancellation/suspension of key licenses/ regulatory approvals",
+    "date_time": "25-Sep-2026 19:22:56",
+    "attachment": ""
+  },
+  {
+    "symbol": "STYLEBAAZA",
+    "category": "CORPORATE FILING",
+    "headline": "Press Release",
+    "date_time": "25-Sep-2026 19:22:46",
+    "attachment": ""
+  },
+  {
+    "symbol": "FLEXITUFF",
     "category": "CORPORATE FILING",
     "headline": "Trading Window",
-    "date_time": "25-Sep-2026 13:41:07",
-    "attachment": ""
-  },
-  {
-    "symbol": "INNOVANA",
-    "category": "CORPORATE FILING",
-    "headline": "Trading Window",
-    "date_time": "25-Sep-2026 13:40:22",
-    "attachment": ""
-  },
-  {
-    "symbol": "ENERGYDEV",
-    "category": "CORPORATE FILING",
-    "headline": "Trading Window",
-    "date_time": "25-Sep-2026 13:39:36",
-    "attachment": ""
-  },
-  {
-    "symbol": "SMCGLOBAL",
-    "category": "CORPORATE FILING",
-    "headline": "Trading Window",
-    "date_time": "25-Sep-2026 13:38:54",
-    "attachment": ""
-  },
-  {
-    "symbol": "TERASOFT",
-    "category": "CORPORATE FILING",
-    "headline": "Trading Window",
-    "date_time": "25-Sep-2026 13:36:57",
-    "attachment": ""
-  },
-  {
-    "symbol": "KKCL",
-    "category": "CORPORATE FILING",
-    "headline": "Trading Window",
-    "date_time": "25-Sep-2026 13:36:52",
-    "attachment": ""
-  },
-  {
-    "symbol": "SKYWAYS",
-    "category": "CORPORATE FILING",
-    "headline": "Trading Window",
-    "date_time": "25-Sep-2026 13:36:31",
+    "date_time": "25-Sep-2026 19:21:56",
     "attachment": ""
   }
 ]
