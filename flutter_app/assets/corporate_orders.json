@@ -1,5 +1,75 @@
 [
   {
+    "symbol": "QPOWER",
+    "category": "CORPORATE FILING",
+    "headline": "Trading Window",
+    "date_time": "28-Sep-2026 23:41:20",
+    "attachment": ""
+  },
+  {
+    "symbol": "INOXWIND",
+    "category": "CORPORATE FILING",
+    "headline": "Shareholders meeting",
+    "date_time": "28-Sep-2026 23:40:48",
+    "attachment": ""
+  },
+  {
+    "symbol": "OLAELEC",
+    "category": "CORPORATE FILING",
+    "headline": "General Updates",
+    "date_time": "28-Sep-2026 23:39:15",
+    "attachment": ""
+  },
+  {
+    "symbol": "POONAWALLA",
+    "category": "CORPORATE FILING",
+    "headline": "Credit Rating",
+    "date_time": "28-Sep-2026 23:39:00",
+    "attachment": ""
+  },
+  {
+    "symbol": "GODIGIT",
+    "category": "CORPORATE FILING",
+    "headline": "General Updates",
+    "date_time": "28-Sep-2026 23:31:10",
+    "attachment": ""
+  },
+  {
+    "symbol": "GICRE",
+    "category": "CORPORATE FILING",
+    "headline": "Trading Window",
+    "date_time": "28-Sep-2026 23:31:05",
+    "attachment": ""
+  },
+  {
+    "symbol": "GODIGIT",
+    "category": "CORPORATE FILING",
+    "headline": "Shareholders meeting",
+    "date_time": "28-Sep-2026 23:29:29",
+    "attachment": ""
+  },
+  {
+    "symbol": "PAKKA",
+    "category": "CORPORATE FILING",
+    "headline": "General Updates",
+    "date_time": "28-Sep-2026 23:26:26",
+    "attachment": ""
+  },
+  {
+    "symbol": "PAKKA",
+    "category": "CORPORATE FILING",
+    "headline": "Trading Window",
+    "date_time": "28-Sep-2026 23:23:56",
+    "attachment": ""
+  },
+  {
+    "symbol": "PRASOLCHEM",
+    "category": "CORPORATE FILING",
+    "headline": "Investor Presentation",
+    "date_time": "28-Sep-2026 23:19:01",
+    "attachment": ""
+  },
+  {
     "symbol": "PALASHSECU",
     "category": "CORPORATE FILING",
     "headline": "Trading Window",
@@ -67,76 +137,6 @@
     "category": "CORPORATE FILING",
     "headline": "General Updates",
     "date_time": "28-Sep-2026 22:40:36",
-    "attachment": ""
-  },
-  {
-    "symbol": "RANEHOLDIN",
-    "category": "CORPORATE FILING",
-    "headline": "Pendency of Litigation(s)/dispute(s) or the outcome impacting the Company",
-    "date_time": "28-Sep-2026 22:35:39",
-    "attachment": ""
-  },
-  {
-    "symbol": "JAIPURKURT",
-    "category": "BOARD MEETING",
-    "headline": "Outcome of Board Meeting",
-    "date_time": "28-Sep-2026 22:34:47",
-    "attachment": ""
-  },
-  {
-    "symbol": "KIRLPNU",
-    "category": "CORPORATE FILING",
-    "headline": "ESOP/ESOS/ESPS",
-    "date_time": "28-Sep-2026 22:32:46",
-    "attachment": ""
-  },
-  {
-    "symbol": "COFORGE",
-    "category": "CORPORATE FILING",
-    "headline": "Press Release",
-    "date_time": "28-Sep-2026 22:31:11",
-    "attachment": ""
-  },
-  {
-    "symbol": "TMCV",
-    "category": "CORPORATE FILING",
-    "headline": "Acquisition",
-    "date_time": "28-Sep-2026 22:26:46",
-    "attachment": ""
-  },
-  {
-    "symbol": "MANKIND",
-    "category": "CORPORATE FILING",
-    "headline": "Resignation of Statutory Auditor",
-    "date_time": "28-Sep-2026 22:24:51",
-    "attachment": ""
-  },
-  {
-    "symbol": "EROSMEDIA",
-    "category": "CORPORATE FILING",
-    "headline": "Trading Window",
-    "date_time": "28-Sep-2026 22:22:53",
-    "attachment": ""
-  },
-  {
-    "symbol": "AJAXENGG",
-    "category": "CORPORATE FILING",
-    "headline": "Shareholders meeting",
-    "date_time": "28-Sep-2026 22:22:38",
-    "attachment": ""
-  },
-  {
-    "symbol": "COFORGE",
-    "category": "CORPORATE FILING",
-    "headline": "Change in Director(s)",
-    "date_time": "28-Sep-2026 22:20:47",
-    "attachment": ""
-  },
-  {
-    "symbol": "COFORGE",
-    "category": "BOARD MEETING",
-    "headline": "Outcome of Board Meeting",
-    "date_time": "28-Sep-2026 22:19:25",
     "attachment": ""
   }
 ]
