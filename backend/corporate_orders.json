@@ -1,5 +1,124 @@
 [
   {
+    "symbol": "TATACHEM",
+    "category": "CORPORATE FILING",
+    "headline": "News Verification",
+    "date_time": "29-Sep-2026 22:08:02",
+    "attachment": ""
+  },
+  {
+    "symbol": "MADHUCON",
+    "category": "CORPORATE FILING",
+    "headline": "Shareholders meeting",
+    "date_time": "29-Sep-2026 22:05:10",
+    "attachment": ""
+  },
+  {
+    "symbol": "DANGEE",
+    "category": "CORPORATE FILING",
+    "headline": "Trading Window",
+    "date_time": "29-Sep-2026 22:01:11",
+    "attachment": ""
+  },
+  {
+    "symbol": "KPIGREEN",
+    "category": "CORPORATE FILING",
+    "headline": "Shareholders meeting",
+    "date_time": "29-Sep-2026 22:00:34",
+    "attachment": ""
+  },
+  {
+    "symbol": "SRGHFL",
+    "category": "CORPORATE FILING",
+    "headline": "Shareholders meeting",
+    "date_time": "29-Sep-2026 21:59:35",
+    "attachment": ""
+  },
+  {
+    "symbol": "KPEL",
+    "category": "CORPORATE FILING",
+    "headline": "Shareholders meeting",
+    "date_time": "29-Sep-2026 21:55:53",
+    "attachment": ""
+  },
+  {
+    "symbol": "DUCON",
+    "category": "CORPORATE FILING",
+    "headline": "Shareholders meeting",
+    "date_time": "29-Sep-2026 21:55:28",
+    "attachment": ""
+  },
+  {
+    "symbol": "DANGEE",
+    "category": "CORPORATE FILING",
+    "headline": "Shareholders meeting",
+    "date_time": "29-Sep-2026 21:50:46",
+    "attachment": ""
+  },
+  {
+    "symbol": "CYBERTECH",
+    "category": "CORPORATE FILING",
+    "headline": "Shareholders meeting",
+    "date_time": "29-Sep-2026 21:50:27",
+    "attachment": ""
+  },
+  {
+    "symbol": "IFBAGRO",
+    "category": "CORPORATE FILING",
+    "headline": "Cessation",
+    "date_time": "29-Sep-2026 21:48:40",
+    "attachment": ""
+  },
+  {
+    "symbol": "WINSOME",
+    "category": "CORPORATE FILING",
+    "headline": "Shareholders meeting",
+    "date_time": "29-Sep-2026 21:45:18",
+    "attachment": ""
+  },
+  {
+    "symbol": "DUCON",
+    "category": "CORPORATE FILING",
+    "headline": "Change in Management",
+    "date_time": "29-Sep-2026 21:43:31",
+    "attachment": ""
+  },
+  {
+    "symbol": "TMPV",
+    "category": "CORPORATE FILING",
+    "headline": "News Verification",
+    "date_time": "29-Sep-2026 21:41:21",
+    "attachment": ""
+  },
+  {
+    "symbol": "AURUM",
+    "category": "CORPORATE FILING",
+    "headline": "Allotment of Securities",
+    "date_time": "29-Sep-2026 21:40:37",
+    "attachment": ""
+  },
+  {
+    "symbol": "AURUM",
+    "category": "CORPORATE FILING",
+    "headline": "General Updates",
+    "date_time": "29-Sep-2026 21:40:37",
+    "attachment": ""
+  },
+  {
+    "symbol": "MAANALU",
+    "category": "CORPORATE FILING",
+    "headline": "Shareholders meeting",
+    "date_time": "29-Sep-2026 21:38:05",
+    "attachment": ""
+  },
+  {
+    "symbol": "VIPULLTD",
+    "category": "BOARD MEETING",
+    "headline": "Outcome of Board Meeting",
+    "date_time": "29-Sep-2026 21:35:33",
+    "attachment": ""
+  },
+  {
     "symbol": "LASERPOWER",
     "category": "CORPORATE FILING",
     "headline": "Press Release",
@@ -18,125 +137,6 @@
     "category": "CORPORATE FILING",
     "headline": "Shareholders meeting",
     "date_time": "29-Sep-2026 21:28:34",
-    "attachment": ""
-  },
-  {
-    "symbol": "KISSHT",
-    "category": "CORPORATE FILING",
-    "headline": "Allotment of Securities",
-    "date_time": "29-Sep-2026 21:27:31",
-    "attachment": ""
-  },
-  {
-    "symbol": "LASERPOWER",
-    "category": "MAJOR ORDER WIN",
-    "headline": "Bagging/Receiving of orders/contracts",
-    "date_time": "29-Sep-2026 21:27:20",
-    "attachment": ""
-  },
-  {
-    "symbol": "NLCINDIA",
-    "category": "CORPORATE FILING",
-    "headline": "Press Release",
-    "date_time": "29-Sep-2026 21:22:41",
-    "attachment": ""
-  },
-  {
-    "symbol": "PRESTIGE",
-    "category": "CORPORATE FILING",
-    "headline": "General Updates",
-    "date_time": "29-Sep-2026 21:20:33",
-    "attachment": ""
-  },
-  {
-    "symbol": "DPABHUSHAN",
-    "category": "CORPORATE FILING",
-    "headline": "Trading Window",
-    "date_time": "29-Sep-2026 21:18:01",
-    "attachment": ""
-  },
-  {
-    "symbol": "J&KBANK",
-    "category": "CORPORATE FILING",
-    "headline": "Credit Rating",
-    "date_time": "29-Sep-2026 21:12:34",
-    "attachment": ""
-  },
-  {
-    "symbol": "IREDA",
-    "category": "CORPORATE FILING",
-    "headline": "Shareholders meeting",
-    "date_time": "29-Sep-2026 21:11:05",
-    "attachment": ""
-  },
-  {
-    "symbol": "DOLATALGO",
-    "category": "CORPORATE FILING",
-    "headline": "Shareholders meeting",
-    "date_time": "29-Sep-2026 21:10:57",
-    "attachment": ""
-  },
-  {
-    "symbol": "CCHHL",
-    "category": "CORPORATE FILING",
-    "headline": "Trading Window",
-    "date_time": "29-Sep-2026 21:08:52",
-    "attachment": ""
-  },
-  {
-    "symbol": "MAHABANK",
-    "category": "CORPORATE FILING",
-    "headline": "General Updates",
-    "date_time": "29-Sep-2026 21:07:38",
-    "attachment": ""
-  },
-  {
-    "symbol": "ASHAPURMIN",
-    "category": "CORPORATE FILING",
-    "headline": "Retirement",
-    "date_time": "29-Sep-2026 21:07:14",
-    "attachment": ""
-  },
-  {
-    "symbol": "GKSL",
-    "category": "CORPORATE FILING",
-    "headline": "Shareholders meeting",
-    "date_time": "29-Sep-2026 21:06:58",
-    "attachment": ""
-  },
-  {
-    "symbol": "LIBERTSHOE",
-    "category": "CORPORATE FILING",
-    "headline": "Shareholders meeting",
-    "date_time": "29-Sep-2026 21:06:05",
-    "attachment": ""
-  },
-  {
-    "symbol": "JSWCEMENT",
-    "category": "CORPORATE FILING",
-    "headline": "Press Release",
-    "date_time": "29-Sep-2026 21:03:28",
-    "attachment": ""
-  },
-  {
-    "symbol": "PARAGMILK",
-    "category": "CORPORATE FILING",
-    "headline": "Shareholders meeting",
-    "date_time": "29-Sep-2026 21:02:59",
-    "attachment": ""
-  },
-  {
-    "symbol": "ASHAPURMIN",
-    "category": "CORPORATE FILING",
-    "headline": "Appointment",
-    "date_time": "29-Sep-2026 21:00:40",
-    "attachment": ""
-  },
-  {
-    "symbol": "HITECHCORP",
-    "category": "CORPORATE FILING",
-    "headline": "General Updates",
-    "date_time": "29-Sep-2026 20:53:48",
     "attachment": ""
   }
 ]
