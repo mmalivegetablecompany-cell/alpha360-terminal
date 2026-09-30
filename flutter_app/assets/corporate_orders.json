@@ -1,5 +1,89 @@
 [
   {
+    "symbol": "FLEXITUFF",
+    "category": "CORPORATE FILING",
+    "headline": "Shareholders meeting",
+    "date_time": "30-Sep-2026 21:56:06",
+    "attachment": ""
+  },
+  {
+    "symbol": "KIRLOSENG",
+    "category": "CORPORATE FILING",
+    "headline": "General Updates",
+    "date_time": "30-Sep-2026 21:55:22",
+    "attachment": ""
+  },
+  {
+    "symbol": "AVROIND",
+    "category": "CORPORATE FILING",
+    "headline": "Shareholders meeting",
+    "date_time": "30-Sep-2026 21:48:55",
+    "attachment": ""
+  },
+  {
+    "symbol": "CSM",
+    "category": "CORPORATE FILING",
+    "headline": "Change in Management",
+    "date_time": "30-Sep-2026 21:44:36",
+    "attachment": ""
+  },
+  {
+    "symbol": "VBL",
+    "category": "CORPORATE FILING",
+    "headline": "General Updates",
+    "date_time": "30-Sep-2026 21:43:40",
+    "attachment": ""
+  },
+  {
+    "symbol": "KARAMTARA",
+    "category": "CORPORATE FILING",
+    "headline": "Trading Window",
+    "date_time": "30-Sep-2026 21:41:02",
+    "attachment": ""
+  },
+  {
+    "symbol": "VBL",
+    "category": "CORPORATE FILING",
+    "headline": "Pendency of Litigation(s)/dispute(s) or the outcome impacting the Company",
+    "date_time": "30-Sep-2026 21:40:51",
+    "attachment": ""
+  },
+  {
+    "symbol": "CGPOWER",
+    "category": "CORPORATE FILING",
+    "headline": "Change in Management",
+    "date_time": "30-Sep-2026 21:38:26",
+    "attachment": ""
+  },
+  {
+    "symbol": "CGPOWER",
+    "category": "CORPORATE FILING",
+    "headline": "Resignation",
+    "date_time": "30-Sep-2026 21:34:53",
+    "attachment": ""
+  },
+  {
+    "symbol": "SHRENIK",
+    "category": "CORPORATE FILING",
+    "headline": "Trading Window",
+    "date_time": "30-Sep-2026 21:33:41",
+    "attachment": ""
+  },
+  {
+    "symbol": "ORTINGLOBE",
+    "category": "CORPORATE FILING",
+    "headline": "Shareholders meeting",
+    "date_time": "30-Sep-2026 21:33:04",
+    "attachment": ""
+  },
+  {
+    "symbol": "ZENITHSTL",
+    "category": "CORPORATE FILING",
+    "headline": "Shareholders meeting",
+    "date_time": "30-Sep-2026 21:32:20",
+    "attachment": ""
+  },
+  {
     "symbol": "IIFL",
     "category": "CORPORATE FILING",
     "headline": "Resignation of Director/KMP/SMP",
@@ -53,90 +137,6 @@
     "category": "CORPORATE FILING",
     "headline": "Resignation",
     "date_time": "30-Sep-2026 21:23:08",
-    "attachment": ""
-  },
-  {
-    "symbol": "PVP",
-    "category": "CORPORATE FILING",
-    "headline": "Resignation",
-    "date_time": "30-Sep-2026 21:23:08",
-    "attachment": ""
-  },
-  {
-    "symbol": "PVP",
-    "category": "CORPORATE FILING",
-    "headline": "Resignation",
-    "date_time": "30-Sep-2026 21:23:08",
-    "attachment": ""
-  },
-  {
-    "symbol": "PVP",
-    "category": "CORPORATE FILING",
-    "headline": "Resignation",
-    "date_time": "30-Sep-2026 21:23:08",
-    "attachment": ""
-  },
-  {
-    "symbol": "KANOHAR",
-    "category": "CORPORATE FILING",
-    "headline": "Analysts/Institutional Investor Meet/Con. Call Updates",
-    "date_time": "30-Sep-2026 21:22:10",
-    "attachment": ""
-  },
-  {
-    "symbol": "SHRENIK",
-    "category": "CORPORATE FILING",
-    "headline": "Corporate Insolvency Resolution Process",
-    "date_time": "30-Sep-2026 21:21:51",
-    "attachment": ""
-  },
-  {
-    "symbol": "IIFL",
-    "category": "CORPORATE FILING",
-    "headline": "Change in Management",
-    "date_time": "30-Sep-2026 21:21:27",
-    "attachment": ""
-  },
-  {
-    "symbol": "JINDWORLD",
-    "category": "CORPORATE FILING",
-    "headline": "Change in Director(s)",
-    "date_time": "30-Sep-2026 21:20:04",
-    "attachment": ""
-  },
-  {
-    "symbol": "HILINFRA",
-    "category": "MAJOR ORDER WIN",
-    "headline": "Bagging/Receiving of orders/contracts",
-    "date_time": "30-Sep-2026 21:18:41",
-    "attachment": ""
-  },
-  {
-    "symbol": "AEROPLANE",
-    "category": "CORPORATE FILING",
-    "headline": "Shareholders meeting",
-    "date_time": "30-Sep-2026 21:17:12",
-    "attachment": ""
-  },
-  {
-    "symbol": "CSM",
-    "category": "CORPORATE FILING",
-    "headline": "Shareholders meeting",
-    "date_time": "30-Sep-2026 21:14:15",
-    "attachment": ""
-  },
-  {
-    "symbol": "ASMS",
-    "category": "CORPORATE FILING",
-    "headline": "Shareholders meeting",
-    "date_time": "30-Sep-2026 21:12:41",
-    "attachment": ""
-  },
-  {
-    "symbol": "SHRENIK",
-    "category": "CORPORATE FILING",
-    "headline": "Corporate Insolvency Resolution Process",
-    "date_time": "30-Sep-2026 21:12:27",
     "attachment": ""
   }
 ]
