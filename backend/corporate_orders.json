@@ -1,5 +1,33 @@
 [
   {
+    "symbol": "UNIONBANK",
+    "category": "CORPORATE FILING",
+    "headline": "General Updates",
+    "date_time": "01-Oct-2026 22:35:17",
+    "attachment": ""
+  },
+  {
+    "symbol": "CSBBANK",
+    "category": "CORPORATE FILING",
+    "headline": "Updates",
+    "date_time": "01-Oct-2026 22:29:21",
+    "attachment": ""
+  },
+  {
+    "symbol": "INFY",
+    "category": "CORPORATE FILING",
+    "headline": "Certificate under SEBI (Depositories and Participants) Regulations, 2018",
+    "date_time": "01-Oct-2026 22:20:53",
+    "attachment": ""
+  },
+  {
+    "symbol": "TMB",
+    "category": "CORPORATE FILING",
+    "headline": "Change in Director(s)",
+    "date_time": "01-Oct-2026 22:13:13",
+    "attachment": ""
+  },
+  {
     "symbol": "NILAINFRA",
     "category": "MAJOR ORDER WIN",
     "headline": "Bagging/Receiving of orders/contracts",
@@ -109,34 +137,6 @@
     "category": "CORPORATE FILING",
     "headline": "Integrated Filing- Financial",
     "date_time": "01-Oct-2026 21:37:06",
-    "attachment": ""
-  },
-  {
-    "symbol": "SECURKLOUD",
-    "category": "CORPORATE FILING",
-    "headline": "Defaults on Payment of Interest/Principal",
-    "date_time": "01-Oct-2026 21:33:09",
-    "attachment": ""
-  },
-  {
-    "symbol": "BIOCON",
-    "category": "CORPORATE FILING",
-    "headline": "Options to purchase securities",
-    "date_time": "01-Oct-2026 21:32:13",
-    "attachment": ""
-  },
-  {
-    "symbol": "GICRE",
-    "category": "CORPORATE FILING",
-    "headline": "Change in Auditors",
-    "date_time": "01-Oct-2026 21:30:47",
-    "attachment": ""
-  },
-  {
-    "symbol": "AARTISURF",
-    "category": "CORPORATE FILING",
-    "headline": "Amendment to AOA/MOA",
-    "date_time": "01-Oct-2026 21:28:55",
     "attachment": ""
   }
 ]
