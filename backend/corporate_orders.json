@@ -1,5 +1,19 @@
 [
   {
+    "symbol": "GODREJCP",
+    "category": "CORPORATE FILING",
+    "headline": "Allotment of Securities",
+    "date_time": "02-Oct-2026 21:42:17",
+    "attachment": ""
+  },
+  {
+    "symbol": "EMCURE",
+    "category": "CORPORATE FILING",
+    "headline": "Pendency of Litigation(s)/dispute(s) or the outcome impacting the Company",
+    "date_time": "02-Oct-2026 21:31:28",
+    "attachment": ""
+  },
+  {
     "symbol": "AIFL",
     "category": "CORPORATE FILING",
     "headline": "Shareholders meeting",
@@ -123,20 +137,6 @@
     "category": "CORPORATE FILING",
     "headline": "Shareholders meeting",
     "date_time": "02-Oct-2026 18:45:09",
-    "attachment": ""
-  },
-  {
-    "symbol": "AUROPHARMA",
-    "category": "CORPORATE FILING",
-    "headline": "General Updates",
-    "date_time": "02-Oct-2026 18:32:35",
-    "attachment": ""
-  },
-  {
-    "symbol": "PFIZER",
-    "category": "CORPORATE FILING",
-    "headline": "Copy of Newspaper Publication",
-    "date_time": "02-Oct-2026 18:32:12",
     "attachment": ""
   }
 ]
