@@ -1,5 +1,19 @@
 [
   {
+    "symbol": "GRAVITA",
+    "category": "CORPORATE FILING",
+    "headline": "Acquisition",
+    "date_time": "08-Oct-2026 22:59:45",
+    "attachment": ""
+  },
+  {
+    "symbol": "ARIS",
+    "category": "CORPORATE FILING",
+    "headline": "Amalgamation/Merger",
+    "date_time": "08-Oct-2026 22:43:10",
+    "attachment": ""
+  },
+  {
     "symbol": "TCS",
     "category": "CORPORATE FILING",
     "headline": "Analysts/Institutional Investor Meet/Con. Call Updates",
@@ -123,20 +137,6 @@
     "category": "CORPORATE FILING",
     "headline": "Credit Rating",
     "date_time": "08-Oct-2026 20:48:05",
-    "attachment": ""
-  },
-  {
-    "symbol": "TATASTEEL",
-    "category": "CORPORATE FILING",
-    "headline": "Certificate under SEBI (Depositories and Participants) Regulations, 2018",
-    "date_time": "08-Oct-2026 20:47:31",
-    "attachment": ""
-  },
-  {
-    "symbol": "POLYCAB",
-    "category": "CORPORATE FILING",
-    "headline": "Corporate Insolvency Resolution Process",
-    "date_time": "08-Oct-2026 20:41:15",
     "attachment": ""
   }
 ]
