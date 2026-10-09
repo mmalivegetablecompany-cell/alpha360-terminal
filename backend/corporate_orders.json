@@ -1,5 +1,33 @@
 [
   {
+    "symbol": "EMBDL",
+    "category": "CORPORATE FILING",
+    "headline": "Resignation of Director/KMP/SMP",
+    "date_time": "09-Oct-2026 22:38:46",
+    "attachment": ""
+  },
+  {
+    "symbol": "JSWSTEEL",
+    "category": "CORPORATE FILING",
+    "headline": "Analysts/Institutional Investor Meet/Con. Call Updates",
+    "date_time": "09-Oct-2026 22:36:46",
+    "attachment": ""
+  },
+  {
+    "symbol": "TECHM",
+    "category": "CORPORATE FILING",
+    "headline": "Sale or disposal",
+    "date_time": "09-Oct-2026 22:29:55",
+    "attachment": ""
+  },
+  {
+    "symbol": "BIL",
+    "category": "CORPORATE FILING",
+    "headline": "Change in Management",
+    "date_time": "09-Oct-2026 22:28:42",
+    "attachment": ""
+  },
+  {
     "symbol": "MAXHEALTH",
     "category": "CORPORATE FILING",
     "headline": "Credit Rating",
@@ -109,34 +137,6 @@
     "category": "CORPORATE FILING",
     "headline": "Corrigendum",
     "date_time": "09-Oct-2026 21:19:35",
-    "attachment": ""
-  },
-  {
-    "symbol": "SYRMA",
-    "category": "CORPORATE FILING",
-    "headline": "Certificate under SEBI (Depositories and Participants) Regulations, 2018",
-    "date_time": "09-Oct-2026 21:14:19",
-    "attachment": ""
-  },
-  {
-    "symbol": "EMBDL",
-    "category": "CORPORATE FILING",
-    "headline": "Credit Rating- Revision",
-    "date_time": "09-Oct-2026 21:03:02",
-    "attachment": ""
-  },
-  {
-    "symbol": "BAJEL",
-    "category": "CORPORATE FILING",
-    "headline": "Press Release",
-    "date_time": "09-Oct-2026 20:59:39",
-    "attachment": ""
-  },
-  {
-    "symbol": "DPSCLTD",
-    "category": "CORPORATE FILING",
-    "headline": "Corporate Insolvency Resolution Process",
-    "date_time": "09-Oct-2026 20:52:18",
     "attachment": ""
   }
 ]
