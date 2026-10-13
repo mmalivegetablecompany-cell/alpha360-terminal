@@ -1,5 +1,12 @@
 [
   {
+    "symbol": "AEGISLOG",
+    "category": "BOARD MEETING",
+    "headline": "Outcome of Board Meeting",
+    "date_time": "13-Oct-2026 23:07:10",
+    "attachment": ""
+  },
+  {
     "symbol": "OIL",
     "category": "CORPORATE FILING",
     "headline": "General Updates",
@@ -130,13 +137,6 @@
     "category": "CORPORATE FILING",
     "headline": "Certificate under SEBI (Depositories and Participants) Regulations, 2018",
     "date_time": "13-Oct-2026 21:01:50",
-    "attachment": ""
-  },
-  {
-    "symbol": "CCHHL",
-    "category": "CORPORATE FILING",
-    "headline": "Certificate under SEBI (Depositories and Participants) Regulations, 2018",
-    "date_time": "13-Oct-2026 20:58:36",
     "attachment": ""
   }
 ]
