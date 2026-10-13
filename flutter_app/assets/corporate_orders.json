@@ -1,142 +1,142 @@
 [
   {
-    "symbol": "BEL",
+    "symbol": "OIL",
+    "category": "CORPORATE FILING",
+    "headline": "General Updates",
+    "date_time": "13-Oct-2026 22:50:57",
+    "attachment": ""
+  },
+  {
+    "symbol": "RPOWER",
+    "category": "CORPORATE FILING",
+    "headline": "Updates",
+    "date_time": "13-Oct-2026 22:45:08",
+    "attachment": ""
+  },
+  {
+    "symbol": "NCC",
+    "category": "CORPORATE FILING",
+    "headline": "Updates",
+    "date_time": "13-Oct-2026 22:44:16",
+    "attachment": ""
+  },
+  {
+    "symbol": "RPOWER",
     "category": "MAJOR ORDER WIN",
-    "headline": "Bagging/Receiving of orders/contracts",
-    "date_time": "13-Oct-2026 15:33:38",
+    "headline": "Action(s) initiated or orders passed",
+    "date_time": "13-Oct-2026 22:24:54",
     "attachment": ""
   },
   {
-    "symbol": "EIMCOELECO",
-    "category": "CORPORATE FILING",
-    "headline": "Resignation of Director/KMP/SMP",
-    "date_time": "13-Oct-2026 15:33:33",
-    "attachment": ""
-  },
-  {
-    "symbol": "GALLANTT",
+    "symbol": "LCL",
     "category": "CORPORATE FILING",
     "headline": "Certificate under SEBI (Depositories and Participants) Regulations, 2018",
-    "date_time": "13-Oct-2026 15:33:14",
+    "date_time": "13-Oct-2026 22:24:33",
     "attachment": ""
   },
   {
-    "symbol": "KIOCL",
-    "category": "CORPORATE FILING",
-    "headline": "Credit Rating- Revision",
-    "date_time": "13-Oct-2026 15:33:14",
-    "attachment": ""
-  },
-  {
-    "symbol": "CHEMPLASTS",
+    "symbol": "JNPR",
     "category": "CORPORATE FILING",
     "headline": "Certificate under SEBI (Depositories and Participants) Regulations, 2018",
-    "date_time": "13-Oct-2026 15:32:50",
+    "date_time": "13-Oct-2026 22:04:24",
     "attachment": ""
   },
   {
-    "symbol": "SFL",
-    "category": "CORPORATE FILING",
-    "headline": "Credit Rating",
-    "date_time": "13-Oct-2026 15:31:42",
-    "attachment": ""
-  },
-  {
-    "symbol": "SADHNANIQ",
-    "category": "CORPORATE FILING",
-    "headline": "Resignation",
-    "date_time": "13-Oct-2026 15:31:35",
-    "attachment": ""
-  },
-  {
-    "symbol": "ICICIAMC",
-    "category": "CORPORATE FILING",
-    "headline": "Copy of Newspaper Publication",
-    "date_time": "13-Oct-2026 15:30:51",
-    "attachment": ""
-  },
-  {
-    "symbol": "EASEMYTRIP",
-    "category": "CORPORATE FILING",
-    "headline": "Press Release",
-    "date_time": "13-Oct-2026 15:30:24",
-    "attachment": ""
-  },
-  {
-    "symbol": "ELLEN",
+    "symbol": "LPDC",
     "category": "CORPORATE FILING",
     "headline": "Certificate under SEBI (Depositories and Participants) Regulations, 2018",
-    "date_time": "13-Oct-2026 15:27:14",
+    "date_time": "13-Oct-2026 22:01:29",
     "attachment": ""
   },
   {
-    "symbol": "UNIENTER",
+    "symbol": "AHCL",
+    "category": "BOARD MEETING",
+    "headline": "Outcome of Board Meeting",
+    "date_time": "13-Oct-2026 21:57:28",
+    "attachment": ""
+  },
+  {
+    "symbol": "ARSHIYA",
     "category": "CORPORATE FILING",
     "headline": "Certificate under SEBI (Depositories and Participants) Regulations, 2018",
-    "date_time": "13-Oct-2026 15:26:43",
+    "date_time": "13-Oct-2026 21:47:03",
     "attachment": ""
   },
   {
-    "symbol": "EIMCOELECO",
+    "symbol": "TARIL",
     "category": "CORPORATE FILING",
-    "headline": "Investor Presentation",
-    "date_time": "13-Oct-2026 15:24:24",
+    "headline": "Analysts/Institutional Investor Meet/Con. Call Updates",
+    "date_time": "13-Oct-2026 21:45:31",
     "attachment": ""
   },
   {
-    "symbol": "VIMTALABS",
+    "symbol": "TBZ",
     "category": "CORPORATE FILING",
-    "headline": "Certificate under SEBI (Depositories and Participants) Regulations, 2018",
-    "date_time": "13-Oct-2026 15:24:03",
+    "headline": "General Updates",
+    "date_time": "13-Oct-2026 21:33:48",
     "attachment": ""
   },
   {
-    "symbol": "ELECTHERM",
+    "symbol": "KSOLVES",
     "category": "CORPORATE FILING",
-    "headline": "Certificate under SEBI (Depositories and Participants) Regulations, 2018",
-    "date_time": "13-Oct-2026 15:23:47",
+    "headline": "Analysts/Institutional Investor Meet/Con. Call Updates",
+    "date_time": "13-Oct-2026 21:30:00",
     "attachment": ""
   },
   {
-    "symbol": "EIMCOELECO",
-    "category": "CORPORATE FILING",
-    "headline": "Press Release",
-    "date_time": "13-Oct-2026 15:21:29",
-    "attachment": ""
-  },
-  {
-    "symbol": "DLINKINDIA",
-    "category": "CORPORATE FILING",
-    "headline": "Shareholders meeting",
-    "date_time": "13-Oct-2026 15:19:57",
-    "attachment": ""
-  },
-  {
-    "symbol": "SIKKO",
-    "category": "CORPORATE FILING",
-    "headline": "Updates",
-    "date_time": "13-Oct-2026 15:18:01",
-    "attachment": ""
-  },
-  {
-    "symbol": "TARACHAND",
-    "category": "CORPORATE FILING",
-    "headline": "Updates",
-    "date_time": "13-Oct-2026 15:15:31",
-    "attachment": ""
-  },
-  {
-    "symbol": "SHANTIGOLD",
+    "symbol": "KPITTECH",
     "category": "CORPORATE FILING",
     "headline": "Certificate under SEBI (Depositories and Participants) Regulations, 2018",
-    "date_time": "13-Oct-2026 15:15:23",
+    "date_time": "13-Oct-2026 21:20:01",
     "attachment": ""
   },
   {
-    "symbol": "SWARAJENG",
+    "symbol": "HEROMOTORS",
+    "category": "BOARD MEETING",
+    "headline": "Outcome of Board Meeting",
+    "date_time": "13-Oct-2026 21:18:37",
+    "attachment": ""
+  },
+  {
+    "symbol": "SITINET",
+    "category": "CORPORATE FILING",
+    "headline": "Corporate Insolvency Resolution Process",
+    "date_time": "13-Oct-2026 21:12:39",
+    "attachment": ""
+  },
+  {
+    "symbol": "HEROMOTORS",
+    "category": "CORPORATE FILING",
+    "headline": "General Updates",
+    "date_time": "13-Oct-2026 21:12:19",
+    "attachment": ""
+  },
+  {
+    "symbol": "KPITTECH",
     "category": "CORPORATE FILING",
     "headline": "Certificate under SEBI (Depositories and Participants) Regulations, 2018",
-    "date_time": "13-Oct-2026 15:14:52",
+    "date_time": "13-Oct-2026 21:09:13",
+    "attachment": ""
+  },
+  {
+    "symbol": "COUNCODOS",
+    "category": "CORPORATE FILING",
+    "headline": "Certificate under SEBI (Depositories and Participants) Regulations, 2018",
+    "date_time": "13-Oct-2026 21:08:41",
+    "attachment": ""
+  },
+  {
+    "symbol": "SPIC",
+    "category": "CORPORATE FILING",
+    "headline": "Certificate under SEBI (Depositories and Participants) Regulations, 2018",
+    "date_time": "13-Oct-2026 21:01:50",
+    "attachment": ""
+  },
+  {
+    "symbol": "CCHHL",
+    "category": "CORPORATE FILING",
+    "headline": "Certificate under SEBI (Depositories and Participants) Regulations, 2018",
+    "date_time": "13-Oct-2026 20:58:36",
     "attachment": ""
   }
 ]
