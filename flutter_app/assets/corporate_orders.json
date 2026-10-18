@@ -1,142 +1,142 @@
 [
   {
-    "symbol": "TRUALT",
-    "category": "CORPORATE FILING",
-    "headline": "Resignation",
-    "date_time": "17-Oct-2026 15:36:17",
-    "attachment": ""
-  },
-  {
-    "symbol": "PARIN",
-    "category": "BOARD MEETING",
-    "headline": "Outcome of Board Meeting",
-    "date_time": "17-Oct-2026 15:33:57",
-    "attachment": ""
-  },
-  {
-    "symbol": "SOUTHBANK",
-    "category": "CORPORATE FILING",
-    "headline": "General Updates",
-    "date_time": "17-Oct-2026 15:32:28",
-    "attachment": ""
-  },
-  {
-    "symbol": "EMMVEE",
-    "category": "CORPORATE FILING",
-    "headline": "Copy of Newspaper Publication",
-    "date_time": "17-Oct-2026 15:30:41",
-    "attachment": ""
-  },
-  {
-    "symbol": "BALMLAWRIE",
-    "category": "CORPORATE FILING",
-    "headline": "General Updates",
-    "date_time": "17-Oct-2026 15:29:48",
-    "attachment": ""
-  },
-  {
-    "symbol": "BALMLAWRIE",
-    "category": "CORPORATE FILING",
-    "headline": "Copy of Newspaper Publication",
-    "date_time": "17-Oct-2026 15:29:48",
-    "attachment": ""
-  },
-  {
-    "symbol": "TRUALT",
-    "category": "CORPORATE FILING",
-    "headline": "Resignation of Director/KMP/SMP",
-    "date_time": "17-Oct-2026 15:29:27",
-    "attachment": ""
-  },
-  {
-    "symbol": "ICICIBANK",
-    "category": "BOARD MEETING",
-    "headline": "Outcome of Board Meeting",
-    "date_time": "17-Oct-2026 15:28:05",
-    "attachment": ""
-  },
-  {
-    "symbol": "SANGAMIND",
-    "category": "CORPORATE FILING",
-    "headline": "Shareholders meeting",
-    "date_time": "17-Oct-2026 15:27:59",
-    "attachment": ""
-  },
-  {
-    "symbol": "GUFICBIO",
-    "category": "CORPORATE FILING",
-    "headline": "Copy of Newspaper Publication",
-    "date_time": "17-Oct-2026 15:26:28",
-    "attachment": ""
-  },
-  {
     "symbol": "DODLA",
     "category": "CORPORATE FILING",
-    "headline": "Analysts/Institutional Investor Meet/Con. Call Updates",
-    "date_time": "17-Oct-2026 15:25:46",
+    "headline": "Rumour Verification - Regulation 30(11)",
+    "date_time": "18-Oct-2026 15:42:07",
     "attachment": ""
   },
   {
-    "symbol": "ICICIBANK",
-    "category": "BOARD MEETING",
-    "headline": "Outcome of Board Meeting",
-    "date_time": "17-Oct-2026 15:21:44",
-    "attachment": ""
-  },
-  {
-    "symbol": "MWL",
-    "category": "CORPORATE FILING",
-    "headline": "Copy of Newspaper Publication",
-    "date_time": "17-Oct-2026 15:19:05",
-    "attachment": ""
-  },
-  {
-    "symbol": "ACUTAAS",
-    "category": "CORPORATE FILING",
-    "headline": "Acquisition",
-    "date_time": "17-Oct-2026 15:15:48",
-    "attachment": ""
-  },
-  {
-    "symbol": "HDFCBANK",
-    "category": "CORPORATE FILING",
-    "headline": "Analysts/Institutional Investor Meet/Con. Call Updates",
-    "date_time": "17-Oct-2026 15:15:29",
-    "attachment": ""
-  },
-  {
-    "symbol": "GIPCL",
-    "category": "MAJOR ORDER WIN",
-    "headline": "Awarding of order(s)/contract(s)",
-    "date_time": "17-Oct-2026 15:10:37",
-    "attachment": ""
-  },
-  {
-    "symbol": "SHALBY",
+    "symbol": "SCHNEIDER",
     "category": "MAJOR ORDER WIN",
     "headline": "Action(s) taken or orders passed",
-    "date_time": "17-Oct-2026 15:08:25",
+    "date_time": "18-Oct-2026 13:20:10",
     "attachment": ""
   },
   {
-    "symbol": "KSCL",
+    "symbol": "PRIMESECU",
     "category": "CORPORATE FILING",
-    "headline": "Structural Digital Database",
-    "date_time": "17-Oct-2026 15:05:52",
+    "headline": "Certificate under SEBI (Depositories and Participants) Regulations, 2018",
+    "date_time": "18-Oct-2026 13:17:03",
     "attachment": ""
   },
   {
-    "symbol": "SHUKRAPHAR",
+    "symbol": "PRIMESECU",
     "category": "CORPORATE FILING",
-    "headline": "Structural Digital Database",
-    "date_time": "17-Oct-2026 14:57:29",
+    "headline": "Certificate under SEBI (Depositories and Participants) Regulations, 2018",
+    "date_time": "18-Oct-2026 13:06:24",
     "attachment": ""
   },
   {
-    "symbol": "5PAISA",
+    "symbol": "JSWSTEEL",
+    "category": "CORPORATE FILING",
+    "headline": "Pendency of Litigation(s)/dispute(s) or the outcome impacting the Company",
+    "date_time": "18-Oct-2026 12:25:39",
+    "attachment": ""
+  },
+  {
+    "symbol": "VEDL",
+    "category": "CORPORATE FILING",
+    "headline": "Press Release",
+    "date_time": "18-Oct-2026 12:04:01",
+    "attachment": ""
+  },
+  {
+    "symbol": "SBICARD",
+    "category": "CORPORATE FILING",
+    "headline": "General Updates",
+    "date_time": "18-Oct-2026 11:35:01",
+    "attachment": ""
+  },
+  {
+    "symbol": "ZENTEC",
+    "category": "CORPORATE FILING",
+    "headline": "Press Release",
+    "date_time": "18-Oct-2026 11:20:44",
+    "attachment": ""
+  },
+  {
+    "symbol": "CYIENT",
+    "category": "CORPORATE FILING",
+    "headline": "Resignation of Director/KMP/SMP",
+    "date_time": "18-Oct-2026 11:09:17",
+    "attachment": ""
+  },
+  {
+    "symbol": "OIL",
+    "category": "CORPORATE FILING",
+    "headline": "Press Release",
+    "date_time": "18-Oct-2026 11:08:13",
+    "attachment": ""
+  },
+  {
+    "symbol": "CAMLINFINE",
+    "category": "CORPORATE FILING",
+    "headline": "Retirement",
+    "date_time": "18-Oct-2026 11:03:58",
+    "attachment": ""
+  },
+  {
+    "symbol": "LTM",
     "category": "CORPORATE FILING",
     "headline": "Copy of Newspaper Publication",
-    "date_time": "17-Oct-2026 14:55:57",
+    "date_time": "18-Oct-2026 10:42:01",
+    "attachment": ""
+  },
+  {
+    "symbol": "CYIENT",
+    "category": "CORPORATE FILING",
+    "headline": "Change in Director(s)",
+    "date_time": "18-Oct-2026 10:19:17",
+    "attachment": ""
+  },
+  {
+    "symbol": "JNPR",
+    "category": "CORPORATE FILING",
+    "headline": "Acquisition",
+    "date_time": "17-Oct-2026 23:43:36",
+    "attachment": ""
+  },
+  {
+    "symbol": "OFSS",
+    "category": "CORPORATE FILING",
+    "headline": "General Updates",
+    "date_time": "17-Oct-2026 23:20:21",
+    "attachment": ""
+  },
+  {
+    "symbol": "INFOBEAN",
+    "category": "CORPORATE FILING",
+    "headline": "Updates",
+    "date_time": "17-Oct-2026 23:10:11",
+    "attachment": ""
+  },
+  {
+    "symbol": "AXISBANK",
+    "category": "CORPORATE FILING",
+    "headline": "Analysts/Institutional Investor Meet/Con. Call Updates",
+    "date_time": "17-Oct-2026 23:07:27",
+    "attachment": ""
+  },
+  {
+    "symbol": "IMAGICAA",
+    "category": "CORPORATE FILING",
+    "headline": "Change in Director(s)",
+    "date_time": "17-Oct-2026 23:02:08",
+    "attachment": ""
+  },
+  {
+    "symbol": "AWHCL",
+    "category": "CORPORATE FILING",
+    "headline": "Updates",
+    "date_time": "17-Oct-2026 22:50:07",
+    "attachment": ""
+  },
+  {
+    "symbol": "BAJAJHCARE",
+    "category": "CORPORATE FILING",
+    "headline": "Press Release",
+    "date_time": "17-Oct-2026 22:28:15",
     "attachment": ""
   }
 ]
