@@ -1,5 +1,40 @@
 [
   {
+    "symbol": "CLEDUCATE",
+    "category": "CORPORATE FILING",
+    "headline": "Resignation",
+    "date_time": "20-Oct-2026 20:28:03",
+    "attachment": ""
+  },
+  {
+    "symbol": "AGARWALEYE",
+    "category": "CORPORATE FILING",
+    "headline": "ESOP/ESOS/ESPS",
+    "date_time": "20-Oct-2026 19:18:20",
+    "attachment": ""
+  },
+  {
+    "symbol": "AGARWALEYE",
+    "category": "CORPORATE FILING",
+    "headline": "Record Date",
+    "date_time": "20-Oct-2026 19:11:49",
+    "attachment": ""
+  },
+  {
+    "symbol": "TVSMOTOR",
+    "category": "CORPORATE FILING",
+    "headline": "Credit Rating",
+    "date_time": "20-Oct-2026 19:08:54",
+    "attachment": ""
+  },
+  {
+    "symbol": "MONEYVIEW",
+    "category": "CORPORATE FILING",
+    "headline": "Amendment to AOA/MOA",
+    "date_time": "20-Oct-2026 19:04:23",
+    "attachment": ""
+  },
+  {
     "symbol": "MONEYVIEW",
     "category": "CORPORATE FILING",
     "headline": "General Updates",
@@ -102,41 +137,6 @@
     "category": "CORPORATE FILING",
     "headline": "Press Release",
     "date_time": "20-Oct-2026 17:32:48",
-    "attachment": ""
-  },
-  {
-    "symbol": "BSOFT",
-    "category": "CORPORATE FILING",
-    "headline": "Record Date",
-    "date_time": "20-Oct-2026 17:32:20",
-    "attachment": ""
-  },
-  {
-    "symbol": "ADVENZYMES",
-    "category": "CORPORATE FILING",
-    "headline": "Updates",
-    "date_time": "20-Oct-2026 17:32:10",
-    "attachment": ""
-  },
-  {
-    "symbol": "SRTL",
-    "category": "CORPORATE FILING",
-    "headline": "Statement of deviation(s) or variation(s) under Reg. 32",
-    "date_time": "20-Oct-2026 17:31:37",
-    "attachment": ""
-  },
-  {
-    "symbol": "SRTL",
-    "category": "BOARD MEETING",
-    "headline": "Outcome of Board Meeting",
-    "date_time": "20-Oct-2026 17:28:15",
-    "attachment": ""
-  },
-  {
-    "symbol": "INDIAMART",
-    "category": "CORPORATE FILING",
-    "headline": "Analysts/Institutional Investor Meet/Con. Call Updates",
-    "date_time": "20-Oct-2026 17:23:41",
     "attachment": ""
   }
 ]
