@@ -85211,23 +85211,23 @@
     "sector": "Chemicals, Petrochemicals & Specialty Chem",
     "mcap_tier": "Small Cap",
     "cmp": 428.45,
-    "prev_close": 424.75,
-    "day_change": 3.7,
-    "day_change_pct": 0.87,
-    "chg_5m_pct": 0.13,
-    "day_high": 434.35,
-    "day_low": 421.0,
+    "prev_close": 428.45,
+    "day_change": 0.0,
+    "day_change_pct": 0.0,
+    "chg_5m_pct": 0.0,
+    "day_high": 428.45,
+    "day_low": 428.45,
     "volume": 172716,
-    "avg_vol_20d": 289061,
-    "vol_ratio": 0.6,
+    "avg_vol_20d": 172716,
+    "vol_ratio": 1.0,
     "vol_status": "NORMAL",
-    "high_52w": 526.6,
-    "low_52w": 408.4,
-    "dist_52w_high": -18.64,
-    "dist_52w_low": 4.91,
-    "tech_score": 66.0,
-    "action": "HOLD",
-    "action_badge": "<span class=\"px-2 py-0.5 rounded text-xs font-bold uppercase tracking-wider bg-emerald-500/20 text-emerald-400 border border-emerald-500/30\">HOLD</span>",
+    "high_52w": 492.7175,
+    "low_52w": 321.3375,
+    "dist_52w_high": -13.04,
+    "dist_52w_low": 33.33,
+    "tech_score": 70.0,
+    "action": "BUY ON DIPS",
+    "action_badge": "<span class=\"px-2 py-0.5 rounded text-xs font-bold uppercase tracking-wider bg-emerald-500/20 text-emerald-400 border border-emerald-500/30\">BUY ON DIPS</span>",
     "setup_type": "Swing Pullback",
     "primary_pattern": "Ascending Consolidation Breakout",
     "master_score": 57.2,
@@ -85250,13 +85250,13 @@
     "mcap_cr": 4092.8,
     "trade_blueprint": {
       "entry_cmp": 428.45,
-      "stop_loss": 408.43,
-      "target_1": 458.48,
-      "target_2": 478.5,
-      "target_3": 508.53,
+      "stop_loss": 416.88,
+      "target_1": 445.8,
+      "target_2": 457.38,
+      "target_3": 474.73,
       "rr_ratio": 2.5,
       "win_rate_score": 75.0,
-      "risk_per_share": 20.019999999999982
+      "risk_per_share": 11.569999999999993
     },
     "moving_averages": {
       "ema9": 426.31,
@@ -85267,54 +85267,54 @@
       "alignment": "Perfect Bullish Stack (9 > 20 > 50 > 200)"
     },
     "oscillators": {
-      "rsi": 30.9,
+      "rsi": 30.4,
       "macd_signal": "Bullish Crossover",
       "adx": 28.5,
       "stochastic": 65.0
     },
     "volatility": {
-      "atr": 13.35,
-      "bb_upper": 448.72,
+      "atr": 7.71,
+      "bb_upper": 437.44,
       "bb_mid": 422.02,
-      "bb_lower": 395.32,
-      "bb_bandwidth": 12.65
+      "bb_lower": 406.6,
+      "bb_bandwidth": 7.31
     },
     "pivots": {
-      "pivot": 427.93,
-      "r1": 434.86,
-      "r2": 441.28,
-      "r3": 448.21,
-      "s1": 421.51,
-      "s2": 414.58,
-      "s3": 408.16
+      "pivot": 428.45,
+      "r1": 428.45,
+      "r2": 428.45,
+      "r3": 428.45,
+      "s1": 428.45,
+      "s2": 428.45,
+      "s3": 428.45
     },
     "fibonacci": {
-      "fib_236": 498.7,
-      "fib_382": 481.45,
-      "fib_500": 467.5,
-      "fib_618": 453.55,
-      "fib_786": 433.69,
-      "fib_1618": 599.65
+      "fib_236": 452.27,
+      "fib_382": 427.25,
+      "fib_500": 407.03,
+      "fib_618": 386.8,
+      "fib_786": 358.01,
+      "fib_1618": 598.63
     },
     "timeframes": {
       "15M": {
-        "trend": "Bullish",
-        "rsi": 30.9,
-        "verdict": "Bullish Breakout"
+        "trend": "Consolidating",
+        "rsi": 30.4,
+        "verdict": "Neutral"
       },
       "1H": {
         "trend": "Strong Bullish",
-        "rsi": 29.4,
+        "rsi": 28.9,
         "verdict": "Bullish"
       },
       "1D": {
         "trend": "Uptrend",
-        "rsi": 30.9,
+        "rsi": 30.4,
         "verdict": "Buy"
       },
       "1W": {
         "trend": "Stage 2 Expansion",
-        "rsi": 32.9,
+        "rsi": 32.4,
         "verdict": "Multi-Month Bull"
       }
     },
@@ -85322,128 +85322,7 @@
       "score": 75.0,
       "badge": "High Institutional Confluence"
     },
-    "candles": [
-      {
-        "date": "2026-10-07",
-        "open": 500.0,
-        "high": 504.9,
-        "low": 479.5,
-        "close": 488.0,
-        "volume": 732922
-      },
-      {
-        "date": "2026-10-08",
-        "open": 488.2,
-        "high": 491.45,
-        "low": 467.55,
-        "close": 469.35,
-        "volume": 370650
-      },
-      {
-        "date": "2026-10-09",
-        "open": 470.0,
-        "high": 478.05,
-        "low": 467.15,
-        "close": 470.8,
-        "volume": 168370
-      },
-      {
-        "date": "2026-10-12",
-        "open": 478.0,
-        "high": 480.0,
-        "low": 468.8,
-        "close": 471.85,
-        "volume": 132448
-      },
-      {
-        "date": "2026-10-13",
-        "open": 471.15,
-        "high": 483.9,
-        "low": 471.05,
-        "close": 482.2,
-        "volume": 364863
-      },
-      {
-        "date": "2026-10-14",
-        "open": 484.9,
-        "high": 491.9,
-        "low": 478.55,
-        "close": 484.95,
-        "volume": 352814
-      },
-      {
-        "date": "2026-10-15",
-        "open": 487.35,
-        "high": 489.4,
-        "low": 463.3,
-        "close": 465.0,
-        "volume": 253626
-      },
-      {
-        "date": "2026-10-16",
-        "open": 466.0,
-        "high": 471.8,
-        "low": 461.25,
-        "close": 464.4,
-        "volume": 187461
-      },
-      {
-        "date": "2026-10-19",
-        "open": 465.0,
-        "high": 471.5,
-        "low": 452.15,
-        "close": 455.7,
-        "volume": 153157
-      },
-      {
-        "date": "2026-10-21",
-        "open": 455.8,
-        "high": 459.7,
-        "low": 433.05,
-        "close": 436.65,
-        "volume": 289859
-      },
-      {
-        "date": "2026-10-22",
-        "open": 434.35,
-        "high": 442.8,
-        "low": 428.2,
-        "close": 432.7,
-        "volume": 221128
-      },
-      {
-        "date": "2026-10-23",
-        "open": 432.8,
-        "high": 433.6,
-        "low": 411.5,
-        "close": 420.5,
-        "volume": 362983
-      },
-      {
-        "date": "2026-10-26",
-        "open": 414.15,
-        "high": 420.5,
-        "low": 408.4,
-        "close": 417.1,
-        "volume": 382703
-      },
-      {
-        "date": "2026-10-27",
-        "open": 421.15,
-        "high": 435.0,
-        "low": 418.7,
-        "close": 424.75,
-        "volume": 234213
-      },
-      {
-        "date": "2026-10-28",
-        "open": 430.0,
-        "high": 434.35,
-        "low": 421.0,
-        "close": 428.45,
-        "volume": 172716
-      }
-    ],
+    "candles": [],
     "radar": {
       "is_candidate": true,
       "is_perfect": false,
@@ -85454,7 +85333,7 @@
       "reasons": [
         "🎯 High R:R (1:2.5)"
       ],
-      "alpha_rank": 98.8
+      "alpha_rank": 103.8
     }
   },
   {
