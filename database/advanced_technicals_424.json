@@ -23297,8 +23297,8 @@
     "chg_5m_pct": 0.16,
     "day_high": 350.0,
     "day_low": 344.0,
-    "volume": 342933,
-    "avg_vol_20d": 1547552,
+    "volume": 343147,
+    "avg_vol_20d": 1547562,
     "vol_ratio": 0.22,
     "vol_status": "NORMAL",
     "high_52w": 350.0,
@@ -23521,7 +23521,7 @@
         "high": 350.0,
         "low": 344.0,
         "close": 349.65,
-        "volume": 342933
+        "volume": 343147
       }
     ],
     "radar": {
@@ -45818,8 +45818,8 @@
     "chg_5m_pct": 0.21,
     "day_high": 742.0,
     "day_low": 725.0,
-    "volume": 649259,
-    "avg_vol_20d": 388525,
+    "volume": 649782,
+    "avg_vol_20d": 388551,
     "vol_ratio": 1.67,
     "vol_status": "HIGH SURGE",
     "high_52w": 757.8,
@@ -46042,7 +46042,7 @@
         "high": 742.0,
         "low": 725.0,
         "close": 730.65,
-        "volume": 649259
+        "volume": 649782
       }
     ],
     "radar": {
@@ -86028,9 +86028,9 @@
     "chg_5m_pct": 1.7,
     "day_high": 7.5,
     "day_low": 6.8,
-    "volume": 601330,
-    "avg_vol_20d": 361831,
-    "vol_ratio": 1.66,
+    "volume": 617209,
+    "avg_vol_20d": 362625,
+    "vol_ratio": 1.7,
     "vol_status": "HIGH SURGE",
     "high_52w": 8.32,
     "low_52w": 5.5,
@@ -86252,7 +86252,7 @@
         "high": 7.5,
         "low": 6.8,
         "close": 7.48,
-        "volume": 601330
+        "volume": 617209
       }
     ],
     "radar": {
@@ -86264,10 +86264,10 @@
       "rr_ratio": 2.5,
       "reasons": [
         "🌟 High Confluence Synergy",
-        "🔥 Vol Surge (1.66x)",
+        "🔥 Vol Surge (1.7x)",
         "📈 RSI Sweet Spot (58.6)"
       ],
-      "alpha_rank": 123.8
+      "alpha_rank": 124.2
     }
   },
   {
@@ -95509,21 +95509,21 @@
     "sector": "Oil, Gas & Petrochemicals",
     "mcap_tier": "Mid Cap",
     "cmp": 549.9,
-    "prev_close": 549.6,
-    "day_change": 0.3,
-    "day_change_pct": 0.05,
-    "chg_5m_pct": 0.01,
-    "day_high": 560.9,
-    "day_low": 545.4,
+    "prev_close": 549.9,
+    "day_change": 0.0,
+    "day_change_pct": 0.0,
+    "chg_5m_pct": 0.0,
+    "day_high": 549.9,
+    "day_low": 549.9,
     "volume": 523891,
-    "avg_vol_20d": 522159,
+    "avg_vol_20d": 523891,
     "vol_ratio": 1.0,
     "vol_status": "NORMAL",
-    "high_52w": 595.45,
-    "low_52w": 519.05,
-    "dist_52w_high": -7.65,
-    "dist_52w_low": 5.94,
-    "tech_score": 78.0,
+    "high_52w": 632.3849999999999,
+    "low_52w": 412.42499999999995,
+    "dist_52w_high": -13.04,
+    "dist_52w_low": 33.33,
+    "tech_score": 73.0,
     "action": "BUY ON DIPS",
     "action_badge": "<span class=\"px-2 py-0.5 rounded text-xs font-bold uppercase tracking-wider bg-emerald-500/20 text-emerald-400 border border-emerald-500/30\">BUY ON DIPS</span>",
     "setup_type": "Swing Pullback",
@@ -95548,13 +95548,13 @@
     "mcap_cr": 60478.6,
     "trade_blueprint": {
       "entry_cmp": 549.9,
-      "stop_loss": 526.65,
-      "target_1": 584.77,
-      "target_2": 608.02,
-      "target_3": 642.9,
+      "stop_loss": 535.05,
+      "target_1": 572.17,
+      "target_2": 587.03,
+      "target_3": 609.3,
       "rr_ratio": 2.5,
-      "win_rate_score": 88.0,
-      "risk_per_share": 23.25
+      "win_rate_score": 80.0,
+      "risk_per_share": 14.850000000000023
     },
     "moving_averages": {
       "ema9": 547.15,
@@ -95571,34 +95571,34 @@
       "stochastic": 65.0
     },
     "volatility": {
-      "atr": 15.5,
-      "bb_upper": 572.65,
+      "atr": 9.9,
+      "bb_upper": 561.45,
       "bb_mid": 541.65,
-      "bb_lower": 510.65,
-      "bb_bandwidth": 11.45
+      "bb_lower": 521.85,
+      "bb_bandwidth": 7.31
     },
     "pivots": {
-      "pivot": 552.07,
-      "r1": 558.74,
-      "r2": 567.57,
-      "r3": 574.24,
-      "s1": 543.24,
-      "s2": 536.57,
-      "s3": 527.74
+      "pivot": 549.9,
+      "r1": 549.9,
+      "r2": 549.9,
+      "r3": 549.9,
+      "s1": 549.9,
+      "s2": 549.9,
+      "s3": 549.9
     },
     "fibonacci": {
-      "fib_236": 577.42,
-      "fib_382": 566.27,
-      "fib_500": 557.25,
-      "fib_618": 548.23,
-      "fib_786": 535.4,
-      "fib_1618": 642.67
+      "fib_236": 580.47,
+      "fib_382": 548.36,
+      "fib_500": 522.4,
+      "fib_618": 496.45,
+      "fib_786": 459.5,
+      "fib_1618": 768.32
     },
     "timeframes": {
       "15M": {
-        "trend": "Bullish",
+        "trend": "Consolidating",
         "rsi": 27.0,
-        "verdict": "Bullish Breakout"
+        "verdict": "Neutral"
       },
       "1H": {
         "trend": "Strong Bullish",
@@ -95617,143 +95617,21 @@
       }
     },
     "confluence": {
-      "score": 88.0,
+      "score": 80.0,
       "badge": "High Institutional Confluence"
     },
-    "candles": [
-      {
-        "date": "2026-10-13",
-        "open": 564.0,
-        "high": 574.0,
-        "low": 560.05,
-        "close": 572.2,
-        "volume": 475137
-      },
-      {
-        "date": "2026-10-14",
-        "open": 572.2,
-        "high": 585.0,
-        "low": 567.6,
-        "close": 581.6,
-        "volume": 643649
-      },
-      {
-        "date": "2026-10-15",
-        "open": 582.0,
-        "high": 582.95,
-        "low": 574.5,
-        "close": 576.8,
-        "volume": 367763
-      },
-      {
-        "date": "2026-10-16",
-        "open": 578.65,
-        "high": 584.95,
-        "low": 573.2,
-        "close": 579.35,
-        "volume": 360508
-      },
-      {
-        "date": "2026-10-19",
-        "open": 579.1,
-        "high": 582.25,
-        "low": 572.15,
-        "close": 573.65,
-        "volume": 325938
-      },
-      {
-        "date": "2026-10-21",
-        "open": 573.65,
-        "high": 573.95,
-        "low": 555.25,
-        "close": 559.4,
-        "volume": 401833
-      },
-      {
-        "date": "2026-10-22",
-        "open": 556.9,
-        "high": 558.65,
-        "low": 547.65,
-        "close": 552.85,
-        "volume": 453629
-      },
-      {
-        "date": "2026-10-23",
-        "open": 559.0,
-        "high": 559.8,
-        "low": 520.55,
-        "close": 529.5,
-        "volume": 1215162
-      },
-      {
-        "date": "2026-10-26",
-        "open": 527.0,
-        "high": 538.6,
-        "low": 519.05,
-        "close": 532.0,
-        "volume": 721525
-      },
-      {
-        "date": "2026-10-27",
-        "open": 532.0,
-        "high": 539.8,
-        "low": 530.3,
-        "close": 537.75,
-        "volume": 423892
-      },
-      {
-        "date": "2026-10-28",
-        "open": 536.0,
-        "high": 538.5,
-        "low": 530.05,
-        "close": 533.5,
-        "volume": 378711
-      },
-      {
-        "date": "2026-10-29",
-        "open": 533.0,
-        "high": 549.9,
-        "low": 531.15,
-        "close": 546.6,
-        "volume": 745592
-      },
-      {
-        "date": "2026-10-30",
-        "open": 547.0,
-        "high": 547.0,
-        "low": 531.7,
-        "close": 534.45,
-        "volume": 391076
-      },
-      {
-        "date": "2026-11-02",
-        "open": 536.9,
-        "high": 552.4,
-        "low": 534.85,
-        "close": 549.6,
-        "volume": 505513
-      },
-      {
-        "date": "2026-11-03",
-        "open": 554.0,
-        "high": 560.9,
-        "low": 545.4,
-        "close": 549.9,
-        "volume": 523891
-      }
-    ],
+    "candles": [],
     "radar": {
       "is_candidate": true,
       "is_perfect": false,
       "is_swing": true,
       "is_intraday": false,
-      "win_rate_score": 88.0,
+      "win_rate_score": 80.0,
       "rr_ratio": 2.5,
       "reasons": [
-        "⛰️ Near 52W High (-7.65%)",
         "🎯 High R:R (1:2.5)"
       ],
-      "alpha_rank": 110.3
+      "alpha_rank": 106.2
     }
   },
   {
