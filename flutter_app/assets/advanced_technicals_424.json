@@ -23305,8 +23305,8 @@
     "chg_5m_pct": 0.24,
     "day_high": 363.0,
     "day_low": 353.7,
-    "volume": 645819,
-    "avg_vol_20d": 1507938,
+    "volume": 646360,
+    "avg_vol_20d": 1507965,
     "vol_ratio": 0.43,
     "vol_status": "NORMAL",
     "high_52w": 363.0,
@@ -23529,7 +23529,7 @@
         "high": 363.0,
         "low": 353.7,
         "close": 363.0,
-        "volume": 645819
+        "volume": 646360
       }
     ],
     "radar": {
@@ -45838,8 +45838,8 @@
     "chg_5m_pct": -0.19,
     "day_high": 768.0,
     "day_low": 758.0,
-    "volume": 331815,
-    "avg_vol_20d": 406802,
+    "volume": 332096,
+    "avg_vol_20d": 406816,
     "vol_ratio": 0.82,
     "vol_status": "NORMAL",
     "high_52w": 785.0,
@@ -46062,7 +46062,7 @@
         "high": 768.0,
         "low": 758.0,
         "close": 764.15,
-        "volume": 331815
+        "volume": 332096
       }
     ],
     "radar": {
@@ -96818,9 +96818,9 @@
     "chg_5m_pct": -0.74,
     "day_high": 7.88,
     "day_low": 7.54,
-    "volume": 3950988,
-    "avg_vol_20d": 3714620,
-    "vol_ratio": 1.06,
+    "volume": 3958176,
+    "avg_vol_20d": 3714980,
+    "vol_ratio": 1.07,
     "vol_status": "NORMAL",
     "high_52w": 9.36,
     "low_52w": 7.4,
@@ -97042,7 +97042,7 @@
         "high": 7.88,
         "low": 7.54,
         "close": 7.54,
-        "volume": 3950988
+        "volume": 3958176
       }
     ],
     "radar": {
@@ -97055,7 +97055,7 @@
       "reasons": [
         "🎯 High R:R (1:2.5)"
       ],
-      "alpha_rank": 104.6
+      "alpha_rank": 104.7
     }
   },
   {
