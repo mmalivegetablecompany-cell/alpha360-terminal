@@ -23303,7 +23303,7 @@
     "chg_5m_pct": 0.02,
     "day_high": 367.3,
     "day_low": 361.85,
-    "volume": 249355,
+    "volume": 249356,
     "avg_vol_20d": 1471007,
     "vol_ratio": 0.17,
     "vol_status": "NORMAL",
@@ -23527,7 +23527,7 @@
         "high": 367.3,
         "low": 361.85,
         "close": 364.5,
-        "volume": 249355
+        "volume": 249356
       }
     ],
     "radar": {
@@ -45828,9 +45828,9 @@
     "chg_5m_pct": -0.19,
     "day_high": 822.0,
     "day_low": 797.05,
-    "volume": 750737,
-    "avg_vol_20d": 482893,
-    "vol_ratio": 1.55,
+    "volume": 751550,
+    "avg_vol_20d": 482934,
+    "vol_ratio": 1.56,
     "vol_status": "HIGH SURGE",
     "high_52w": 822.0,
     "low_52w": 688.0,
@@ -46052,7 +46052,7 @@
         "high": 822.0,
         "low": 797.05,
         "close": 800.7,
-        "volume": 750737
+        "volume": 751550
       }
     ],
     "radar": {
@@ -46064,10 +46064,10 @@
       "rr_ratio": 2.5,
       "reasons": [
         "🌟 High Confluence Synergy",
-        "🔥 Vol Surge (1.55x)",
+        "🔥 Vol Surge (1.56x)",
         "⛰️ Near 52W High (-2.59%)"
       ],
-      "alpha_rank": 122.0
+      "alpha_rank": 122.2
     }
   },
   {
@@ -63540,7 +63540,7 @@
     "chg_5m_pct": 0.75,
     "day_high": 64.44,
     "day_low": 60.25,
-    "volume": 231994,
+    "volume": 231997,
     "avg_vol_20d": 73333,
     "vol_ratio": 3.16,
     "vol_status": "HIGH SURGE",
@@ -63764,7 +63764,7 @@
         "high": 64.44,
         "low": 60.25,
         "close": 64.44,
-        "volume": 231994
+        "volume": 231997
       }
     ],
     "radar": {
@@ -86058,8 +86058,8 @@
     "chg_5m_pct": 0.34,
     "day_high": 8.14,
     "day_low": 7.67,
-    "volume": 288159,
-    "avg_vol_20d": 343549,
+    "volume": 288759,
+    "avg_vol_20d": 343579,
     "vol_ratio": 0.84,
     "vol_status": "NORMAL",
     "high_52w": 8.43,
@@ -86282,7 +86282,7 @@
         "high": 8.14,
         "low": 7.67,
         "close": 8.08,
-        "volume": 288159
+        "volume": 288759
       }
     ],
     "radar": {
@@ -96812,8 +96812,8 @@
     "chg_5m_pct": 0.74,
     "day_high": 8.67,
     "day_low": 8.4,
-    "volume": 8110245,
-    "avg_vol_20d": 4071198,
+    "volume": 8111045,
+    "avg_vol_20d": 4071238,
     "vol_ratio": 1.99,
     "vol_status": "HIGH SURGE",
     "high_52w": 8.8,
@@ -97036,7 +97036,7 @@
         "high": 8.67,
         "low": 8.4,
         "close": 8.67,
-        "volume": 8110245
+        "volume": 8111045
       }
     ],
     "radar": {
@@ -103640,8 +103640,8 @@
     "chg_5m_pct": -0.3,
     "day_high": 114.0,
     "day_low": 108.5,
-    "volume": 56163,
-    "avg_vol_20d": 76682,
+    "volume": 56323,
+    "avg_vol_20d": 76690,
     "vol_ratio": 0.73,
     "vol_status": "NORMAL",
     "high_52w": 114.74,
@@ -103864,7 +103864,7 @@
         "high": 114.0,
         "low": 108.5,
         "close": 109.01,
-        "volume": 56163
+        "volume": 56323
       }
     ],
     "radar": {
